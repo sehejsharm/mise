@@ -7,7 +7,7 @@ Generated 2026-09-29 by `pnpm seo:report` against a local production build (57 U
 ## Summary
 
 - URLs checked: **57**
-- Keyword placement issues on scored pages: **1**
+- Keyword placement issues on scored pages: **0**
 - Description length / CTA issues: **0**
 
 ### Homepage copy budget
@@ -20,7 +20,7 @@ Generated 2026-09-29 by `pnpm seo:report` against a local production build (57 U
 
 ### Open issues
 
-- /blog: primary keyword "Mise blog" not in an H2
+None.
 
 ## Per-URL detail
 
@@ -78,7 +78,7 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/team/ali-electricwala` | Ali Electricwala, Co-Founder & COO of Mise | Ali Electricwala | Ali Electricwala | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 150 |
 | `/team/aditya-mishra` | Aditya Mishra, Co-Founder & CTO of Mise | Aditya Mishra | Aditya Mishra | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 149 |
 | `/advisors` | Mise Advisory Board: Hospitality Advisors \| Mise | The Mise advisory board | Mise advisory board | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 145 |
-| `/blog` | Mise Blog: Hotel SOP & Operations Guides | The Mise blog: hotel SOPs, standards and service execution | Mise blog | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 143 |
+| `/blog` | Mise Blog: Hotel SOP & Operations Guides | The Mise blog: hotel SOPs, standards and service execution | Mise blog | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 143 |
 | `/demo` | Book a 15-Minute Mise Demo \| Mise | Book a 15-minute Mise demo | Mise demo | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 154 ⚠ |
 | `/contact` | Contact Mise: Hotel SOP Software Team \| Mise | Contact Mise | contact Mise | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 154 |
 | `/security` | Security & Data Handling \| Mise | Security and data handling at Mise | Mise security | ✗ | ✗ | ✗ | ✗ | ✗ | – | ✗ | 153 |

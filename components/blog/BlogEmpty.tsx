@@ -21,7 +21,7 @@ export default function BlogEmpty() {
           id="blog-empty-title"
           className="mt-4 font-display text-[clamp(1.8rem,3.6vw,2.8rem)] leading-[1.05] font-semibold text-ink"
         >
-          The blog is still at <span className="text-gradient-gold">mise en place.</span>
+          The Mise blog is still at <span className="text-gradient-gold">mise en place.</span>
         </h2>
         <p className="mt-5 max-w-xl text-[1.05rem] leading-relaxed text-muted">
           Stations are set, knives are sharp, and the first articles are being plated. We hold them to the
