@@ -102,7 +102,6 @@ Every listing links to https://misehotel.com/ (or `/demo` where a separate "demo
 | Item | Start at | Plan |
 |---|---|---|
 | **Product Hunt** | https://www.producthunt.com/ | Launch on a Tuesday–Thursday.<br>Tagline: "Every shift, five-star: hotel SOPs as timed tasks, with evidence".<br>First comment from Sehej: the mise en place story plus a 60-second loop video.<br>Link: https://misehotel.com/ |
-| **Case study co-publishing** with **The Hosteller** and **Clarks Hotels & Resorts** | Their marketing and PR teams | Only with written approval of every word and number.<br>Publish on misehotel.com's blog and ask each to post or link it from their newsroom or LinkedIn.<br>Anchor: "Mise, the service execution platform we use for SOPs" |
 
 ## 5. Hospitality associations and directories (months 2–3)
 

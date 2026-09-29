@@ -93,9 +93,7 @@ The page inventory lives in `lib/routes.ts`, which drives the sitemap, the Playw
 
 ## 6. Decisions to confirm (tracked as TODOs in code)
 
-- `TODO(sehej)`: show the verbatim Clarks testimonial or omit it (`content/site.ts`, `showClarksTestimonial`, default **off**).
 - `TODO(sehej)`: advisor titles and credentials, taken from the current site.
 - `TODO(sehej)`: confirm that the `hello@misehotel.com` mailbox exists.
-- `TODO(sehej)`: official client logo files.
 - `TODO(review)`: founder thesis quotes (newly written) and all six blog posts (seeded as `draft`).
 - `TODO(verify)`: click-check each outbound citation from an unrestricted network (`pnpm check:links`).

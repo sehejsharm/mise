@@ -109,6 +109,14 @@ for (const name of ["llms.txt.body", "llms-full.txt.body"]) {
   check(text, name);
 }
 
+// Client brands are never named on the site: not in copy, metadata, schema or the RSC payload.
+const clientNames = /\b(clarks|hosteller)\b/i;
+for (const file of [...htmlFiles(appDir), ...["llms.txt.body", "llms-full.txt.body"].map((n) => path.join(appDir, n))]) {
+  if (!fs.existsSync(file)) continue;
+  const m = fs.readFileSync(file, "utf8").match(clientNames);
+  if (m) failures.push(`${path.relative(appDir, file)}: names a client ("${m[0]}"); client brands are not shown on the site`);
+}
+
 if (failures.length) {
   console.error(`\n✗ copy-lint: ${failures.length} problem(s)\n`);
   for (const f of failures) console.error(`  - ${f}`);

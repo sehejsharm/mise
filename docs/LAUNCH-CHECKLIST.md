@@ -69,8 +69,7 @@ A box is ticked only when its check passes.
 | # | Item | Decision |
 |---|---|---|
 | 1 | Contact mailbox | `hello@misehotel.com` confirmed |
-| 2 | Clarks testimonial | Stays hidden (`showClarksTestimonial = false`) |
-| 3 | Client logos | Text wordmarks for now |
+| 2 | Client names, logos, testimonials | None on the website |
 | 4 | Advisor titles | Confirmed as shown |
 | 5 | Founder thesis lines | Approved |
 | 6 | Blog | Draft posts removed. `/blog` shows a "still at mise en place" empty state until the first post is published |

@@ -55,7 +55,7 @@ The build fails if a published page uses **"LMS", "course", "module", "learner" 
 
 Only publish numbers you can link to a public, verifiable source, and link that source in the sentence.
 - No invented statistics, customers, awards or certifications.
-- The only named clients are Clarks Hotels & Resorts and The Hosteller.
+- Do not name clients or show their logos or quotes.
 
 ## Adding an advisor
 

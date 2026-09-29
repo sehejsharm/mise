@@ -135,27 +135,6 @@ export function founderBySlug(slug: string) {
   return founders.find((f) => f.slug === slug);
 }
 
-/* ── Clients (hospitality only) ──────────────────────────────────────── */
-
-export const clients = [
-  // Text wordmarks by decision; set `logo` to an SVG path only with the client's permission.
-  { name: "Clarks Hotels & Resorts", segment: "Multi-property hotel group", logo: "" },
-  { name: "The Hosteller", segment: "Distributed properties", logo: "" },
-] as const;
-
-/**
- * Decision: the Clarks quote stays hidden. It predates the repositioning and
- * uses retired vocabulary; if ever shown, it is framed as the client's own
- * words and exempt from the copy lint.
- */
-export const showClarksTestimonial = false;
-export const clarksTestimonial = {
-  quote:
-    "Focus Realm provided a flexible LMS solution that improved staff training, automated compliance tracking, and enhanced reporting efficiency across multiple hotel properties.",
-  author: "Clarks Hotels & Resorts",
-  framing: "From an early deployment, in the client's own words.",
-};
-
 /* ── Demo property (fictional) ───────────────────────────────────────── */
 
 export const demoProperty = {

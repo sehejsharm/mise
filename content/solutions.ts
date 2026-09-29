@@ -327,10 +327,6 @@ Group operations teams need to see where standards hold across properties. Mise 
         q: "How do hotel groups roll out Mise?",
         a: "One property at a time. A pilot starts at a representative property in one department, proves the service record in the first weeks, then extends to more standards, departments and properties, adapting only what genuinely differs.",
       },
-      {
-        q: "Is Mise already used by hotel groups?",
-        a: "Mise works with hospitality operators including Clarks Hotels & Resorts, a multi-property hotel group, and The Hosteller, which runs distributed properties.",
-      },
     ],
     related: [
       { href: "/problems/star-rating-ceiling", label: "The star rating ceiling", note: "Variance across properties." },

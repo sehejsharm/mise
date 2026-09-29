@@ -51,8 +51,6 @@ Many Indian hotels run a PMS that is hard to integrate with, or a mix of systems
 
 Every pilot is scoped to one property. We usually start in housekeeping, convert the standards that matter most, and let the service record fill for the first weeks. Groups then extend property by property. See [multi-property hotel SOP software](/solutions/hotel-chains).
 
-Mise works with Indian hospitality operators including Clarks Hotels & Resorts and The Hosteller.
-
 ## Data handling
 
 Mise runs on Google Cloud and Firebase. Read [security and data handling](/security) for what is collected, who can see it, and how India's data protection law is reflected in our policies.
