@@ -22,7 +22,7 @@
     "check:links": "node scripts/check-external-links.mjs",
     "test:e2e": "playwright test",
     "test:visual": "playwright test --config playwright.visual.config.ts",
-    "lhci": "lhci autorun",
+    "lhci": "lhci autorun && lhci autorun --config=lighthouserc.desktop.json",
     "seo:report": "node scripts/seo-report.mjs",
     "analyze": "ANALYZE=true next build"
   },

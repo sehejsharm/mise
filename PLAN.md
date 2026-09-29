@@ -23,7 +23,7 @@ Goals, in order: (1) search and AI-answer visibility, (2) 15-minute demo booking
 - **Tailwind CSS v4.** Design tokens live in `app/globals.css` under `@theme`. Dark is the default; the light theme uses `[data-theme="light"]`, set before paint by a tiny inline script.
 - **Fonts.** `next/font/local` with self-hosted woff2: Space Grotesk (display), Inter (body), Geist Mono (timestamps). Display and body are preloaded, with `display: swap`.
 - **Content model** (`content/`):
-  - `content/pages/*.ts`: typed long-form pages (problems, solutions, audiences, pillars, comparisons, geo, glossary). Bodies are written in a small Markdown dialect, rendered server-side by `lib/md.tsx`, so they ship zero client JS.
+  - `content/*.ts`: typed long-form pages (problems, solutions, audiences, pillars, comparisons, geo, glossary). Bodies are written in a small Markdown dialect, rendered server-side by `lib/md.tsx`, so they ship zero client JS.
   - `content/blog/*.mdoc`: Keystatic-managed posts (Markdoc), plus `content/authors`, `content/categories` and `content/advisors` as JSON.
   - `content/site.ts`: the canonical definition, brand strings, nav, footer, founders and clients. This is the single source of entity data for pages, schema, OG and `llms.txt`.
 - **Internal-linking engine.** `lib/links.ts` maps keywords to URLs. `autolink()` links the first mention of each mapped term, once per page, never to the page itself and never inside an existing link. It runs over every pillar/problem/solution paragraph and every text node of a blog post.
@@ -33,7 +33,7 @@ Goals, in order: (1) search and AI-answer visibility, (2) 15-minute demo booking
   - `app/sitemap.ts`, `app/robots.ts`, `app/llms.txt`, `app/llms-full.txt` and `app/og/[key]` (static OG PNGs per page) round it out.
 - **CMS.** Keystatic is mounted at `/keystatic`, with its API at `/api/keystatic`. It uses GitHub storage when `KEYSTATIC_GITHUB_CLIENT_ID` is set, and local storage otherwise.
 - **Forms.**
-  - `POST /api/lead` covers the demo, contact and newsletter forms: zod validation, a honeypot plus a minimum fill time, and a per-IP token-bucket rate limit, delivered through Resend.
+  - `POST /api/lead` covers the demo, contact and newsletter forms: zod validation, a honeypot plus a minimum fill time, and a per-IP sliding-window rate limit, delivered through Resend.
   - In production a missing `RESEND_API_KEY` returns 503. `LEAD_DRY_RUN=1` enables tests.
 - **Analytics.** GA4 `G-X8HT0D7TPW` is set up in `app/layout.tsx`:
   - A Consent Mode v2 defaults snippet (`beforeInteractive`) sets everything to denied, and grants if the first-party `mise_consent` cookie says so.

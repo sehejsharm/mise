@@ -114,6 +114,8 @@ export async function POST(request: Request) {
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.DEMO_INBOX_EMAIL || process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@misehotel.com";
   const from = process.env.RESEND_FROM_EMAIL || "Mise website <website@misehotel.com>";
+  const publicEmail = process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@misehotel.com";
+  const fallback = `We couldn't send that just now. Please email us at ${publicEmail}.`;
 
   if (!apiKey) {
     if (process.env.LEAD_DRY_RUN === "1" || process.env.NODE_ENV !== "production") {
@@ -121,10 +123,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: true, dryRun: true });
     }
     console.error("[lead] RESEND_API_KEY is not set; refusing to drop the lead silently.");
-    return NextResponse.json(
-      { ok: false, error: "We couldn't send that just now. Please email us directly." },
-      { status: 503 },
-    );
+    return NextResponse.json({ ok: false, error: fallback }, { status: 503 });
   }
 
   const { subject, html } = render(lead);
@@ -141,7 +140,7 @@ export async function POST(request: Request) {
     if (error) throw new Error(error.message);
   } catch (error) {
     console.error("[lead] send failed", error);
-    return NextResponse.json({ ok: false, error: "We couldn't send that just now. Please email us directly." }, { status: 502 });
+    return NextResponse.json({ ok: false, error: fallback }, { status: 502 });
   }
   return NextResponse.json({ ok: true });
 }

@@ -68,7 +68,7 @@ export default function NewsletterForm() {
       </div>
       {status === "error" ? (
         <p role="alert" className="mt-2 text-[0.85rem] text-coral-ink">
-          That didn't go through. Please try again, or email us directly.
+          That didn't go through. Please try again, or email us at {process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@misehotel.com"}.
         </p>
       ) : null}
     </form>

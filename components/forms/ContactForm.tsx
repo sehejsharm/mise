@@ -31,7 +31,7 @@ export default function ContactForm() {
       }
       setStatus("done");
     } catch {
-      setError("We couldn't reach the server. Please try again, or email us.");
+      setError(`We couldn't reach the server. Please try again, or email us at ${process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@misehotel.com"}.`);
       setStatus("error");
     }
   }

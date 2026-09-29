@@ -398,14 +398,15 @@
   color: var(--ink);
   font-weight: 600;
 }
-.prose-mise a {
+/* Components embedded in a post (the demo card) opt out with .not-prose. */
+.prose-mise a:not(.not-prose a) {
   color: var(--ink);
   text-decoration: underline;
   text-decoration-color: var(--gold);
   text-decoration-thickness: 1px;
   transition: color 200ms;
 }
-.prose-mise a:hover {
+.prose-mise a:not(.not-prose a):hover {
   color: var(--gold-ink);
 }
 .prose-mise ul,

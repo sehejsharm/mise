@@ -84,8 +84,8 @@ export default function HowItWorksPinned() {
                     <li
                       key={s.id}
                       data-loop-card={i}
-                      className={`relative rounded-2xl border p-5 transition-[border-color,background,opacity] duration-500 ${
-                        active ? "border-gold/50 bg-gold-soft" : "border-line bg-surface/40 opacity-70"
+                      className={`relative rounded-2xl border p-5 transition-[border-color,background] duration-500 ${
+                        active ? "border-gold/50 bg-gold-soft" : "border-line bg-surface/40"
                       }`}
                     >
                       <div className="flex items-baseline gap-4">

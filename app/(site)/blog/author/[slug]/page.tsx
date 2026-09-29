@@ -32,8 +32,12 @@ async function load(slug: string) {
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
-  const data = await load((await params).slug);
-  return data ? buildMetadata(data.meta) : {};
+  const slug = (await params).slug;
+  const data = await load(slug);
+  if (!data) return {};
+  // Until a post in this author is published, keep the page out of the index.
+  const hasPosts = (await getAllPosts()).some((p) => p.author.slug === slug);
+  return buildMetadata({ ...data.meta, noindex: !hasPosts });
 }
 
 export default async function AuthorPage({ params }: { params: Promise<{ slug: string }> }) {
