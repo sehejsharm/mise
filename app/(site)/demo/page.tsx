@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import BookingEmbed from "@/components/forms/BookingEmbed";
 import DemoForm from "@/components/forms/DemoForm";
-import { Breadcrumbs, FaqList, JsonLd } from "@/components/ui/blocks";
+import { Breadcrumbs, FaqList, JsonLd, RelatedLinks } from "@/components/ui/blocks";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { Eyebrow } from "@/components/ui/primitives";
 import { contact } from "@/content/site";
@@ -122,6 +122,15 @@ export default function DemoPage() {
             Demo questions
           </h2>
           <FaqList items={faqs} className="mt-6" />
+          <RelatedLinks
+            title="Before the demo"
+            links={[
+              { href: "/how-it-works", label: "How Mise works", note: "The loop in four moves." },
+              { href: "/platform", label: "The three interfaces", note: "Staff, manager, standards." },
+              { href: "/how-it-works#pilot", label: "How a one-property pilot works", note: "Scope, setup, first shifts." },
+              { href: "/security", label: "Security & data handling", note: "What we hold and where." },
+            ]}
+          />
         </div>
       </section>
     </>

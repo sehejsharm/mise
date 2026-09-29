@@ -43,17 +43,17 @@ export const fiveSeconds = {
   title: "Hotel audit readiness, answered in one filter",
   question: "Was room 208 reset to standard this morning, and can you prove it?",
   without: {
-    label: "Today: five calls",
+    label: "Five calls",
     steps: [
-      { call: "Call the floor supervisor", result: "Wasn't on that corridor" },
-      { call: "Supervisor radios the attendant", result: "Mid-shift, can't talk" },
-      { call: "Attendant thinks there's a photo", result: "Somewhere" },
-      { call: "Photo is in a camera roll", result: "Personal phone" },
+      { call: "Call the floor supervisor", result: "Wasn't there" },
+      { call: "Radio the attendant", result: "Mid-shift" },
+      { call: "Ask for the photo", result: "Somewhere" },
+      { call: "Search a camera roll", result: "Personal phone" },
       { call: "Check the audit file", result: "Proof: none" },
     ],
   },
   with: {
-    label: "With Mise: one filter",
+    label: "One filter",
     filter: "room:208 · today",
     record: [
       { k: "Standard", v: "HSK-101 Guest room reset" },
@@ -101,15 +101,15 @@ export const runsOn = {
   eyebrow: "Zero setup",
   title: "Runs on what your hotel already has",
   tiles: [
-    { icon: "globe", title: "Any browser", line: "Nothing to install from an app store." },
-    { icon: "signal", title: "Mobile data", line: "Light enough for a basement corridor." },
+    { icon: "globe", title: "Any browser", line: "No app store install." },
+    { icon: "signal", title: "Mobile data", line: "Light on any network." },
     { icon: "plugOff", title: "No PMS integration", line: "Your PMS stays untouched." },
-    { icon: "phone", title: "No hardware", line: "The phones your team already carries." },
+    { icon: "phone", title: "No hardware", line: "Staff's own phones." },
   ] as const,
 };
 
 export const whoFor = {
-  eyebrow: "Built for whoever answers for service",
+  eyebrow: "Who it's for",
   title: "Hotel operations software for every decision-maker",
   cards: [
     { href: "/for/hr-directors", who: "HR Directors", line: "Readiness and acknowledgement evidence, per person." },

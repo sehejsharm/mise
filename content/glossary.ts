@@ -20,7 +20,7 @@ export const glossary: GlossaryTerm[] = [
     short:
       "A service execution platform is software that turns a hotel's standard operating procedures into timed tasks carried out on staff devices, captures evidence as the work happens, and compounds it into an audit-ready service record.",
     description:
-      "A service execution platform turns hotel SOPs into timed tasks on staff phones, captures evidence and builds a service record. Definition and examples. Book a demo.",
+      "A service execution platform turns hotel SOPs into timed tasks on staff phones, captures evidence and builds a service record. Book a 15-min demo.",
     body: `
 A service execution platform sits between a hotel's standards and its shifts. Where document systems store SOPs and training tools teach them, a service execution platform runs them: each standard becomes a [timed task](/glossary/timed-task) on the phone of the person doing the work, key steps require evidence, and every completion writes to a [service record](/glossary/service-record).
 
@@ -119,7 +119,7 @@ It is the last step of the Mise loop: Standard → Timed task → Evidence → S
     short:
       "A timed task is a hotel standard delivered as a unit of work on a staff device, with ordered steps, a target time and a live countdown, so the standard runs at the moment of work.",
     description:
-      "A timed task delivers a hotel SOP as a unit of work with steps, a target time and a countdown on the staff phone. How timed tasks replace binders. Book a demo.",
+      "A timed task delivers a hotel SOP as a unit of work with steps, a target time and a countdown on the staff phone. How it replaces binders. Book a demo.",
     body: `
 A timed task is how a standard reaches the floor in Mise. When a standard is published and assigned, it appears on the right person's phone as a task with a countdown against its target time. The steps are grouped into four phases (**Prepare, Perform, Verify, Release**) with reference photos, and some steps are [photo gates](/glossary/photo-gate).
 
@@ -262,7 +262,7 @@ Pick a standard, a room and a date. If you can show who carried it out, when, ag
     short:
       "A digital SOP is a standard operating procedure delivered on a device as a task to carry out, with ordered steps, a target time and evidence captured as the work is done, not a scanned document.",
     description:
-      "A digital SOP for hotels is a standard run as a task on a device, with steps, target time and evidence, not a scanned PDF. Definition and examples. Book a demo.",
+      "A digital SOP for hotels is a standard run as a task on a device, with steps, target time and evidence, not a scanned PDF. Book a 15-min demo.",
     body: `
 Moving an SOP into a shared folder is digital storage. A digital SOP, in the sense that matters for operations, is one that runs: it reaches the person doing the work as a [timed task](/glossary/timed-task), shows the steps at the moment of work, and records execution with evidence.
 
@@ -285,7 +285,7 @@ Read the full guide to [digitizing hotel SOPs](/digital-sop).
     short:
       "Mise en place is the kitchen discipline of having everything in its place before service starts. It is where Mise, the hotel service execution platform, takes its name.",
     description:
-      "Mise en place is the kitchen discipline of having everything in its place before service starts, and the origin of the Mise name. What it means for hotels.",
+      "Mise en place is the kitchen discipline of having everything in its place before service starts, and the origin of the Mise name. Book a 15-min demo.",
     body: `
 Professional kitchens run on mise en place: every ingredient prepared, every tool in position, every station set before the first order arrives. It is what lets a kitchen deliver the same dish, to the same standard, under pressure.
 
@@ -310,8 +310,8 @@ export const glossaryHubMeta = {
   path: "/glossary",
   title: "Hotel Service Execution Glossary: Key Terms | Mise",
   description:
-    "Definitions of hotel service execution terms: service execution platform, ghost SOP, photo gate, timed task, service record, readiness and more. Book a demo.",
-  h1: "Glossary of hotel service execution terms",
+    "The hotel service execution glossary: service execution platform, ghost SOP, photo gate, timed task, service record, readiness and more. Book a demo.",
+  h1: "Hotel service execution glossary: key terms defined",
   primaryKeyword: "hotel service execution glossary",
   eyebrow: "Glossary",
   updated: "2026-09-29",

@@ -35,7 +35,7 @@ export default function RoiTeaser() {
             id="roi-title"
             eyebrow="Back of the envelope"
             title="What staff turnover costs your hotel"
-            lede="Three sliders, your numbers. Every assumption is editable on the full calculator."
+            lede="Your numbers, fully editable."
           />
           <div className="mt-6">
             <ArrowLink href="/roi">Open the full hotel operations ROI calculator</ArrowLink>
@@ -68,13 +68,12 @@ export default function RoiTeaser() {
             ))}
           </div>
           <div className="mt-8 border-t border-line pt-6" aria-live="polite">
-            <p className="text-[0.9rem] text-muted">Estimated annual cost of staff turnover</p>
+            <p className="text-[0.9rem] text-muted">Annual cost of staff turnover</p>
             <p className="mt-1 font-display text-[clamp(2.2rem,5vw,3rem)] leading-none font-semibold text-ink">
               {formatMoney(r.turnoverCost, "INR")}
             </p>
             <p className="mt-3 text-[0.85rem] leading-relaxed text-faint">
-              Assumes {formatMoney(roiDefaults.replacementCost, "INR")} to replace one person ({Math.round(r.leavers)} leavers a
-              year). That figure is an editable assumption, not an industry statistic.
+              Assumes {formatMoney(roiDefaults.replacementCost, "INR")} per replacement (editable).
             </p>
           </div>
         </div>

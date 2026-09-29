@@ -20,6 +20,7 @@ export function Picture({
   priority = false,
   className,
   imgClassName,
+  lead = false,
 }: {
   image: string;
   alt: string;
@@ -27,6 +28,8 @@ export function Picture({
   priority?: boolean;
   className?: string;
   imgClassName?: string;
+  /** Marks the page's lead image (used by the SEO report). */
+  lead?: boolean;
 }) {
   const e = imageEntry(image);
   return (
@@ -43,6 +46,7 @@ export function Picture({
         decoding="async"
         {...(priority ? { fetchPriority: "high" as const } : {})}
         className={cx("h-auto w-full bg-cover bg-center", imgClassName)}
+        {...(lead ? { "data-lead": "" } : {})}
         style={{ backgroundImage: `url(${e.blurDataURL})` }}
       />
     </picture>

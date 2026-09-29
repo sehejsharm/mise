@@ -19,7 +19,7 @@ async function load(slug: string) {
   const meta: PageMeta = {
     path: `/blog/category/${slug}`,
     title: `${category.name} Articles | Mise Blog`,
-    description: `${category.description} Articles from the Mise blog on hotel standards and service execution. Book a 15-min demo.`.slice(0, 158),
+    description: `${category.description} Guides and field notes from the Mise blog. Book a 15-min demo.`,
     h1: `${category.name}: articles from the Mise blog`,
     primaryKeyword: category.name.toLowerCase(),
     eyebrow: "Blog category",

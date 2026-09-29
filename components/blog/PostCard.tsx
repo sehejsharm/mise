@@ -31,7 +31,7 @@ export function PostCover({ post, large = false }: { post: PostMeta; large?: boo
   );
 }
 
-export function PostCard({ post, headingLevel = 3 }: { post: PostMeta; headingLevel?: 2 | 3 }) {
+export function PostCard({ post, headingLevel = 3, compact = false }: { post: PostMeta; headingLevel?: 2 | 3; compact?: boolean }) {
   const H = headingLevel === 2 ? "h2" : "h3";
   return (
     <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface/60 transition-colors hover:border-gold/50">
@@ -41,7 +41,7 @@ export function PostCard({ post, headingLevel = 3 }: { post: PostMeta; headingLe
         </div>
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <p className="font-mono text-[0.7rem] tracking-[0.12em] text-gold-ink uppercase">
+        <p className={`font-mono text-[0.7rem] tracking-[0.12em] text-gold-ink uppercase ${compact ? "sr-only" : ""}`}>
           {post.category.name}
           {post.status === "draft" ? <span className="ml-2 rounded bg-coral/15 px-1.5 py-0.5 text-coral-ink">Draft</span> : null}
         </p>
@@ -50,10 +50,12 @@ export function PostCard({ post, headingLevel = 3 }: { post: PostMeta; headingLe
             {post.title}
           </Link>
         </H>
-        <p className="mt-2 flex-1 text-[0.93rem] leading-relaxed text-muted">{post.excerpt}</p>
-        <p className="mt-4 font-mono text-[0.72rem] text-faint">
-          {post.author.name} · <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
-        </p>
+        {compact ? <span className="flex-1" /> : <p className="mt-2 flex-1 text-[0.93rem] leading-relaxed text-muted">{post.excerpt}</p>}
+        {compact ? null : (
+          <p className="mt-4 font-mono text-[0.72rem] text-faint">
+            {post.author.name} · <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+          </p>
+        )}
       </div>
     </article>
   );

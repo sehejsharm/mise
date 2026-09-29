@@ -17,9 +17,9 @@ export default function AudiencesHub() {
   return (
     <HubPage
       meta={audiencesHubMeta}
-      lede="Mise is hotel operations software for the people who answer for service: HR Directors, General Managers, L&D Heads and hotel-group founders. Each gets a different view of the same evidence, captured as the work happens on every shift."
+      lede="Mise is hotel operations software for hotel leaders, the people who answer for service: HR Directors, General Managers, L&D Heads and hotel-group founders. Each gets a different view of the same evidence, captured as the work happens on every shift."
       tldr="HR Directors get acknowledgement and readiness evidence per person. General Managers get a live service picture. L&D Heads get execution evidence and floor feedback per standard. Hotel-group founders get one standards library, evidenced at every property. All of it comes from one service record."
-      cardsTitle="Choose your role"
+      cardsTitle="Hotel operations software for hotel leaders, by role"
       cards={[
         ...audiences.map((a) => ({ href: a.meta.path, eyebrow: `For ${a.name}`, title: a.meta.h1, body: a.card })),
         {

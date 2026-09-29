@@ -19,7 +19,7 @@ export default function CompareHub() {
       meta={compareHubMeta}
       lede="Hotels compare Mise with the tools they already use for standards and shifts: training systems, spreadsheets, WhatsApp groups and checklist apps. Each comparison below is answer-first and specific about what each tool actually records."
       tldr="Training systems record attendance and completion; spreadsheets record what someone typed later; WhatsApp records messages; checklist apps record ticks. Mise records execution: SOPs run as timed tasks, key steps need photo evidence, and each shift builds an audit-ready service record."
-      cardsTitle="Comparisons"
+      cardsTitle="Hotel SOP software comparisons"
       cards={comparisons.map((c) => ({
         href: c.meta.path,
         eyebrow: c.versus,

@@ -67,7 +67,6 @@ export default function RoleShowcase({ roles }: { roles: RoleInterface[] }) {
           id="roles-title"
           eyebrow="Three interfaces, one record"
           title="A hotel staff app, manager dashboard and standards workspace"
-          lede="Each built separately, for its own hands. Not one responsive compromise."
         />
 
         <div className="mt-10 flex flex-wrap items-center gap-3">
@@ -113,7 +112,6 @@ export default function RoleShowcase({ roles }: { roles: RoleInterface[] }) {
               <p className="font-mono text-[0.72rem] tracking-[0.14em] text-cyan-ink uppercase">{role.posture}</p>
               <h3 className="mt-3 font-display text-[clamp(1.5rem,2.6vw,2rem)] leading-tight font-semibold text-ink">{role.keyword}</h3>
               <p className="mt-3 text-[1.05rem] leading-relaxed text-muted">{role.summary}</p>
-              <p className="mt-2 text-[0.95rem] text-faint">{role.who}</p>
               <div className="mt-6">
                 <ArrowLink href={`/platform#${role.id}`}>Explore the {role.keyword.toLowerCase()}</ArrowLink>
               </div>

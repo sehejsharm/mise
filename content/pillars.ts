@@ -173,7 +173,7 @@ export const auditReadiness: Longform = {
     path: "/audit-readiness",
     title: "Hotel Audit Readiness Software & Service Records | Mise",
     description:
-      "Hotel audit readiness software that builds an audit-ready service record every shift: photo evidence, timestamps and sign-offs as work happens. Book a 15-min demo.",
+      "Hotel audit readiness software that builds an audit-ready service record every shift, with photo evidence, timestamps and sign-offs. Book a demo.",
     h1: "Hotel audit readiness software: an audit-ready service record, every shift",
     primaryKeyword: "hotel audit readiness software",
     secondaryKeywords: [

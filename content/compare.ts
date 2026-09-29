@@ -104,7 +104,7 @@ No. Mise does not manage courses, learners or certificates. It is a service exec
       path: "/compare/mise-vs-excel",
       title: "Hotel Operations Excel Alternative | Mise",
       description:
-        "A hotel operations Excel alternative: replace spreadsheet trackers with timed tasks on staff phones, photo evidence and a live service record. Book a 15-min demo.",
+        "A hotel operations Excel alternative: replace spreadsheet trackers with timed tasks on staff phones, photo evidence and a live record. Book a demo.",
       h1: "A hotel operations Excel alternative that records the work as it happens",
       primaryKeyword: "hotel operations Excel alternative",
       secondaryKeywords: ["SOP software vs Excel hotel"],
@@ -334,7 +334,7 @@ export const compareHubMeta = {
   path: "/compare",
   title: "Hotel SOP Software Comparisons | Mise",
   description:
-    "Compare Mise with training systems, Excel trackers, WhatsApp groups and checklist apps: what each records, and which proves execution. Book a 15-min demo.",
+    "Hotel SOP software comparisons: Mise vs training systems, Excel trackers, WhatsApp groups and checklist apps, and what each one records. Book a demo.",
   h1: "Hotel SOP software comparisons: what each tool actually records",
   primaryKeyword: "hotel SOP software comparison",
   eyebrow: "Compare",

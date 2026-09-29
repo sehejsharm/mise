@@ -20,7 +20,7 @@ export const indiaPage: Longform = {
     "Mise is a service execution platform built in India for hotels. It runs SOPs as timed tasks on staff phones in a browser over mobile data, with photo evidence and supervisor sign-off, and no PMS integration or hardware. Pilots start at one property, usually in housekeeping.",
   leadImage: {
     key: "product/staff-today",
-    alt: "Mise hotel staff task app India teams use on a budget phone, showing the next timed task and countdown",
+    alt: "Mise hotel SOP software India teams run on a budget phone: the staff app showing the next timed task and countdown",
     device: "phone",
   },
   body: `

@@ -24,7 +24,6 @@ export function RunsOn() {
                 <Icon name={t.icon as IconName} size={21} />
               </span>
               <h3 className="mt-5 font-display text-[1.15rem] font-semibold text-ink">{t.title}</h3>
-              <p className="mt-1.5 text-[0.95rem] text-muted">{t.line}</p>
             </li>
           ))}
         </ul>
@@ -50,10 +49,7 @@ export function WhoFor() {
                   <Icon name={icons[i]} size={22} className="text-gold-ink" />
                   <h3 className="mt-5 font-display text-[1.2rem] font-semibold text-ink">{card.who}</h3>
                   <p className="mt-1.5 flex-1 text-[0.95rem] text-muted">{card.line}</p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 text-[0.88rem] font-medium text-gold-ink">
-                    Mise for {card.who}
-                    <Icon name="arrowRight" size={15} className="transition-transform group-hover:translate-x-0.5" />
-                  </span>
+                  <Icon name="arrowRight" size={18} className="mt-5 text-gold-ink transition-transform group-hover:translate-x-0.5" />
                 </Link>
               </Tilt>
             </li>
@@ -108,14 +104,12 @@ export function PeoplePreview({ advisors }: { advisors: Advisor[] }) {
                   ) : null}
                   <span>
                     <span className="block font-display text-[1.02rem] font-semibold text-ink">{a.name}</span>
-                    {a.title ? <span className="block text-[0.85rem] text-muted">{a.title}</span> : null}
                   </span>
                 </li>
               ))}
             </ul>
           </div>
           <div className="flex shrink-0 flex-col gap-2">
-            <ArrowLink href="/about">The story behind Mise</ArrowLink>
             <ArrowLink href="/advisors">Meet the Mise advisory board</ArrowLink>
           </div>
         </div>

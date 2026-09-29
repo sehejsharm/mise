@@ -11,7 +11,7 @@ export const audiences: Audience[] = [
       path: "/for/hr-directors",
       title: "Hotel HR Compliance Software for HR Directors | Mise",
       description:
-        "Hotel HR compliance software that shows who acknowledged each standard, who is ready for which role, and the evidence behind it. For HR Directors. Book a demo.",
+        "Hotel HR compliance software that shows who acknowledged each standard, who is ready for which role, and the evidence behind it. Book a demo.",
       h1: "Hotel HR compliance software that shows readiness, not attendance",
       primaryKeyword: "hotel HR compliance software",
       secondaryKeywords: ["hotel staff compliance tracking"],
@@ -96,7 +96,7 @@ Mise runs on Google Cloud and Firebase. See [security and data handling](/securi
       path: "/for/general-managers",
       title: "Hotel GM Dashboard for Operations Visibility | Mise",
       description:
-        "A hotel GM dashboard for operations visibility: readiness, service health, blocked rooms and SOP results, fed live by timed tasks on the floor. Book a 15-min demo.",
+        "A hotel GM dashboard for operations visibility: readiness, service health, blocked rooms and SOP results, live from the floor. Book a 15-min demo.",
       h1: "The hotel GM dashboard for live operations visibility",
       primaryKeyword: "hotel GM dashboard",
       secondaryKeywords: ["hotel operations visibility", "hotel general manager operations software"],
@@ -170,7 +170,7 @@ Mise is not a PMS and does not replace revenue, reservation or finance systems. 
       path: "/for/learning-and-development",
       title: "Hotel Standards Platform for L&D Teams | Mise",
       description:
-        "A hotel standards platform for L&D: author standards, sequence operating briefs, and see execution evidence and floor feedback per standard. Book a 15-min demo.",
+        "A hotel standards platform for L&D: author standards, sequence operating briefs, and see execution evidence and floor feedback. Book a demo.",
       h1: "A hotel standards platform for L&D teams who need execution, not attendance",
       primaryKeyword: "hotel standards platform for L&D",
       secondaryKeywords: ["hospitality standards software"],
@@ -249,11 +249,11 @@ export function audienceBySlug(slug: string) {
 
 export const audiencesHubMeta = {
   path: "/for",
-  title: "Who Mise Is For: HR, GMs, L&D and Hotel Groups | Mise",
+  title: "Hotel Operations Software for Hotel Leaders | Mise",
   description:
-    "Mise hotel operations software for HR Directors, General Managers, L&D Heads and hotel-group founders: standards, evidence and records. Book a 15-min demo.",
-  h1: "Hotel operations software for the people accountable for service",
-  primaryKeyword: "hotel operations software for managers",
+    "Hotel operations software for hotel leaders: HR Directors, General Managers, L&D Heads and group founders, all working from one evidence record. Book a demo.",
+  h1: "Hotel operations software for hotel leaders accountable for service",
+  primaryKeyword: "hotel operations software for hotel leaders",
   eyebrow: "Who it's for",
   updated: "2026-09-29",
 };

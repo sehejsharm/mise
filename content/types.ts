@@ -19,6 +19,8 @@ export type Longform = {
   /** Blog post slugs to feature (only shown once the post is published). */
   relatedPosts?: string[];
   howTo?: { name: string; description: string; steps: { name: string; text: string }[] };
+  /** FAQ section heading. Defaults to "<Primary keyword>: frequently asked questions". */
+  faqTitle?: string;
   /** Pages whose subject legitimately compares against LMS vocabulary. */
   allowLmsVocabulary?: boolean;
 };

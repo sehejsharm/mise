@@ -35,7 +35,8 @@ export default function GlossaryHub() {
             definitions describe its building blocks: standards, timed tasks, evidence and the service record they produce.
           </TldrBox>
         </div>
-        <dl className="mt-14 grid gap-4 md:grid-cols-2">
+        <h2 className="mt-14 font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">Hotel service execution glossary, A to Z</h2>
+        <dl className="mt-6 grid gap-4 md:grid-cols-2">
           {sorted.map((t) => (
             <div key={t.slug} className="rounded-2xl border border-line bg-surface/60 p-6">
               <dt>

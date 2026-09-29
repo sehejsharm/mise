@@ -68,7 +68,8 @@ export default async function BlogIndex() {
         )}
 
         {rest.length ? (
-          <section aria-label="All articles" className="mt-14">
+          <section aria-labelledby="more-posts" className="mt-14">
+            <h2 id="more-posts" className="mb-6 font-display text-[clamp(1.4rem,2.4vw,1.8rem)] font-semibold text-ink">More from the Mise blog</h2>
             <BlogFilter posts={rest} categories={categories} />
           </section>
         ) : null}

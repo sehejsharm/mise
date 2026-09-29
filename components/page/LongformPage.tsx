@@ -83,7 +83,7 @@ export default async function LongformPage({
             {page.faqs.length ? (
               <section aria-labelledby="page-faq" className="mt-16">
                 <h2 id="page-faq" className="scroll-mt-28 font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
-                  Frequently asked questions
+                  {page.faqTitle ?? `${meta.primaryKeyword.replace(/^./, (c) => c.toUpperCase())}: frequently asked questions`}
                 </h2>
                 <FaqList items={page.faqs} className="mt-6" />
               </section>

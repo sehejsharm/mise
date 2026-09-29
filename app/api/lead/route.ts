@@ -1,6 +1,6 @@
 /**
  * Lead intake for the demo form, contact form and footer newsletter.
- * zod validation · honeypot + minimum fill time · per-IP token bucket ·
+ * zod validation · honeypot + minimum fill time · per-IP rate limit (after validation) ·
  * delivery through Resend. In production a missing RESEND_API_KEY returns 503
  * instead of silently dropping the lead; LEAD_DRY_RUN=1 accepts without sending
  * (local testing and CI only).
@@ -53,7 +53,7 @@ type LeadInput = z.infer<typeof Lead>;
 
 /* ── Rate limiting: 6 submissions per 10 minutes per IP, per instance. ───── */
 const WINDOW_MS = 10 * 60 * 1000;
-const LIMIT = 6;
+const LIMIT = Number(process.env.LEAD_RATE_LIMIT || 6);
 const hits = new Map<string, number[]>();
 
 function rateLimited(ip: string) {
@@ -84,11 +84,6 @@ function render(lead: LeadInput) {
 }
 
 export async function POST(request: Request) {
-  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "unknown";
-  if (rateLimited(ip)) {
-    return NextResponse.json({ ok: false, error: "Too many submissions. Please try again in a few minutes." }, { status: 429 });
-  }
-
   let body: unknown;
   try {
     body = await request.json();
@@ -107,6 +102,13 @@ export async function POST(request: Request) {
   // Bots: filled honeypot or an inhumanly fast submission. Accept silently.
   if (lead.company_website || (typeof lead.elapsedMs === "number" && lead.elapsedMs < 1500)) {
     return NextResponse.json({ ok: true });
+  }
+
+  // Only well-formed, human-looking submissions count towards the limit, so a
+  // visitor correcting validation errors is never locked out.
+  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "unknown";
+  if (rateLimited(ip)) {
+    return NextResponse.json({ ok: false, error: "Too many submissions. Please try again in a few minutes." }, { status: 429 });
   }
 
   const apiKey = process.env.RESEND_API_KEY;

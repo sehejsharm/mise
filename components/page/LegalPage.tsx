@@ -1,5 +1,5 @@
 import PageHero from "@/components/page/PageHero";
-import { JsonLd, RelatedLinks } from "@/components/ui/blocks";
+import { FinalCta, JsonLd, RelatedLinks } from "@/components/ui/blocks";
 import { createLinkState } from "@/lib/links";
 import { Markdown } from "@/lib/md";
 import { baseNodes, breadcrumbNode, webPageNode } from "@/lib/schema";
@@ -31,6 +31,7 @@ export default function LegalPage({ page }: { page: { meta: PageMeta; lede: stri
           />
         </div>
       </div>
+      <FinalCta location={page.meta.path.slice(1)} title="Questions about how Mise handles data?" body="Ask us anything in a 15-minute demo, or see the platform running on a live demo property." />
     </>
   );
 }

@@ -191,6 +191,7 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
       updated: "2026-09-29",
     },
     eyebrow: "Pain 02 of 6",
+    faqTitle: "Ghost SOPs in hotels: frequently asked questions",
     lede:
       "The ghost SOP is the most common hotel SOP compliance problem, and the least visible one. Every ghost SOP hotel teams live with was written with care, approved and filed. Then the floor carried on doing what the most senior person on shift does. This page explains why hotel SOPs are not followed, and how to close the SOP execution gap for good.",
     tldr:
@@ -421,7 +422,7 @@ When performance is visible, the next two pains in the chain become manageable. 
       path: "/problems/attrition-bleed",
       title: "Hotel Staff Turnover: Protect Service Quality | Mise",
       description:
-        "Hotel staff turnover resets service quality with every departure. Keep the standard in the operation, not in people's heads, from a new joiner's first shift. Book a demo.",
+        "Hotel staff turnover resets service quality with every departure. Keep the standard in the operation from a new joiner's first shift. Book a demo.",
       h1: "The attrition bleed: keeping standards when hotel staff turnover is high",
       primaryKeyword: "hotel staff turnover",
       secondaryKeywords: ["hotel onboarding software", "hotel employee retention operations"],
@@ -534,7 +535,7 @@ Consistent execution across old and new staff is the lever on the next pain in t
       path: "/problems/star-rating-ceiling",
       title: "Hotel Service Consistency Software: Lift Ratings | Mise",
       description:
-        "Hotel service consistency software that runs every room to the same standard, every shift, so guest reviews reflect your best work, not your variance. Book a demo.",
+        "Hotel service consistency software that runs every room to the same standard on every shift, so reviews reflect your best work. Book a demo.",
       h1: "The star rating ceiling: hotel service consistency software for every shift",
       primaryKeyword: "hotel service consistency software",
       secondaryKeywords: ["hotel service quality management", "hotel star rating standards"],
@@ -647,7 +648,7 @@ Consistent, recorded execution also means you already hold the evidence an audit
       path: "/problems/audit-ambush",
       title: "Hotel Audit Problems: End the Pre-Audit Scramble | Mise",
       description:
-        "Hotel audit problems start when evidence was never recorded. Build an operational audit trail on every shift, so audits become a filter, not a fire drill. Book a demo.",
+        "Hotel audit problems start when evidence was never recorded. Build an operational audit trail every shift, so audits become a filter. Book a demo.",
       h1: "The audit ambush: solving hotel audit problems before the auditor arrives",
       primaryKeyword: "hotel audit problems",
       secondaryKeywords: ["hotel audit compliance software", "hotel operational audit trail"],
@@ -738,7 +739,7 @@ export const problemsHubMeta = {
   path: "/problems",
   title: "Hotel Operations Problems: The Six-Pain Chain | Mise",
   description:
-    "Six hotel operations problems, from supervisor workload to audit prep, and how each makes the next worse. See how Mise closes the whole chain. Book a 15-min demo.",
+    "Six hotel operations problems, from supervisor workload to audit prep, and how each makes the next worse. See how Mise closes the chain. Book a demo.",
   h1: "Hotel operations problems that compound, shift after shift",
   primaryKeyword: "hotel operations problems",
   secondaryKeywords: ["hotel supervisor workload", "hotel SOPs not followed", "hotel performance tracking"],

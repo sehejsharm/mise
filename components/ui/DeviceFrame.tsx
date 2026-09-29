@@ -28,11 +28,11 @@ export function PhoneFrame({ children, className }: { children: ReactNode; class
 export function LaptopFrame({ children, className }: { children: ReactNode; className?: string }) {
   return (
     <div className={cx("relative", className)}>
-      <div className="rounded-t-[1.1rem] bg-gradient-to-b from-[#2a3450] to-[#141c33] p-[10px] pb-[14px] shadow-float ring-1 ring-white/10">
+      <div className="mx-[4.5%] rounded-t-[1.1rem] bg-gradient-to-b from-[#2a3450] to-[#141c33] p-[10px] pb-[14px] shadow-float ring-1 ring-white/10">
         <div aria-hidden="true" className="mx-auto mb-[6px] size-[5px] rounded-full bg-[#3a4668]" />
         <div className="overflow-hidden rounded-[4px] bg-[#0b1328]">{children}</div>
       </div>
-      <div aria-hidden="true" className="relative mx-[-5%] h-[14px] rounded-b-[14px] bg-gradient-to-b from-[#3a4668] to-[#1a2340]">
+      <div aria-hidden="true" className="relative h-[14px] rounded-b-[14px] bg-gradient-to-b from-[#3a4668] to-[#1a2340]">
         <div className="absolute top-0 left-1/2 h-[5px] w-[16%] -translate-x-1/2 rounded-b-md bg-[#141c33]" />
       </div>
     </div>

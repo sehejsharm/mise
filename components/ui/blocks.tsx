@@ -63,10 +63,12 @@ export function FaqList({
   items,
   className,
   headingLevel = 3,
+  openFirst = true,
 }: {
   items: { q: string; a: string; allowLms?: boolean }[];
   className?: string;
   headingLevel?: 2 | 3;
+  openFirst?: boolean;
 }) {
   const H = headingLevel === 2 ? "h2" : "h3";
   return (
@@ -77,7 +79,7 @@ export function FaqList({
           name="faq"
           className="group py-1"
           {...(item.allowLms ? { "data-copy-lint": "allow" } : {})}
-          {...(i === 0 ? { open: true } : {})}
+          {...(i === 0 && openFirst ? { open: true } : {})}
         >
           <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 text-left [&::-webkit-details-marker]:hidden">
             <H className="font-display text-[1.08rem] leading-snug font-medium text-ink sm:text-[1.15rem]">{item.q}</H>
@@ -98,7 +100,7 @@ export function FaqList({
 /** Full-bleed gold-on-navy closing CTA. */
 export function FinalCta({
   title = "See it on a real shift. No feature tour.",
-  body = "Fifteen minutes: three interfaces on a live demo property, and one of your SOPs turned into a timed task.",
+  body = "Fifteen minutes. Your SOP, as a timed task, on a live demo property.",
   location,
 }: {
   title?: string;

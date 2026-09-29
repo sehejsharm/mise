@@ -1,6 +1,5 @@
 import { Icon } from "@/components/ui/Icon";
 import { SectionHeading } from "@/components/ui/primitives";
-import { demoProperty } from "@/content/site";
 import { fiveSeconds as c } from "@/content/home";
 
 /**
@@ -55,7 +54,6 @@ export default function FiveSeconds() {
             <div className="mt-5 flex items-center gap-3 rounded-xl border border-line-strong bg-surface px-4 py-3 font-mono text-[0.86rem] text-ink">
               <Icon name="search" size={16} className="text-muted" />
               <span>{c.with.filter}</span>
-              <span className="ml-auto rounded-md bg-green/15 px-2 py-0.5 text-[0.7rem] text-green-ink">1 record</span>
             </div>
             <dl className="mt-4 divide-y divide-line rounded-xl border border-line bg-surface/70">
               {c.with.record.map((r) => (
@@ -69,7 +67,6 @@ export default function FiveSeconds() {
               ))}
             </dl>
             <p className="mt-5 font-display text-[1.2rem] font-medium text-green-ink">{c.with.verdict}</p>
-            <p className="mt-2 font-mono text-[0.68rem] text-faint">{demoProperty.label}</p>
           </div>
         </div>
       </div>

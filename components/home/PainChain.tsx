@@ -102,7 +102,7 @@ export default function PainChain({ pains }: { pains: ChainPain[] }) {
           id="pains-title"
           eyebrow="Six problems, one chain"
           title="Hotel operations problems Mise solves"
-          lede="Each one makes the next one worse. Tap a link in the chain."
+          lede="Each one makes the next worse."
         />
 
         {/* Desktop: horizontal chain */}
@@ -162,7 +162,7 @@ export default function PainChain({ pains }: { pains: ChainPain[] }) {
         >
           <div>
             <p className="font-mono text-[0.72rem] tracking-[0.16em] text-coral-ink uppercase">
-              {active.index} · {active.name} · the wound
+              The wound
             </p>
             <p className="mt-2 font-display text-[1.45rem] leading-snug text-ink">{active.wound}</p>
           </div>
@@ -211,16 +211,6 @@ export default function PainChain({ pains }: { pains: ChainPain[] }) {
           </ol>
         </div>
 
-        {/* All six, as plain links, for keyboard users and crawlers on desktop. */}
-        <ul className="mt-6 hidden flex-wrap gap-x-5 gap-y-2 md:flex" aria-label="The six hotel operations problems">
-          {pains.map((p) => (
-            <li key={p.slug}>
-              <Link href={`/problems/${p.slug}`} className="text-[0.88rem] text-muted underline decoration-line-strong underline-offset-4 hover:text-gold-ink">
-                The {p.name.toLowerCase()} problem
-              </Link>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

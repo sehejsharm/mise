@@ -112,13 +112,6 @@ function MiseCard() {
         <p className="font-display text-[1.5rem] font-semibold text-ink">{c.mise.title}</p>
       </div>
       <p className="mt-3 text-[1.02rem] text-ink">{c.mise.line}</p>
-      <ul className="mt-4 flex flex-wrap gap-1.5">
-        {["Standard", "Timed task", "Evidence", "Service record"].map((s) => (
-          <li key={s} className="rounded-full border border-gold/40 px-2.5 py-0.5 font-mono text-[0.68rem] text-gold-ink">
-            {s}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }

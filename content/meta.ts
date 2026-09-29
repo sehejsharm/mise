@@ -73,11 +73,11 @@ export const contactMeta: PageMeta = {
 
 export const blogMeta: PageMeta = {
   path: "/blog",
-  title: "Hotel SOP & Operations Blog | Mise",
+  title: "Mise Blog: Hotel SOP & Operations Guides",
   description:
-    "The Mise blog: practical guides on digitizing hotel SOPs, audit readiness, housekeeping standards and running shifts without WhatsApp chaos. Book a 15-min demo.",
+    "The Mise blog: guides on digitizing hotel SOPs, audit readiness, housekeeping standards and running shifts without WhatsApp chaos. Book a demo.",
   h1: "The Mise blog: hotel SOPs, standards and service execution",
-  primaryKeyword: "hotel SOP blog",
+  primaryKeyword: "Mise blog",
   eyebrow: "Field notes",
   updated,
   priority: 0.7,

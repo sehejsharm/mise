@@ -11,7 +11,7 @@ export default function ServiceTicker({ items, label }: { items: TickerItem[]; l
   const [paused, setPaused] = useState(false);
   const rows = [...items, ...items];
   return (
-    <div className={`relative ${paused ? "is-paused" : ""}`}>
+    <div data-copy-budget="exclude" className={`relative ${paused ? "is-paused" : ""}`}>
       <div className="flex items-center justify-between gap-3 border-b border-white/10 px-4 py-2.5">
         <p className="font-mono text-[0.68rem] tracking-[0.16em] text-[#d4a94f] uppercase">Service record · live</p>
         <button

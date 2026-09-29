@@ -103,7 +103,8 @@ export default function IsoPoster({ animate = true }: { animate?: boolean }) {
       viewBox="0 0 600 340"
       className="h-auto w-full [--iso-room:rgb(56_225_255/0.07)] [--iso-row:rgb(11_19_40/0.9)] [--iso-side-l:rgb(12_22_48)] [--iso-side-r:rgb(9_16_36)] [--iso-stroke:rgb(56_225_255/0.28)] [--iso-text:rgb(238_242_250/0.55)] [--iso-text-dim:rgb(238_242_250/0.25)]"
       role="img"
-      aria-label="Isometric hotel floor plan: rooms light up gold as their timed tasks close, and evidence streams into the service record"
+      data-lead=""
+      aria-label="Mise hotel SOP software on an isometric hotel floor plan: rooms light up gold as their timed tasks close, and evidence streams into the service record"
     >
       <defs>
         <linearGradient id="col" x1="0" y1="0" x2="0" y2="1">

@@ -145,9 +145,9 @@ export const faqMeta = {
   path: "/faq",
   title: "Mise FAQ: Hotel SOP Software Questions Answered | Mise",
   description:
-    "Answers about Mise hotel SOP software: what it is, how it digitizes SOPs, evidence, PMS, pilots, pricing, data and Focus Realm. Book a 15-min demo.",
+    "Mise FAQ: answers about Mise hotel SOP software, how it digitizes SOPs, evidence, PMS, pilots, pricing, data and Focus Realm. Book a 15-min demo.",
   h1: "Mise FAQ: hotel SOP software, answered",
-  primaryKeyword: "Mise hotel software FAQ",
+  primaryKeyword: "Mise FAQ",
   secondaryKeywords: ["Mise SOP", "Mise hotel operations", "Mise by Focus Realm"],
   eyebrow: "Frequently asked",
   updated: "2026-09-29",

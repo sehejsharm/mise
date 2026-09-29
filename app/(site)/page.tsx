@@ -78,7 +78,7 @@ export default async function HomePage() {
             <ul className="mt-10 grid gap-5 md:grid-cols-3">
               {posts.map((post, i) => (
                 <li key={post.slug} data-reveal style={{ ["--reveal-delay" as string]: `${i * 100}ms` }}>
-                  <PostCard post={post} />
+                  <PostCard post={post} compact />
                 </li>
               ))}
             </ul>
@@ -94,7 +94,7 @@ export default async function HomePage() {
               <ArrowLink href="/faq">Every question about Mise, answered</ArrowLink>
             </div>
           </div>
-          <FaqList items={faqs} />
+          <FaqList items={faqs} openFirst={false} />
         </div>
       </section>
 

@@ -47,7 +47,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative">
+        <div className="relative" data-copy-budget="exclude">
           <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#070d1d] shadow-float">
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-2.5">
               <p className="font-mono text-[0.68rem] tracking-[0.16em] text-[#8a94ad] uppercase">

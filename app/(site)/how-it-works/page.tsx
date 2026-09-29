@@ -115,7 +115,7 @@ export default function HowItWorksPage() {
           <Markdown source={deepDive} state={state} />
           <section aria-labelledby="hiw-faq" className="mt-16">
             <h2 id="hiw-faq" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
-              Frequently asked questions
+              Hotel SOP management software: frequently asked questions
             </h2>
             <FaqList items={howItWorksFaqs} className="mt-6" />
           </section>

@@ -112,7 +112,7 @@ export default function PlatformPage() {
                 {role.device === "phone" ? (
                   <div className="flex justify-center">
                     <PhoneFrame className="w-[min(300px,76vw)]">
-                      <Picture image={role.screens[0].image} alt={role.screens[0].alt} sizes="300px" priority={idx === 0} />
+                      <Picture image={role.screens[0].image} alt={idx === 0 ? "Mise hotel operations software: the staff app Today screen with Room 208 as the next timed task and 18 minutes left" : role.screens[0].alt} sizes="300px" priority={idx === 0} lead={idx === 0} />
                     </PhoneFrame>
                   </div>
                 ) : (
@@ -194,7 +194,7 @@ export default function PlatformPage() {
       <div className="container-page pb-20">
         <section aria-labelledby="platform-faq" className="max-w-3xl">
           <h2 id="platform-faq" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
-            Frequently asked questions
+            Hotel operations software: frequently asked questions
           </h2>
           <FaqList items={platformFaqs} className="mt-6" />
         </section>

@@ -76,7 +76,7 @@ export const privacy: LegalPage = {
     path: "/privacy",
     title: "Privacy Policy | Mise",
     description:
-      "How Mise collects, uses and protects personal data on misehotel.com and in the Mise platform, and the rights you have over it. Questions? Book a demo or email us.",
+      "How Mise collects, uses and protects personal data on misehotel.com and in the Mise platform, and your rights over it. Questions? Book a demo.",
     h1: "Privacy policy",
     primaryKeyword: "Mise privacy policy",
     eyebrow: "Legal",
@@ -131,7 +131,7 @@ export const terms: LegalPage = {
     path: "/terms",
     title: "Terms of Use | Mise",
     description:
-      "The terms that apply to using misehotel.com, including content, acceptable use and liability. Platform pilots are covered by separate customer agreements.",
+      "The terms for using misehotel.com: content, acceptable use and liability. Pilots are covered by separate customer agreements. Book a 15-min demo.",
     h1: "Terms of use",
     primaryKeyword: "Mise terms of use",
     eyebrow: "Legal",
@@ -179,7 +179,7 @@ export const cookies: LegalPage = {
     path: "/cookies",
     title: "Cookie Policy | Mise",
     description:
-      "Which cookies misehotel.com uses, why, and how to accept, reject or change them. Analytics runs only after you accept. Change your choice any time in the footer.",
+      "Which cookies misehotel.com uses and why. Analytics runs only after you accept, and you can change your choice at any time. Book a 15-min demo.",
     h1: "Cookie policy",
     primaryKeyword: "Mise cookie policy",
     eyebrow: "Legal",

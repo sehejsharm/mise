@@ -11,7 +11,7 @@ export const solutions: Solution[] = [
       path: "/solutions/housekeeping",
       title: "Housekeeping SOP App with Photo Evidence | Mise",
       description:
-        "A housekeeping SOP app that runs room reset, turndown and release as timed tasks with photo evidence and supervisor sign-off. No PMS needed. Book a 15-min demo.",
+        "A housekeeping SOP app that runs room reset, turndown and release as timed tasks with photo evidence and sign-off. No PMS needed. Book a demo.",
       h1: "The housekeeping SOP app that proves every room is guest-ready",
       primaryKeyword: "housekeeping SOP app",
       secondaryKeywords: [
@@ -109,7 +109,7 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
       path: "/solutions/front-office",
       title: "Front Desk SOP Software for Hotels | Mise",
       description:
-        "Front desk SOP software that runs arrivals, handovers and service recovery as timed tasks with evidence, so every guest gets the same standard. Book a 15-min demo.",
+        "Front desk SOP software that runs arrivals, handovers and service recovery as timed tasks with evidence, so every guest gets it. Book a demo.",
       h1: "Front desk SOP software for consistent arrivals and service recovery",
       primaryKeyword: "front desk SOP software",
       secondaryKeywords: ["hotel front office task management"],
@@ -427,11 +427,11 @@ export function solutionBySlug(slug: string) {
 
 export const solutionsHubMeta = {
   path: "/solutions",
-  title: "Hotel SOP Software by Department & Property | Mise",
+  title: "Hotel SOP Software for Every Department | Mise",
   description:
-    "Hotel SOP software for housekeeping, front office, F&B, hotel chains and boutique hotels: standards as timed tasks with photo evidence. Book a 15-min demo.",
+    "Hotel SOP software for every department: housekeeping, front office, F&B, hotel chains and boutique hotels, as timed tasks with photo evidence. Book a demo.",
   h1: "Hotel SOP software for every department and property type",
-  primaryKeyword: "hotel SOP software by department",
+  primaryKeyword: "hotel SOP software for every department",
   eyebrow: "Solutions",
   updated: "2026-09-29",
 };

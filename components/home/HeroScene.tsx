@@ -14,7 +14,7 @@ const ROWS = 6;
 const GAP = 1.18;
 const LOOP = 14; // seconds per shift cycle
 const GOLD = new THREE.Color("#d4a94f");
-const IDLE = new THREE.Color("#12254a");
+const IDLE = new THREE.Color("#1c3566");
 const BLOCKED = new THREE.Color("#ff6b5b");
 const COLUMN = new THREE.Vector3(5.6, 0.2, -2.4);
 
@@ -154,7 +154,7 @@ export default function HeroScene({ active, onReady }: { active: boolean; onRead
   return (
     <Canvas
       orthographic
-      camera={{ zoom: 46, near: 0.1, far: 100, position: [9, 9, 9] }}
+      camera={{ zoom: 38, near: 0.1, far: 100, position: [9, 9, 9] }}
       dpr={[1, 1.75]}
       gl={{ antialias: true, alpha: true, powerPreference: "low-power" }}
       frameloop={active ? "always" : "never"}

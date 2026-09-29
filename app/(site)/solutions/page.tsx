@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata(solutionsHubMeta);
 
 const body = `
-## One mechanism, every department
+## Hotel SOP software for every department: one mechanism
 
 Every department in a hotel runs repeatable standards: a room reset, an arrival, an outlet opening, a banquet setup. Mise runs all of them the same way. The standard becomes a [timed task](/glossary/timed-task) on the phone of the person doing the work, key steps need a photo, supervisors sign off in the task, and every completion writes to the property's service record.
 
@@ -21,7 +21,7 @@ export default function SolutionsHub() {
   return (
     <HubPage
       meta={solutionsHubMeta}
-      lede="Mise is hotel SOP software that works the same way in every department and at every scale: standards become timed tasks, key steps need photo evidence, and each shift builds an audit-ready service record. Choose a department or property type to see how it applies."
+      lede="Mise is hotel SOP software for every department and every scale, working the same way everywhere: standards become timed tasks, key steps need photo evidence, and each shift builds an audit-ready service record. Choose a department or property type to see how it applies."
       tldr="Mise runs housekeeping, front office and food and beverage standards as timed tasks with photo evidence and supervisor sign-off, for single boutique properties and multi-property hotel groups alike. No PMS integration or hardware is required, and pilots usually start in housekeeping at one property."
       cardsTitle="Solutions by department and property type"
       cards={solutions.map((s) => ({ href: s.meta.path, eyebrow: s.name, title: s.meta.h1, body: s.short }))}

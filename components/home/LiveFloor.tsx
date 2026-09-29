@@ -125,6 +125,7 @@ export default function LiveFloor() {
 
         <div
           ref={root}
+          data-copy-budget="exclude"
           className="relative mt-10 overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0b1328] p-4 text-[#eef2fa] shadow-float sm:p-7"
           onPointerLeave={() => {
             setTip(null);

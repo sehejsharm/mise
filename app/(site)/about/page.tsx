@@ -199,7 +199,7 @@ export default function AboutPage() {
             <div className="max-w-2xl">
               <Eyebrow>A Focus Realm company</Eyebrow>
               <h2 id="parent" className="mt-3 font-display text-[1.6rem] font-semibold text-ink">
-                Mise is built by Focus Realm
+                Mise hospitality is built by Focus Realm
               </h2>
               <p className="mt-3 text-[1rem] leading-relaxed text-muted">
                 Focus Realm is the parent company behind Mise. Mise is its hospitality platform, with its own name,

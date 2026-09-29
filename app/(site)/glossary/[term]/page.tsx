@@ -47,7 +47,8 @@ export default async function TermPage({ params }: { params: Promise<{ term: str
       <div className="container-page pb-20">
         <div className="max-w-3xl">
           <TldrBox label="Definition">{t.short}</TldrBox>
-          <div className="mt-10">
+          <h2 className="mt-12 font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">{t.term} in hotel operations</h2>
+          <div className="mt-2">
             <Markdown source={t.body} state={createLinkState(meta.path)} />
           </div>
           <RelatedLinks

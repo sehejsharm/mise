@@ -34,7 +34,8 @@ export default function AdvisorsPage() {
         lede={<p>Mise is advised by hospitality practitioners working in service standards and guest presentation. They help keep the platform grounded in how hotel teams actually work.</p>}
       />
       <div className="container-page pb-20">
-        <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <h2 className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">Mise advisory board members</h2>
+        <ul className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {advisors.map((a) => (
             <li key={a.slug} id={a.slug} className="scroll-mt-28 overflow-hidden rounded-2xl border border-line bg-surface/60">
               {a.photo ? (
