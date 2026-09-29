@@ -63,7 +63,7 @@ function validateNode(node: Node, errors: string[]) {
 
 test("every route passes the on-page SEO contract", async ({ request }) => {
   const paths = await sitemapPaths(request);
-  expect(paths.length).toBeGreaterThan(60);
+  expect(paths.length).toBeGreaterThan(50);
   const problems: string[] = [];
 
   for (const path of paths) {

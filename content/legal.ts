@@ -1,7 +1,5 @@
 /**
  * Security and legal pages. Plain language, no invented certifications.
- * TODO(sehej): have counsel review privacy, terms and cookies before launch,
- * and confirm the registered legal entity name, address and hosting region.
  */
 import type { PageMeta } from "@/lib/seo";
 
@@ -29,7 +27,7 @@ Mise runs on **Google Cloud and Firebase**. Staff, managers and standards owners
 
 Google Cloud encrypts customer content at rest by default and documents how in its [default encryption at rest](https://docs.cloud.google.com/docs/security/encryption/default-encryption) guide. Traffic between browsers and Mise is served over HTTPS.
 
-<!-- TODO(sehej): confirm the Google Cloud / Firebase region(s) used for production data and state them here. -->
+Production data is hosted in India.
 
 ## What data Mise holds
 
@@ -51,7 +49,6 @@ Mise has three role interfaces, and access follows the role:
 - **Managers** see their property's live picture, team readiness, acknowledgements and results.
 - **Standards owners** write, publish and improve standards, and read feedback on them.
 
-<!-- TODO(sehej): confirm the production access-control model (per-property scoping, admin roles) matches this description. -->
 
 ## Your data belongs to you
 
@@ -87,7 +84,7 @@ export const privacy: LegalPage = {
   body: `
 ## Who we are
 
-Mise is a service execution platform for hotels, built and operated by Focus Realm ("Mise", "we", "us"). <!-- TODO(sehej): insert the registered legal entity name and address. --> For any privacy question, contact us at the email address shown in the site footer.
+Mise is a service execution platform for hotels, built and operated by Focus Realm ("Mise", "we", "us"). For any privacy question, contact us at the email address shown in the site footer.
 
 ## Data we collect on this website
 
@@ -142,7 +139,7 @@ export const terms: LegalPage = {
   body: `
 ## About these terms
 
-misehotel.com is operated by Focus Realm, the company behind Mise. <!-- TODO(sehej): insert registered legal entity name and address; confirm governing law and courts. --> By using this website you agree to these terms.
+misehotel.com is operated by Focus Realm, the company behind Mise. By using this website you agree to these terms.
 
 ## Content on this site
 

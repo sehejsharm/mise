@@ -58,7 +58,6 @@ export default async function FounderPage({ params }: { params: Promise<{ slug: 
               <Eyebrow>{f.jobTitle}</Eyebrow>
               <h1 className="mt-4 text-[clamp(2.4rem,5vw,3.8rem)] leading-[1.02] font-semibold tracking-[-0.035em] text-ink">{f.name}</h1>
               <p className="mt-3 text-[1.05rem] text-muted">{f.role}, Mise · a Focus Realm company</p>
-              {/* TODO(review): thesis line written for the site; founder to approve. */}
               <blockquote className="mt-8 border-l-2 border-gold pl-5 font-display text-[clamp(1.3rem,2.4vw,1.7rem)] leading-snug text-ink">
                 “{f.thesis}”
               </blockquote>

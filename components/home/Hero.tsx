@@ -21,7 +21,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className="container-page relative grid items-center gap-12 lg:grid-cols-[1.02fr_1fr] lg:gap-10">
+      <div className="container-page relative grid grid-cols-[minmax(0,1fr)] items-center gap-12 lg:grid-cols-[minmax(0,1.02fr)_minmax(0,1fr)] lg:gap-10">
         <div>
           <Eyebrow>{homeMeta.eyebrow}</Eyebrow>
           {/* LCP element: plain text, never animated from opacity 0. */}

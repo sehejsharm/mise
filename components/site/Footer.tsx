@@ -109,10 +109,9 @@ export default function Footer() {
               </li>
             </ul>
             <div className="flex items-center gap-2">
-              {/* TODO(sehej): point this at the Mise LinkedIn company page once it exists. */}
               <a
-                href="https://www.linkedin.com/in/sehej-sharma-5b2151234/"
-                aria-label="Co-founder Sehej Sharma on LinkedIn (opens in a new tab)"
+                href="https://www.linkedin.com/company/focus-realm/"
+                aria-label="Focus Realm on LinkedIn (opens in a new tab)"
                 rel="noopener"
                 target="_blank"
                 className="grid size-10 place-items-center rounded-full border border-line-strong text-muted hover:border-gold hover:text-gold-ink"

@@ -316,14 +316,12 @@ This is slower than a big-bang launch and much more likely to stick. Pilots are 
 
 ## Group-level visibility
 
-<!-- TODO(review): confirm which cross-property roll-up views are live in production before launch. -->
-
-Group operations teams need to see where standards hold across properties. Mise records execution in the same structure at every property, which is what makes comparison meaningful. Talk to us about how group-level views are configured for your portfolio during the demo.
+Group operations teams need to see where standards hold across properties. Mise records execution in the same structure at every property, which is what makes comparison meaningful. Group-level views are shown in the demo; ask us to walk through them for your portfolio.
 `,
     faqs: [
       {
         q: "Can Mise manage standards across multiple hotels?",
-        a: "Yes. Standards are written once and published to each property, where they run as timed tasks with evidence. Each property builds its own service record in the same structure, so execution can be compared across the group.",
+        a: "Yes. Standards are written once and published to each property, where they run as timed tasks with evidence. Each property builds its own service record in the same structure, so every property's execution is recorded the same way.",
       },
       {
         q: "How do hotel groups roll out Mise?",

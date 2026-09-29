@@ -1,10 +1,11 @@
 {
   "name": "Renu Mehra",
   "title": "Luxury & Celebrity Image Consultant & Corporate Trainer",
-  "credentials": ["Founder, RMIC"],
+  "credentials": [
+    "Founder, RMIC"
+  ],
   "photo": "advisors/renu-mehra",
   "linkedin": "",
   "bio": "",
-  "order": 2,
-  "notes": "TODO(sehej): title/bio. Title and credential are taken from the current focusrealm.org site source, not the Drive folder. The old site's client strip separately credits 'ALL' of finesse to Renu Mehra while the advisor block credits it to Parul Sharma. Confirm which is correct. No bio has been written."
+  "order": 2
 }

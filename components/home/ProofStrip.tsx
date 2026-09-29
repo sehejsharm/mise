@@ -2,9 +2,8 @@ import PauseMotion from "@/components/fx/PauseMotion";
 import { clients } from "@/content/site";
 
 /**
- * Hospitality clients as a slow grayscale-to-colour marquee. Official logos are
- * pending (TODO(sehej) in content/site.ts); until then each client renders as a
- * typographic wordmark, which keeps the name in the HTML for crawlers.
+ * Hospitality clients as a slow marquee of typographic wordmarks, which keeps
+ * each name in the HTML for crawlers.
  */
 export default function ProofStrip() {
   const items = [...clients, ...clients, ...clients];

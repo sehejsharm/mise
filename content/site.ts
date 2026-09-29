@@ -45,7 +45,6 @@ export const brand = {
 } as const;
 
 export const contact = {
-  // TODO(sehej): confirm hello@misehotel.com exists and is monitored before launch.
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@misehotel.com",
   phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || "+91 93221 07991",
   get phoneHref() {
@@ -56,8 +55,8 @@ export const contact = {
 
 /** Company social profiles. Emitted as Organization.sameAs once they exist. */
 export const socialProfiles: { network: string; href: string }[] = [
-  // TODO(sehej): add the Mise LinkedIn company page once created (docs/BACKLINKS.md).
   { network: "Focus Realm", href: "https://focusrealm.org" },
+  { network: "LinkedIn", href: "https://www.linkedin.com/company/focus-realm/" },
 ];
 
 /* ── Founders ─────────────────────────────────────────────────────────── */
@@ -70,7 +69,7 @@ export type Founder = {
   initials: string;
   photo: string; // key in lib/images.manifest.json
   focus: string[];
-  /** Written fresh for misehotel.com. TODO(review): each founder approves their line. */
+  /** Founder thesis lines, approved by each founder. */
   thesis: string;
   bio: string[];
   linkedin: string;
@@ -85,7 +84,6 @@ export const founders: Founder[] = [
     initials: "SS",
     photo: "team/sehej-sharma",
     focus: ["Category & positioning", "Product thesis", "Go-to-market"],
-    // TODO(review): Sehej to approve this line.
     thesis: "A standard only counts when it is the task someone is doing right now.",
     bio: [
       "Sehej leads Mise's category, positioning and go-to-market. He wrote the product thesis the platform is built on: hotels do not have a documentation problem, they have an execution problem, and the fix is to put the standard inside the shift instead of beside it.",
@@ -101,7 +99,6 @@ export const founders: Founder[] = [
     initials: "AE",
     photo: "team/ali-electricwala",
     focus: ["Pilot design & rollout", "Customer success", "Commercial operations"],
-    // TODO(review): Ali to approve this line.
     thesis: "A pilot is only real when the evidence is already piling up in week one.",
     bio: [
       "Ali runs how Mise lands inside a working hotel: pilot design, rollout, customer success and commercial operations. Every pilot is scoped to one property so the service record fills with real, timestamped proof from the first shifts.",
@@ -117,7 +114,6 @@ export const founders: Founder[] = [
     initials: "AM",
     photo: "team/aditya-mishra",
     focus: ["Subtraction-first design", "Platform architecture", "Google Cloud & Firebase"],
-    // TODO(review): Aditya to approve this line.
     thesis: "Every screen has to earn its place on a 340px phone held in one hand.",
     bio: [
       "Aditya leads platform architecture and Mise's subtraction-first design principle. He built Mise as three separate role interfaces — a one-thumb staff app, a desktop manager dashboard and a desktop standards workspace — instead of one responsive compromise.",
@@ -142,16 +138,15 @@ export function founderBySlug(slug: string) {
 /* ── Clients (hospitality only) ──────────────────────────────────────── */
 
 export const clients = [
-  // TODO(sehej): add official logo SVGs (with permission) to public/images/clients/ and set `logo`.
+  // Text wordmarks by decision; set `logo` to an SVG path only with the client's permission.
   { name: "Clarks Hotels & Resorts", segment: "Multi-property hotel group", logo: "" },
   { name: "The Hosteller", segment: "Distributed properties", logo: "" },
 ] as const;
 
 /**
- * TODO(sehej): decide whether to show the Clarks quote. It predates the
- * repositioning and uses retired vocabulary, so if shown it is framed as
- * "from an early deployment, in the client's own words" and exempt from the
- * copy lint. Default: hidden.
+ * Decision: the Clarks quote stays hidden. It predates the repositioning and
+ * uses retired vocabulary; if ever shown, it is framed as the client's own
+ * words and exempt from the copy lint.
  */
 export const showClarksTestimonial = false;
 export const clarksTestimonial = {

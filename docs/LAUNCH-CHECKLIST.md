@@ -64,25 +64,24 @@ A box is ticked only when its check passes.
 - [ ] **Make sure the public mailbox exists** (default `hello@misehotel.com`) and someone monitors it.
   - It appears in the footer, `/contact`, the media kit, schema `contactPoint` and `llms.txt`.
 
-## 4. Resolve every open decision before launch
+## 4. Decisions (resolved 29 Sep 2026)
 
-These markers are in the code. `grep -rn "TODO(" --exclude-dir=node_modules --exclude-dir=.next .` lists them.
+| # | Item | Decision |
+|---|---|---|
+| 1 | Contact mailbox | `hello@misehotel.com` confirmed |
+| 2 | Clarks testimonial | Stays hidden (`showClarksTestimonial = false`) |
+| 3 | Client logos | Text wordmarks for now |
+| 4 | Advisor titles | Confirmed as shown |
+| 5 | Founder thesis lines | Approved |
+| 6 | Blog | Draft posts removed. `/blog` shows a "still at mise en place" empty state until the first post is published |
+| 7 | Legal pages | Approved as written |
+| 8 | Security page | Production data hosted in India |
+| 9 | Multi-property views | Presented as shown in the demo only |
+| 10 | LinkedIn | Footer and schema link Focus Realm's company page (`linkedin.com/company/focus-realm`); no separate Mise page |
+| 11 | Keystatic GitHub App | Owner to complete §6 (needs a GitHub sign-in in a browser) |
+| 12 | Focus Realm back-links | Owner to add the links in `docs/BACKLINKS.md` §1 |
 
-| # | Item | Where | What to decide |
-|---|---|---|---|
-| 1 | Contact mailbox | `content/site.ts`, `.env.example` | Confirm `hello@misehotel.com`, or set `NEXT_PUBLIC_CONTACT_EMAIL` |
-| 2 | Clarks testimonial | `content/site.ts` → `showClarksTestimonial` (off) | Show the verbatim quote only if Clarks is happy for it to appear on Mise's site |
-| 3 | Client logos | `content/site.ts` → `clients[].logo`, `public/images/clients/` | Official SVGs, with written permission. Text wordmarks show until then |
-| 4 | Advisor titles and bios | `content/advisors/*.json` (edit in `/keystatic`) | Confirm titles taken from the old site. Resolve the "'ALL' of finesse" credit on Renu Mehra's note. Add bios if wanted |
-| 5 | Founder thesis lines | `content/site.ts` → `founders[].thesis` | Each founder approves or rewrites their line |
-| 6 | Six blog drafts | `content/blog/*.mdoc` (edit in `/keystatic`) | Review, confirm bylines, then set Status to Published. **Drafts are hidden on Production**, so the blog is empty until at least one is published |
-| 7 | Legal pages | `content/legal.ts` | Registered entity name and address, governing law, counsel review of privacy/terms/cookies |
-| 8 | Security page facts | `content/legal.ts` | Hosting region(s) and the production access-control model |
-| 9 | Multi-property roll-up | `content/solutions.ts` (hotel chains) | Confirm which cross-property views are live today |
-| 10 | Mise LinkedIn page | `content/site.ts` → `socialProfiles`, `components/site/Footer.tsx` | Create the company page and swap the footer link, which points at Sehej's profile for now |
-| 11 | Outbound citations | `pnpm build && pnpm check:links` | Click-check every "unverified" URL from a normal network (see §7) |
-| 12 | Old-site crawl | `docs/current-site-inventory.md` | Built from the old site's source, because focusrealm.org was unreachable from the build sandbox. Spot-check it against the live site |
-| 13 | Focus Realm back-links | focusrealm.org | Add the reciprocal links in `docs/BACKLINKS.md` §1 |
+Still to click-check from a normal network: the external citation links (`pnpm check:links`) and the Focus Realm LinkedIn URL.
 
 ## 5. Search engines
 

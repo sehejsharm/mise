@@ -509,3 +509,35 @@
     animation: none;
   }
 }
+
+/* Blog empty state: the launch ticket sways on its rail; the "in prep" dot pulses. */
+@keyframes ticket-sway {
+  0%, 100% { transform: rotate(-1.2deg); }
+  50% { transform: rotate(1.2deg); }
+}
+@keyframes ticket-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+.blog-ticket {
+  transform-origin: 50% -12px;
+  animation: ticket-sway 5s ease-in-out infinite;
+}
+.blog-ticket-dot {
+  animation: ticket-dot 1.4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .blog-ticket,
+  .blog-ticket-dot {
+    animation: none;
+  }
+}
+
+/* Grid children may shrink below their content's min width, so a wide
+   no-wrap row (mockups, tickers) can never stretch a track past the viewport
+   and silently clip the text beside it. */
+@layer base {
+  .grid > * {
+    min-width: 0;
+  }
+}

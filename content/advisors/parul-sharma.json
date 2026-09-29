@@ -1,10 +1,12 @@
 {
   "name": "Parul Sharma",
   "title": "Hospitality Training Consultant",
-  "credentials": ["Ex-Faculty, IHM Aurangabad", "Co-Founder, 'All' of Finesse"],
+  "credentials": [
+    "Ex-Faculty, IHM Aurangabad",
+    "Co-Founder, 'All' of Finesse"
+  ],
   "photo": "advisors/parul-sharma",
   "linkedin": "",
   "bio": "",
-  "order": 1,
-  "notes": "TODO(sehej): title/bio. Title and credentials are taken from the current focusrealm.org site source, not from the Advisory Board Drive folder (which holds photos only). Confirm both, and add a bio if Parul approves one."
+  "order": 1
 }

@@ -117,15 +117,16 @@ export default function Header() {
             </nav>
             <div className="flex items-center gap-2.5">
               <ThemeToggle className="hidden sm:grid" />
-              <Magnetic className="hidden sm:inline-flex">
+              <Magnetic className="inline-flex">
                 <Link
                   href="/demo"
                   data-track="demo_cta_click"
                   data-track-location="header"
-                  className="inline-flex h-10 items-center gap-2 rounded-full bg-gold px-4.5 text-[0.9rem] font-medium text-on-gold shadow-[0_8px_30px_-10px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a]"
+                  className="inline-flex h-10 items-center gap-2 rounded-full bg-gold px-4 text-[0.9rem] font-medium whitespace-nowrap text-on-gold shadow-[0_8px_30px_-10px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a] sm:px-4.5"
                 >
-                  Book a 15-min demo
-                  <Icon name="arrowRight" size={16} />
+                  <span className="sm:hidden">Book demo</span>
+                  <span className="hidden sm:inline">Book a 15-min demo</span>
+                  <Icon name="arrowRight" size={16} className="hidden sm:block" />
                 </Link>
               </Magnetic>
               <button
