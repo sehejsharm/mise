@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import { rejectConsentUpfront, stubGoogle } from "./helpers";
 
-test("the demo form validates and submits", async ({ page }) => {
+test("the demo form validates and opens a prefilled email to hello@misehotel.com", async ({ page }) => {
   await stubGoogle(page);
   await rejectConsentUpfront(page);
   await page.goto("/demo");
@@ -16,9 +16,23 @@ test("the demo form validates and submits", async ({ page }) => {
   await page.getByLabel("Your role").selectOption("General Manager");
   await page.getByLabel("Number of properties").selectOption("2–5");
   await page.getByLabel("Anything we should know?").fill("Playwright end-to-end test submission.");
-  await page.waitForTimeout(1600); // minimum human fill time
   await page.getByRole("button", { name: "Book my 15-min demo" }).click();
   await expect(page.getByTestId("demo-success")).toBeVisible();
+  const href = await page.getByRole("link", { name: "Open the email again" }).getAttribute("href");
+  expect(href).toMatch(/^mailto:hello@misehotel\.com\?subject=/);
+  expect(decodeURIComponent(href ?? "")).toContain("Hotel or group: Example Grand");
+});
+
+test("every demo button opens a prefilled email to hello@misehotel.com", async ({ page }) => {
+  await stubGoogle(page);
+  await rejectConsentUpfront(page);
+  await page.goto("/");
+  const hrefs = await page.locator("a[data-track='demo_cta_click']").evaluateAll((els) => els.map((e) => e.getAttribute("href")));
+  expect(hrefs.length).toBeGreaterThan(2);
+  for (const h of hrefs) {
+    expect(h).toMatch(/^mailto:hello@misehotel\.com\?subject=Mise%20demo%20request/);
+    expect(decodeURIComponent(h ?? "")).toContain("I'd like to book a 15-minute demo of Mise.");
+  }
 });
 
 test("the lead API rejects invalid payloads and swallows honeypot bots", async ({ request }) => {

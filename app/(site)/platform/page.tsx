@@ -9,6 +9,7 @@ import { platformFaqs, platformMeta, roleInterfaces } from "@/content/platform";
 import { brand, demoProperty } from "@/content/site";
 import { baseNodes, breadcrumbNode, faqNode, softwareNode, webPageNode, imageUrl } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 export const metadata: Metadata = buildMetadata(platformMeta);
 
@@ -55,7 +56,7 @@ export default function PlatformPage() {
         }
       >
         <div className="mt-8 flex flex-wrap gap-3">
-          <ButtonLink href="/demo" arrow trackLocation="platform-hero">
+          <ButtonLink href={DEMO_HREF} arrow trackLocation="platform-hero">
             Book a 15-min demo
           </ButtonLink>
           <ButtonLink href={brand.prototypeUrl} variant="ghost">

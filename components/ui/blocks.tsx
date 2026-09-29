@@ -4,6 +4,7 @@ import { ButtonLink, Container, cx } from "@/components/ui/primitives";
 import { Icon } from "@/components/ui/Icon";
 import { formatDate } from "@/lib/seo";
 import { serializeGraph } from "@/lib/schema";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 export function JsonLd({ nodes }: { nodes: Parameters<typeof serializeGraph>[0] }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeGraph(nodes) }} />;
@@ -129,7 +130,7 @@ export function FinalCta({
           {body}
         </p>
         <div data-reveal className="mt-9 flex flex-wrap justify-center gap-3">
-          <ButtonLink href="/demo" size="lg" arrow trackLocation={`final-cta-${location}`}>
+          <ButtonLink href={DEMO_HREF} size="lg" arrow trackLocation={`final-cta-${location}`}>
             Book a 15-min demo
           </ButtonLink>
         </div>

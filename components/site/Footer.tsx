@@ -5,6 +5,7 @@ import NewsletterForm from "@/components/site/NewsletterForm";
 import ThemeToggle from "@/components/site/ThemeToggle";
 import { Icon } from "@/components/ui/Icon";
 import { brand, contact, footerColumns, legalNav } from "@/content/site";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 const linkClass = "text-[0.9rem] text-muted transition-colors hover:text-ink";
 
@@ -53,7 +54,7 @@ export default function Footer() {
             <p className="eyebrow !text-faint">Get started</p>
             <ul className="mt-4 space-y-2.5">
               <li>
-                <Link href="/demo" data-track="demo_cta_click" data-track-location="footer" className="text-[0.9rem] font-medium text-gold-ink hover:text-ink">
+                <Link href={DEMO_HREF} data-track="demo_cta_click" data-track-location="footer" className="text-[0.9rem] font-medium text-gold-ink hover:text-ink">
                   Book a 15-min demo
                 </Link>
               </li>

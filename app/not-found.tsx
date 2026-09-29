@@ -3,6 +3,7 @@ import Link from "next/link";
 import SiteChrome from "@/components/site/SiteChrome";
 import SiteSearch from "@/components/site/SiteSearch";
 import { ButtonLink, Eyebrow } from "@/components/ui/primitives";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 export const metadata: Metadata = {
   title: "Page not found | Mise",
@@ -42,7 +43,7 @@ export default function NotFound() {
             ))}
           </ul>
           <div className="mt-10">
-            <ButtonLink href="/demo" arrow trackLocation="404">
+            <ButtonLink href={DEMO_HREF} arrow trackLocation="404">
               Book a 15-min demo
             </ButtonLink>
           </div>

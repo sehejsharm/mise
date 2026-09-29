@@ -10,6 +10,7 @@ import { Field, inputClass } from "@/components/forms/Field";
 import BookingEmbed from "@/components/forms/BookingEmbed";
 import { Icon } from "@/components/ui/Icon";
 import { track } from "@/lib/analytics";
+import { DEMO_EMAIL, DEMO_HREF, demoMailto } from "@/lib/demo-mail";
 
 const loadFeatures = () => import("@/lib/framer-features").then((mod) => mod.default);
 
@@ -17,37 +18,43 @@ const roles = ["HR Director", "General Manager", "L&D / Training Head", "Operati
 const propertyCounts = ["1", "2–5", "6–20", "21+"];
 
 export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "done" | "error">("idle");
   const [error, setError] = useState("");
   const [fields, setFields] = useState<Record<string, string>>({});
-  const [startedAt] = useState(() => Date.now());
+  const [mailHref, setMailHref] = useState(DEMO_HREF);
 
-  async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
+  function onSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const form = new FormData(event.currentTarget);
-    const payload = Object.fromEntries(form.entries());
-    setStatus("sending");
-    setError("");
-    setFields({});
-    try {
-      const res = await fetch("/api/lead", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ type: "demo", ...payload, elapsedMs: Date.now() - startedAt, page: location.pathname }),
-      });
-      const data = await res.json().catch(() => ({}));
-      if (!res.ok || !data.ok) {
-        setFields(data.fields ?? {});
-        setError(data.error ?? "Something went wrong. Please try again.");
-        setStatus("error");
-        return;
-      }
-      track("demo_form_submit", { form: "demo" });
-      setStatus("done");
-    } catch {
-      setError(`We couldn't reach the server. Please try again, or email us at ${process.env.NEXT_PUBLIC_CONTACT_EMAIL || "hello@misehotel.com"}.`);
+    const form = Object.fromEntries(new FormData(event.currentTarget).entries()) as Record<string, string>;
+    // Bots fill the hidden field; humans never see it.
+    if (form.company_website) return;
+    const problems: Record<string, string> = {};
+    const val = (k: string) => (form[k] ?? "").trim();
+    if (val("name").length < 2) problems.name = "Please enter your name";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val("email"))) problems.email = "Please use a valid work email";
+    if (val("hotel").length < 2) problems.hotel = "Please enter your hotel or group";
+    if (!val("role")) problems.role = "Please choose your role";
+    if (!val("properties")) problems.properties = "Please choose a number of properties";
+    setFields(problems);
+    if (Object.keys(problems).length) {
+      setError("Please check the highlighted fields.");
       setStatus("error");
+      return;
     }
+    setError("");
+    const href = demoMailto({
+      name: val("name"),
+      email: val("email"),
+      hotel: val("hotel"),
+      role: val("role"),
+      properties: val("properties"),
+      phone: val("phone"),
+      message: val("message"),
+    });
+    setMailHref(href);
+    track("demo_form_submit", { form: "demo" });
+    window.location.href = href;
+    setStatus("done");
   }
 
   const invalid = (name: string) => (fields[name] ? { "aria-invalid": true, "aria-describedby": `demo-${name}-error` } : {});
@@ -73,10 +80,21 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
             >
               <Icon name="check" size={28} strokeWidth={2.4} />
             </m.div>
-            <h2 className="mt-5 font-display text-[1.6rem] font-semibold text-ink">Request received.</h2>
+            <h2 className="mt-5 font-display text-[1.6rem] font-semibold text-ink">Your email is ready to send.</h2>
             <p className="mt-2 text-[1rem] leading-relaxed text-muted">
-              We will reply shortly to fix a time.{" "}
-              {bookingUrl ? "Or pick a slot now:" : "Bring one SOP you would like to see as a timed task."}
+              Your email app should have opened with the request addressed to {DEMO_EMAIL}. Press send and we will reply to
+              fix a time. {bookingUrl ? "Or pick a slot now:" : "Bring one SOP you would like to see as a timed task."}
+            </p>
+            <p className="mt-4 text-[0.95rem] text-muted">
+              Nothing opened?{" "}
+              <a href={mailHref} className="text-ink underline decoration-gold/60 underline-offset-4">
+                Open the email again
+              </a>{" "}
+              or write to{" "}
+              <a href={`mailto:${DEMO_EMAIL}`} className="text-ink underline decoration-gold/60 underline-offset-4">
+                {DEMO_EMAIL}
+              </a>
+              .
             </p>
             {bookingUrl ? (
               <div className="mt-6">
@@ -148,10 +166,9 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
             ) : null}
             <button
               type="submit"
-              disabled={status === "sending"}
               className="inline-flex h-13 w-full items-center justify-center gap-2 rounded-full bg-gold px-7 font-medium text-on-gold shadow-[0_10px_40px_-12px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a] disabled:opacity-70"
             >
-              {status === "sending" ? "Sending…" : "Book my 15-min demo"}
+              Book my 15-min demo
               <Icon name="arrowRight" size={17} />
             </button>
             <p className="text-center text-[0.82rem] text-faint">

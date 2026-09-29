@@ -108,7 +108,7 @@ test("every route passes the on-page SEO contract", async ({ request }) => {
         .filter((h) => h && h !== path && !h.startsWith("/demo")),
     );
     if (internalLinks.size < 3) problems.push(`${path}: only ${internalLinks.size} contextual internal links in <main>`);
-    if (path !== "/demo" && !doc.querySelector("main a[href^='/demo']")) problems.push(`${path}: no demo CTA in <main>`);
+    if (path !== "/demo" && !doc.querySelector("main a[href^='/demo'], main a[href^='mailto:hello@misehotel.com?subject=']")) problems.push(`${path}: no demo CTA in <main>`);
   }
 
   expect(problems, problems.join("\n")).toEqual([]);

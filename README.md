@@ -66,7 +66,7 @@ Every key, with its purpose, is in [`.env.example`](.env.example). The ones that
 | `NEXT_PUBLIC_GA_ID` | No | GA4 measurement ID, default `G-X8HT0D7TPW` |
 | `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_CONTACT_PHONE` | No | Public contact details, defaults `hello@misehotel.com` and `+91 93221 07991` |
 | `NEXT_PUBLIC_BOOKING_URL` | No | Cal.com/Calendly URL; embeds the scheduler on `/demo` |
-| `RESEND_API_KEY`, `DEMO_INBOX_EMAIL`, `RESEND_FROM_EMAIL` | **Yes, for leads** | Email delivery for the demo, contact and newsletter forms. Without a key, production forms show the contact email instead of silently dropping the lead |
+| `RESEND_API_KEY`, `DEMO_INBOX_EMAIL`, `RESEND_FROM_EMAIL` | Optional | Email delivery for the contact and newsletter forms. Without a key, those forms show the contact email instead. **Demo requests never need it:** every demo button and the `/demo` form open the visitor's own email app, prefilled and addressed to `NEXT_PUBLIC_CONTACT_EMAIL` (`lib/demo-mail.ts`) |
 | `GOOGLE_SITE_VERIFICATION`, `BING_SITE_VERIFICATION` | At launch | Search Console and Bing Webmaster verification meta tags |
 | `INDEXNOW_KEY` | At launch | Pings IndexNow with the sitemap on each production build |
 | `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`, `KEYSTATIC_SECRET`, `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | For live CMS editing | Keystatic GitHub mode |

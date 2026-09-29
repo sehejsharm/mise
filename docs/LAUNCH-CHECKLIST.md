@@ -28,7 +28,7 @@ A box is ticked only when its check passes.
   | `NEXT_PUBLIC_CONTACT_EMAIL` | the monitored inbox | same | Resolve TODO(sehej) §4 first |
   | `NEXT_PUBLIC_CONTACT_PHONE` | `+91 93221 07991` | same | |
   | `NEXT_PUBLIC_BOOKING_URL` | Cal.com/Calendly link | same | Optional; embeds the scheduler on `/demo` |
-  | `RESEND_API_KEY` | from resend.com | optional | **Required for leads to arrive.** Without it, forms show the contact email instead |
+  | `RESEND_API_KEY` | from resend.com | optional | Only for the contact and newsletter forms. Demo requests go by email to `hello@misehotel.com` via the visitor's own email app |
   | `DEMO_INBOX_EMAIL` | inbox for leads | same | |
   | `RESEND_FROM_EMAIL` | `Mise website <website@misehotel.com>` | same | The domain must be verified in Resend (§3) |
   | `GOOGLE_SITE_VERIFICATION` | token from §5 | — | |

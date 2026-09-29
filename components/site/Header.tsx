@@ -7,6 +7,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Logo } from "@/components/site/Logo";
 import ThemeToggle from "@/components/site/ThemeToggle";
 import { primaryNav } from "@/content/site";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 export default function Header() {
   const pathname = usePathname();
@@ -119,7 +120,7 @@ export default function Header() {
               <ThemeToggle className="hidden sm:grid" />
               <Magnetic className="inline-flex">
                 <Link
-                  href="/demo"
+                  href={DEMO_HREF}
                   data-track="demo_cta_click"
                   data-track-location="header"
                   className="inline-flex h-10 items-center gap-2 rounded-full bg-gold px-4 text-[0.9rem] font-medium whitespace-nowrap text-on-gold shadow-[0_8px_30px_-10px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a] sm:px-4.5"
@@ -171,7 +172,7 @@ export default function Header() {
         </nav>
         <div className="mt-8 flex items-center gap-3">
           <Link
-            href="/demo"
+            href={DEMO_HREF}
             data-track="demo_cta_click"
             data-track-location="mobile-menu"
             className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-gold font-medium text-on-gold"

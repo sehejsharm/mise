@@ -100,7 +100,7 @@ export function ButtonLink({
     className,
   );
   const dataTrack =
-    trackLocation && href.startsWith("/demo")
+    trackLocation && (href.startsWith("/demo") || href.startsWith("mailto:"))
       ? { "data-track": "demo_cta_click", "data-track-location": trackLocation }
       : {};
   const content = (
@@ -114,6 +114,13 @@ export function ButtonLink({
   if (external) {
     return (
       <a href={href} className={classes} rel="noopener" target="_blank" {...dataTrack}>
+        {content}
+      </a>
+    );
+  }
+  if (/^(mailto|tel):/.test(href)) {
+    return (
+      <a href={href} className={classes} {...dataTrack}>
         {content}
       </a>
     );

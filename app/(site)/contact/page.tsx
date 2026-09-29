@@ -8,6 +8,7 @@ import { contact } from "@/content/site";
 import { baseNodes, breadcrumbNode, webPageNode } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 import { contactMeta } from "@/content/meta";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 const meta = contactMeta;
 
@@ -47,7 +48,7 @@ export default function ContactPage() {
               <span className="block font-medium text-ink">{contact.phone}</span>
             </span>
           </a>
-          <Link href="/demo" data-track="demo_cta_click" data-track-location="contact-aside" className="flex items-center justify-between gap-4 rounded-2xl border border-gold/40 bg-gold-soft p-5">
+          <Link href={DEMO_HREF} data-track="demo_cta_click" data-track-location="contact-aside" className="flex items-center justify-between gap-4 rounded-2xl border border-gold/40 bg-gold-soft p-5">
             <span>
               <span className="block font-display text-[1.1rem] font-semibold text-ink">Book a 15-min demo</span>
               <span className="block text-[0.9rem] text-muted">See one of your SOPs become a timed task.</span>

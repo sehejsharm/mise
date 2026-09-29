@@ -4,6 +4,7 @@ import ServiceTicker from "@/components/home/ServiceTicker";
 import { ButtonLink, Eyebrow } from "@/components/ui/primitives";
 import { brand, demoProperty } from "@/content/site";
 import { homeMeta, ticker } from "@/content/home";
+import { DEMO_HREF } from "@/lib/demo-mail";
 
 export default function Hero() {
   return (
@@ -35,7 +36,7 @@ export default function Hero() {
           <p className="mt-4 max-w-xl text-[1.08rem] leading-relaxed text-muted">{brand.definitionShort}</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Magnetic>
-              <ButtonLink href="/demo" size="lg" arrow trackLocation="hero">
+              <ButtonLink href={DEMO_HREF} size="lg" arrow trackLocation="hero">
                 Book a 15-min demo
               </ButtonLink>
             </Magnetic>
