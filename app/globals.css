@@ -2,54 +2,54 @@
 
 /* Theme-switched values. Dark is the default; [data-theme="light"] overrides. */
 :root {
-  --bg: #060b18;
-  --surface: #0b1328;
-  --surface-2: #111b36;
-  --elevated: #16213f;
-  --ink: #eef2fa;
-  --muted: #8a94ad;
-  --faint: #7f89a4;
-  --line: rgb(238 242 250 / 0.09);
-  --line-strong: rgb(238 242 250 / 0.18);
-  --gold: #d4a94f;
-  --gold-ink: #d4a94f;
-  --gold-soft: rgb(212 169 79 / 0.14);
-  --cyan: #38e1ff;
-  --cyan-ink: #38e1ff;
-  --green: #3ddc97;
-  --green-ink: #3ddc97;
+  --bg: #0c2329;
+  --surface: #122d35;
+  --surface-2: #18363e;
+  --elevated: #1d3d44;
+  --ink: #f2f4ee;
+  --muted: #a0b0ac;
+  --faint: #8ea09c;
+  --line: rgb(242 244 238 / 0.09);
+  --line-strong: rgb(242 244 238 / 0.18);
+  --gold: #e5b35a;
+  --gold-ink: #e5b35a;
+  --gold-soft: rgb(229 179 90 / 0.14);
+  --cyan: #aedfd2;
+  --cyan-ink: #aedfd2;
+  --green: #4fc59e;
+  --green-ink: #4fc59e;
   --coral: #ff6b5b;
   --coral-ink: #ff8a7d;
-  --on-gold: #060b18;
-  --glass: rgb(11 19 40 / 0.62);
+  --on-gold: #0c2329;
+  --glass: rgb(18 45 53 / 0.62);
   --grain-opacity: 0.06;
   --shadow: 0 30px 80px -30px rgb(0 0 0 / 0.65);
   color-scheme: dark;
 }
 
 [data-theme="light"] {
-  --bg: #f6f4ee;
+  --bg: #f6f7f1;
   --surface: #ffffff;
-  --surface-2: #efece3;
+  --surface-2: #eceee6;
   --elevated: #ffffff;
-  --ink: #0b1328;
-  --muted: #4a5470;
-  --faint: #566079;
-  --line: rgb(11 19 40 / 0.1);
-  --line-strong: rgb(11 19 40 / 0.2);
-  --gold: #d4a94f;
+  --ink: #122d35;
+  --muted: #4c5c58;
+  --faint: #56655f;
+  --line: rgb(18 45 53 / 0.1);
+  --line-strong: rgb(18 45 53 / 0.2);
+  --gold: #e5b35a;
   --gold-ink: #7d5c14;
-  --gold-soft: rgb(212 169 79 / 0.18);
-  --cyan: #0a8db3;
-  --cyan-ink: #056e8c;
-  --green: #139a63;
-  --green-ink: #0b7148;
+  --gold-soft: rgb(229 179 90 / 0.18);
+  --cyan: #278972;
+  --cyan-ink: #1f6e5b;
+  --green: #278972;
+  --green-ink: #1b5a47;
   --coral: #d9493a;
   --coral-ink: #b3321f;
-  --on-gold: #060b18;
+  --on-gold: #0c2329;
   --glass: rgb(255 255 255 / 0.72);
   --grain-opacity: 0.035;
-  --shadow: 0 30px 70px -35px rgb(11 19 40 / 0.35);
+  --shadow: 0 30px 70px -35px rgb(18 45 53 / 0.35);
   color-scheme: light;
 }
 
@@ -73,8 +73,8 @@
   --color-coral: var(--coral);
   --color-coral-ink: var(--coral-ink);
   --color-on-gold: var(--on-gold);
-  --color-navy: #060b18;
-  --color-navy-2: #0b1328;
+  --color-navy: #0c2329;
+  --color-navy-2: #122d35;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -171,14 +171,14 @@
 }
 
 @utility text-gradient-gold {
-  background: linear-gradient(100deg, #f3d48f 0%, var(--gold) 45%, #b7862f 100%);
+  background: linear-gradient(100deg, #cfeee5 0%, #aedfd2 45%, #7cc4ae 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 [data-theme="light"] .text-gradient-gold {
-  background: linear-gradient(100deg, #9a7420 0%, #7d5c14 60%, #5f440c 100%);
+  background: linear-gradient(100deg, #2f9a80 0%, #278972 55%, #1f6e5b 100%);
   -webkit-background-clip: text;
   background-clip: text;
 }

@@ -10,7 +10,7 @@ function InternalLink({ href, children }: { href: string; children: ReactNode })
 /** The in-article demo card, inserted by lib/blog.ts at roughly 40% of the post. */
 function DemoCta() {
   return (
-    <aside className="not-prose my-10 rounded-2xl border border-gold/40 bg-[linear-gradient(150deg,rgb(212_169_79/0.16),transparent_65%)] p-6 sm:p-7" aria-label="Book a demo">
+    <aside className="not-prose my-10 rounded-2xl border border-gold/40 bg-[linear-gradient(150deg,rgb(229_179_90/0.16),transparent_65%)] p-6 sm:p-7" aria-label="Book a demo">
       <p className="eyebrow">See it running</p>
       <p className="mt-2 font-display text-[1.35rem] leading-snug font-semibold text-ink">
         Watch one of your SOPs become a timed task, in 15 minutes.

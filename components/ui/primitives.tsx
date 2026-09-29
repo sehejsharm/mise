@@ -94,7 +94,7 @@ export function ButtonLink({
     "group relative inline-flex items-center justify-center gap-2 rounded-full font-medium whitespace-nowrap transition-[background,color,box-shadow,transform] duration-300 ease-(--ease-out-expo) select-none",
     size === "lg" ? "h-13 px-7 text-[1rem]" : "h-11 px-5 text-[0.93rem]",
     variant === "primary" &&
-      "bg-gold text-on-gold shadow-[0_10px_40px_-12px_rgb(212_169_79/0.7)] hover:bg-[#e2bb66] hover:shadow-[0_14px_50px_-10px_rgb(212_169_79/0.85)]",
+      "bg-gold text-on-gold shadow-[0_10px_40px_-12px_rgb(229_179_90/0.7)] hover:bg-[#eec27a] hover:shadow-[0_14px_50px_-10px_rgb(229_179_90/0.85)]",
     variant === "ghost" && "border border-line-strong text-ink hover:border-gold hover:text-gold-ink",
     variant === "quiet" && "px-0 text-ink hover:text-gold-ink",
     className,

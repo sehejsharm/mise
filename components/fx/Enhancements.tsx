@@ -88,7 +88,7 @@ export default function Enhancements() {
       className="pointer-events-none fixed inset-0 z-[1] opacity-0 transition-opacity duration-700"
       style={{
         background:
-          "radial-gradient(520px circle at var(--x, 50%) var(--y, 50%), rgb(212 169 79 / 0.07), transparent 45%)",
+          "radial-gradient(520px circle at var(--x, 50%) var(--y, 50%), rgb(229 179 90 / 0.07), transparent 45%)",
       }}
     />
   );

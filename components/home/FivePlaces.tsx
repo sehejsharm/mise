@@ -106,7 +106,7 @@ export default function FivePlaces() {
 
 function MiseCard() {
   return (
-    <div className="rounded-2xl border border-gold/60 bg-[linear-gradient(160deg,rgb(212_169_79/0.2),rgb(212_169_79/0.04))] p-6 shadow-[0_30px_80px_-30px_rgb(212_169_79/0.5)]">
+    <div className="rounded-2xl border border-gold/60 bg-[linear-gradient(160deg,rgb(229_179_90/0.2),rgb(229_179_90/0.04))] p-6 shadow-[0_30px_80px_-30px_rgb(229_179_90/0.5)]">
       <div className="flex items-center gap-3">
         <LogoMark size={34} />
         <p className="font-display text-[1.5rem] font-semibold text-ink">{c.mise.title}</p>

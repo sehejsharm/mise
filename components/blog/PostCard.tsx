@@ -18,13 +18,13 @@ export function PostCover({ post, large = false }: { post: PostMeta; large?: boo
     );
   }
   return (
-    <div className="relative h-full w-full overflow-hidden bg-[#0b1328]" aria-hidden="true">
-      <div className="grid-lines absolute inset-0 opacity-60 [--line:rgb(238_242_250/0.06)]" />
-      <div className="absolute -right-10 -bottom-16 size-64 rounded-full bg-[radial-gradient(circle,rgb(212_169_79/0.35),transparent_65%)]" />
-      <div className="absolute top-5 left-5 font-mono text-[0.66rem] tracking-[0.16em] text-[#d4a94f] uppercase">
+    <div className="relative h-full w-full overflow-hidden bg-[#122d35]" aria-hidden="true">
+      <div className="grid-lines absolute inset-0 opacity-60 [--line:rgb(242_244_238/0.06)]" />
+      <div className="absolute -right-10 -bottom-16 size-64 rounded-full bg-[radial-gradient(circle,rgb(229_179_90/0.35),transparent_65%)]" />
+      <div className="absolute top-5 left-5 font-mono text-[0.66rem] tracking-[0.16em] text-[#e5b35a] uppercase">
         {post.category.name}
       </div>
-      <div className={`absolute right-5 bottom-5 left-5 font-display leading-tight font-semibold text-[#eef2fa] ${large ? "text-[1.6rem]" : "text-[1.05rem]"}`}>
+      <div className={`absolute right-5 bottom-5 left-5 font-display leading-tight font-semibold text-[#f2f4ee] ${large ? "text-[1.6rem]" : "text-[1.05rem]"}`}>
         {(post.primaryKeyword || post.title).replace(/^./, (c) => c.toUpperCase())}
       </div>
     </div>

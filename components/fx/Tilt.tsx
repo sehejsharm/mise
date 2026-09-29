@@ -41,7 +41,7 @@ export default function Tilt({ children, className, max = 6 }: { children: React
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 rounded-[inherit] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{ background: "radial-gradient(420px circle at var(--hx,50%) var(--hy,50%), rgb(212 169 79 / 0.1), transparent 45%)" }}
+        style={{ background: "radial-gradient(420px circle at var(--hx,50%) var(--hy,50%), rgb(229 179 90 / 0.1), transparent 45%)" }}
       />
     </div>
   );

@@ -101,25 +101,25 @@ export default function IsoPoster({ animate = true }: { animate?: boolean }) {
   return (
     <svg
       viewBox="0 0 600 340"
-      className="h-auto w-full [--iso-room:rgb(56_225_255/0.07)] [--iso-row:rgb(11_19_40/0.9)] [--iso-side-l:rgb(12_22_48)] [--iso-side-r:rgb(9_16_36)] [--iso-stroke:rgb(56_225_255/0.28)] [--iso-text:rgb(238_242_250/0.55)] [--iso-text-dim:rgb(238_242_250/0.25)]"
+      className="h-auto w-full [--iso-room:rgb(174_223_210/0.07)] [--iso-row:rgb(18_45_53/0.9)] [--iso-side-l:rgb(20_48_56)] [--iso-side-r:rgb(14_38_45)] [--iso-stroke:rgb(174_223_210/0.28)] [--iso-text:rgb(242_244_238/0.55)] [--iso-text-dim:rgb(242_244_238/0.25)]"
       role="img"
       data-lead=""
       aria-label="Mise hotel SOP software on an isometric hotel floor plan: rooms light up gold as their timed tasks close, and evidence streams into the service record"
     >
       <defs>
         <linearGradient id="col" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="rgb(212 169 79 / 0.35)" />
-          <stop offset="1" stopColor="rgb(212 169 79 / 0)" />
+          <stop offset="0" stopColor="rgb(229 179 90 / 0.35)" />
+          <stop offset="1" stopColor="rgb(229 179 90 / 0)" />
         </linearGradient>
         <radialGradient id="floorGlow" cx="0.45" cy="0.45" r="0.6">
-          <stop offset="0" stopColor="rgb(56 225 255 / 0.14)" />
-          <stop offset="1" stopColor="rgb(56 225 255 / 0)" />
+          <stop offset="0" stopColor="rgb(174 223 210 / 0.14)" />
+          <stop offset="1" stopColor="rgb(174 223 210 / 0)" />
         </radialGradient>
       </defs>
       <ellipse cx="250" cy="170" rx="250" ry="130" fill="url(#floorGlow)" />
       {rooms}
-      <rect x="470" y="70" width="108" height="250" rx="10" fill="url(#col)" stroke="rgb(212 169 79 / 0.45)" strokeWidth="1" />
-      <text x="478" y="86" fontFamily="var(--font-mono)" fontSize="8.5" letterSpacing="1.2" fill="rgb(212 169 79)">
+      <rect x="470" y="70" width="108" height="250" rx="10" fill="url(#col)" stroke="rgb(229 179 90 / 0.45)" strokeWidth="1" />
+      <text x="478" y="86" fontFamily="var(--font-mono)" fontSize="8.5" letterSpacing="1.2" fill="rgb(229 179 90)">
         SERVICE RECORD
       </text>
       {rows}

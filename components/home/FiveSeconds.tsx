@@ -48,7 +48,7 @@ export default function FiveSeconds() {
           <div
             data-reveal
             style={{ ["--reveal-delay" as string]: "900ms" }}
-            className="relative overflow-hidden rounded-2xl border border-green/30 bg-[linear-gradient(180deg,rgb(61_220_151/0.07),transparent)] p-6 sm:p-7"
+            className="relative overflow-hidden rounded-2xl border border-green/30 bg-[linear-gradient(180deg,rgb(79_197_158/0.07),transparent)] p-6 sm:p-7"
           >
             <p className="font-mono text-[0.72rem] tracking-[0.16em] text-green-ink uppercase">{c.with.label}</p>
             <div className="mt-5 flex items-center gap-3 rounded-xl border border-line-strong bg-surface px-4 py-3 font-mono text-[0.86rem] text-ink">

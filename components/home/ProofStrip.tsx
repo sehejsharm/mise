@@ -11,11 +11,9 @@ export default function ProofStrip() {
   return (
     <section aria-labelledby="proof-title" className="relative border-y border-line bg-surface/30 py-10">
       <div className="container-page flex flex-col gap-8 lg:flex-row lg:items-center">
-        <div className="shrink-0 lg:w-56">
-          <h2 id="proof-title" className="eyebrow !text-faint">
-            In early deployment with
-          </h2>
-        </div>
+        <h2 id="proof-title" className="sr-only">
+          Hospitality clients
+        </h2>
         <PauseMotion label="client names" className="relative min-w-0 flex-1 overflow-hidden [mask-image:linear-gradient(90deg,transparent,#000_12%,#000_88%,transparent)]">
           <ul className="animate-marquee flex w-max items-center gap-14 pr-14 [--marquee-duration:34s]">
             {[...items, ...items].map((c, n) => (

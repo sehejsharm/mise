@@ -331,7 +331,7 @@ Group operations teams need to see where standards hold across properties. Mise 
       },
       {
         q: "Is Mise already used by hotel groups?",
-        a: "Mise has early deployments with hospitality operators including Clarks Hotels & Resorts, a multi-property hotel group, and The Hosteller, which runs distributed properties.",
+        a: "Mise works with hospitality operators including Clarks Hotels & Resorts, a multi-property hotel group, and The Hosteller, which runs distributed properties.",
       },
     ],
     related: [

@@ -117,7 +117,7 @@ export default function RoleShowcase({ roles }: { roles: RoleInterface[] }) {
               </div>
             </div>
             <div className="relative [perspective:1600px]">
-              <div aria-hidden="true" className="absolute inset-[10%] rounded-full bg-[radial-gradient(circle,rgb(56_225_255/0.14),transparent_65%)] blur-2xl" />
+              <div aria-hidden="true" className="absolute inset-[10%] rounded-full bg-[radial-gradient(circle,rgb(174_223_210/0.14),transparent_65%)] blur-2xl" />
               <AnimatePresence mode="wait" initial={false}>
                 <m.div
                   key={role.id}

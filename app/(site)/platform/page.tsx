@@ -177,12 +177,12 @@ export default function PlatformPage() {
               </ButtonLink>
             </div>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-[#0b1328] p-6 text-[#eef2fa] shadow-float">
-            <p className="font-mono text-[0.7rem] tracking-[0.16em] text-[#d4a94f] uppercase">Service record entry · {demoProperty.label}</p>
+          <div className="rounded-2xl border border-white/10 bg-[#122d35] p-6 text-[#f2f4ee] shadow-float">
+            <p className="font-mono text-[0.7rem] tracking-[0.16em] text-[#e5b35a] uppercase">Service record entry · {demoProperty.label}</p>
             <dl className="mt-5 divide-y divide-white/10">
               {recordFields.map(([k, v]) => (
                 <div key={k} className="flex flex-col justify-between gap-1 py-3 sm:flex-row sm:items-center">
-                  <dt className="font-mono text-[0.72rem] tracking-wide text-[#8a94ad] uppercase">{k}</dt>
+                  <dt className="font-mono text-[0.72rem] tracking-wide text-[#a0b0ac] uppercase">{k}</dt>
                   <dd className="text-[0.95rem]">{v}</dd>
                 </div>
               ))}

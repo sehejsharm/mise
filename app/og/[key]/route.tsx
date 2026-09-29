@@ -42,28 +42,28 @@ export async function GET(_req: Request, { params }: { params: Promise<{ key: st
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "64px 72px",
-          background: "#060B18",
+          background: "#0C2329",
           backgroundImage:
             "radial-gradient(circle at 85% 10%, rgba(212,169,79,0.35), transparent 45%), radial-gradient(circle at 10% 100%, rgba(56,225,255,0.14), transparent 40%)",
-          color: "#EEF2FA",
+          color: "#F2F4EE",
           fontFamily: "Inter",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
           <svg width="56" height="56" viewBox="0 0 32 32">
-            <rect width="32" height="32" rx="8" fill="#D4A94F" />
-            <path d="M8.5 22.5V11l7.5 7.5 7.5-7.5v11.5" fill="none" stroke="#060B18" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
-            <circle cx="16" cy="7.6" r="1.7" fill="#060B18" />
+            <rect width="32" height="32" rx="8" fill="#E5B35A" />
+            <path d="M8.5 22.5V11l7.5 7.5 7.5-7.5v11.5" fill="none" stroke="#0C2329" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round" />
+            <circle cx="16" cy="7.6" r="1.7" fill="#0C2329" />
           </svg>
           <div style={{ fontFamily: "Space Grotesk", fontSize: 40, letterSpacing: -1 }}>Mise</div>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 22, maxWidth: 1000 }}>
-          <div style={{ fontFamily: "Geist Mono", fontSize: 22, letterSpacing: 4, color: "#D4A94F", textTransform: "uppercase" }}>{card.eyebrow}</div>
+          <div style={{ fontFamily: "Geist Mono", fontSize: 22, letterSpacing: 4, color: "#E5B35A", textTransform: "uppercase" }}>{card.eyebrow}</div>
           <div style={{ fontFamily: "Space Grotesk", fontSize: size, lineHeight: 1.05, letterSpacing: -2 }}>{card.title}</div>
         </div>
-        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 24, color: "#8A94AD" }}>
+        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 24, color: "#A0B0AC" }}>
           <div>misehotel.com · Every shift, five-star.</div>
-          <div style={{ color: "#D4A94F" }}>Service Execution Platform</div>
+          <div style={{ color: "#E5B35A" }}>Service Execution Platform</div>
         </div>
       </div>
     ),

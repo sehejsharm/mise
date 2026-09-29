@@ -13,10 +13,10 @@ import { demoProperty } from "@/content/site";
 
 type Status = "released" | "progress" | "blocked" | "queued";
 const STATUS: Record<Status, { label: string; color: string }> = {
-  released: { label: "Released", color: "#3DDC97" },
+  released: { label: "Released", color: "#4FC59E" },
   progress: { label: "In progress", color: "#5B8CFF" },
   blocked: { label: "Blocked", color: "#FF6B5B" },
-  queued: { label: "Queued", color: "#2A3553" },
+  queued: { label: "Queued", color: "#2B4A50" },
 };
 const FLOORS = 14;
 const COLS = 34;
@@ -126,7 +126,7 @@ export default function LiveFloor() {
         <div
           ref={root}
           data-copy-budget="exclude"
-          className="relative mt-10 overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0b1328] p-4 text-[#eef2fa] shadow-float sm:p-7"
+          className="relative mt-10 overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#122d35] p-4 text-[#f2f4ee] shadow-float sm:p-7"
           onPointerLeave={() => {
             setTip(null);
             setHover(null);
@@ -135,10 +135,10 @@ export default function LiveFloor() {
           {/* Stat tiles */}
           <dl className="grid grid-cols-2 gap-3 lg:grid-cols-4">
             {c.counters.map((k) => {
-              const color = k.tone === "green" ? "#3DDC97" : k.tone === "cyan" ? "#5B8CFF" : k.tone === "coral" ? "#FF6B5B" : "#5b6788";
+              const color = k.tone === "green" ? "#4FC59E" : k.tone === "cyan" ? "#5B8CFF" : k.tone === "coral" ? "#FF6B5B" : "#5e7773";
               return (
                 <div key={k.label} className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-                  <dt className="flex items-center gap-2 text-[0.82rem] text-[#b4bdd3]">
+                  <dt className="flex items-center gap-2 text-[0.82rem] text-[#b9c7c3]">
                     <span className="size-2 rounded-[2px]" style={{ background: color }} aria-hidden="true" />
                     {k.label}
                   </dt>
@@ -155,7 +155,7 @@ export default function LiveFloor() {
             <figure className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <figcaption className="flex flex-wrap items-center justify-between gap-3">
                 <span className="text-[0.9rem] font-medium">Rooms by floor, this shift</span>
-                <ul className="flex flex-wrap gap-x-4 gap-y-1 text-[0.75rem] text-[#b4bdd3]" aria-label="Legend">
+                <ul className="flex flex-wrap gap-x-4 gap-y-1 text-[0.75rem] text-[#b9c7c3]" aria-label="Legend">
                   {(Object.keys(STATUS) as Status[]).map((s) => (
                     <li key={s} className="flex items-center gap-1.5">
                       <span className="size-2.5 rounded-[2px]" style={{ background: STATUS[s].color }} aria-hidden="true" />
@@ -170,7 +170,7 @@ export default function LiveFloor() {
                     const floor = FLOORS - idx;
                     return (
                       <g key={floor}>
-                        <text x="0" y={idx * (CELL + GAP) + CELL - 3} fontSize="9" fill="#8a94ad" fontFamily="var(--font-mono)">
+                        <text x="0" y={idx * (CELL + GAP) + CELL - 3} fontSize="9" fill="#a0b0ac" fontFamily="var(--font-mono)">
                           F{floor}
                         </text>
                       </g>
@@ -180,7 +180,7 @@ export default function LiveFloor() {
                     const row = FLOORS - cell.floor;
                     const cx = 30 + (cell.room - 1) * (CELL + GAP);
                     const cy = row * (CELL + GAP);
-                    const fill = inView ? STATUS[cell.status].color : "#16213f";
+                    const fill = inView ? STATUS[cell.status].color : "#1d3d44";
                     return (
                       <rect
                         key={i}
@@ -210,15 +210,15 @@ export default function LiveFloor() {
                 <ul className="mt-4 space-y-3">
                   {c.departments.map((d, i) => (
                     <li key={d.name} className="grid grid-cols-[7.5rem_1fr] items-center gap-3 text-[0.82rem]">
-                      <span className="text-[#b4bdd3]">{d.name}</span>
+                      <span className="text-[#b9c7c3]">{d.name}</span>
                       <span className="flex items-center gap-2">
                         <span className="relative h-2.5 flex-1 overflow-hidden rounded-r-[4px] bg-white/[0.06]">
                           <span
-                            className="absolute inset-y-0 left-0 rounded-r-[4px] bg-[#d4a94f] transition-[width] duration-1000 ease-(--ease-out-expo)"
+                            className="absolute inset-y-0 left-0 rounded-r-[4px] bg-[#e5b35a] transition-[width] duration-1000 ease-(--ease-out-expo)"
                             style={{ width: inView ? `${d.value}%` : "0%", transitionDelay: `${200 + i * 90}ms` }}
                           />
                         </span>
-                        <span className="w-9 text-right font-mono text-[#eef2fa] tabular-nums">{d.value}%</span>
+                        <span className="w-9 text-right font-mono text-[#f2f4ee] tabular-nums">{d.value}%</span>
                       </span>
                     </li>
                   ))}
@@ -250,16 +250,16 @@ export default function LiveFloor() {
                   {[50, 75, 100].map((t) => (
                     <g key={t}>
                       <line x1={pad.l} x2={LW - pad.r} y1={y(t)} y2={y(t)} stroke="rgb(255 255 255 / 0.08)" strokeWidth="1" />
-                      <text x={pad.l - 6} y={y(t) + 3} fontSize="9" textAnchor="end" fill="#8a94ad" fontFamily="var(--font-mono)">
+                      <text x={pad.l - 6} y={y(t) + 3} fontSize="9" textAnchor="end" fill="#a0b0ac" fontFamily="var(--font-mono)">
                         {t}%
                       </text>
                     </g>
                   ))}
-                  <path d={area} fill="#3DDC97" opacity={inView ? 0.1 : 0} style={{ transition: "opacity 800ms 900ms" }} />
+                  <path d={area} fill="#4FC59E" opacity={inView ? 0.1 : 0} style={{ transition: "opacity 800ms 900ms" }} />
                   <path
                     d={line}
                     fill="none"
-                    stroke="#3DDC97"
+                    stroke="#4FC59E"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -271,14 +271,14 @@ export default function LiveFloor() {
                   {hover !== null && hover >= 1000 ? (
                     <line x1={x(hover - 1000)} x2={x(hover - 1000)} y1={pad.t} y2={LH - pad.b} stroke="rgb(255 255 255 / 0.3)" strokeWidth="1" />
                   ) : null}
-                  <circle cx={x(ev.length - 1)} cy={y(ev[ev.length - 1])} r="5" fill="#3DDC97" stroke="#0b1328" strokeWidth="2" opacity={inView ? 1 : 0} style={{ transition: "opacity 300ms 1700ms" }} />
-                  <text x={x(ev.length - 1) + 9} y={y(ev[ev.length - 1]) + 4} fontSize="11" fill="#eef2fa" fontFamily="var(--font-mono)">
+                  <circle cx={x(ev.length - 1)} cy={y(ev[ev.length - 1])} r="5" fill="#4FC59E" stroke="#122d35" strokeWidth="2" opacity={inView ? 1 : 0} style={{ transition: "opacity 300ms 1700ms" }} />
+                  <text x={x(ev.length - 1) + 9} y={y(ev[ev.length - 1]) + 4} fontSize="11" fill="#f2f4ee" fontFamily="var(--font-mono)">
                     {ev[ev.length - 1]}%
                   </text>
-                  <text x={pad.l} y={LH - 4} fontSize="9" fill="#8a94ad" fontFamily="var(--font-mono)">
+                  <text x={pad.l} y={LH - 4} fontSize="9" fill="#a0b0ac" fontFamily="var(--font-mono)">
                     Shift 1
                   </text>
-                  <text x={LW - pad.r} y={LH - 4} fontSize="9" textAnchor="end" fill="#8a94ad" fontFamily="var(--font-mono)">
+                  <text x={LW - pad.r} y={LH - 4} fontSize="9" textAnchor="end" fill="#a0b0ac" fontFamily="var(--font-mono)">
                     Shift 14
                   </text>
                 </svg>
@@ -289,22 +289,22 @@ export default function LiveFloor() {
           {tip ? (
             <div
               role="status"
-              className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-[calc(100%+10px)] rounded-lg border border-white/15 bg-[#060b18]/95 px-3 py-2 text-[0.78rem] shadow-float"
+              className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-[calc(100%+10px)] rounded-lg border border-white/15 bg-[#0c2329]/95 px-3 py-2 text-[0.78rem] shadow-float"
               style={{ left: tip.x, top: tip.y }}
             >
-              <p className="font-medium text-[#eef2fa]">{tip.value}</p>
-              <p className="text-[#8a94ad]">{tip.text}</p>
+              <p className="font-medium text-[#f2f4ee]">{tip.value}</p>
+              <p className="text-[#a0b0ac]">{tip.text}</p>
             </div>
           ) : null}
 
-          <details className="mt-5 text-[0.82rem] text-[#b4bdd3]">
-            <summary className="cursor-pointer font-mono text-[0.72rem] tracking-wide text-[#8a94ad] hover:text-[#eef2fa]">
+          <details className="mt-5 text-[0.82rem] text-[#b9c7c3]">
+            <summary className="cursor-pointer font-mono text-[0.72rem] tracking-wide text-[#a0b0ac] hover:text-[#f2f4ee]">
               View the floor data as a table
             </summary>
             <div className="mt-3 overflow-x-auto">
               <table className="w-full min-w-[420px] text-left">
                 <thead>
-                  <tr className="text-[#8a94ad]">
+                  <tr className="text-[#a0b0ac]">
                     <th scope="col" className="py-1 pr-4 font-normal">Floor</th>
                     <th scope="col" className="py-1 pr-4 font-normal">Released</th>
                     <th scope="col" className="py-1 pr-4 font-normal">In progress</th>
@@ -326,7 +326,7 @@ export default function LiveFloor() {
               </table>
             </div>
           </details>
-          <p className="mt-3 font-mono text-[0.66rem] text-[#8a94ad]">
+          <p className="mt-3 font-mono text-[0.66rem] text-[#a0b0ac]">
             All figures: {demoProperty.label}. A fictional property used to demonstrate the manager view.
           </p>
         </div>

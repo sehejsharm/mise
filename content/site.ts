@@ -127,6 +127,14 @@ export const founders: Founder[] = [
   },
 ];
 
+/**
+ * Visual order for every founder lineup (cards, headshots, grids): Sehej sits
+ * in the centre. Prose and schema keep the canonical order in `founders`.
+ */
+export const foundersCentered: Founder[] = ["ali-electricwala", "sehej-sharma", "aditya-mishra"].map(
+  (slug) => founders.find((f) => f.slug === slug)!,
+);
+
 export function founderBySlug(slug: string) {
   return founders.find((f) => f.slug === slug);
 }

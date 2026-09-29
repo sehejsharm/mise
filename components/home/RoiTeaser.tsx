@@ -62,7 +62,7 @@ export default function RoiTeaser() {
                   step={s.step}
                   value={v[s.key]}
                   onChange={(e) => change(s.key, Number(e.target.value))}
-                  className="mt-3 w-full accent-[#d4a94f]"
+                  className="mt-3 w-full accent-[#e5b35a]"
                 />
               </div>
             ))}

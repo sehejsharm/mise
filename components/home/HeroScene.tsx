@@ -13,8 +13,8 @@ const COLS = 7;
 const ROWS = 6;
 const GAP = 1.18;
 const LOOP = 14; // seconds per shift cycle
-const GOLD = new THREE.Color("#d4a94f");
-const IDLE = new THREE.Color("#1c3566");
+const GOLD = new THREE.Color("#e5b35a");
+const IDLE = new THREE.Color("#1f4a4f");
 const BLOCKED = new THREE.Color("#ff6b5b");
 const COLUMN = new THREE.Vector3(5.6, 0.2, -2.4);
 
@@ -116,17 +116,17 @@ function RecordColumn() {
     <group position={[COLUMN.x, 0, COLUMN.z]}>
       <mesh position={[0, 1.6, 0]}>
         <boxGeometry args={[1.3, 3.4, 1.3]} />
-        <meshBasicMaterial color="#d4a94f" transparent opacity={0.08} depthWrite={false} />
+        <meshBasicMaterial color="#e5b35a" transparent opacity={0.08} depthWrite={false} />
       </mesh>
       <mesh position={[0, 1.6, 0]}>
         <boxGeometry args={[1.32, 3.42, 1.32]} />
-        <meshBasicMaterial color="#d4a94f" wireframe transparent opacity={0.35} />
+        <meshBasicMaterial color="#e5b35a" wireframe transparent opacity={0.35} />
       </mesh>
       <group ref={rows}>
         {Array.from({ length: 7 }, (_, n) => (
           <mesh key={n} position={[0, 0.4 + n * 0.42, 0.67]}>
             <planeGeometry args={[1.05, 0.26]} />
-            <meshBasicMaterial color={n === 2 ? "#ff6b5b" : "#3ddc97"} transparent opacity={0.5} />
+            <meshBasicMaterial color={n === 2 ? "#ff6b5b" : "#4fc59e"} transparent opacity={0.5} />
           </mesh>
         ))}
       </group>
@@ -166,9 +166,9 @@ export default function HeroScene({ active, onReady }: { active: boolean; onRead
       <Rig />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.2, 0]}>
         <planeGeometry args={[COLS * GAP + 1, ROWS * GAP + 1]} />
-        <meshBasicMaterial color="#38e1ff" transparent opacity={0.04} />
+        <meshBasicMaterial color="#aedfd2" transparent opacity={0.04} />
       </mesh>
-      <gridHelper args={[14, 14, "#1d3a6b", "#122447"]} position={[0, -0.19, 0]} />
+      <gridHelper args={[14, 14, "#1f4a50", "#15373d"]} position={[0, -0.19, 0]} />
       <Instances limit={COLS * ROWS}>
         <boxGeometry args={[1, 0.3, 1]} />
         <meshLambertMaterial />

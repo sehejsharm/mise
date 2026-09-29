@@ -29,7 +29,7 @@ export default function PageHero({
         <div className="grid-lines absolute inset-0 [mask-image:radial-gradient(ellipse_at_30%_0%,#000_10%,transparent_65%)]" />
         <div
           className="absolute -top-56 left-1/4 size-[640px] rounded-full opacity-50 blur-3xl"
-          style={{ background: "radial-gradient(circle, rgb(212 169 79 / 0.2), transparent 60%)" }}
+          style={{ background: "radial-gradient(circle, rgb(229 179 90 / 0.2), transparent 60%)" }}
         />
       </div>
       <div className={`container-page relative ${aside ? "grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]" : ""}`}>

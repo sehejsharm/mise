@@ -13,11 +13,11 @@ export default function Hero() {
         <div className="grid-lines absolute inset-0 [mask-image:radial-gradient(ellipse_at_60%_30%,#000_20%,transparent_70%)]" />
         <div
           className="absolute -top-40 left-[35%] size-[720px] rounded-full opacity-60 blur-3xl [animation:mesh_22s_ease-in-out_infinite]"
-          style={{ background: "radial-gradient(circle, rgb(212 169 79 / 0.22), transparent 60%)" }}
+          style={{ background: "radial-gradient(circle, rgb(229 179 90 / 0.22), transparent 60%)" }}
         />
         <div
           className="absolute top-24 -right-40 size-[620px] rounded-full opacity-50 blur-3xl [animation:mesh_28s_ease-in-out_infinite_reverse]"
-          style={{ background: "radial-gradient(circle, rgb(56 225 255 / 0.14), transparent 60%)" }}
+          style={{ background: "radial-gradient(circle, rgb(174 223 210 / 0.14), transparent 60%)" }}
         />
       </div>
 
@@ -48,20 +48,20 @@ export default function Hero() {
         </div>
 
         <div className="relative" data-copy-budget="exclude">
-          <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#070d1d] shadow-float">
+          <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0a1f24] shadow-float">
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-2.5">
-              <p className="font-mono text-[0.68rem] tracking-[0.16em] text-[#8a94ad] uppercase">
+              <p className="font-mono text-[0.68rem] tracking-[0.16em] text-[#a0b0ac] uppercase">
                 {demoProperty.name} · Floor plan
               </p>
-              <p className="flex items-center gap-2 font-mono text-[0.68rem] tracking-[0.12em] text-[#3ddc97] uppercase">
-                <span className="size-1.5 animate-pulse-dot rounded-full bg-[#3ddc97]" aria-hidden="true" />
+              <p className="flex items-center gap-2 font-mono text-[0.68rem] tracking-[0.12em] text-[#4fc59e] uppercase">
+                <span className="size-1.5 animate-pulse-dot rounded-full bg-[#4fc59e]" aria-hidden="true" />
                 Live
               </p>
             </div>
             <div className="px-2 pt-3 sm:px-4">
               <HeroVisual />
             </div>
-            <div className="border-t border-white/10 bg-[#060b18]/70">
+            <div className="border-t border-white/10 bg-[#0c2329]/70">
               <ServiceTicker items={ticker} label={`Service record entries, ${demoProperty.label}`} />
             </div>
           </div>

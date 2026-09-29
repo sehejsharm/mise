@@ -3,7 +3,7 @@ import Tilt from "@/components/fx/Tilt";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { Picture } from "@/components/ui/Picture";
 import { ArrowLink, SectionHeading } from "@/components/ui/primitives";
-import { founders } from "@/content/site";
+import { foundersCentered } from "@/content/site";
 import { runsOn, whoFor } from "@/content/home";
 import type { Advisor } from "@/lib/advisors";
 
@@ -66,7 +66,7 @@ export function PeoplePreview({ advisors }: { advisors: Advisor[] }) {
       <div className="container-page">
         <SectionHeading id="people-title" eyebrow="The people behind it" title="Mise founders and advisory board" />
         <ul className="mt-10 grid gap-5 md:grid-cols-3">
-          {founders.map((f, i) => (
+          {foundersCentered.map((f, i) => (
             <li key={f.slug} data-reveal style={{ ["--reveal-delay" as string]: `${i * 90}ms` }}>
               <Link href={`/team/${f.slug}`} className="group block overflow-hidden rounded-2xl border border-line bg-surface/60">
                 <div className="relative aspect-[4/5] overflow-hidden">
@@ -79,11 +79,11 @@ export function PeoplePreview({ advisors }: { advisors: Advisor[] }) {
                   />
                   <div
                     aria-hidden="true"
-                    className="absolute inset-0 bg-[linear-gradient(180deg,rgb(11_19_40/0.1),rgb(6_11_24/0.85)),linear-gradient(135deg,rgb(212_169_79/0.35),rgb(56_225_255/0.15))] mix-blend-multiply transition-opacity duration-700 group-hover:opacity-40"
+                    className="absolute inset-0 bg-[linear-gradient(180deg,rgb(18_45_53/0.1),rgb(12_35_41/0.85)),linear-gradient(135deg,rgb(229_179_90/0.35),rgb(174_223_210/0.15))] mix-blend-multiply transition-opacity duration-700 group-hover:opacity-40"
                   />
                   <div className="absolute inset-x-0 bottom-0 p-5">
-                    <p className="font-mono text-[0.7rem] tracking-[0.14em] text-[#d4a94f] uppercase">{f.role}</p>
-                    <h3 className="mt-1 font-display text-[1.4rem] font-semibold text-[#eef2fa]">{f.name}</h3>
+                    <p className="font-mono text-[0.7rem] tracking-[0.14em] text-[#e5b35a] uppercase">{f.role}</p>
+                    <h3 className="mt-1 font-display text-[1.4rem] font-semibold text-[#f2f4ee]">{f.name}</h3>
                   </div>
                 </div>
                 <p className="p-5 text-[0.95rem] leading-relaxed text-muted">“{f.thesis}”</p>

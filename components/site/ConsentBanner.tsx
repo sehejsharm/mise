@@ -73,7 +73,7 @@ export default function ConsentBanner() {
                 <span className="block font-medium text-ink">Strictly necessary</span>
                 <span className="text-muted">Consent choice and theme. Always on.</span>
               </span>
-              <input type="checkbox" checked disabled className="mt-1 size-4 accent-[#d4a94f]" />
+              <input type="checkbox" checked disabled className="mt-1 size-4 accent-[#e5b35a]" />
             </label>
             <label className="flex items-start justify-between gap-4 text-[0.9rem]">
               <span>
@@ -84,7 +84,7 @@ export default function ConsentBanner() {
                 type="checkbox"
                 checked={analytics}
                 onChange={(e) => setAnalytics(e.target.checked)}
-                className="mt-1 size-4 accent-[#d4a94f]"
+                className="mt-1 size-4 accent-[#e5b35a]"
               />
             </label>
             <label className="flex items-start justify-between gap-4 text-[0.9rem]">
@@ -96,7 +96,7 @@ export default function ConsentBanner() {
                 type="checkbox"
                 checked={marketing}
                 onChange={(e) => setMarketing(e.target.checked)}
-                className="mt-1 size-4 accent-[#d4a94f]"
+                className="mt-1 size-4 accent-[#e5b35a]"
               />
             </label>
           </fieldset>
@@ -107,7 +107,7 @@ export default function ConsentBanner() {
             ref={firstButton}
             type="button"
             onClick={() => save({ analytics: true, marketing: prefsOpen ? marketing : false })}
-            className="h-10 flex-1 rounded-full bg-gold px-4 text-[0.9rem] font-medium text-on-gold transition-colors hover:bg-[#e2bb66]"
+            className="h-10 flex-1 rounded-full bg-gold px-4 text-[0.9rem] font-medium text-on-gold transition-colors hover:bg-[#eec27a]"
           >
             Accept
           </button>

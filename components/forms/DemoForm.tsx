@@ -61,7 +61,7 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
             initial={{ opacity: 0, y: 16, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-2xl border border-green/40 bg-[linear-gradient(160deg,rgb(61_220_151/0.12),transparent_60%)] p-7"
+            className="rounded-2xl border border-green/40 bg-[linear-gradient(160deg,rgb(79_197_158/0.12),transparent_60%)] p-7"
             role="status"
             data-testid="demo-success"
           >
@@ -69,7 +69,7 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
               initial={{ scale: 0, rotate: -45 }}
               animate={{ scale: 1, rotate: 0 }}
               transition={{ delay: 0.15, type: "spring", stiffness: 260, damping: 18 }}
-              className="grid size-14 place-items-center rounded-full bg-green text-[#060b18]"
+              className="grid size-14 place-items-center rounded-full bg-green text-[#0c2329]"
             >
               <Icon name="check" size={28} strokeWidth={2.4} />
             </m.div>
@@ -149,7 +149,7 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="inline-flex h-13 w-full items-center justify-center gap-2 rounded-full bg-gold px-7 font-medium text-on-gold shadow-[0_10px_40px_-12px_rgb(212_169_79/0.7)] transition-colors hover:bg-[#e2bb66] disabled:opacity-70"
+              className="inline-flex h-13 w-full items-center justify-center gap-2 rounded-full bg-gold px-7 font-medium text-on-gold shadow-[0_10px_40px_-12px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a] disabled:opacity-70"
             >
               {status === "sending" ? "Sending…" : "Book my 15-min demo"}
               <Icon name="arrowRight" size={17} />

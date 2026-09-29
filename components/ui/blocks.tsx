@@ -108,24 +108,24 @@ export function FinalCta({
   location: string;
 }) {
   return (
-    <section aria-labelledby={`cta-${location}`} className="relative overflow-hidden bg-navy py-20 text-[#eef2fa] sm:py-28">
-      <div aria-hidden="true" className="grid-lines absolute inset-0 opacity-40 [--line:rgb(238_242_250/0.06)]" />
+    <section aria-labelledby={`cta-${location}`} className="relative overflow-hidden bg-navy py-20 text-[#f2f4ee] sm:py-28">
+      <div aria-hidden="true" className="grid-lines absolute inset-0 opacity-40 [--line:rgb(242_244_238/0.06)]" />
       <div
         aria-hidden="true"
-        className="absolute -top-1/2 left-1/2 size-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(212_169_79/0.28),transparent_60%)]"
+        className="absolute -top-1/2 left-1/2 size-[900px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(229_179_90/0.28),transparent_60%)]"
       />
       <Container className="relative text-center">
-        <p className="eyebrow justify-center !text-[#d4a94f]" data-reveal>
+        <p className="eyebrow justify-center !text-[#e5b35a]" data-reveal>
           Book a demo
         </p>
         <h2
           id={`cta-${location}`}
           data-reveal
-          className="mx-auto mt-5 max-w-3xl text-[clamp(2rem,5vw,3.6rem)] leading-[1.04] font-semibold text-[#eef2fa]"
+          className="mx-auto mt-5 max-w-3xl text-[clamp(2rem,5vw,3.6rem)] leading-[1.04] font-semibold text-[#f2f4ee]"
         >
           {title}
         </h2>
-        <p data-reveal className="mx-auto mt-5 max-w-xl text-[1.05rem] leading-relaxed text-[#b4bdd3]">
+        <p data-reveal className="mx-auto mt-5 max-w-xl text-[1.05rem] leading-relaxed text-[#b9c7c3]">
           {body}
         </p>
         <div data-reveal className="mt-9 flex flex-wrap justify-center gap-3">

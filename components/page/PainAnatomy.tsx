@@ -32,7 +32,7 @@ export default function PainAnatomy({ pain }: { pain: Pain }) {
         </li>
       </ol>
 
-      <div className="mt-4 rounded-2xl border border-green/30 bg-[linear-gradient(180deg,rgb(61_220_151/0.07),transparent)] p-6 sm:p-8">
+      <div className="mt-4 rounded-2xl border border-green/30 bg-[linear-gradient(180deg,rgb(79_197_158/0.07),transparent)] p-6 sm:p-8">
         <p className="font-mono text-[0.72rem] tracking-[0.16em] text-green-ink uppercase">04 · How Mise closes it</p>
         <ul className="mt-5 grid gap-6 md:grid-cols-3">
           {pain.closes.map((c) => (

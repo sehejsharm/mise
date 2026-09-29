@@ -6,7 +6,7 @@ import { Icon } from "@/components/ui/Icon";
 import { Picture } from "@/components/ui/Picture";
 import { Eyebrow } from "@/components/ui/primitives";
 import { LogoMark } from "@/components/site/Logo";
-import { brand, contact, founders } from "@/content/site";
+import { brand, contact, founders, foundersCentered } from "@/content/site";
 import { getAdvisors } from "@/lib/advisors";
 import { advisorNode, baseNodes, breadcrumbNode, founderNode, ids, softwareNode, webPageNode } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -103,7 +103,7 @@ export default function AboutPage() {
 
       <section aria-labelledby="name" className="py-16">
         <div className="container-page">
-          <div className="relative overflow-hidden rounded-[1.6rem] border border-gold/30 bg-[linear-gradient(140deg,rgb(212_169_79/0.14),transparent_60%)] p-8 sm:p-12">
+          <div className="relative overflow-hidden rounded-[1.6rem] border border-gold/30 bg-[linear-gradient(140deg,rgb(229_179_90/0.14),transparent_60%)] p-8 sm:p-12">
             <Eyebrow>The name</Eyebrow>
             <h2 id="name" className="mt-4 max-w-3xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
               Mise, from <em className="text-gold-ink not-italic">mise en place</em>
@@ -142,7 +142,7 @@ export default function AboutPage() {
             The founders of Mise
           </h2>
           <ul className="mt-10 grid gap-5 md:grid-cols-3">
-            {founders.map((f) => (
+            {foundersCentered.map((f) => (
               <li key={f.slug} className="overflow-hidden rounded-2xl border border-line bg-surface/60">
                 <Link href={`/team/${f.slug}`} className="group block">
                   <div className="aspect-[4/5] overflow-hidden">
@@ -245,7 +245,7 @@ export default function AboutPage() {
             <div className="rounded-2xl border border-line bg-surface/60 p-6">
               <h3 className="font-display text-[1.1rem] font-semibold text-ink">Founder headshots</h3>
               <ul className="mt-3 space-y-2 text-[0.92rem]">
-                {founders.map((f) => (
+                {foundersCentered.map((f) => (
                   <li key={f.slug}>
                     <a
                       href={(manifest as Record<string, ManifestEntry>)[f.photo].src}

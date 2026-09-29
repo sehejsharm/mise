@@ -112,7 +112,7 @@ export default function HowItWorksPinned() {
             </div>
             <div className="hidden justify-center lg:flex">
               <div className="relative">
-                <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-[radial-gradient(circle,rgb(212_169_79/0.18),transparent_65%)]" />
+                <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-[radial-gradient(circle,rgb(229_179_90/0.18),transparent_65%)]" />
                 <PhoneFrame className="relative">
                   <LoopPhone step={step} />
                 </PhoneFrame>

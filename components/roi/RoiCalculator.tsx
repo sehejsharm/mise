@@ -111,7 +111,7 @@ export default function RoiCalculator() {
                       step={f.step}
                       value={Math.min(value, f.max)}
                       onChange={(e) => set(f.key, Number(e.target.value))}
-                      className="mt-2 w-full accent-[#d4a94f]"
+                      className="mt-2 w-full accent-[#e5b35a]"
                     />
                     {f.help ? <p className="mt-1 text-[0.82rem] text-faint">{f.help}</p> : null}
                   </div>
@@ -123,7 +123,7 @@ export default function RoiCalculator() {
       </form>
 
       <div className="lg:sticky lg:top-24 lg:self-start">
-        <div className="rounded-2xl border border-gold/35 bg-[linear-gradient(160deg,rgb(212_169_79/0.14),transparent_60%)] p-6 sm:p-7" aria-live="polite">
+        <div className="rounded-2xl border border-gold/35 bg-[linear-gradient(160deg,rgb(229_179_90/0.14),transparent_60%)] p-6 sm:p-7" aria-live="polite">
           <p className="eyebrow">Annual cost pools, on your assumptions</p>
           <dl className="mt-5 divide-y divide-line">
             <div className="flex items-baseline justify-between gap-4 py-3">
@@ -167,7 +167,7 @@ export default function RoiCalculator() {
               step={1}
               value={v.scenarioPct}
               onChange={(e) => set("scenarioPct", Number(e.target.value))}
-              className="mt-2 w-full accent-[#d4a94f]"
+              className="mt-2 w-full accent-[#e5b35a]"
             />
             <p className="mt-3 text-[0.9rem] text-muted">
               Scenario value: <strong className="font-display text-[1.25rem] text-ink">{money(r.scenarioValue)}</strong> a year

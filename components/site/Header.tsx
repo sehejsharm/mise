@@ -122,7 +122,7 @@ export default function Header() {
                   href="/demo"
                   data-track="demo_cta_click"
                   data-track-location="header"
-                  className="inline-flex h-10 items-center gap-2 rounded-full bg-gold px-4.5 text-[0.9rem] font-medium text-on-gold shadow-[0_8px_30px_-10px_rgb(212_169_79/0.7)] transition-colors hover:bg-[#e2bb66]"
+                  className="inline-flex h-10 items-center gap-2 rounded-full bg-gold px-4.5 text-[0.9rem] font-medium text-on-gold shadow-[0_8px_30px_-10px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a]"
                 >
                   Book a 15-min demo
                   <Icon name="arrowRight" size={16} />
