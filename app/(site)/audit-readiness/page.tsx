@@ -1,0 +1,10 @@
+import type { Metadata } from "next";
+import LongformPage from "@/components/page/LongformPage";
+import { auditReadiness as page } from "@/content/pillars";
+import { buildMetadata } from "@/lib/seo";
+
+export const metadata: Metadata = buildMetadata(page.meta);
+
+export default function Page() {
+  return <LongformPage page={page} crumbs={[{ name: "Audit readiness", path: page.meta.path }]} />;
+}

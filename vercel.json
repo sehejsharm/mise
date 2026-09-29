@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.misehotel.com" }],
+      "destination": "https://misehotel.com/:path*",
+      "statusCode": 301
+    }
+  ]
+}

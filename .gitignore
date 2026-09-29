@@ -1,0 +1,28 @@
+# deps
+node_modules/
+.pnpm-store/
+
+# next
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# env
+.env
+.env*.local
+
+# tooling output
+test-results/
+playwright-report/
+.lighthouseci/
+qa/screenshots/
+tmp/
+coverage/
+
+# os
+.DS_Store
+*.pem
+npm-debug.log*
+pnpm-debug.log*
+.vercel

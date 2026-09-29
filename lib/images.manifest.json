@@ -1,0 +1,146 @@
+{
+  "team/sehej-sharma": {
+    "width": 640,
+    "height": 800,
+    "avif": "/images/team/sehej-sharma-co-founder-ceo-mise-400.avif 400w, /images/team/sehej-sharma-co-founder-ceo-mise-640.avif 640w",
+    "webp": "/images/team/sehej-sharma-co-founder-ceo-mise-400.webp 400w, /images/team/sehej-sharma-co-founder-ceo-mise-640.webp 640w",
+    "src": "/images/team/sehej-sharma-co-founder-ceo-mise-640.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JZQC3uB9TSrbF4+0RFsk4sUAA25V7DD2OUsGGHWSn1Yifr5Eysb3DKbQhdg9bvRcraSgFenC5LYk5kV38K4NQKaRPXuJYY++jSvSF9YofrWgbqhvDKeBCt8gIjIDFbCNzYoX7mVBJ00AA"
+  },
+  "team/ali-electricwala": {
+    "width": 751,
+    "height": 939,
+    "avif": "/images/team/ali-electricwala-co-founder-coo-mise-400.avif 400w, /images/team/ali-electricwala-co-founder-coo-mise-751.avif 751w",
+    "webp": "/images/team/ali-electricwala-co-founder-coo-mise-400.webp 400w, /images/team/ali-electricwala-co-founder-coo-mise-751.webp 751w",
+    "src": "/images/team/ali-electricwala-co-founder-coo-mise-751.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAABQBACdASoQABQAPu1iqU2ppaOiMAgBMB2JYgCdAB4iXzfH/rtHa4aUH6CQAP7nOzd9YucXig/tjKpFAqWzd+jC/KTnpy9AnNiMvsQatXnRji6VhmN/HC0ZtE+268m28YoZWXfyvtxdKf9u1h+5jgSlxgPLfl82IwIGRLmzB5s7sgBGl0X4dxP6zJvWZpIAAAA="
+  },
+  "team/aditya-mishra": {
+    "width": 640,
+    "height": 800,
+    "avif": "/images/team/aditya-mishra-co-founder-cto-mise-400.avif 400w, /images/team/aditya-mishra-co-founder-cto-mise-640.avif 640w",
+    "webp": "/images/team/aditya-mishra-co-founder-cto-mise-400.webp 400w, /images/team/aditya-mishra-co-founder-cto-mise-640.webp 640w",
+    "src": "/images/team/aditya-mishra-co-founder-cto-mise-640.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JaQAAXu7uzKDKR7y4lKzgcAD+9C+e6OHS2CnvGFcBYqfVnDtR06kKK7TxCTZ+1MlaMMpm2Djke2RE6mtdmDMiqOfeT8DB8jt6WZ5eDFavJvl8ZM99jq4CgE9RIfZSZ/o9ljoEAAA="
+  },
+  "advisors/parul-sharma": {
+    "width": 1071,
+    "height": 1339,
+    "avif": "/images/advisors/parul-sharma-advisory-board-mise-400.avif 400w, /images/advisors/parul-sharma-advisory-board-mise-800.avif 800w, /images/advisors/parul-sharma-advisory-board-mise-1071.avif 1071w",
+    "webp": "/images/advisors/parul-sharma-advisory-board-mise-400.webp 400w, /images/advisors/parul-sharma-advisory-board-mise-800.webp 800w, /images/advisors/parul-sharma-advisory-board-mise-1071.webp 1071w",
+    "src": "/images/advisors/parul-sharma-advisory-board-mise-1071.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAAAwBACdASoQABQAPu1iqU2ppaOiMAgBMB2JQBOkHMhjm7k7qPtyxiSXkPQA/tX//RrFvUv4HZKl18uhWFgumU9quDywILprlmJ5D7+lV3FbTRBttcUjL6yflfTNBLGHvT5XO3tQjm3fkQGoB4URPJNaw2gOyxFpcbHxvAAA"
+  },
+  "advisors/renu-mehra": {
+    "width": 683,
+    "height": 854,
+    "avif": "/images/advisors/renu-mehra-advisory-board-mise-400.avif 400w, /images/advisors/renu-mehra-advisory-board-mise-683.avif 683w",
+    "webp": "/images/advisors/renu-mehra-advisory-board-mise-400.webp 400w, /images/advisors/renu-mehra-advisory-board-mise-683.webp 683w",
+    "src": "/images/advisors/renu-mehra-advisory-board-mise-683.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JQBgfeABOtBbkb+hBR2ljB8kgAP7zd0sW8P7a6tgLY7R1hPaU0Q6X2RJkGT9k3hM2gVIRr+WTid64j+9+BVnW0CUdduVE9F2qVMvCzVvjxqfab04/j+/plEd0+BncmPpfSTGMAdi21cFi3u7KW1e/r+1q03+yHRPKFLpGfyzgtylsAAA="
+  },
+  "product/staff-today": {
+    "width": 812,
+    "height": 1364,
+    "avif": "/images/product/mise-hotel-staff-app-timed-task-406.avif 406w, /images/product/mise-hotel-staff-app-timed-task-812.avif 812w",
+    "webp": "/images/product/mise-hotel-staff-app-timed-task-406.webp 406w, /images/product/mise-hotel-staff-app-timed-task-812.webp 812w",
+    "src": "/images/product/mise-hotel-staff-app-timed-task-812.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoQABsAPu1yrU+pp6QiMAgBMB2JYwDCgCHfibE3K4TPgnqiMADMo6zHFyz9s28C4MvMXz8Zd4TZivckxqzcHi8WULSJfqkl5C4+Gg+puYXmbrmAkkSWZm6z2VPGcE1+Ubx42I0Tu7/n4BEj9fHHLf+rqZ3NQYPEvval4BWG+PNPT8G5GxeEAAAA"
+  },
+  "product/staff-standards": {
+    "width": 812,
+    "height": 1364,
+    "avif": "/images/product/mise-hotel-sop-app-standards-library-406.avif 406w, /images/product/mise-hotel-sop-app-standards-library-812.avif 812w",
+    "webp": "/images/product/mise-hotel-sop-app-standards-library-406.webp 406w, /images/product/mise-hotel-sop-app-standards-library-812.webp 812w",
+    "src": "/images/product/mise-hotel-sop-app-standards-library-812.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBACdASoQABsAPu1iqU2ppaOiMAgBMB2JZQDG9CHhfA1b2sOhLoDkNSKAAMyjrMcXLP2zbwLgy8xfN43Wi02hfNETtwRBe5qaqScrFGiTQPlzLq1fcPz+qLtB3J7hswqC6YHSo+tA6klS0+LafPeAIxmH1TJ4/yqYNdxGKxY3lBFf5phQXlPMQhKn9bJYtenS1+tUjpxoAAAA"
+  },
+  "product/staff-briefs": {
+    "width": 812,
+    "height": 1364,
+    "avif": "/images/product/mise-hotel-staff-app-operating-briefs-406.avif 406w, /images/product/mise-hotel-staff-app-operating-briefs-812.avif 812w",
+    "webp": "/images/product/mise-hotel-staff-app-operating-briefs-406.webp 406w, /images/product/mise-hotel-staff-app-operating-briefs-812.webp 812w",
+    "src": "/images/product/mise-hotel-staff-app-operating-briefs-812.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBACdASoQABsAPu1kqU2ppaQiMAgBMB2JZQDCgCHazU/FjnmZ4o7lIgDMo6zHFyz9s28C4MvMX0DSv3YwVQcniar7LKBatUSeBMHQptLfbnYsA1+6akUmRx/zCL8QpAt+5gVMm2ELikbWPH4HnMRna30946Cfi59WUxoySuP9ggadGAXdWQmxB2e7jcT3MIe3wMjhDM5u1qSI4ik31s7yvv/SfwAA"
+  },
+  "product/staff-sequence": {
+    "width": 812,
+    "height": 1364,
+    "avif": "/images/product/mise-hotel-staff-app-shift-readiness-sequence-406.avif 406w, /images/product/mise-hotel-staff-app-shift-readiness-sequence-812.avif 812w",
+    "webp": "/images/product/mise-hotel-staff-app-shift-readiness-sequence-406.webp 406w, /images/product/mise-hotel-staff-app-shift-readiness-sequence-812.webp 812w",
+    "src": "/images/product/mise-hotel-staff-app-shift-readiness-sequence-812.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBACdASoQABsAPu1kqU2ppaOiMAgBMB2JZQAIEAPZMWKjihq4KHx1uADMo6zHFyz30CEjvAD+iRpBTNHvk74zcZVND697F/urpviw7DmSE+RyAg05MmLbGbbr/6KQlF6zI8a79wnTbth5xNitGDc1+nNu9xWpqd+uQUdu4bb6JWHM6QPzyoKeTiIUKVwnH8rs2ufMex9pj2augAA="
+  },
+  "product/staff-service-record": {
+    "width": 812,
+    "height": 1364,
+    "avif": "/images/product/mise-hotel-staff-service-record-406.avif 406w, /images/product/mise-hotel-staff-service-record-812.avif 812w",
+    "webp": "/images/product/mise-hotel-staff-service-record-406.webp 406w, /images/product/mise-hotel-staff-service-record-812.webp 812w",
+    "src": "/images/product/mise-hotel-staff-service-record-812.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAABwBACdASoQABsAPu1iqU2ppaOiMAgBMB2JZQAdo6RGYv9cSAchcJj4DDWdYADMo6zGU0G5qqKYKTWkWrrOPWXcehgg96+23rfq+7jjWqNXNyLDx9ic//BAotc/ufl9hn+AeHvG/m5dgnW/R/UZ7MbrtZbPX2qcLE58dx8kyVMu6I1o+SKoQy8fVEY5B9wMIp5tjrphffUYUZXWS5fPcpP9J/jHcpxOEjbDkefr9QoQAA=="
+  },
+  "product/staff-inbox": {
+    "width": 812,
+    "height": 1364,
+    "avif": "/images/product/mise-hotel-staff-app-operations-inbox-406.avif 406w, /images/product/mise-hotel-staff-app-operations-inbox-812.avif 812w",
+    "webp": "/images/product/mise-hotel-staff-app-operations-inbox-406.webp 406w, /images/product/mise-hotel-staff-app-operations-inbox-812.webp 812w",
+    "src": "/images/product/mise-hotel-staff-app-operations-inbox-812.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoQABsAPu1iqk2ppaQiMAgBMB2JZQC7ACHhXCW0qSIScsbiAADMo6zHFyz9s28C4MvMXxnb+V+5c7+Cuywq1HQKSdSWbJEsiYz0d/+KgdMqfqCfZeUgSMt0ffWs2nT6yA8vMrFrt17HZ/K2tjI9e4ZagbYg5khdMOlmMR6T/H+nSpXM/xTonWAA"
+  },
+  "product/manager-overview": {
+    "width": 1372,
+    "height": 888,
+    "avif": "/images/product/mise-hotel-manager-dashboard-overview-686.avif 686w, /images/product/mise-hotel-manager-dashboard-overview-1372.avif 1372w",
+    "webp": "/images/product/mise-hotel-manager-dashboard-overview-686.webp 686w, /images/product/mise-hotel-manager-dashboard-overview-1372.webp 1372w",
+    "src": "/images/product/mise-hotel-manager-dashboard-overview-1372.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAoAA4BaJYgCdAD0judydAD+7NBktL+ulhMQDODzzQswRjhd97Ly+pk4FipLVO/PZFKG6XS9+jL34AA="
+  },
+  "product/manager-assignments": {
+    "width": 1372,
+    "height": 888,
+    "avif": "/images/product/mise-hotel-manager-dashboard-assignments-686.avif 686w, /images/product/mise-hotel-manager-dashboard-assignments-1372.avif 1372w",
+    "webp": "/images/product/mise-hotel-manager-dashboard-assignments-686.webp 686w, /images/product/mise-hotel-manager-dashboard-assignments-1372.webp 1372w",
+    "src": "/images/product/mise-hotel-manager-dashboard-assignments-1372.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAoAA4BaJQBdgBhwJKqgAP7s0GS0v6Hx1zuCnydgWyLLUNLuOCdyAn0pXmhAkE59H1GosKL9+U+9VYpyk3roAAA="
+  },
+  "product/manager-readiness": {
+    "width": 1372,
+    "height": 888,
+    "avif": "/images/product/mise-hotel-manager-dashboard-acknowledgements-686.avif 686w, /images/product/mise-hotel-manager-dashboard-acknowledgements-1372.avif 1372w",
+    "webp": "/images/product/mise-hotel-manager-dashboard-acknowledgements-686.webp 686w, /images/product/mise-hotel-manager-dashboard-acknowledgements-1372.webp 1372w",
+    "src": "/images/product/mise-hotel-manager-dashboard-acknowledgements-1372.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAoAA4BaJQBOgB6SDxufsCAA/uzQZLS/uHDPTMEVlEbHn+XvqdmJ4w9s9oflt4Nau6ej2MGSw/xspN66AAAA"
+  },
+  "product/manager-team-progress": {
+    "width": 1372,
+    "height": 888,
+    "avif": "/images/product/mise-hotel-manager-dashboard-team-readiness-686.avif 686w, /images/product/mise-hotel-manager-dashboard-team-readiness-1372.avif 1372w",
+    "webp": "/images/product/mise-hotel-manager-dashboard-team-readiness-686.webp 686w, /images/product/mise-hotel-manager-dashboard-team-readiness-1372.webp 1372w",
+    "src": "/images/product/mise-hotel-manager-dashboard-team-readiness-1372.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQAAoAA4BaJYwCdH8AFx+y4++AAP7s0GS0v63qah+wxkRHAsRQzxQZ95wq7WAY0XfzjqUAAAA="
+  },
+  "product/manager-standard-results": {
+    "width": 1372,
+    "height": 888,
+    "avif": "/images/product/mise-hotel-manager-dashboard-sop-results-686.avif 686w, /images/product/mise-hotel-manager-dashboard-sop-results-1372.avif 1372w",
+    "webp": "/images/product/mise-hotel-manager-dashboard-sop-results-686.webp 686w, /images/product/mise-hotel-manager-dashboard-sop-results-1372.webp 1372w",
+    "src": "/images/product/mise-hotel-manager-dashboard-sop-results-1372.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQAAoAA4BaJYwCdH8AEbk9jQFAAP7s0GS0v6IrRGiXLOyLwMD4lc7jAtpG08iw1xuG1P7WaUf3rLCfrgAAAA=="
+  },
+  "product/author-create-standard": {
+    "width": 1054,
+    "height": 682,
+    "avif": "/images/product/mise-hotel-standards-workspace-create-sop-527.avif 527w, /images/product/mise-hotel-standards-workspace-create-sop-1054.avif 1054w",
+    "webp": "/images/product/mise-hotel-standards-workspace-create-sop-527.webp 527w, /images/product/mise-hotel-standards-workspace-create-sop-1054.webp 1054w",
+    "src": "/images/product/mise-hotel-standards-workspace-create-sop-1054.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQAAoAA4BaJYwCdH8AFXk7a5sAAP7s0GS0v60BrkjH+cyyL4qyOmEHnpeS64AA"
+  },
+  "product/author-feedback-inbox": {
+    "width": 1054,
+    "height": 682,
+    "avif": "/images/product/mise-hotel-standards-workspace-feedback-inbox-527.avif 527w, /images/product/mise-hotel-standards-workspace-feedback-inbox-1054.avif 1054w",
+    "webp": "/images/product/mise-hotel-standards-workspace-feedback-inbox-527.webp 527w, /images/product/mise-hotel-standards-workspace-feedback-inbox-1054.webp 1054w",
+    "src": "/images/product/mise-hotel-standards-workspace-feedback-inbox-1054.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAAAQAgCdASoQAAoAA4BaJYwCdH8AFXeTaeIAAP7s0GS0v60Dl56+0g68rvJQtv1KAAA="
+  }
+}
