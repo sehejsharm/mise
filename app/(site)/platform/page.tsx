@@ -9,17 +9,16 @@ import { platformFaqs, platformMeta, roleInterfaces } from "@/content/platform";
 import { brand, demoProperty } from "@/content/site";
 import { baseNodes, breadcrumbNode, faqNode, softwareNode, webPageNode, imageUrl } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
-import { DEMO_HREF } from "@/lib/demo-mail";
 
 export const metadata: Metadata = buildMetadata(platformMeta);
 
 const recordFields = [
-  ["Standard & version", "HSK-101 · v6"],
-  ["Person", "Maya Fernando, room attendant"],
-  ["Where", "Room 208 · Floor 2"],
-  ["Time", "08:15 → 08:39 · 24 of 26 min"],
-  ["Evidence", "Photos on steps 4 and 7 (gated)"],
-  ["Sign-off", "E. Rossi · 08:42"],
+  ["Standard & version", "ENG-402 Fault first response · v3"],
+  ["Person", "Nimal Perera, duty technician"],
+  ["Where", "Room 512 · AC complaint"],
+  ["Time", "09:14 → 09:27 · 13 of 15 min"],
+  ["Evidence", "Fixed + tested photo, step 5 (gated)"],
+  ["Sign-off", "M. Silva · 09:30"],
 ];
 
 export default function PlatformPage() {
@@ -56,7 +55,7 @@ export default function PlatformPage() {
         }
       >
         <div className="mt-8 flex flex-wrap gap-3">
-          <ButtonLink href={DEMO_HREF} arrow trackLocation="platform-hero">
+          <ButtonLink href="/demo" arrow trackLocation="platform-hero">
             Book a 15-min demo
           </ButtonLink>
           <ButtonLink href={brand.prototypeUrl} variant="ghost">
@@ -162,7 +161,7 @@ export default function PlatformPage() {
           <div>
             <Eyebrow>Shared by all three</Eyebrow>
             <h2 id="record-title" className="mt-4 text-[clamp(1.8rem,3.6vw,2.7rem)] leading-[1.08] font-semibold text-ink">
-              The service record: housekeeping task tracking software that writes the audit trail
+              The service record: one audit trail for every department's SOPs
             </h2>
             <p className="mt-4 text-[1.05rem] leading-relaxed text-muted">
               Every timed task, in every department, writes one attributable entry. Managers use it to see readiness and
@@ -203,7 +202,7 @@ export default function PlatformPage() {
           <RelatedLinks
             links={[
               { href: "/how-it-works", label: "How Mise works", note: "Standard → Timed task → Evidence → Service record." },
-              { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "Where most pilots start." },
+              { href: "/solutions", label: "Solutions by department", note: "Front office to engineering, one app." },
               { href: "/digital-sop", label: "Digitize hotel SOPs", note: "The step-by-step guide." },
               { href: "/security", label: "Security & data handling", note: "Google Cloud and Firebase, plainly stated." },
             ]}

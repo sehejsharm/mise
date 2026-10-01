@@ -4,7 +4,6 @@ import ServiceTicker from "@/components/home/ServiceTicker";
 import { ButtonLink, Eyebrow } from "@/components/ui/primitives";
 import { brand, demoProperty } from "@/content/site";
 import { homeMeta, ticker } from "@/content/home";
-import { DEMO_HREF } from "@/lib/demo-mail";
 
 export default function Hero() {
   return (
@@ -28,15 +27,15 @@ export default function Hero() {
           {/* LCP element: plain text, never animated from opacity 0. */}
           <h1
             id="hero-title"
-            className="mt-6 text-[clamp(2.5rem,6.2vw,4.6rem)] leading-[0.98] font-semibold tracking-[-0.04em] text-ink"
+            className="mt-6 text-[clamp(2.4rem,5.4vw,3.9rem)] leading-[1.0] font-semibold tracking-[-0.04em] text-ink"
           >
-            Hotel SOP software that runs inside <span className="text-gradient-gold">every shift.</span>
+            The SOP app for hotels. <span className="text-gradient-gold">Every department, every shift.</span>
           </h1>
           <p className="mt-6 font-display text-[1.25rem] font-medium text-gold-ink">{brand.tagline}</p>
           <p className="mt-4 max-w-xl text-[1.08rem] leading-relaxed text-muted">{brand.definitionShort}</p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Magnetic>
-              <ButtonLink href={DEMO_HREF} size="lg" arrow trackLocation="hero">
+              <ButtonLink href="/demo" size="lg" arrow trackLocation="hero">
                 Book a 15-min demo
               </ButtonLink>
             </Magnetic>
@@ -52,7 +51,7 @@ export default function Hero() {
           <div className="relative overflow-hidden rounded-[1.6rem] border border-white/10 bg-[#0a1f24] shadow-float">
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-2.5">
               <p className="font-mono text-[0.68rem] tracking-[0.16em] text-[#a0b0ac] uppercase">
-                {demoProperty.name} · Floor plan
+                {demoProperty.name} · Property map
               </p>
               <p className="flex items-center gap-2 font-mono text-[0.68rem] tracking-[0.12em] text-[#4fc59e] uppercase">
                 <span className="size-1.5 animate-pulse-dot rounded-full bg-[#4fc59e]" aria-hidden="true" />

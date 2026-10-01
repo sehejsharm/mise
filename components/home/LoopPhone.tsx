@@ -10,27 +10,16 @@
  */
 import { useEffect, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
+import { departments, type Department } from "@/content/departments";
 
-const steps = [
-  "Strip bed, remove linen",
-  "Clean and sanitise bathroom",
-  "Restock amenities to par",
-  "Bathroom finish photo",
-  "Make bed to standard",
-  "Dust and polish surfaces",
-  "Guest-eye scan",
-  "Release room",
-];
-const photoSteps = new Set([3, 6]);
-
-function Countdown({ active }: { active: boolean }) {
-  const [secs, setSecs] = useState(18 * 60);
+function Countdown({ active, minutes }: { active: boolean; minutes: number }) {
+  const [secs, setSecs] = useState(minutes * 60);
   useEffect(() => {
     if (!active) return;
-    setSecs(18 * 60);
+    setSecs(minutes * 60);
     const id = setInterval(() => setSecs((s) => (s > 0 ? s - 1 : 0)), 1000);
     return () => clearInterval(id);
-  }, [active]);
+  }, [active, minutes]);
   const mm = String(Math.floor(secs / 60)).padStart(2, "0");
   const ss = String(secs % 60).padStart(2, "0");
   return (
@@ -56,7 +45,10 @@ function Typed({ text, active }: { text: string; active: boolean }) {
   );
 }
 
-export default function LoopPhone({ step }: { step: number }) {
+export default function LoopPhone({ step, dept = departments[0] }: { step: number; dept?: Department }) {
+  const steps = dept.steps;
+  const photoSteps = new Set(dept.photoSteps);
+  const gate = dept.photoSteps[0] ?? 0;
   const screen = (i: number) =>
     `absolute inset-0 px-4 pt-10 pb-5 transition-[opacity,transform] duration-500 ease-(--ease-out-expo) ${
       step === i ? "opacity-100 translate-y-0" : "pointer-events-none opacity-0 translate-y-3"
@@ -67,7 +59,9 @@ export default function LoopPhone({ step }: { step: number }) {
       {/* 0 · Standard */}
       <div className={screen(0)}>
         <p className="font-mono text-[0.62rem] tracking-[0.16em] text-[#e5b35a] uppercase">Standard · v6</p>
-        <p className="mt-1.5 font-display text-[1.05rem] leading-tight font-semibold">HSK-101 Guest room reset &amp; release</p>
+        <p className="mt-1.5 font-display text-[1.05rem] leading-tight font-semibold">
+          {dept.standardId} {dept.standardName}
+        </p>
         <div className="mt-3 flex flex-wrap gap-1.5">
           {["Prepare", "Perform", "Verify", "Release"].map((p, i) => (
             <span
@@ -91,14 +85,18 @@ export default function LoopPhone({ step }: { step: number }) {
             </li>
           ))}
         </ol>
-        <p className="mt-3 font-mono text-[0.64rem] text-[#a0b0ac]">Target 26 min · 2 photo gates</p>
+        <p className="mt-3 font-mono text-[0.64rem] text-[#a0b0ac]">
+          {dept.target} · {dept.photoSteps.length} photo gate{dept.photoSteps.length > 1 ? "s" : ""}
+        </p>
       </div>
 
       {/* 1 · Timed task */}
       <div className={screen(1)}>
         <p className="font-mono text-[0.62rem] tracking-[0.16em] text-[#aedfd2] uppercase">Next timed task</p>
-        <p className="mt-1.5 font-display text-[1.25rem] leading-tight font-semibold">Room 208 · Floor 2</p>
-        <p className="text-[0.78rem] text-[#a0b0ac]">Guest-ready reset · release by 09:05</p>
+        <p className="mt-1.5 font-display text-[1.25rem] leading-tight font-semibold">{dept.where}</p>
+        <p className="text-[0.78rem] text-[#a0b0ac]">
+          {dept.task} · {dept.target}
+        </p>
         <div className="relative mx-auto mt-6 grid size-[172px] place-items-center">
           <svg viewBox="0 0 120 120" className="absolute inset-0 -rotate-90">
             <circle cx="60" cy="60" r="52" fill="none" stroke="rgb(255 255 255 / 0.08)" strokeWidth="7" />
@@ -124,13 +122,15 @@ export default function LoopPhone({ step }: { step: number }) {
             </defs>
           </svg>
           <div className="text-center">
-            <Countdown active={step === 1} />
+            <Countdown active={step === 1} minutes={dept.targetMin} />
             <p className="font-mono text-[0.6rem] tracking-[0.14em] text-[#a0b0ac] uppercase">remaining</p>
           </div>
         </div>
         <div className="mt-6 rounded-xl bg-white/[0.05] p-3">
           <div className="flex justify-between font-mono text-[0.64rem] text-[#a0b0ac]">
-            <span>Step 4 of 8</span>
+            <span>
+              Step {gate + 1} of {steps.length}
+            </span>
             <span>On time</span>
           </div>
           <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-white/10">
@@ -141,8 +141,8 @@ export default function LoopPhone({ step }: { step: number }) {
 
       {/* 2 · Evidence */}
       <div className={screen(2)}>
-        <p className="font-mono text-[0.62rem] tracking-[0.16em] text-[#4fc59e] uppercase">Photo gate · step 4</p>
-        <p className="mt-1.5 font-display text-[1.05rem] leading-tight font-semibold">Bathroom finish photo</p>
+        <p className="font-mono text-[0.62rem] tracking-[0.16em] text-[#4fc59e] uppercase">Photo gate · step {gate + 1}</p>
+        <p className="mt-1.5 font-display text-[1.05rem] leading-tight font-semibold">{dept.photoGate}</p>
         <div className="relative mt-4 aspect-[4/5] overflow-hidden rounded-xl border border-white/10 bg-[linear-gradient(160deg,#1f3d44,#122d35)]">
           <div className="absolute inset-4 rounded-lg border border-dashed border-white/25" />
           <div className="absolute inset-x-0 bottom-6 flex justify-center">
@@ -179,14 +179,10 @@ export default function LoopPhone({ step }: { step: number }) {
             className="rounded-lg border border-[#e5b35a]/50 bg-[#e5b35a]/10 px-2.5 py-2 text-[#f2f4ee] transition-[opacity,transform] duration-700 ease-(--ease-out-expo)"
             style={{ opacity: step === 3 ? 1 : 0, transform: step === 3 ? "none" : "translateY(-12px)" }}
           >
-            <Typed text="08:39 · Room 208 · Photo evidence attached · step 4" active={step === 3} />
+            <Typed text={`${dept.completed.split(" · ")[0]} · ${dept.where} · ${dept.standardId} evidence held`} active={step === 3} />
           </li>
           {[
-            "08:21 · Room 206 · Released · E. Rossi",
-            "08:04 · Room 204 · Sign-off · 23 of 26 min",
-            "07:48 · Room 202 · Photo evidence · step 7",
-            "07:31 · Room 201 · Released · on time",
-            "07:12 · Handover · acknowledged",
+            ...dept.recordRows,
           ].map((row) => (
             <li key={row} className="rounded-lg bg-white/[0.04] px-2.5 py-2 text-[#b9c7c3]">
               {row}
@@ -195,8 +191,8 @@ export default function LoopPhone({ step }: { step: number }) {
         </ul>
         <div className="mt-4 grid grid-cols-3 gap-1.5 text-center">
           {[
-            ["24/26", "min"],
-            ["2/2", "photos"],
+            [dept.completed.split(" · ")[1] ?? "on time", ""],
+            [`${dept.photoSteps.length}/${dept.photoSteps.length}`, "photos"],
             ["✓", "sign-off"],
           ].map(([v, l]) => (
             <div key={l} className="rounded-lg bg-white/[0.05] py-2">

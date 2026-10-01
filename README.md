@@ -50,6 +50,9 @@ pnpm dev                     # http://localhost:3000
 | `pnpm lhci` | Lighthouse CI on six key pages, mobile then desktop.<br>Performance must be ≥ 95; Accessibility, Best Practices and SEO must be 100 |
 | `pnpm seo:report` | Regenerates `docs/SEO-REPORT.md` from the built HTML |
 | `pnpm check:links` | Checks every external link in the built pages; `--strict` also fails on unverifiable ones |
+| `pnpm audit:copy` | Positioning audit (`scripts/copy-audit.ts`, also run in `postbuild` and CI): fails if housekeeping appears in a title, H1 or meta description outside its own pages, if the homepage over-weights housekeeping, if any demo CTA is a `mailto:`, or on the vocabulary and confidential-term bans. Writes `docs/COPY-AUDIT.md` |
+| `pnpm audit:copy:live` | The same audit against every URL in the live sitemap → `docs/COPY-AUDIT-LIVE.md` |
+| `node scripts/verify-live.mjs` | Live deployment verification (domain, headers, positioning, CTAs, GA4 and consent, SEO/GEO, OG images, link crawl) → `docs/LIVE-VERIFICATION.md`. Add `--submit-test-lead` to send one real test request through `/demo` |
 | `pnpm images` | Re-processes portraits and product screenshots from `assets/raw/` into AVIF/WebP with blur placeholders |
 | `pnpm analyze` | Bundle analyser |
 
@@ -66,7 +69,7 @@ Every key, with its purpose, is in [`.env.example`](.env.example). The ones that
 | `NEXT_PUBLIC_GA_ID` | No | GA4 measurement ID, default `G-X8HT0D7TPW` |
 | `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_CONTACT_PHONE` | No | Public contact details, defaults `hello@misehotel.com` and `+91 93221 07991` |
 | `NEXT_PUBLIC_BOOKING_URL` | No | Cal.com/Calendly URL; embeds the scheduler on `/demo` |
-| `RESEND_API_KEY`, `DEMO_INBOX_EMAIL`, `RESEND_FROM_EMAIL` | Optional | Email delivery for the contact and newsletter forms. Without a key, those forms show the contact email instead. **Demo requests never need it:** every demo button and the `/demo` form open the visitor's own email app, prefilled and addressed to `NEXT_PUBLIC_CONTACT_EMAIL` (`lib/demo-mail.ts`) |
+| `RESEND_API_KEY`, `DEMO_INBOX_EMAIL`, `RESEND_FROM_EMAIL` | **Yes, for leads** | Email delivery for the `/demo` form, contact form and newsletter. Every demo CTA goes to `/demo`. Without a key in production, the form shows an error with a prefilled email fallback to `NEXT_PUBLIC_CONTACT_EMAIL` instead of dropping the lead |
 | `GOOGLE_SITE_VERIFICATION`, `BING_SITE_VERIFICATION` | At launch | Search Console and Bing Webmaster verification meta tags |
 | `INDEXNOW_KEY` | At launch | Pings IndexNow with the sitemap on each production build |
 | `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`, `KEYSTATIC_SECRET`, `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` | For live CMS editing | Keystatic GitHub mode |

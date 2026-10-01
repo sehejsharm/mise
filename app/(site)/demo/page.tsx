@@ -54,7 +54,7 @@ export default function DemoPage() {
             </div>
             <h1 className="mt-5 text-[clamp(2.3rem,5vw,3.8rem)] leading-[1.02] font-semibold tracking-[-0.035em] text-ink">{meta.h1}</h1>
             <p className="mt-5 max-w-xl text-[1.1rem] leading-relaxed text-muted">
-              See Mise, the service execution platform for hotels, running on a real shift. Short, specific, and about your
+              See Mise, the SOP app for hotels, running on a real shift in the department you choose. Short, specific, and about your
               standards rather than our slides.
             </p>
             <section id="what-you-see" aria-labelledby="see-title" className="mt-10 scroll-mt-28">

@@ -52,7 +52,7 @@ export const faqs: FaqItem[] = [
     group: "How it works",
     home: true,
     q: "Who uses the three interfaces?",
-    a: "Staff such as room attendants, front office and F&B teams use the mobile staff app to run timed tasks. Supervisors, duty managers and department heads use the desktop manager dashboard. Whoever owns the standards, often a quality, standards or L&D lead, uses the desktop standards workspace to write and publish them.",
+    a: "Staff in every department, from front desk agents and cooks to technicians, security officers and therapists, use the mobile staff app to run timed tasks. Supervisors, duty managers and department heads use the desktop manager dashboard. Whoever owns the standards, often a quality, standards or L&D lead, uses the desktop standards workspace to write and publish them.",
     homeAnswer:
       "Staff run timed tasks on the mobile app; supervisors and managers use the desktop dashboard; standards owners write and publish in the standards workspace.",
   },
@@ -60,9 +60,9 @@ export const faqs: FaqItem[] = [
     group: "Setup",
     home: true,
     q: "How does a pilot work?",
-    a: "A pilot is scoped to one property, usually starting in housekeeping. We convert your most important standards into timed tasks, your team runs them on real shifts, and the service record fills with evidence from the first days. Scope, and therefore pricing, is agreed on a call rather than from a rate card.",
+    a: "A pilot is scoped to one property, starting with the department where standards slip most: front office, housekeeping, F&B, kitchen or engineering. We convert your most important standards into timed tasks, your team runs them on real shifts, and the service record fills with evidence from the first days. Scope, and therefore pricing, is agreed on a call rather than from a rate card.",
     homeAnswer:
-      "One property, usually starting in housekeeping. Your standards become timed tasks, and the service record fills with evidence from the first shifts.",
+      "One property, starting with the department where standards slip most — front office, housekeeping, F&B, kitchen or engineering. Your SOPs become timed tasks, and the service record fills with evidence from the first shifts.",
   },
   {
     group: "About Mise",
@@ -115,7 +115,7 @@ export const faqs: FaqItem[] = [
   {
     group: "Setup",
     q: "Which departments can use Mise?",
-    a: "Any department that runs repeatable standards. Most pilots start in housekeeping because room readiness is easy to evidence, then extend to front office, food and beverage and other departments.",
+    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own SOPs as timed tasks with photo evidence in the same app, writing to one service record.",
   },
   {
     group: "Trust",
@@ -150,5 +150,5 @@ export const faqMeta = {
   primaryKeyword: "Mise FAQ",
   secondaryKeywords: ["Mise SOP", "Mise hotel operations", "Mise by Focus Realm"],
   eyebrow: "Frequently asked",
-  updated: "2026-09-29",
+  updated: "2026-10-01",
 };

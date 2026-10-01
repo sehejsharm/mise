@@ -21,6 +21,8 @@ export type PageMeta = {
   type?: "website" | "article";
   /** Priority in the sitemap (0–1). */
   priority?: number;
+  /** Overrides the <meta name="keywords"> order (defaults to primary + secondary). */
+  metaKeywords?: string[];
 };
 
 /** Stable key for the static OG image of a route: "/" → "home", "/a/b" → "a--b". */
@@ -45,7 +47,9 @@ export function buildMetadata(meta: PageMeta, extra: Partial<Metadata> = {}): Me
   return {
     title: { absolute: meta.title },
     description: meta.description,
-    keywords: [meta.primaryKeyword, ...(meta.secondaryKeywords ?? [])],
+    keywords: meta.metaKeywords ?? [meta.primaryKeyword, ...(meta.secondaryKeywords ?? [])],
+    // When the keywords list leads with something else, the crawl report still knows the page's primary keyword.
+    ...(meta.metaKeywords ? { other: { "mise:primary-keyword": meta.primaryKeyword } } : {}),
     alternates: {
       canonical: url,
       languages: { en: url, "en-IN": url, "x-default": url },

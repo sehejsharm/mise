@@ -1,10 +1,12 @@
 import type { Longform } from "@/content/types";
+import { departmentSolutions } from "@/content/solutions-departments";
 
-export type Solution = Longform & { slug: string; name: string; short: string };
+export type Solution = Longform & { slug: string; name: string; short: string; group: "department" | "property" };
 
-export const solutions: Solution[] = [
+const coreSolutions: Solution[] = [
   {
     slug: "housekeeping",
+    group: "department",
     name: "Housekeeping",
     short: "Room reset, turndown and release as timed tasks with photo gates.",
     meta: {
@@ -20,25 +22,25 @@ export const solutions: Solution[] = [
         "room inspection checklist app",
       ],
       eyebrow: "Solutions · Housekeeping",
-      updated: "2026-09-29",
+      updated: "2026-10-01",
       priority: 0.8,
     },
     eyebrow: "Solutions · Housekeeping",
     lede:
       "Mise is a housekeeping SOP app built for the room attendant's phone and the housekeeping manager's desk. Each room becomes a timed task: the standard's steps on screen, a countdown against the target time, photo gates on the details guests notice, and supervisor sign-off before release. Every room adds a line to an audit-ready service record.",
     tldr:
-      "Mise runs housekeeping standards such as guest room reset and release as timed tasks on attendants' phones. Key steps need a photo before they close, supervisors sign off from evidence, and every room writes to a service record. It needs no PMS integration or hardware, and pilots usually start here.",
+      "Mise runs housekeeping standards such as guest room reset and release as timed tasks on attendants' phones. Key steps need a photo before they close, supervisors sign off from evidence, and every room writes to a service record. It needs no PMS integration or hardware.",
     leadImage: {
       key: "product/staff-today",
       alt: "Mise housekeeping SOP app showing Room 208 guest-ready reset as the next timed task with a live countdown",
       device: "phone",
     },
     body: `
+Housekeeping is one of seven departments Mise runs, alongside [front office](/solutions/front-office), [F&B service](/solutions/food-and-beverage), [kitchen](/solutions/kitchen), [engineering](/solutions/engineering), [security and safety](/solutions/security-and-safety) and [spa and wellness](/solutions/spa-and-wellness). See [all solutions](/solutions).
+
 ## What does a housekeeping SOP app need to do?
 
 A housekeeping SOP app needs to put the room standard in the attendant's hand at the moment of work, time it against a realistic target, capture proof on the steps that matter, and let a supervisor release the room without walking to it. Anything less is a list, and lists are what [ghost SOPs](/problems/ghost-sop) are made of.
-
-Housekeeping is where most Mise pilots begin, because room readiness is repeatable, time-bound and easy to evidence.
 
 ## How a room runs in Mise
 
@@ -97,12 +99,13 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
       { href: "/problems/supervisor-bottleneck", label: "The supervisor bottleneck", note: "Why inspections queue." },
       { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Convert your housekeeping binder." },
       { href: "/solutions/front-office", label: "Front desk SOP software", note: "Room release meets arrival." },
-      { href: "/platform#staff", label: "The staff app", note: "One thumb, one shift." },
+      { href: "/solutions", label: "All departments", note: "One SOP app for the whole hotel." },
     ],
     relatedPosts: ["housekeeping-sop-checklist", "how-to-digitize-hotel-sops"],
   },
   {
     slug: "front-office",
+    group: "department",
     name: "Front office",
     short: "Arrival, check-in and service recovery standards that run on every shift.",
     meta: {
@@ -181,7 +184,8 @@ Front office and housekeeping meet at room release. When housekeeping releases a
   },
   {
     slug: "food-and-beverage",
-    name: "Food & beverage",
+    group: "department",
+    name: "F&B service",
     short: "Outlet opening, hygiene and service standards with dated evidence.",
     meta: {
       path: "/solutions/food-and-beverage",
@@ -256,6 +260,7 @@ The staff app works on any phone in a browser, with large touch targets and high
   },
   {
     slug: "hotel-chains",
+    group: "property",
     name: "Hotel chains",
     short: "One standards library, executed and evidenced at every property.",
     meta: {
@@ -298,7 +303,7 @@ That is the [ghost SOP](/problems/ghost-sop) at group scale, and it caps ratings
 
 We roll out one property at a time, on purpose:
 
-1. **Pilot one property.** Choose a representative property and one department, usually housekeeping. Convert the group standards that matter most.
+1. **Pilot one property.** Choose a representative property and the department where standards slip most. Convert the group standards that matter most.
 2. **Prove the record.** Within the first shifts, the service record fills with evidence. Group operations sees execution, not a rollout plan.
 3. **Extend the library.** Add departments and standards based on what the pilot shows.
 4. **Add properties.** Publish the proven standards to the next property, adapting only what genuinely differs.
@@ -338,6 +343,7 @@ Group operations teams need to see where standards hold across properties. Mise 
   },
   {
     slug: "boutique-hotels",
+    group: "property",
     name: "Boutique hotels",
     short: "Five-star consistency without a large operations team.",
     meta: {
@@ -408,12 +414,31 @@ Many boutique owners run more than one business or live elsewhere. The service r
     related: [
       { href: "/problems/attrition-bleed", label: "The attrition bleed", note: "When the signature walks out." },
       { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Write your first standards." },
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "The usual starting point." },
+      { href: "/solutions", label: "Solutions by department", note: "Every department, one app." },
       { href: "/roi", label: "ROI calculator", note: "Estimate with your own figures." },
     ],
     relatedPosts: ["how-to-digitize-hotel-sops"],
   },
 ];
+
+const order = [
+  "front-office",
+  "housekeeping",
+  "food-and-beverage",
+  "kitchen",
+  "engineering",
+  "security-and-safety",
+  "spa-and-wellness",
+  "hotel-chains",
+  "boutique-hotels",
+];
+
+/** Every solution page, departments first (housekeeping is one of seven), then property types. */
+export const solutions: Solution[] = [...coreSolutions, ...departmentSolutions].sort(
+  (a, b) => order.indexOf(a.slug) - order.indexOf(b.slug),
+);
+export const departments = solutions.filter((s) => s.group === "department");
+export const propertyTypes = solutions.filter((s) => s.group === "property");
 
 export function solutionBySlug(slug: string) {
   return solutions.find((s) => s.slug === slug);
@@ -421,11 +446,12 @@ export function solutionBySlug(slug: string) {
 
 export const solutionsHubMeta = {
   path: "/solutions",
-  title: "Hotel SOP Software for Every Department | Mise",
+  title: "Hotel SOP App for Every Department | Mise",
   description:
-    "Hotel SOP software for every department: housekeeping, front office, F&B, hotel chains and boutique hotels, as timed tasks with photo evidence. Book a demo.",
-  h1: "Hotel SOP software for every department and property type",
-  primaryKeyword: "hotel SOP software for every department",
+    "The hotel SOP app for every department, from front office and F&B to kitchen, engineering, security and spa, with photo evidence. Book a 15-min demo.",
+  h1: "Hotel SOP app for every department",
+  primaryKeyword: "hotel SOP app",
+  secondaryKeywords: ["hotel department SOP software", "hotel departmental workflow software", "SOP app for hotels"],
   eyebrow: "Solutions",
-  updated: "2026-09-29",
+  updated: "2026-10-01",
 };

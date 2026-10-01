@@ -55,6 +55,9 @@ export default async function BlogIndex() {
       />
       <div className="container-page pb-20">
         {featured ? (
+          <h2 className="mb-6 font-display text-[clamp(1.4rem,2.4vw,1.8rem)] font-semibold text-ink">Latest from the Mise blog</h2>
+        ) : null}
+        {featured ? (
           <article className="group relative grid overflow-hidden rounded-[1.6rem] border border-line bg-surface/60 lg:grid-cols-[1.2fr_1fr]">
             <div className="aspect-[16/9] lg:aspect-auto">
               <PostCover post={featured} large />

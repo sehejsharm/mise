@@ -75,7 +75,7 @@ export const blogMeta: PageMeta = {
   path: "/blog",
   title: "Mise Blog: Hotel SOP & Operations Guides",
   description:
-    "The Mise blog: guides on digitizing hotel SOPs, audit readiness, housekeeping standards and running shifts without WhatsApp chaos. Book a demo.",
+    "The Mise blog: guides on digitizing hotel SOPs, audit readiness, every department's standards and running shifts without WhatsApp chaos. Book a demo.",
   h1: "The Mise blog: hotel SOPs, standards and service execution",
   primaryKeyword: "Mise blog",
   eyebrow: "Field notes",

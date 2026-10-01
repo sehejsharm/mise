@@ -8,6 +8,7 @@
  */
 import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
+import DeptSwitcher, { useDepartmentRotation } from "@/components/home/DeptSwitcher";
 import IsoPoster from "@/components/home/IsoPoster";
 
 const HeroScene = dynamic(() => import("@/components/home/HeroScene"), { ssr: false });
@@ -31,6 +32,7 @@ function capable() {
 
 export default function HeroVisual() {
   const box = useRef<HTMLDivElement>(null);
+  const rot = useDepartmentRotation();
   const [mount3d, setMount3d] = useState(false);
   const [ready, setReady] = useState(false);
   const [visible, setVisible] = useState(true);
@@ -57,21 +59,34 @@ export default function HeroVisual() {
   }, []);
 
   return (
-    <div ref={box} className="relative aspect-[600/340] w-full">
-      <div
-        className="absolute inset-0 transition-opacity duration-700 ease-(--ease-out-expo)"
-        style={{ opacity: ready ? 0 : 1 }}
-      >
-        <IsoPoster animate={!reduced} />
-      </div>
-      {mount3d ? (
+    <div ref={rot.ref} {...rot.pauseProps}>
+      <DeptSwitcher
+        index={rot.index}
+        select={rot.select}
+        reduced={rot.reduced}
+        rotating={rot.rotating}
+        label="Show the demo for a department"
+        className="px-2 sm:px-0"
+      />
+      <p aria-live="polite" className="mt-2 min-h-[1.2rem] px-2 font-mono text-[0.66rem] tracking-wide text-[#a0b0ac] sm:px-0">
+        <span className="text-[#f2f4ee]">{rot.dept.zone}</span> · <span className="text-[#e5b35a]">{rot.dept.standardId}</span> {rot.dept.standardName} · {rot.dept.task} · {rot.dept.target} · photo: {rot.dept.photoGate}
+      </p>
+      <div ref={box} className="relative aspect-[600/340] w-full">
         <div
           className="absolute inset-0 transition-opacity duration-700 ease-(--ease-out-expo)"
-          style={{ opacity: ready ? 1 : 0 }}
+          style={{ opacity: ready ? 0 : 1 }}
         >
-          <HeroScene active={visible} onReady={() => setReady(true)} />
+          <IsoPoster active={reduced ? null : rot.index} animate={!reduced} />
         </div>
-      ) : null}
+        {mount3d ? (
+          <div
+            className="absolute inset-0 transition-opacity duration-700 ease-(--ease-out-expo)"
+            style={{ opacity: ready ? 1 : 0 }}
+          >
+            <HeroScene running={visible} zone={rot.index} onReady={() => setReady(true)} />
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

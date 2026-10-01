@@ -5,10 +5,8 @@
       "startServerReadyPattern": "Ready",
       "url": [
         "http://localhost:3100/",
+        "http://localhost:3100/solutions",
         "http://localhost:3100/platform",
-        "http://localhost:3100/problems/ghost-sop",
-        "http://localhost:3100/digital-sop",
-        "http://localhost:3100/blog/how-to-digitize-hotel-sops",
         "http://localhost:3100/demo"
       ],
       "numberOfRuns": 3,

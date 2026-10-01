@@ -2,7 +2,6 @@ import Markdoc, { type RenderableTreeNode } from "@markdoc/markdoc";
 import Link from "next/link";
 import React, { type ReactNode } from "react";
 import { ButtonLink } from "@/components/ui/primitives";
-import { DEMO_HREF } from "@/lib/demo-mail";
 
 function InternalLink({ href, children }: { href: string; children: ReactNode }) {
   return <Link href={href}>{children}</Link>;
@@ -18,7 +17,7 @@ function DemoCta() {
       </p>
       <p className="mt-2 text-[0.95rem] text-muted">Three interfaces on a live demo property. No feature tour.</p>
       <div className="mt-5">
-        <ButtonLink href={DEMO_HREF} arrow trackLocation="blog-inline">
+        <ButtonLink href="/demo" arrow trackLocation="blog-inline">
           Book a 15-min demo
         </ButtonLink>
       </div>

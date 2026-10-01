@@ -1,22 +1,22 @@
 # SEO report: misehotel.com
 
-Generated 2026-09-29 by `pnpm seo:report` against a local production build (57 URLs from the sitemap, drafts included because this is not a production build).
+Generated 2026-10-01 by `pnpm seo:report` against a local production build (66 URLs from the sitemap, drafts included because this is not a production build).
 
 **Keyword checks** use the page's primary keyword (the first `keywords` meta entry, set in `content/`). A keyword counts as present when its words appear in order (so "hotel SOP software India" matches "Hotel SOP software built in India"). **URL slugs** were fixed by the brief's information architecture, so they are not scored here. Utility pages (legal, contact, demo, author and category archives, founder profiles) are listed but not scored for keyword placement.
 
 ## Summary
 
-- URLs checked: **57**
+- URLs checked: **66**
 - Keyword placement issues on scored pages: **0**
 - Description length / CTA issues: **0**
 
 ### Homepage copy budget
 
-- Body copy in `<main>` at 1440px: **634 words** (rendered text; excludes collapsed FAQ answers, aria-hidden decorative duplicates such as the marquee copies and phone mockup, and the demo-data ticker and dashboard, which are labelled data rather than copy)
-- Words inside the eight FAQ accordion items (questions + collapsed answers): **223**
-- Words in the demo service-record ticker (data labels): **78**
-- Per section: Hotel SOP software that runs inside ever 44 · Hospitality clients 19 · Hotel audit readiness, answered in one f 80 · How Mise turns hotel SOPs into audit-rea 61 · Hotel operations problems Mise solves 52 · Five places. One hotel operations platfo 52 · A hotel staff app, manager dashboard and 47 · The hotel GM dashboard, live as the shif 20 · Runs on what your hotel already has 18 · What staff turnover costs your hotel 42 · Hotel operations software for every deci 44 · Mise founders and advisory board 76 · Hotel SOP software FAQ 50 · See it on a real shift. No feature tour. 29
-- Section headlines (H2) and word counts: Hospitality clients (2) · Hotel audit readiness, answered in one filter (7) · How Mise turns hotel SOPs into audit-ready records (8) · Hotel operations problems Mise solves (5) · Five places. One hotel operations platform. (6) · A hotel staff app, manager dashboard and standards workspace (9) · The hotel GM dashboard, live as the shift runs (9) · Runs on what your hotel already has (7) · What staff turnover costs your hotel (6) · Hotel operations software for every decision-maker (6) · Mise founders and advisory board (5) · Hotel SOP software FAQ (4) · See it on a real shift. No feature tour. (9)
+- Body copy in `<main>` at 1440px: **615 words** (rendered text; excludes collapsed FAQ answers, aria-hidden decorative duplicates such as the marquee copies and phone mockup, and the demo-data ticker and dashboard, which are labelled data rather than copy)
+- Words inside the eight FAQ accordion items (questions + collapsed answers): **238**
+- Words in the demo service-record ticker (data labels): **91**
+- Per section: The SOP app for hotels. Every department 48 · How Mise deploys 10 · Hotel audit readiness, answered in one f 40 · How Mise turns hotel SOPs into audit-rea 61 · Hotel operations problems Mise solves 52 · Five places. One SOP app for hotels. 53 · A hotel staff app, manager dashboard and 47 · The hotel GM dashboard, live as the shif 22 · Runs on what your hotel already has 18 · What staff turnover costs your hotel 42 · Hotel operations software for every deci 44 · Mise founders and advisory board 76 · Hotel SOP and operations guides 23 · Hotel SOP software FAQ 50 · See it on a real shift. No feature tour. 29
+- Section headlines (H2) and word counts: How Mise deploys (3) · Hotel audit readiness, answered in one filter (7) · How Mise turns hotel SOPs into audit-ready records (8) · Hotel operations problems Mise solves (5) · Five places. One SOP app for hotels. (7) · A hotel staff app, manager dashboard and standards workspace (9) · The hotel GM dashboard, live as the shift runs (9) · Runs on what your hotel already has (7) · What staff turnover costs your hotel (6) · Hotel operations software for every decision-maker (6) · Mise founders and advisory board (5) · Hotel SOP and operations guides (5) · Hotel SOP software FAQ (4) · See it on a real shift. No feature tour. (9)
 
 ### Open issues
 
@@ -28,7 +28,7 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 
 | URL | Title | H1 | Primary keyword | Title | Desc | H1 | First 100 | H2 | Alt | OG | Desc len |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| `/` | Hotel SOP Software for Service Execution \| Mise | Hotel SOP software that runs inside every shift. | hotel SOP software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 151 |
+| `/` | Hotel SOP App for Every Department \| Mise | The SOP app for hotels. Every department, every shift. | SOP app for hotels | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 158 |
 | `/platform` | Hotel Operations Software: Staff, Manager, Standards \| Mise | Hotel operations software with three interfaces and one service record | hotel operations software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 155 |
 | `/how-it-works` | How Hotel SOP Management Software Works \| Mise | How hotel SOP management software turns standards into evidence | hotel SOP management software | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 158 |
 | `/problems` | Hotel Operations Problems: The Six-Pain Chain \| Mise | Hotel operations problems that compound, shift after shift | hotel operations problems | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
@@ -38,10 +38,14 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/problems/attrition-bleed` | Hotel Staff Turnover: Protect Service Quality \| Mise | The attrition bleed: keeping standards when hotel staff turnover is high | hotel staff turnover | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 146 |
 | `/problems/star-rating-ceiling` | Hotel Service Consistency Software: Lift Ratings \| Mise | The star rating ceiling: hotel service consistency software for every shift | hotel service consistency software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 140 |
 | `/problems/audit-ambush` | Hotel Audit Problems: End the Pre-Audit Scramble \| Mise | The audit ambush: solving hotel audit problems before the auditor arrives | hotel audit problems | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 146 |
-| `/solutions` | Hotel SOP Software for Every Department \| Mise | Hotel SOP software for every department and property type | hotel SOP software for every department | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 156 |
-| `/solutions/housekeeping` | Housekeeping SOP App with Photo Evidence \| Mise | The housekeeping SOP app that proves every room is guest-ready | housekeeping SOP app | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 142 |
+| `/solutions` | Hotel SOP App for Every Department \| Mise | Hotel SOP app for every department | hotel SOP app | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
 | `/solutions/front-office` | Front Desk SOP Software for Hotels \| Mise | Front desk SOP software for consistent arrivals and service recovery | front desk SOP software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 141 |
+| `/solutions/housekeeping` | Housekeeping SOP App with Photo Evidence \| Mise | The housekeeping SOP app that proves every room is guest-ready | housekeeping SOP app | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 142 |
 | `/solutions/food-and-beverage` | Hotel F&B SOP Software for Outlets & Kitchens \| Mise | Hotel F&B SOP software for outlets, kitchens and banquets | hotel F&B SOP software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 154 |
+| `/solutions/kitchen` | Hotel Kitchen SOP Software & Hygiene Checklists \| Mise | Hotel kitchen SOP software that logs every check with evidence | hotel kitchen SOP software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 147 |
+| `/solutions/engineering` | Hotel Maintenance Task Tracking & PM Checklists \| Mise | Hotel maintenance task tracking, from complaint to fixed and tested | hotel maintenance task tracking | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 153 |
+| `/solutions/security-and-safety` | Hotel Security Round App & Fire Safety Checklists \| Mise | The hotel security round app that proves every exit was checked | hotel security round app | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 158 |
+| `/solutions/spa-and-wellness` | Spa SOP Software for Hotels \| Mise | Spa SOP software for hotels: every treatment room reset on time | spa SOP software for hotels | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 147 |
 | `/solutions/hotel-chains` | Multi-Property Hotel SOP Software for Groups \| Mise | Multi-property hotel SOP software for groups and chains | multi-property hotel SOP software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 155 |
 | `/solutions/boutique-hotels` | Digital SOP for Boutique Hotels \| Mise | A digital SOP for boutique hotels that makes signature service repeatable | digital SOP for boutique hotels | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 154 |
 | `/for` | Hotel Operations Software for Hotel Leaders \| Mise | Hotel operations software for hotel leaders accountable for service | hotel operations software for hotel leaders | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 157 |
@@ -71,6 +75,8 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/glossary/audit-ambush` | What Is an Audit ambush? \| Mise Glossary | What is an audit ambush? | audit ambush | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 158 |
 | `/glossary/audit-ready` | What Is Audit-ready? \| Mise Glossary | What is audit-ready? | audit-ready | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 155 |
 | `/glossary/digital-sop` | What Is a Digital SOP? \| Mise Glossary | What is a digital SOP? | digital sop | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 142 |
+| `/glossary/sop-app-for-hotels` | What Is SOP app for hotels? \| Mise Glossary | What is SOP app for hotels? | sop app for hotels | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
+| `/glossary/departmental-sop` | What Is Departmental SOP? \| Mise Glossary | What is departmental SOP? | departmental sop | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 140 |
 | `/glossary/mise-en-place` | What Is Mise en place? \| Mise Glossary | What is mise en place? | mise en place | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
 | `/faq` | Mise FAQ: Hotel SOP Software Questions Answered \| Mise | Mise FAQ: hotel SOP software, answered | Mise FAQ | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 145 |
 | `/about` | About Mise Hospitality: Mise by Focus Realm \| Mise | About Mise hospitality: every shift, five-star | Mise hospitality | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 155 |
@@ -78,10 +84,13 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/team/ali-electricwala` | Ali Electricwala, Co-Founder & COO of Mise | Ali Electricwala | Ali Electricwala | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 150 |
 | `/team/aditya-mishra` | Aditya Mishra, Co-Founder & CTO of Mise | Aditya Mishra | Aditya Mishra | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 149 |
 | `/advisors` | Mise Advisory Board: Hospitality Advisors \| Mise | The Mise advisory board | Mise advisory board | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 145 |
-| `/blog` | Mise Blog: Hotel SOP & Operations Guides | The Mise blog: hotel SOPs, standards and service execution | Mise blog | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 143 |
+| `/blog` | Mise Blog: Hotel SOP & Operations Guides | The Mise blog: hotel SOPs, standards and service execution | Mise blog | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
 | `/demo` | Book a 15-Minute Mise Demo \| Mise | Book a 15-minute Mise demo | Mise demo | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 154 ⚠ |
 | `/contact` | Contact Mise: Hotel SOP Software Team \| Mise | Contact Mise | contact Mise | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 154 |
-| `/security` | Security & Data Handling \| Mise | Security and data handling at Mise | Mise security | ✗ | ✗ | ✗ | ✗ | ✗ | – | ✗ | 153 |
-| `/privacy` | Privacy Policy \| Mise | Privacy policy | Mise privacy policy | ✗ | ✗ | ✗ | ✗ | ✗ | – | ✗ | 142 |
-| `/terms` | Terms of Use \| Mise | Terms of use | Mise terms of use | ✗ | ✗ | ✗ | ✗ | ✗ | – | ✗ | 145 |
-| `/cookies` | Cookie Policy \| Mise | Cookie policy | Mise cookie policy | ✗ | ✗ | ✗ | ✗ | ✗ | – | ✗ | 143 |
+| `/security` | Security & Data Handling \| Mise | Security and data handling at Mise | Mise security | ✓ | ✗ | ✓ | ✓ | ✗ | – | ✓ | 153 |
+| `/privacy` | Privacy Policy \| Mise | Privacy policy | Mise privacy policy | ✓ | ✗ | ✗ | ✓ | ✗ | – | ✓ | 142 |
+| `/terms` | Terms of Use \| Mise | Terms of use | Mise terms of use | ✓ | ✗ | ✗ | ✓ | ✗ | – | ✓ | 145 |
+| `/cookies` | Cookie Policy \| Mise | Cookie policy | Mise cookie policy | ✓ | ✗ | ✗ | ✗ | ✗ | – | ✓ | 143 |
+| `/blog/one-sop-app-every-hotel-department` | One SOP App for Every Hotel Department \| Mise | One SOP app for every hotel department: front office to engineering | SOP app for hotels | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 153 |
+| `/blog/category/hotel-operations` | Hotel operations Articles \| Mise Blog | Hotel operations: articles from the Mise blog | hotel operations | ✓ | ✗ | ✓ | ✓ | ✗ | – | ✓ | 123 |
+| `/blog/author/sehej-sharma` | Sehej Sharma: Articles on the Mise Blog | Articles by Sehej Sharma | Sehej Sharma | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 123 |

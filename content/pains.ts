@@ -264,7 +264,7 @@ If any of these sound familiar, the [audit ambush](/problems/audit-ambush) is us
     ],
     related: [
       { href: "/digital-sop", label: "Digitize hotel SOPs, step by step", note: "From binder to timed task." },
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "Where most pilots start." },
+      { href: "/solutions", label: "Solutions by department", note: "Every department, one app." },
       { href: "/compare/sop-software-vs-checklist-app", label: "Hotel SOP software vs checklist apps", note: "Why ticking is not executing." },
       { href: "/problems/invisible-performance-gap", label: "Next in the chain: the invisible performance gap", note: "When execution leaves no trace." },
     ],
@@ -601,7 +601,7 @@ Consistent, recorded execution also means you already hold the evidence an audit
       },
       {
         q: "Which departments does consistency software cover?",
-        a: "Most pilots start in housekeeping because room readiness is easy to evidence. The same approach applies to front office, food and beverage and other departments that run repeatable standards.",
+        a: "Any department that runs repeatable standards: front office, housekeeping, F&B, kitchen, engineering, security and spa. A pilot starts with the department where standards slip most.",
       },
     ],
     related: [

@@ -30,10 +30,10 @@ export const brand = {
    * Do not paraphrase it anywhere else.
    */
   definition:
-    "Mise is a service execution platform for hotels. It turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.",
-  /** Hero sub-line: the definition, shortened to 23 words. */
+    "Mise is the SOP app for hotels: a service execution platform that turns every department's SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and builds an audit-ready service record. Not an LMS. No PMS integration required.",
+  /** Hero sub-line: names the departments. */
   definitionShort:
-    "Mise turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as work happens, and builds an audit-ready service record.",
+    "Front office, housekeeping, F&B, kitchen, engineering, security and spa: every department's SOPs become timed tasks on staff phones, with photo evidence and one audit-ready service record.",
   spine: ["Standard", "Timed task", "Evidence", "Service record"] as const,
   nameOrigin:
     "Mise comes from mise en place, the kitchen discipline of having everything in its place before service starts. Mise brings that discipline to every department, on every shift.",
@@ -159,10 +159,27 @@ export const primaryNav = [
   { href: "/platform", label: "Platform" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/problems", label: "Problems" },
-  { href: "/solutions/housekeeping", label: "Solutions", match: "/solutions" },
+  { href: "/solutions", label: "Solutions", match: "/solutions", menu: true },
   { href: "/blog", label: "Blog" },
   { href: "/about", label: "About" },
 ] as const;
+
+/** The Solutions mega-menu (desktop) and accordion (mobile). Order matters: housekeeping is one of seven. */
+export const solutionsMenu = {
+  departments: [
+    { href: "/solutions/front-office", label: "Front office" },
+    { href: "/solutions/housekeeping", label: "Housekeeping" },
+    { href: "/solutions/food-and-beverage", label: "F&B service" },
+    { href: "/solutions/kitchen", label: "Kitchen" },
+    { href: "/solutions/engineering", label: "Engineering & maintenance" },
+    { href: "/solutions/security-and-safety", label: "Security & safety" },
+    { href: "/solutions/spa-and-wellness", label: "Spa & wellness" },
+  ],
+  propertyTypes: [
+    { href: "/solutions/hotel-chains", label: "Hotel chains" },
+    { href: "/solutions/boutique-hotels", label: "Boutique hotels" },
+  ],
+} as const;
 
 export type FooterLink = { href: string; label: string; external?: boolean };
 
@@ -177,19 +194,17 @@ export const footerColumns: { heading: string; links: FooterLink[] }[] = [
       { href: "/platform#service-record", label: "Service record" },
       { href: "/how-it-works", label: "How it works" },
       { href: "/roi", label: "ROI calculator" },
+      { href: "/for/hr-directors", label: "For HR Directors" },
+      { href: "/for/general-managers", label: "For General Managers" },
+      { href: "/for/learning-and-development", label: "For L&D Heads" },
     ],
   },
   {
     heading: "Solutions",
     links: [
-      { href: "/solutions/housekeeping", label: "Housekeeping" },
-      { href: "/solutions/front-office", label: "Front office" },
-      { href: "/solutions/food-and-beverage", label: "Food & beverage" },
-      { href: "/solutions/hotel-chains", label: "Hotel chains" },
-      { href: "/solutions/boutique-hotels", label: "Boutique hotels" },
-      { href: "/for/hr-directors", label: "For HR Directors" },
-      { href: "/for/general-managers", label: "For General Managers" },
-      { href: "/for/learning-and-development", label: "For L&D Heads" },
+      ...solutionsMenu.departments,
+      ...solutionsMenu.propertyTypes,
+      { href: "/solutions", label: "All solutions →" },
     ],
   },
   {

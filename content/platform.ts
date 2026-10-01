@@ -23,7 +23,7 @@ export const roleInterfaces: RoleInterface[] = [
     keyword: "Hotel staff app",
     device: "phone",
     posture: "Mobile-first · one thumb · cheap Android · bright daylight",
-    who: "Room attendants, front office, F&B and every team doing the work.",
+    who: "Front desk agents, room attendants, servers, cooks, technicians, security officers and therapists.",
     persona: "Maya Fernando, room attendant",
     headline: "The hotel staff app built around the next timed task",
     summary: "The standard, on the clock, in one hand. The timed task is the interface.",
@@ -165,14 +165,22 @@ export const platformMeta = {
     "Mise hotel operations software: a staff app for timed tasks, a manager dashboard and a standards workspace, sharing one service record. Book a 15-min demo.",
   h1: "Hotel operations software with three interfaces and one service record",
   primaryKeyword: "hotel operations software",
+  metaKeywords: [
+    "hotel SOP app",
+    "SOP app for hotels",
+    "hotel operations software",
+    "hotel SOP management system",
+    "hotel department SOP software",
+    "hotel operations task management",
+  ],
   secondaryKeywords: [
     "hotel SOP management system",
     "hotel staff app",
     "hotel manager dashboard",
-    "housekeeping task tracking software",
+    "hotel operations task management",
   ],
   eyebrow: "The platform",
-  updated: "2026-09-29",
+  updated: "2026-10-01",
   priority: 0.9,
 };
 
@@ -186,8 +194,8 @@ export const platformFaqs: Faq[] = [
     a: "Yes, and more than storage. As a hotel SOP management system, Mise holds versioned standards, but its core job is execution: each SOP runs as a timed task on staff phones, with photo evidence and sign-off, building an audit-ready service record.",
   },
   {
-    q: "Does Mise do housekeeping task tracking?",
-    a: "Yes. Housekeeping task tracking is where most pilots start. Each room runs as a timed task with steps, a target time and photo gates, and the manager dashboard shows progress, blocked rooms and missing evidence by floor.",
+    q: "Which hotel departments can use Mise?",
+    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own SOPs as timed tasks with photo evidence in the same app, writing to one service record.",
   },
 ];
 
@@ -258,6 +266,6 @@ export const howItWorksFaqs: Faq[] = [
   },
   {
     q: "What does a pilot look like?",
-    a: "One property, usually starting in housekeeping. We convert your most important standards into timed tasks with you, your team runs them on real shifts, and the service record fills with evidence from the first days. Scope and pricing are agreed after the demo.",
+    a: "One property, starting with the department where standards slip most: front office, housekeeping, F&B, kitchen or engineering. We convert your most important standards into timed tasks with you, your team runs them on real shifts, and the service record fills with evidence from the first days. Scope and pricing are agreed after the demo.",
   },
 ];

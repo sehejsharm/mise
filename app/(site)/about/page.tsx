@@ -236,10 +236,10 @@ export default function AboutPage() {
               <h3 className="font-display text-[1.1rem] font-semibold text-ink">Boilerplate</h3>
               <p className="mt-3 text-[0.92rem] leading-relaxed text-muted">{boilerplate}</p>
               <p className="mt-3 text-[0.85rem] text-faint">
-                Press contact:{" "}
-                <a href={`mailto:${contact.email}`} data-track-location="media-kit" className="text-ink underline decoration-gold/60 underline-offset-4">
-                  {contact.email}
-                </a>
+                Press contact: <span className="text-ink">{contact.email}</span> or the{" "}
+                <Link href="/contact" className="text-ink underline decoration-gold/60 underline-offset-4">
+                  contact page
+                </Link>
               </p>
             </div>
             <div className="rounded-2xl border border-line bg-surface/60 p-6">

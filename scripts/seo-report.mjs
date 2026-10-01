@@ -27,7 +27,12 @@ function has(text, keyword) {
   const tokens = k.split(" ");
   let i = 0;
   for (const word of t.split(" ")) if (word === tokens[i] || word === `${tokens[i]}s`) i++;
-  return i === tokens.length;
+  if (i === tokens.length) return true;
+  // Word-order variants count, as they do for search engines: "Hotel SOP App" matches "SOP app for hotels".
+  const stop = new Set(["for", "the", "a", "an", "of", "in", "to", "and", "&"]);
+  const stem = (w) => w.replace(/'s$/, "").replace(/s$/, "");
+  const words = new Set(t.split(" ").map(stem));
+  return tokens.filter((w) => !stop.has(w)).every((w) => words.has(stem(w)));
 }
 const mark = (b) => (b ? "✓" : "✗");
 
@@ -41,7 +46,9 @@ for (const p of paths) {
   const doc = parse(html);
   const title = doc.querySelector("title")?.text.trim() ?? "";
   const desc = doc.querySelector('meta[name="description"]')?.getAttribute("content") ?? "";
-  const kw = (doc.querySelector('meta[name="keywords"]')?.getAttribute("content") ?? "").split(",")[0].trim();
+  const kw =
+    doc.querySelector('meta[name="mise:primary-keyword"]')?.getAttribute("content") ??
+    (doc.querySelector('meta[name="keywords"]')?.getAttribute("content") ?? "").split(",")[0].trim();
   const h1 = doc.querySelector("h1")?.text.trim() ?? "";
   const ogTitle = doc.querySelector('meta[property="og:title"]')?.getAttribute("content") ?? "";
   const main = doc.querySelector("main");

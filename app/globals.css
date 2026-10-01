@@ -272,6 +272,26 @@
     fill: var(--gold);
   }
 }
+@keyframes zone-glow {
+  from {
+    fill: var(--iso-room);
+  }
+  to {
+    fill: var(--gold);
+  }
+}
+/* Department switcher: the active pill's progress bar fills over one interval. */
+@keyframes dept-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.dept-progress {
+  animation: dept-progress 4200ms linear both;
+}
 @keyframes stream-up {
   0% {
     transform: translate3d(0, 0, 0);
@@ -539,5 +559,17 @@
 @layer base {
   .grid > * {
     min-width: 0;
+  }
+}
+
+/* Department switcher content swap. */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }

@@ -280,6 +280,54 @@ Read the full guide to [digitizing hotel SOPs](/digital-sop).
     ],
   },
   {
+    slug: "sop-app-for-hotels",
+    term: "SOP app for hotels",
+    short:
+      "An SOP app for hotels is a mobile app that delivers a hotel's standard operating procedures to staff as tasks to carry out, for every department, and records evidence that each standard was followed.",
+    description:
+      "An SOP app for hotels runs every department's standards as tasks on staff phones and records evidence that each one was followed. Book a 15-min demo.",
+    body: `
+An SOP app for hotels puts the standard where the work happens: on the phone of the person at the front desk, in the guest room, at the pass, in the plant room or on the night round. Instead of a binder or a PDF, each SOP arrives as a [timed task](/glossary/timed-task) with its steps on screen and evidence captured as it is done.
+
+## What makes it different from a document library
+
+A document library stores SOPs. An SOP app for hotels runs them. The difference shows in what is left afterwards: a library leaves a file that was opened, if anyone checks; an SOP app leaves a [service record](/glossary/service-record) of who did which standard, when, against what target time, with photos and sign-off.
+
+## One app across departments
+
+The same mechanism works for every department: front office arrivals, housekeeping room resets, F&B service, kitchen logs, engineering response, security rounds and spa turnovers. Only the content of the standards changes. See [solutions by department](/solutions).
+`,
+    related: [
+      { href: "/solutions", label: "Hotel SOP app for every department" },
+      { href: "/glossary/departmental-sop", label: "Departmental SOP" },
+      { href: "/platform", label: "The Mise platform" },
+    ],
+  },
+  {
+    slug: "departmental-sop",
+    term: "Departmental SOP",
+    short:
+      "A departmental SOP is a standard operating procedure owned by one hotel department, such as front office, housekeeping, kitchen or engineering, describing how a repeatable task in that department must be done.",
+    description:
+      "A departmental SOP is a hotel standard owned by one department, from front office to engineering, for a repeatable task. Book a 15-min demo.",
+    body: `
+Hotels organise their standards by department because each department owns different work: arrivals at the front desk, room resets in housekeeping, cold-chain checks in the kitchen, fault response in engineering, rounds in security. Each of these is a departmental SOP.
+
+## Why departmental SOPs drift apart
+
+When each department keeps its SOPs in its own binder or shared folder, they drift in format, in version and in how they are checked. A group or general manager ends up with seven different ways of knowing whether standards were followed, and often none that produces evidence.
+
+## Running departmental SOPs in one system
+
+Running every departmental SOP the same way, as [timed tasks](/glossary/timed-task) with [photo gates](/glossary/photo-gate) and sign-off, keeps each department's content its own while giving the property one [service record](/glossary/service-record). See the [hotel SOP app for every department](/solutions).
+`,
+    related: [
+      { href: "/glossary/sop-app-for-hotels", label: "SOP app for hotels" },
+      { href: "/solutions", label: "Solutions by department" },
+      { href: "/digital-sop", label: "Digitize hotel SOPs" },
+    ],
+  },
+  {
     slug: "mise-en-place",
     term: "Mise en place",
     short:
@@ -291,7 +339,7 @@ Professional kitchens run on mise en place: every ingredient prepared, every too
 
 ## From the kitchen to every department
 
-Mise brings that discipline to the rest of the hotel. Housekeeping, front office, food and beverage and every other department get their standards in place before and during service: the steps on screen, the evidence captured, the record kept. Every shift, five-star.
+Mise brings that discipline to the rest of the hotel. Front office, housekeeping, F&B, kitchen, engineering, security, spa and every other department get their standards in place before and during service: the steps on screen, the evidence captured, the record kept. Every shift, five-star.
 
 Read [the story behind Mise](/about).
 `,
@@ -314,5 +362,5 @@ export const glossaryHubMeta = {
   h1: "Hotel service execution glossary: key terms defined",
   primaryKeyword: "hotel service execution glossary",
   eyebrow: "Glossary",
-  updated: "2026-09-29",
+  updated: "2026-10-01",
 };

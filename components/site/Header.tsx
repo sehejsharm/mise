@@ -6,13 +6,16 @@ import Magnetic from "@/components/fx/Magnetic";
 import { Icon } from "@/components/ui/Icon";
 import { Logo } from "@/components/site/Logo";
 import ThemeToggle from "@/components/site/ThemeToggle";
-import { primaryNav } from "@/content/site";
-import { DEMO_HREF } from "@/lib/demo-mail";
+import { primaryNav, solutionsMenu } from "@/content/site";
 
 export default function Header() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mega, setMega] = useState(false);
+  // Hover opens the menu; a click only closes a menu that a click opened.
+  const megaByClick = useRef(false);
+  const [mobileSolutions, setMobileSolutions] = useState(false);
   const bar = useRef<HTMLDivElement>(null);
   const menuButton = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLDivElement>(null);
@@ -40,8 +43,18 @@ export default function Header() {
     };
   }, []);
 
-  // Close the mobile menu on navigation.
-  useEffect(() => setOpen(false), [pathname]);
+  // Close menus on navigation.
+  useEffect(() => {
+    setOpen(false);
+    setMega(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!mega) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setMega(false);
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [mega]);
 
   useEffect(() => {
     if (!open) return;
@@ -102,6 +115,82 @@ export default function Header() {
               <ul className="flex items-center gap-1">
                 {primaryNav.map((item) => {
                   const active = isActive(item.href, "match" in item ? item.match : undefined);
+                  if ("menu" in item && item.menu) {
+                    return (
+                      <li
+                        key={item.href}
+                        className="relative flex items-center"
+                        onMouseEnter={() => setMega(true)}
+                        onMouseLeave={() => {
+                          megaByClick.current = false;
+                          setMega(false);
+                        }}
+                        onBlur={(e) => {
+                          if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setMega(false);
+                        }}
+                      >
+                        <Link
+                          href={item.href}
+                          aria-current={pathname === item.href ? "page" : undefined}
+                          className={`rounded-full py-2 pr-1 pl-3.5 text-[0.92rem] transition-colors hover:text-ink ${active ? "text-ink" : "text-muted"}`}
+                        >
+                          {item.label}
+                        </Link>
+                        <button
+                          type="button"
+                          aria-expanded={mega}
+                          aria-controls="solutions-menu"
+                          aria-label="Show solutions by department and property type"
+                          onClick={() => {
+                            const close = mega && megaByClick.current;
+                            megaByClick.current = !close;
+                            setMega(!close);
+                          }}
+                          className="grid size-7 place-items-center rounded-full text-muted transition-colors hover:text-ink"
+                        >
+                          <Icon name="chevronDown" size={14} className={`transition-transform duration-300 ${mega ? "rotate-180" : ""}`} />
+                        </button>
+                        <div
+                          id="solutions-menu"
+                          hidden={!mega}
+                          className="absolute top-full left-1/2 w-[34rem] -translate-x-1/2 pt-3"
+                        >
+                          <div className="grid grid-cols-[1.3fr_1fr] gap-6 rounded-2xl border border-line-strong bg-surface p-6 shadow-float">
+                            <div>
+                              <p className="font-mono text-[0.7rem] tracking-[0.14em] text-gold-ink uppercase">By department</p>
+                              <ul className="mt-3 space-y-0.5">
+                                {solutionsMenu.departments.map((d) => (
+                                  <li key={d.href}>
+                                    <Link href={d.href} className="block rounded-lg px-2 py-1.5 text-[0.92rem] text-ink transition-colors hover:bg-surface-2">
+                                      {d.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            <div className="flex flex-col">
+                              <p className="font-mono text-[0.7rem] tracking-[0.14em] text-gold-ink uppercase">By property type</p>
+                              <ul className="mt-3 space-y-0.5">
+                                {solutionsMenu.propertyTypes.map((d) => (
+                                  <li key={d.href}>
+                                    <Link href={d.href} className="block rounded-lg px-2 py-1.5 text-[0.92rem] text-ink transition-colors hover:bg-surface-2">
+                                      {d.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                              <Link
+                                href="/solutions"
+                                className="mt-auto inline-flex items-center gap-1.5 px-2 pt-4 text-[0.9rem] font-medium text-gold-ink"
+                              >
+                                All solutions <Icon name="arrowRight" size={14} />
+                              </Link>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    );
+                  }
                   return (
                     <li key={item.href}>
                       <Link
@@ -120,7 +209,7 @@ export default function Header() {
               <ThemeToggle className="hidden sm:grid" />
               <Magnetic className="inline-flex">
                 <Link
-                  href={DEMO_HREF}
+                  href="/demo"
                   data-track="demo_cta_click"
                   data-track-location="header"
                   className="inline-flex h-10 items-center gap-2 rounded-full bg-gold px-4 text-[0.9rem] font-medium whitespace-nowrap text-on-gold shadow-[0_8px_30px_-10px_rgb(229_179_90/0.7)] transition-colors hover:bg-[#eec27a] sm:px-4.5"
@@ -157,22 +246,64 @@ export default function Header() {
       >
         <nav aria-label="Mobile">
           <ul className="space-y-1">
-            {[...primaryNav, { href: "/faq", label: "FAQ" }, { href: "/contact", label: "Contact" }].map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="flex items-center justify-between border-b border-line py-4 font-display text-[1.6rem] font-medium text-ink"
-                >
-                  {item.label}
-                  <Icon name="arrowRight" size={20} className="text-gold-ink" />
-                </Link>
-              </li>
-            ))}
+            {[...primaryNav, { href: "/faq", label: "FAQ" }, { href: "/contact", label: "Contact" }].map((item) =>
+              "menu" in item && item.menu ? (
+                <li key={item.href} className="border-b border-line">
+                  <div className="flex items-center justify-between">
+                    <Link href={item.href} className="flex-1 py-4 font-display text-[1.6rem] font-medium text-ink">
+                      {item.label}
+                    </Link>
+                    <button
+                      type="button"
+                      aria-expanded={mobileSolutions}
+                      aria-controls="mobile-solutions"
+                      aria-label="Show solutions by department and property type"
+                      onClick={() => setMobileSolutions((v) => !v)}
+                      className="grid size-11 place-items-center rounded-full text-gold-ink"
+                    >
+                      <Icon name="chevronDown" size={20} className={`transition-transform duration-300 ${mobileSolutions ? "rotate-180" : ""}`} />
+                    </button>
+                  </div>
+                  <div id="mobile-solutions" hidden={!mobileSolutions} className="pb-4">
+                    <p className="font-mono text-[0.7rem] tracking-[0.14em] text-faint uppercase">By department</p>
+                    <ul className="mt-2 grid grid-cols-2 gap-x-4">
+                      {solutionsMenu.departments.map((d) => (
+                        <li key={d.href}>
+                          <Link href={d.href} className="block py-2 text-[1rem] text-ink">
+                            {d.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="mt-4 font-mono text-[0.7rem] tracking-[0.14em] text-faint uppercase">By property type</p>
+                    <ul className="mt-2 grid grid-cols-2 gap-x-4">
+                      {solutionsMenu.propertyTypes.map((d) => (
+                        <li key={d.href}>
+                          <Link href={d.href} className="block py-2 text-[1rem] text-ink">
+                            {d.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+              ) : (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="flex items-center justify-between border-b border-line py-4 font-display text-[1.6rem] font-medium text-ink"
+                  >
+                    {item.label}
+                    <Icon name="arrowRight" size={20} className="text-gold-ink" />
+                  </Link>
+                </li>
+              ),
+            )}
           </ul>
         </nav>
         <div className="mt-8 flex items-center gap-3">
           <Link
-            href={DEMO_HREF}
+            href="/demo"
             data-track="demo_cta_click"
             data-track-location="mobile-menu"
             className="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-gold font-medium text-on-gold"

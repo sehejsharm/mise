@@ -7,6 +7,7 @@
  * no pinning and no scroll-jacking.
  */
 import { useEffect, useRef, useState } from "react";
+import DeptSwitcher, { useDepartmentRotation } from "@/components/home/DeptSwitcher";
 import LoopPhone from "@/components/home/LoopPhone";
 import { PhoneFrame } from "@/components/ui/DeviceFrame";
 import { ArrowLink, SectionHeading } from "@/components/ui/primitives";
@@ -17,6 +18,7 @@ export default function HowItWorksPinned() {
   const track = useRef<HTMLDivElement>(null);
   const [step, setStep] = useState(0);
   const [pinned, setPinned] = useState(false);
+  const rot = useDepartmentRotation(6000);
 
   useEffect(() => {
     const mq = matchMedia("(min-width: 1024px) and (prefers-reduced-motion: no-preference)");
@@ -77,6 +79,16 @@ export default function HowItWorksPinned() {
                 eyebrow="One loop, four moves"
                 title="How Mise turns hotel SOPs into audit-ready records"
               />
+              <div ref={rot.ref} {...rot.pauseProps} data-copy-budget="exclude" className="mt-6">
+                <DeptSwitcher
+                  index={rot.index}
+                  select={rot.select}
+                  reduced={rot.reduced}
+                  rotating={rot.rotating}
+                  label="Show the loop for a department"
+                  tone="theme"
+                />
+              </div>
               <ol className="mt-10 space-y-3">
                 {loopSteps.map((s, i) => {
                   const active = step === i;
@@ -98,7 +110,7 @@ export default function HowItWorksPinned() {
                       {!pinned ? (
                         <div className="mt-5 flex h-[440px] justify-center overflow-hidden lg:hidden">
                           <PhoneFrame className="origin-top scale-[0.8]">
-                            <LoopPhone step={i} />
+                            <LoopPhone step={i} dept={rot.dept} />
                           </PhoneFrame>
                         </div>
                       ) : null}
@@ -114,7 +126,7 @@ export default function HowItWorksPinned() {
               <div className="relative">
                 <div aria-hidden="true" className="absolute -inset-10 rounded-full bg-[radial-gradient(circle,rgb(229_179_90/0.18),transparent_65%)]" />
                 <PhoneFrame className="relative">
-                  <LoopPhone step={step} />
+                  <LoopPhone step={step} dept={rot.dept} />
                 </PhoneFrame>
                 <div className="mt-5 flex justify-center gap-2" aria-hidden="true">
                   {loopSteps.map((s, i) => (

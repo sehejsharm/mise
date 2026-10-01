@@ -5,7 +5,6 @@ import NewsletterForm from "@/components/site/NewsletterForm";
 import ThemeToggle from "@/components/site/ThemeToggle";
 import { Icon } from "@/components/ui/Icon";
 import { brand, contact, footerColumns, legalNav } from "@/content/site";
-import { DEMO_HREF } from "@/lib/demo-mail";
 
 const linkClass = "text-[0.9rem] text-muted transition-colors hover:text-ink";
 
@@ -20,8 +19,7 @@ export default function Footer() {
           <div className="max-w-md">
             <Logo />
             <p className="mt-5 text-[0.98rem] leading-relaxed text-muted">
-              {brand.name} is a service execution platform for hotels: SOPs become timed tasks on staff phones, and
-              every shift builds an audit-ready service record.
+              {brand.definition}
             </p>
           </div>
           <NewsletterForm />
@@ -54,7 +52,7 @@ export default function Footer() {
             <p className="eyebrow !text-faint">Get started</p>
             <ul className="mt-4 space-y-2.5">
               <li>
-                <Link href={DEMO_HREF} data-track="demo_cta_click" data-track-location="footer" className="text-[0.9rem] font-medium text-gold-ink hover:text-ink">
+                <Link href="/demo" data-track="demo_cta_click" data-track-location="footer" className="text-[0.9rem] font-medium text-gold-ink hover:text-ink">
                   Book a 15-min demo
                 </Link>
               </li>

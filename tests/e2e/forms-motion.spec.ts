@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import { rejectConsentUpfront, stubGoogle } from "./helpers";
 
-test("the demo form validates and opens a prefilled email to hello@misehotel.com", async ({ page }) => {
+test("the demo form validates and submits to the lead API", async ({ page }) => {
   await stubGoogle(page);
   await rejectConsentUpfront(page);
   await page.goto("/demo");
@@ -16,22 +16,48 @@ test("the demo form validates and opens a prefilled email to hello@misehotel.com
   await page.getByLabel("Your role").selectOption("General Manager");
   await page.getByLabel("Number of properties").selectOption("2–5");
   await page.getByLabel("Anything we should know?").fill("Playwright end-to-end test submission.");
+  await page.waitForTimeout(1600); // minimum human fill time
+  const lead = page.waitForResponse((r) => r.url().endsWith("/api/lead") && r.request().method() === "POST");
   await page.getByRole("button", { name: "Book my 15-min demo" }).click();
+  expect((await lead).status()).toBe(200);
   await expect(page.getByTestId("demo-success")).toBeVisible();
-  const href = await page.getByRole("link", { name: "Open the email again" }).getAttribute("href");
-  expect(href).toMatch(/^mailto:hello@misehotel\.com\?subject=/);
-  expect(decodeURIComponent(href ?? "")).toContain("Hotel or group: Example Grand");
 });
 
-test("every demo button opens a prefilled email to hello@misehotel.com", async ({ page }) => {
+test("every demo CTA goes to /demo, never mailto", async ({ page }) => {
+  await stubGoogle(page);
+  await rejectConsentUpfront(page);
+  for (const path of ["/", "/platform", "/solutions", "/solutions/kitchen", "/contact"]) {
+    await page.goto(path);
+    const hrefs = await page.locator("a[data-track='demo_cta_click']").evaluateAll((els) => els.map((e) => e.getAttribute("href")));
+    expect(hrefs.length, path).toBeGreaterThan(0);
+    for (const h of hrefs) expect(h, path).toBe("/demo");
+  }
+});
+
+test("nav Solutions opens the department mega-menu and links to /solutions", async ({ page }) => {
+  await stubGoogle(page);
+  await rejectConsentUpfront(page);
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/");
+  const nav = page.getByRole("navigation", { name: "Primary" });
+  await expect(nav.getByRole("link", { name: "Solutions", exact: true })).toHaveAttribute("href", "/solutions");
+  await nav.getByRole("button", { name: /Show solutions/ }).click();
+  const menu = page.locator("#solutions-menu");
+  await expect(menu).toBeVisible();
+  for (const label of ["Front office", "Housekeeping", "F&B service", "Kitchen", "Engineering & maintenance", "Security & safety", "Spa & wellness", "Hotel chains", "Boutique hotels"]) {
+    await expect(menu.getByRole("link", { name: label, exact: true })).toBeVisible();
+  }
+});
+
+test("the homepage is positioned as the SOP app for every department", async ({ page }) => {
   await stubGoogle(page);
   await rejectConsentUpfront(page);
   await page.goto("/");
-  const hrefs = await page.locator("a[data-track='demo_cta_click']").evaluateAll((els) => els.map((e) => e.getAttribute("href")));
-  expect(hrefs.length).toBeGreaterThan(2);
-  for (const h of hrefs) {
-    expect(h).toMatch(/^mailto:hello@misehotel\.com\?subject=Mise%20demo%20request/);
-    expect(decodeURIComponent(h ?? "")).toContain("I'd like to book a 15-minute demo of Mise.");
+  await expect(page).toHaveTitle(/SOP App/i);
+  await expect(page.locator("h1")).toContainText("SOP app for hotels");
+  const group = page.getByRole("group", { name: "Show the demo for a department" });
+  for (const d of ["Front office", "Housekeeping", "F&B service", "Kitchen", "Engineering", "Security", "Spa"]) {
+    await expect(group.getByRole("button", { name: d })).toBeVisible();
   }
 });
 

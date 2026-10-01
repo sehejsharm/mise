@@ -2,7 +2,7 @@
   "name": "misehotel",
   "version": "1.0.0",
   "private": true,
-  "description": "misehotel.com — the marketing site for Mise, the service execution platform for hotels.",
+  "description": "misehotel.com \u2014 the marketing site for Mise, the service execution platform for hotels.",
   "packageManager": "pnpm@10.33.0",
   "engines": {
     "node": ">=20.9"
@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/copy-lint.mjs && node scripts/check-images.mjs && node scripts/indexnow.mjs",
+    "postbuild": "node scripts/copy-lint.mjs && node scripts/copy-audit.ts && node scripts/check-images.mjs && node scripts/indexnow.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -24,7 +24,9 @@
     "test:visual": "playwright test --config playwright.visual.config.ts",
     "lhci": "lhci autorun && lhci autorun --config=lighthouserc.desktop.json",
     "seo:report": "node scripts/seo-report.mjs",
-    "analyze": "ANALYZE=true next build"
+    "analyze": "ANALYZE=true next build",
+    "audit:copy": "node scripts/copy-audit.ts",
+    "audit:copy:live": "node scripts/copy-audit.ts --base https://misehotel.com --out docs/COPY-AUDIT-LIVE.md"
   },
   "dependencies": {
     "@keystatic/core": "0.6.9",

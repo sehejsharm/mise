@@ -4,7 +4,7 @@ import { pains } from "@/content/pains";
 import { auditReadiness, digitalSop } from "@/content/pillars";
 import { roleInterfaces } from "@/content/platform";
 import { absoluteUrl, brand, contact, founders } from "@/content/site";
-import { solutions } from "@/content/solutions";
+import { departments, solutions } from "@/content/solutions";
 
 export const dynamic = "force-static";
 
@@ -32,6 +32,13 @@ ${roleInterfaces.map((r) => `- ${r.name} (${r.posture}): ${r.summary} Used by: $
 
 Runs in any browser, on any phone, over mobile data. No PMS integration, no hardware. Pilots are scoped to one property.
 
+## Departments covered
+
+Mise is the SOP app for every hotel department, not a single-department tool. The same loop (standard, timed task, evidence, service record) runs in each:
+
+${departments.map((d) => `- ${d.name}: ${d.short}`).join("\n")}
+- Guest relations: guest promises, recovery and VIP touches run as timed tasks with evidence.
+
 ## The six pains (a chain: each makes the next worse)
 
 ${pains.map((p) => `- ${p.name}: ${p.definition}`).join("\n")}
@@ -43,7 +50,8 @@ ${audiences.map((a) => `- ${a.name}: ${a.card}`).join("\n")}
 
 ## Key pages
 
-${link("/", "Mise: hotel SOP software", "What Mise is and how it works, in one page.")}
+${link("/", "Mise: the SOP app for hotels", "What Mise is and how it works, for every department.")}
+${link("/solutions", "Hotel SOP app for every department", "Solutions by department and by property type.")}
 ${link("/platform", "Platform", "Staff app, manager dashboard and standards workspace.")}
 ${link("/how-it-works", "How it works", "Standard → Timed task → Evidence → Service record.")}
 ${link(digitalSop.meta.path, "How to digitize hotel SOPs", "Step-by-step pillar guide.")}

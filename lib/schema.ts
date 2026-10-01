@@ -119,12 +119,15 @@ export function softwareNode(): SoftwareApplication {
     description: brand.definition,
     applicationCategory: "BusinessApplication",
     applicationSubCategory: "Service execution platform for hotels",
+    keywords:
+      "SOP app for hotels, hotel SOP app, hotel SOP software, hotel department SOP software, hotel departmental workflow software, hotel operations task management, digital SOP for hotels",
     operatingSystem: "Web, Android, iOS (browser)",
     featureList: [
       "SOPs published as timed tasks on staff phones",
       "Photo gate: evidence steps cannot close without a photo",
       "Supervisor sign-off captured in the task",
-      "Audit-ready service record per room, person, standard and shift",
+      "One SOP app for every department: front office, housekeeping, F&B, kitchen, engineering, security, spa",
+      "Audit-ready service record per task, person, standard and shift",
       "Staff mobile app, manager desktop dashboard, standards authoring workspace",
       "Shift handover and readiness tracking",
       "Runs over mobile data on any phone; no hardware",
@@ -188,6 +191,17 @@ export function breadcrumbNode(path: string, crumbs: Crumb[]): BreadcrumbList {
       name: c.name,
       item: absoluteUrl(c.path),
     })),
+  };
+}
+
+/** An ItemList of child pages (hub pages such as /solutions). */
+export function itemListNode(path: string, name: string, items: { name: string; path: string }[]) {
+  return {
+    "@type": "ItemList",
+    "@id": `${absoluteUrl(path)}#itemlist`,
+    name,
+    numberOfItems: items.length,
+    itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, url: absoluteUrl(it.path) })),
   };
 }
 
