@@ -46,7 +46,18 @@ The 5 SKIPs can only be answered by the live site:
 | Demo form | `POST /api/lead` returned 200 and the success state was shown. This was a dry run: the local server has `LEAD_DRY_RUN=1` and no Resend key |
 | SEO / GEO | 66 sitemap URLs, including the new ones, with `lastmod` 2026-10-01 on the changed pages. robots allows the 10 AI crawlers and blocks `/keystatic` and `/api`. llms files are 200 `text/plain`. Every page has 1 H1, a self-canonical, title ≤60, description ≤158 and parseable JSON-LD. Schema descriptions match the canonical definition. OG images are 1200×630. 76 internal links, 0 broken |
 
-LIGHTHOUSE_PLACEHOLDER
+### Lighthouse (local production build, median of 3 runs)
+
+Budget: Performance ≥90 on mobile and ≥95 on desktop; Accessibility, Best Practices and SEO = 100.
+
+| Page | Mobile (Perf / A11y / BP / SEO) | Desktop (Perf / A11y / BP / SEO) |
+|---|---|---|
+| `/` | 93 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
+| `/solutions` | 95 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
+| `/platform` | 92 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
+| `/demo` | 94 / 100 / 100 / 100 | 100 / 100 / 100 / 100 |
+
+All within budget. `pnpm lhci` asserts these thresholds. Live numbers will differ with Vercel's CDN and real network conditions.
 
 ## Manual steps for the owner
 
