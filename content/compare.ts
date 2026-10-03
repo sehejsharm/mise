@@ -191,8 +191,8 @@ Start with the tracker that causes the most pain, usually room inspections or au
     tldr:
       "WhatsApp groups are good for quick messages and poor for running standards: instructions scroll away, photos lack room, time and standard context, and evidence stays on personal phones. Mise keeps the speed of a phone but runs tasks with steps, timers and photo gates, and writes everything to one service record.",
     leadImage: {
-      key: "product/staff-inbox",
-      alt: "Mise staff operations inbox as an alternative to hotel WhatsApp task management",
+      dept: "rotate",
+      alt: "Mise staff app showing the next timed task for every department, an alternative to hotel WhatsApp task management",
       device: "phone",
     },
     body: `

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import DepartmentBar from "@/components/page/DepartmentBar";
 import LongformPage from "@/components/page/LongformPage";
 import { solutionBySlug, solutions } from "@/content/solutions";
 import { buildMetadata } from "@/lib/seo";
@@ -25,6 +26,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
         { name: "Solutions", path: "/solutions" },
         { name: s.name, path: s.meta.path },
       ]}
+      heroExtra={s.group === "department" ? <DepartmentBar current={s.meta.path} /> : undefined}
     />
   );
 }

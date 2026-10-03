@@ -24,7 +24,7 @@ export const roleInterfaces: RoleInterface[] = [
     device: "phone",
     posture: "Mobile-first · one thumb · cheap Android · bright daylight",
     who: "Front desk agents, room attendants, servers, cooks, technicians, security officers and therapists.",
-    persona: "Maya Fernando, room attendant",
+    persona: "Arjun at the front desk, Maya in rooms, Sunil in the kitchen, Nimal in engineering",
     headline: "The hotel staff app built around the next timed task",
     summary: "The standard, on the clock, in one hand. The timed task is the interface.",
     capabilities: [

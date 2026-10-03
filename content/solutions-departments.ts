@@ -31,9 +31,9 @@ export const departmentSolutions: Solution[] = [
     tldr:
       "Mise runs kitchen standards such as the walk-in temperature log, goods receiving and closing hygiene round as timed tasks on staff phones. Each reading or station is photographed inside the task, the sous chef signs off from the evidence, and the log builds itself. It captures evidence; it does not certify compliance.",
     leadImage: {
-      key: "product/author-create-standard",
-      alt: "Mise standards workspace, the hotel kitchen SOP software view where a cold-chain check is written as steps with evidence gates",
-      device: "laptop",
+      dept: "kitchen",
+      alt: "Mise hotel kitchen SOP software on a cook's phone: KIT-115 walk-in temperature log as the next timed task with a thermometer photo gate",
+      device: "phone",
     },
     body: `
 ## What does hotel kitchen SOP software need to do?
@@ -110,9 +110,9 @@ India's food regulator publishes a [hygiene rating scheme](https://www.fssai.gov
     tldr:
       "Mise runs engineering standards such as fault first response and preventive maintenance rounds as timed tasks on technicians' phones. The fix is not closed until it is photographed as fixed and tested, the chief engineer signs off from evidence, and every job writes to the service record shared with front office and housekeeping.",
     leadImage: {
-      key: "product/manager-assignments",
-      alt: "Mise manager dashboard assigning standards to staff, used for hotel maintenance task tracking and preventive checklists",
-      device: "laptop",
+      dept: "engineering",
+      alt: "Mise hotel maintenance task tracking on a technician's phone: ENG-402 AC complaint in room 512 with a fixed-and-tested photo gate",
+      device: "phone",
     },
     body: `
 ## What should hotel maintenance task tracking prove?
@@ -186,9 +186,9 @@ Preventive rounds are where standards slip quietly: the generator test, pump-roo
     tldr:
       "Mise runs security and safety standards such as the fire-exit round, key control and equipment checks as timed tasks on officers' phones. Each exit or checkpoint needs a photo before the round closes, the security manager signs off from evidence, and missed rounds surface the next morning instead of after an incident.",
     leadImage: {
-      key: "product/manager-readiness",
-      alt: "Mise manager readiness view showing which staff are ready on each standard, used with the hotel security round app",
-      device: "laptop",
+      dept: "security-and-safety",
+      alt: "Mise hotel security round app on an officer's phone: SEC-020 night fire-exit round with a photo at every exit",
+      device: "phone",
     },
     body: `
 ## What does a hotel security round app need to prove?
@@ -264,8 +264,8 @@ Mise records that checks were done and what was found. It does not replace your 
     tldr:
       "Mise runs spa standards such as treatment room turnover, opening checks and hygiene resets as timed tasks on therapists' phones. The reset room is photographed before the task closes, the spa manager signs off from evidence, and the signature details of your spa are delivered the same way by every therapist.",
     leadImage: {
-      key: "product/staff-sequence",
-      alt: "Mise staff app showing a standard's steps in sequence, the way spa SOP software for hotels guides a treatment room turnover",
+      dept: "spa-and-wellness",
+      alt: "Mise spa SOP software for hotels on a therapist's phone: SPA-210 treatment room turnover with a room reset photo gate",
       device: "phone",
     },
     body: `

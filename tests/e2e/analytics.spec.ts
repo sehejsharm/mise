@@ -15,7 +15,7 @@ for (const path of ["/", "/platform", "/demo", "/blog"]) {
     await stubGoogle(page);
     await page.goto(path);
     await page.waitForLoadState("load");
-    await expect(page.locator('script[src*="googletagmanager.com/gtag/js?id=G-X8HT0D7TPW"]')).toHaveCount(1);
+    await expect(page.locator('script[src*="googletagmanager.com/gtag/js?id=G-KVTTR7P7BY"]')).toHaveCount(1);
   });
 }
 
@@ -44,7 +44,7 @@ test("analytics only fires after consent", async ({ page }) => {
   await page.getByRole("region", { name: "Cookie consent" }).getByRole("button", { name: "Accept" }).click();
   dl = (await dataLayer(page)) as Cmd[];
   expect(dl.some((c) => c[0] === "consent" && c[1] === "update" && (c[2] as Record<string, string>).analytics_storage === "granted")).toBe(true);
-  expect(dl.some((c) => c[0] === "config" && c[1] === "G-X8HT0D7TPW")).toBe(true);
+  expect(dl.some((c) => c[0] === "config" && c[1] === "G-KVTTR7P7BY")).toBe(true);
 
   await page.locator('a[data-track-location="hero"]').first().dispatchEvent("click");
   dl = (await dataLayer(page)) as Cmd[];

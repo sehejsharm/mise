@@ -35,7 +35,7 @@ Goals, in order: (1) search and AI-answer visibility, (2) 15-minute demo booking
 - **Forms.**
   - `POST /api/lead` covers the demo, contact and newsletter forms: zod validation, a honeypot plus a minimum fill time, and a per-IP sliding-window rate limit, delivered through Resend.
   - In production a missing `RESEND_API_KEY` returns 503. `LEAD_DRY_RUN=1` enables tests.
-- **Analytics.** GA4 `G-X8HT0D7TPW` is set up in `app/layout.tsx`:
+- **Analytics.** GA4 `G-KVTTR7P7BY` is set up in `app/layout.tsx`:
   - A Consent Mode v2 defaults snippet (`beforeInteractive`) sets everything to denied, and grants if the first-party `mise_consent` cookie says so.
   - `gtag.js` loads once (`afterInteractive`).
   - `gtag('config')` runs only once analytics consent is granted.

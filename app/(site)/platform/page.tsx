@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import DeptPhoneMini from "@/components/ui/DeptPhoneMini";
+import DeptPhoneRotator from "@/components/ui/DeptPhoneRotator";
+import { departments } from "@/content/departments";
 import PageHero from "@/components/page/PageHero";
 import { FaqList, FinalCta, JsonLd, RelatedLinks, TldrBox } from "@/components/ui/blocks";
 import { LaptopFrame, PhoneFrame } from "@/components/ui/DeviceFrame";
@@ -111,9 +114,13 @@ export default function PlatformPage() {
               <div className={idx % 2 ? "lg:order-1" : undefined}>
                 {role.device === "phone" ? (
                   <div className="flex justify-center">
-                    <PhoneFrame className="w-[min(300px,76vw)]">
-                      <Picture image={role.screens[0].image} alt={idx === 0 ? "Mise hotel operations software: the staff app Today screen with Room 208 as the next timed task and 18 minutes left" : role.screens[0].alt} sizes="300px" priority={idx === 0} lead={idx === 0} />
-                    </PhoneFrame>
+                    {role.id === "staff" ? (
+                      <DeptPhoneRotator label="Mise hotel operations software: the staff app Today screen with each department's next timed task, from front desk to spa" lead />
+                    ) : (
+                      <PhoneFrame className="w-[min(300px,76vw)]">
+                        <Picture image={role.screens[0].image} alt={role.screens[0].alt} sizes="300px" />
+                      </PhoneFrame>
+                    )}
                   </div>
                 ) : (
                   <LaptopFrame>
@@ -121,12 +128,31 @@ export default function PlatformPage() {
                   </LaptopFrame>
                 )}
                 <p className="mt-4 text-center font-mono text-[0.72rem] text-faint">
-                  {role.screens[0].title} · {role.screens[0].caption} · {demoProperty.label}
+                  {role.id === "staff" ? "Today · next timed task, by department" : `${role.screens[0].title} · ${role.screens[0].caption}`} · {demoProperty.label}
                 </p>
               </div>
             </div>
 
-            {role.screens.length > 1 ? (
+            {role.id === "staff" ? (
+              <div className="mt-14">
+                <h3 className="text-center font-display text-[1.2rem] font-semibold text-ink">One staff app, every department</h3>
+                <ul className="mx-auto mt-6 grid max-w-[920px] grid-cols-1 gap-6 min-[460px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4" aria-label="The staff app Today screen in each department">
+                  {departments.map((d) => (
+                    <li key={d.id}>
+                      <figure>
+                        <DeptPhoneMini dept={d} />
+                        <figcaption className="mt-3 text-center">
+                          <span className="block font-display text-[0.95rem] font-semibold text-ink">{d.label}</span>
+                          <span className="block text-[0.82rem] text-muted">
+                            {d.standardId} · {d.task}
+                          </span>
+                        </figcaption>
+                      </figure>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : role.screens.length > 1 ? (
               <ul
                 className={`mt-14 grid gap-6 ${role.device === "phone" ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-5" : "sm:grid-cols-2 lg:grid-cols-4"}`}
                 aria-label={`More ${role.keyword.toLowerCase()} screens`}

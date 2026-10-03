@@ -7,7 +7,11 @@
  */
 import { readConsent } from "@/lib/consent";
 
-export const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-X8HT0D7TPW";
+/**
+ * GA4 measurement ID. Fixed in code on purpose: a stale NEXT_PUBLIC_GA_ID left
+ * in hosting settings must never send data to a retired property.
+ */
+export const GA_ID = "G-KVTTR7P7BY";
 
 type Gtag = (...args: unknown[]) => void;
 

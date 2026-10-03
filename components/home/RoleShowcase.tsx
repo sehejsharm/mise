@@ -9,6 +9,7 @@ import { AnimatePresence, LazyMotion, m } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "@/components/ui/Icon";
 import { LaptopFrame, PhoneFrame } from "@/components/ui/DeviceFrame";
+import DeptPhoneRotator from "@/components/ui/DeptPhoneRotator";
 import { Picture } from "@/components/ui/Picture";
 import { ArrowLink, SectionHeading } from "@/components/ui/primitives";
 import type { RoleInterface } from "@/content/platform";
@@ -128,7 +129,9 @@ export default function RoleShowcase({ roles }: { roles: RoleInterface[] }) {
                   className="relative flex justify-center"
                   style={{ transformStyle: "preserve-3d" }}
                 >
-                  {role.device === "phone" ? (
+                  {role.id === "staff" ? (
+                    <DeptPhoneRotator label="Mise staff app Today screen, rotating through each department's next timed task" />
+                  ) : role.device === "phone" ? (
                     <PhoneFrame className="w-[min(300px,78vw)]">
                       <Picture image={screen.image} alt={screen.alt} sizes="300px" />
                     </PhoneFrame>

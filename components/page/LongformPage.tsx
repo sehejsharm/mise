@@ -20,12 +20,15 @@ export default async function LongformPage({
   page,
   crumbs,
   before,
+  heroExtra,
   extraNodes = [],
 }: {
   page: Longform;
   crumbs: { name: string; path: string }[];
   /** Content rendered between the TL;DR and the body (e.g. the pain anatomy). */
   before?: ReactNode;
+  /** Content at the bottom of the hero, under the CTAs (e.g. the department switcher bar). */
+  heroExtra?: ReactNode;
   extraNodes?: unknown[];
 }) {
   const { meta } = page;
@@ -45,7 +48,7 @@ export default async function LongformPage({
             name: meta.title,
             description: meta.description,
             updated: meta.updated,
-            primaryImage: page.leadImage ? imageUrl(page.leadImage.key) : undefined,
+            primaryImage: page.leadImage?.key ? imageUrl(page.leadImage.key) : undefined,
           }),
           breadcrumbNode(meta.path, crumbs),
           page.faqs.length ? faqNode(meta.path, page.faqs) : undefined,
@@ -59,7 +62,7 @@ export default async function LongformPage({
         title={meta.h1}
         lede={<p>{page.lede}</p>}
         updated={meta.updated}
-        aside={page.leadImage ? <LeadImage image={page.leadImage.key} alt={page.leadImage.alt} device={page.leadImage.device} priority /> : undefined}
+        aside={page.leadImage ? <LeadImage image={page.leadImage.key} dept={page.leadImage.dept} alt={page.leadImage.alt} device={page.leadImage.device} priority /> : undefined}
       >
         <div className="mt-8 flex flex-wrap gap-3">
           <ButtonLink href="/demo" arrow trackLocation={`hero-${meta.path}`}>
@@ -69,6 +72,7 @@ export default async function LongformPage({
             How Mise works
           </ButtonLink>
         </div>
+        {heroExtra}
       </PageHero>
 
       <div className="container-page pb-20">

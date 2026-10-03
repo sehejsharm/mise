@@ -30,6 +30,8 @@ export type Department = {
   /** This-shift task counts for the live floor (demo data). */
   shift: { closed: number; progress: number; blocked: number; queued: number };
   readiness: number;
+  /** The staff app's Today screen for this department (illustrative, demo data). */
+  today: { person: string; initials: string; role: string; shift: string; noun: string; next: string; remaining: string; area: string };
 };
 
 export const departments: Department[] = [
@@ -53,6 +55,7 @@ export const departments: Department[] = [
     recordRows: ["07:48 · Front desk · FO-204 closed · 5 of 6 min", "07:31 · Front desk · Room-ready confirmed", "07:12 · Handover · acknowledged"],
     shift: { closed: 46, progress: 9, blocked: 1, queued: 8 },
     readiness: 86,
+    today: { person: "Arjun", initials: "AR", role: "Front desk agent", shift: "Sunday · Morning shift · 07:00–15:30", noun: "arrival", next: "The VIP in 1204 lands at 08:00. Your timed task, live SOP and five-star welcome are ready before the car arrives.", remaining: "6 min target", area: "Front desk" },
   },
   {
     id: "housekeeping",
@@ -74,6 +77,7 @@ export const departments: Department[] = [
     recordRows: ["08:21 · Room 206 · Released · E. Rossi", "08:04 · Room 204 · Sign-off · 23 of 26 min", "07:48 · Room 202 · Photo evidence"],
     shift: { closed: 52, progress: 11, blocked: 2, queued: 9 },
     readiness: 91,
+    today: { person: "Maya", initials: "MF", role: "Room attendant", shift: "Sunday · Morning shift · 07:00–15:30", noun: "room", next: "Room 208 is next. Your timed task, live SOP and five-star finish are ready before you open the door.", remaining: "26 min target", area: "Floor 2" },
   },
   {
     id: "food-and-beverage",
@@ -95,6 +99,7 @@ export const departments: Department[] = [
     recordRows: ["10:41 · Restaurant · FB-310 closed · 16 of 18 min", "10:12 · Restaurant · Buffet restocked", "07:00 · Restaurant · Opening check held"],
     shift: { closed: 31, progress: 6, blocked: 1, queued: 5 },
     readiness: 88,
+    today: { person: "Ravi", initials: "RP", role: "Restaurant server", shift: "Sunday · Breakfast · 06:30–11:00", noun: "reset", next: "Breakfast closes at 10:30. The restaurant reset, table standard and photo check are ready for lunch.", remaining: "18 min target", area: "Restaurant" },
   },
   {
     id: "kitchen",
@@ -116,6 +121,7 @@ export const departments: Department[] = [
     recordRows: ["06:02 · Kitchen · KIT-115 temp log · evidence held", "02:00 · Kitchen · KIT-115 temp log · in range", "22:00 · Kitchen · Closing hygiene round"],
     shift: { closed: 18, progress: 2, blocked: 0, queued: 4 },
     readiness: 94,
+    today: { person: "Sunil", initials: "SF", role: "Commis chef", shift: "Sunday · Early kitchen · 05:00–13:00", noun: "check", next: "The walk-in log is due at 06:00. Range, steps and the thermometer photo are ready on screen.", remaining: "Every 4h", area: "Main kitchen" },
   },
   {
     id: "engineering",
@@ -137,6 +143,7 @@ export const departments: Department[] = [
     recordRows: ["09:27 · Room 512 · ENG-402 fixed + tested", "08:15 · Plant room · Generator test held", "07:40 · Pool · Water test held"],
     shift: { closed: 14, progress: 3, blocked: 1, queued: 3 },
     readiness: 82,
+    today: { person: "Nimal", initials: "NP", role: "Duty technician", shift: "Sunday · Day shift · 08:00–16:00", noun: "fix", next: "Room 512 reports the AC is not cooling. Response steps and the fixed-and-tested check are ready.", remaining: "15 min target", area: "Room 512" },
   },
   {
     id: "security-and-safety",
@@ -158,6 +165,7 @@ export const departments: Department[] = [
     recordRows: ["02:38 · Floors 1–14 · SEC-020 closed · 28 exits", "23:30 · Perimeter · Round held", "21:00 · Key cabinet · Count held"],
     shift: { closed: 9, progress: 1, blocked: 0, queued: 2 },
     readiness: 97,
+    today: { person: "Kasun", initials: "KB", role: "Security officer", shift: "Saturday · Night shift · 22:00–06:00", noun: "round", next: "The 02:00 fire-exit round covers floors 1–14. Every exit needs a photo before the round closes.", remaining: "40 min round", area: "Floors 1–14" },
   },
   {
     id: "spa-and-wellness",
@@ -179,6 +187,7 @@ export const departments: Department[] = [
     recordRows: ["10:52 · Spa room 3 · SPA-210 closed · 11 of 12 min", "09:40 · Spa room 1 · Turnover held", "08:30 · Spa · Opening check held"],
     shift: { closed: 12, progress: 2, blocked: 0, queued: 3 },
     readiness: 89,
+    today: { person: "Amaya", initials: "AR", role: "Spa therapist", shift: "Sunday · Spa · 09:00–18:00", noun: "turnover", next: "Treatment room 3 hosts the 11:00 guest. The reset, rituals and room photo are ready.", remaining: "12 min target", area: "Spa room 3" },
   },
 ];
 

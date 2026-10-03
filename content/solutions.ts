@@ -27,7 +27,7 @@ const coreSolutions: Solution[] = [
     },
     eyebrow: "Solutions · Housekeeping",
     lede:
-      "Mise is a housekeeping SOP app built for the room attendant's phone and the housekeeping manager's desk. Each room becomes a timed task: the standard's steps on screen, a countdown against the target time, photo gates on the details guests notice, and supervisor sign-off before release. Every room adds a line to an audit-ready service record.",
+      "Housekeeping is one of seven departments Mise runs, and Mise is a housekeeping SOP app built for the room attendant's phone and the housekeeping manager's desk. Each room becomes a timed task: the standard's steps on screen, a countdown against the target time, photo gates on the details guests notice, and supervisor sign-off before release. Every room adds a line to an audit-ready service record.",
     tldr:
       "Mise runs housekeeping standards such as guest room reset and release as timed tasks on attendants' phones. Key steps need a photo before they close, supervisors sign off from evidence, and every room writes to a service record. It needs no PMS integration or hardware.",
     leadImage: {
@@ -36,8 +36,6 @@ const coreSolutions: Solution[] = [
       device: "phone",
     },
     body: `
-Housekeeping is one of seven departments Mise runs, alongside [front office](/solutions/front-office), [F&B service](/solutions/food-and-beverage), [kitchen](/solutions/kitchen), [engineering](/solutions/engineering), [security and safety](/solutions/security-and-safety) and [spa and wellness](/solutions/spa-and-wellness). See [all solutions](/solutions).
-
 ## What does a housekeeping SOP app need to do?
 
 A housekeeping SOP app needs to put the room standard in the attendant's hand at the moment of work, time it against a realistic target, capture proof on the steps that matter, and let a supervisor release the room without walking to it. Anything less is a list, and lists are what [ghost SOPs](/problems/ghost-sop) are made of.
@@ -126,8 +124,8 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
     tldr:
       "Mise runs front office standards as timed tasks and guided workflows: arrival readiness, check-in steps, gated shift handovers and a Listen, Acknowledge, Resolve, Follow up service recovery flow. Each action is timestamped into the service record, so managers can see consistency at the desk, not just occupancy.",
     leadImage: {
-      key: "product/staff-inbox",
-      alt: "Mise staff app operations inbox with assignments and supervisor notes for front desk SOP software",
+      dept: "front-office",
+      alt: "Mise front desk SOP software on the agent's phone: FO-204 VIP arrival as the next timed task with ID and room-ready photo gates",
       device: "phone",
     },
     body: `
@@ -205,8 +203,8 @@ Front office and housekeeping meet at room release. When housekeeping releases a
     tldr:
       "Mise runs hotel food and beverage SOPs as timed tasks on staff phones: outlet opening and closing, hygiene and cleaning checks, station setup and service standards. Photo gates capture evidence at the steps inspectors check, and each task writes to a service record you can filter before a hygiene inspection.",
     leadImage: {
-      key: "product/staff-briefs",
-      alt: "Mise staff app showing operating briefs paired with standards, used as hotel F&B SOP software",
+      dept: "food-and-beverage",
+      alt: "Mise hotel F&B SOP software on a server's phone: FB-310 breakfast close as the next timed task with a table setup photo gate",
       device: "phone",
     },
     body: `
@@ -364,8 +362,8 @@ Group operations teams need to see where standards hold across properties. Mise 
     tldr:
       "Boutique hotels depend on a few people who know how things are done. Mise captures those signature standards as timed tasks with reference photos and photo gates, so any staff member can deliver them, and owners can see from the service record that they were delivered, without adding managers or hardware.",
     leadImage: {
-      key: "product/staff-service-record",
-      alt: "Mise staff service record showing five-star readiness, a digital SOP for boutique hotels",
+      dept: "rotate",
+      alt: "Mise staff app across every department of a property, a digital SOP for boutique hotels",
       device: "phone",
     },
     body: `

@@ -11,7 +11,11 @@ export type Longform = {
   lede: string;
   /** Answer-first summary (TL;DR box). */
   tldr: string;
-  leadImage?: { key: string; alt: string; device: "phone" | "laptop" };
+  /**
+   * Lead visual. `key` is a real product screenshot; `dept` draws that
+   * department's staff-app Today screen instead ("rotate" cycles every department).
+   */
+  leadImage?: { key?: string; dept?: string; alt: string; device: "phone" | "laptop" };
   /** Body in the lib/md.tsx dialect. Question-style H2s are followed by a 40–60 word answer. */
   body: string;
   faqs: Faq[];

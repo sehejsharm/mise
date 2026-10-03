@@ -51,7 +51,8 @@ export const metadata: Metadata = {
     types: { "application/rss+xml": [{ url: "/blog/rss.xml", title: "Mise blog" }] },
   },
   verification: {
-    ...(process.env.GOOGLE_SITE_VERIFICATION ? { google: process.env.GOOGLE_SITE_VERIFICATION } : {}),
+    // Search Console ownership token (HTML-tag method); GOOGLE_SITE_VERIFICATION overrides it.
+    google: process.env.GOOGLE_SITE_VERIFICATION || "GhYMZZmq1DqSsWqfkJ7IY38ze6BLDDjcMLdBxMS5Og4",
     ...(process.env.BING_SITE_VERIFICATION ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } } : {}),
   },
   icons: {

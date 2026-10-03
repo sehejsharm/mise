@@ -197,8 +197,8 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
     tldr:
       "A ghost SOP is a standard that exists as a document but not as practice. It happens because the SOP lives beside the work instead of inside it. Mise closes the gap by turning each SOP into a timed task with fixed steps and photo gates, so following the standard and doing the work are the same action.",
     leadImage: {
-      key: "product/staff-standards",
-      alt: "Mise staff app showing the HSK-101 guest room reset standard inside a timed task, the fix for a ghost SOP hotel problem",
+      dept: "rotate",
+      alt: "Mise staff app showing each department's standard inside a timed task, the fix for a ghost SOP hotel problem",
       device: "phone",
     },
     body: `
@@ -435,8 +435,8 @@ When performance is visible, the next two pains in the chain become manageable. 
     tldr:
       "The attrition bleed is the service-quality loss that follows each departure, because standards lived in people rather than in the operation. Mise keeps the standard inside timed tasks and operating briefs, so a new joiner works to the same steps from the first shift and managers can see readiness based on evidenced work.",
     leadImage: {
-      key: "product/staff-sequence",
-      alt: "Mise staff app readiness sequence guiding a new joiner through standards in order, reducing the impact of hotel staff turnover",
+      dept: "rotate",
+      alt: "Mise staff app guiding a new joiner in any department to the next timed task, reducing the impact of hotel staff turnover",
       device: "phone",
     },
     body: `

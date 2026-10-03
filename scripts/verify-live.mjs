@@ -21,7 +21,7 @@ const opt = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
 const BASE = opt("--base", "https://misehotel.com").replace(/\/$/, "");
 const OUT = path.resolve(opt("--out", "docs/LIVE-VERIFICATION.md"));
 const SUBMIT = args.includes("--submit-test-lead");
-const GA = "G-X8HT0D7TPW";
+const GA = "G-KVTTR7P7BY";
 const host = new URL(BASE).host;
 const isLive = !/localhost|127\.0\.0\.1/.test(host);
 const NEW_PAGES = ["/solutions", "/solutions/kitchen", "/solutions/engineering", "/solutions/security-and-safety", "/solutions/spa-and-wellness"];
@@ -217,7 +217,7 @@ for (const p of paths) {
     await page.waitForTimeout(3000);
   }
   const collect = hits.filter((u) => u.includes("/g/collect") && u.includes(`tid=${GA}`));
-  check("Google tag", "After Accept: page_view hit to /g/collect with tid=G-X8HT0D7TPW", isLive ? collect.some((u) => /en=page_view/.test(u)) : null, isLive ? collect.slice(0, 2).join("\n") || "no collect hits observed" : "Google is not reachable from a local rehearsal; run against the live site");
+  check("Google tag", "After Accept: page_view hit to /g/collect with tid=G-KVTTR7P7BY", isLive ? collect.some((u) => /en=page_view/.test(u)) : null, isLive ? collect.slice(0, 2).join("\n") || "no collect hits observed" : "Google is not reachable from a local rehearsal; run against the live site");
   const events = async () => page.evaluate(() => (window.dataLayer ?? []).filter((e) => e && e[0] === "event").map((e) => e[1]));
   await page.goto(`${BASE}/`, { waitUntil: "load" });
   // Hold the navigation for one click so the event can be read from this page's dataLayer.

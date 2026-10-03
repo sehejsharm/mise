@@ -24,7 +24,7 @@ A box is ticked only when its check passes.
   | Key | Production | Preview | Notes |
   |---|---|---|---|
   | `NEXT_PUBLIC_SITE_URL` | `https://misehotel.com` | `https://misehotel.com` | Canonicals and schema always point at the apex |
-  | `NEXT_PUBLIC_GA_ID` | `G-X8HT0D7TPW` | (leave empty to use the same) | Already the code default |
+  | `NEXT_PUBLIC_GA_ID` | not used | — | GA4 `G-KVTTR7P7BY` is fixed in code; delete this variable from Vercel if it exists |
   | `NEXT_PUBLIC_CONTACT_EMAIL` | the monitored inbox | same | Resolve TODO(sehej) §4 first |
   | `NEXT_PUBLIC_CONTACT_PHONE` | `+91 93221 07991` | same | |
   | `NEXT_PUBLIC_BOOKING_URL` | Cal.com/Calendly link | same | Optional; embeds the scheduler on `/demo` |

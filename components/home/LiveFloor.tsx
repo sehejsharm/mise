@@ -163,7 +163,7 @@ export default function LiveFloor() {
                   ))}
                 </ul>
               </figcaption>
-              <div className="mt-4 overflow-x-auto">
+              <div className="mt-4 overflow-x-auto" tabIndex={0} role="region" aria-label="Tasks by department heatmap, scrollable">
                 <svg viewBox={`0 0 ${W} ${H}`} className="h-auto w-full min-w-[520px]" role="img" aria-label={`Heatmap of ${cells.length} tasks across ${ROWS} departments by status (demo data)`}>
                   {departments.map((d, row) => (
                     <text

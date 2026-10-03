@@ -66,7 +66,7 @@ Every key, with its purpose, is in [`.env.example`](.env.example). The ones that
 | Key | Required? | Purpose |
 |---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | Recommended | Canonical origin (`https://misehotel.com`) for canonicals, sitemap, OG and schema |
-| `NEXT_PUBLIC_GA_ID` | No | GA4 measurement ID, default `G-X8HT0D7TPW` |
+| — | — | GA4 measurement ID `G-KVTTR7P7BY` is fixed in `lib/analytics.ts` (no env override); the Search Console token is in `app/layout.tsx` (`GOOGLE_SITE_VERIFICATION` can override it) |
 | `NEXT_PUBLIC_CONTACT_EMAIL`, `NEXT_PUBLIC_CONTACT_PHONE` | No | Public contact details, defaults `hello@misehotel.com` and `+91 93221 07991` |
 | `NEXT_PUBLIC_BOOKING_URL` | No | Cal.com/Calendly URL; embeds the scheduler on `/demo` |
 | `RESEND_API_KEY`, `DEMO_INBOX_EMAIL`, `RESEND_FROM_EMAIL` | **Yes, for leads** | Email delivery for the `/demo` form, contact form and newsletter. Every demo CTA goes to `/demo`. Without a key in production, the form shows an error with a prefilled email fallback to `NEXT_PUBLIC_CONTACT_EMAIL` instead of dropping the lead |

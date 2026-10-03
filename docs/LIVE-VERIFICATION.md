@@ -42,7 +42,7 @@ The 5 SKIPs can only be answered by the live site:
 |---|---|
 | Fix is live | Title and H1 contain "SOP app for hotels". Nav Solutions → `/solutions`. `/solutions` and the 4 new department pages return 200. **318 demo CTAs across 66 pages, all → `/demo`, zero mailto.** llms.txt has "Departments covered" |
 | Security headers | HSTS, CSP, nosniff, Referrer-Policy and Permissions-Policy all present |
-| Google tag | `G-X8HT0D7TPW` in the HTML. gtag/js requested exactly once on `/`, `/solutions`, `/platform` and `/demo`. Consent defaults to denied, with no collect hits before Accept. `demo_cta_click` fires on a CTA click, and `demo_form_submit` fires on submit |
+| Google tag | `G-KVTTR7P7BY` in the HTML. gtag/js requested exactly once on `/`, `/solutions`, `/platform` and `/demo`. Consent defaults to denied, with no collect hits before Accept. `demo_cta_click` fires on a CTA click, and `demo_form_submit` fires on submit |
 | Demo form | `POST /api/lead` returned 200 and the success state was shown. This was a dry run: the local server has `LEAD_DRY_RUN=1` and no Resend key |
 | SEO / GEO | 66 sitemap URLs, including the new ones, with `lastmod` 2026-10-01 on the changed pages. robots allows the 10 AI crawlers and blocks `/keystatic` and `/api`. llms files are 200 `text/plain`. Every page has 1 H1, a self-canonical, title ≤60, description ≤158 and parseable JSON-LD. Schema descriptions match the canonical definition. OG images are 1200×630. 76 internal links, 0 broken |
 
