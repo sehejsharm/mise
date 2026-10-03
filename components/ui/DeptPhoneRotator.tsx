@@ -11,7 +11,7 @@ import { DeptPhoneScreen } from "@/components/ui/DeptPhone";
 export default function DeptPhoneRotator({ label, lead = false, tone = "theme" }: { label: string; lead?: boolean; tone?: "dark" | "theme" }) {
   const rot = useDepartmentRotation(4500);
   return (
-    <div ref={rot.ref} {...rot.pauseProps}>
+    <div ref={rot.ref} {...rot.pauseProps} data-copy-budget="exclude">
       <PhoneFrame className="relative mx-auto w-[min(290px,74vw)]">
         <div role="img" aria-label={label} {...(lead ? { "data-lead": "" } : {})} className="aspect-[290/600]">
           <div key={rot.dept.id} className="h-full animate-[fade-in_400ms_var(--ease-out-expo)]">
