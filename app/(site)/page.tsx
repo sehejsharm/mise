@@ -72,7 +72,7 @@ export default async function HomePage() {
         <section aria-labelledby="blog-title" className="relative py-20 sm:py-24">
           <div className="container-page">
             <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
-              <SectionHeading id="blog-title" eyebrow="Field notes" title="Hotel SOP and operations guides" />
+              <SectionHeading id="blog-title" eyebrow="Field notes" title="Hotel service execution guides" />
               <ArrowLink href="/blog">All Mise articles</ArrowLink>
             </div>
             <ul className="mt-10 grid gap-5 md:grid-cols-3">
@@ -89,7 +89,7 @@ export default async function HomePage() {
       <section aria-labelledby="faq-title" className="relative py-20 sm:py-24">
         <div className="container-page grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <SectionHeading id="faq-title" eyebrow="Straight answers" title="Hotel SOP software FAQ" />
+            <SectionHeading id="faq-title" eyebrow="Straight answers" title="Service execution platform FAQ" />
             <div className="mt-6">
               <ArrowLink href="/faq">Every question about Mise, answered</ArrowLink>
             </div>

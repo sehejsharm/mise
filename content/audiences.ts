@@ -68,7 +68,7 @@ Mise runs on Google Cloud and Firebase. See [security and data handling](/securi
 `,
     faqs: [
       {
-        q: "How does Mise track staff acknowledgement of SOPs?",
+        q: "How does Mise track staff acknowledgement of standards?",
         a: "Each standard is published with a version. When it is assigned, staff acknowledge it in the staff app, and the acknowledgement desk records the person, version, timestamp, device label and a record ID. HR can filter receipts by standard, role or status and export a CSV.",
       },
       {
@@ -96,7 +96,7 @@ Mise runs on Google Cloud and Firebase. See [security and data handling](/securi
       path: "/for/general-managers",
       title: "Hotel GM Dashboard for Operations Visibility | Mise",
       description:
-        "A hotel GM dashboard for operations visibility: readiness, service health, blocked rooms and SOP results, live from the floor. Book a 15-min demo.",
+        "A hotel GM dashboard for operations visibility: readiness, service health, blocked rooms and standard results, live from the floor. Book a 15-min demo.",
       h1: "The hotel GM dashboard for live operations visibility",
       primaryKeyword: "hotel GM dashboard",
       secondaryKeywords: ["hotel operations visibility", "hotel general manager operations software"],
@@ -106,7 +106,7 @@ Mise runs on Google Cloud and Firebase. See [security and data handling](/securi
     },
     eyebrow: "For General Managers",
     lede:
-      "A hotel GM dashboard is only as good as the data under it. Most show occupancy and revenue, because that is what the PMS knows. Mise shows what the PMS cannot: whether the standards behind every promise are being executed right now. Readiness, service health, blocked rooms and SOP results are fed live by timed tasks on the floor.",
+      "A hotel GM dashboard is only as good as the data under it. Most show occupancy and revenue, because that is what the PMS knows. Mise shows what the PMS cannot: whether the standards behind every promise are being executed right now. Readiness, service health, blocked rooms and standard results are fed live by timed tasks on the floor.",
     tldr:
       "Mise gives General Managers a live view of service execution: readiness, service health and guest signal together; floor-by-floor progress with blocked rooms; who needs a decision today; and which standards actually improve results. It is fed by the service record staff create during each shift, with no PMS integration.",
     leadImage: {
@@ -126,7 +126,7 @@ The manager overview is built around decisions:
 - **Readiness, service health and guest signal**, side by side, so the next decision carries its context. In the demo property these read 77%, 84% and 85%; in a pilot they come from your own shifts.
 - **Floor-by-floor view** across guest floors, showing where attention is needed first.
 - **People who need a decision today**, such as pending verifications and timing risks.
-- **SOP results** that compare how standards are used with observed operational outcomes, so you can decide what to reinforce, improve or retire.
+- **standard results** that compare how standards are used with observed operational outcomes, so you can decide what to reinforce, improve or retire.
 
 ## Hotel general manager operations software, without another report
 
@@ -143,7 +143,7 @@ Mise is not a PMS and does not replace revenue, reservation or finance systems. 
     faqs: [
       {
         q: "What does the Mise GM dashboard show?",
-        a: "It shows readiness, service health and guest signal together, a floor-by-floor view of the property, the people and rooms that need a decision today, and SOP results comparing standard usage with observed outcomes. All of it is fed by timed tasks completed on the floor.",
+        a: "It shows readiness, service health and guest signal together, a floor-by-floor view of the property, the people and rooms that need a decision today, and standard results comparing standard usage with observed outcomes. All of it is fed by timed tasks completed on the floor.",
       },
       {
         q: "Does the GM dashboard need our PMS data?",
@@ -204,7 +204,7 @@ Mise treats the standard, not the session, as the unit. L&D and standards owners
 
 ## Seeing what works
 
-Because every timed task records how the standard ran, L&D can see execution per standard: which standards run to time, where steps are skipped, where evidence is missing. The manager view of SOP results compares standard usage with observed operational outcomes, which is the evidence L&D has always lacked.
+Because every timed task records how the standard ran, L&D can see execution per standard: which standards run to time, where steps are skipped, where evidence is missing. The manager view of standard results compares standard usage with observed operational outcomes, which is the evidence L&D has always lacked.
 
 ## Sequenced readiness for new joiners
 
@@ -236,7 +236,7 @@ Briefs unlock in sequence for each role, and supervisor sign-off on evidenced ta
     related: [
       { href: "/platform#standards", label: "The standards workspace", note: "Author, publish, listen." },
       { href: "/compare/mise-vs-hotel-lms", label: "How Mise compares with an LMS", note: "Different questions, different outputs." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Write standards that run." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "Make your standards run." },
       { href: "/for/hr-directors", label: "For HR Directors", note: "Acknowledgement evidence." },
     ],
     relatedPosts: ["what-is-a-service-execution-platform", "ghost-sop-hotel-standards"],

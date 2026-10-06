@@ -50,7 +50,7 @@ export default function PlatformPage() {
         updated={platformMeta.updated}
         lede={
           <p>
-            Mise is hotel operations software built as three separate interfaces: a mobile staff app where SOPs run as
+            Mise is hotel operations software built as three separate interfaces: a mobile staff app where your existing standards run as
             timed tasks, a desktop manager dashboard where supervisors see the live floor, and a desktop standards
             workspace where standards are written and published. All three share one audit-ready service record. No PMS
             integration, no hardware.
@@ -70,7 +70,7 @@ export default function PlatformPage() {
       <div className="container-page">
         <div className="max-w-3xl">
           <TldrBox>
-            Mise is a hotel SOP management system built for execution. Staff run standards as timed tasks on their own
+            Mise is a hotel service execution platform built for execution. Staff run standards as timed tasks on their own
             phones, with photo gates on key steps. Managers see readiness, exceptions and results on a desktop dashboard.
             Standards owners write and publish from a focused workspace. Every task writes to one service record.
           </TldrBox>
@@ -187,7 +187,7 @@ export default function PlatformPage() {
           <div>
             <Eyebrow>Shared by all three</Eyebrow>
             <h2 id="record-title" className="mt-4 text-[clamp(1.8rem,3.6vw,2.7rem)] leading-[1.08] font-semibold text-ink">
-              The service record: one audit trail for every department's SOPs
+              The service record: one audit trail for every department's standards
             </h2>
             <p className="mt-4 text-[1.05rem] leading-relaxed text-muted">
               Every timed task, in every department, writes one attributable entry. Managers use it to see readiness and
@@ -229,7 +229,7 @@ export default function PlatformPage() {
             links={[
               { href: "/how-it-works", label: "How Mise works", note: "Standard → Timed task → Evidence → Service record." },
               { href: "/solutions", label: "Solutions by department", note: "Front office to engineering, one app." },
-              { href: "/digital-sop", label: "Digitize hotel SOPs", note: "The step-by-step guide." },
+              { href: "/standards-to-execution", label: "Standards to execution", note: "The step-by-step guide." },
               { href: "/security", label: "Security & data handling", note: "Google Cloud and Firebase, plainly stated." },
             ]}
           />

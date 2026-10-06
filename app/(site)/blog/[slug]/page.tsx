@@ -18,7 +18,7 @@ export const dynamicParams = false;
 /** The most relevant problem or solution page for each category. */
 const categoryLinks: Record<string, { href: string; label: string }[]> = {
   "digital-sops": [
-    { href: "/digital-sop", label: "The complete guide to digitizing hotel SOPs" },
+    { href: "/standards-to-execution", label: "The complete guide to putting hotel standards into execution" },
     { href: "/problems/ghost-sop", label: "Why hotel SOPs are not followed" },
   ],
   "service-execution": [
@@ -30,7 +30,7 @@ const categoryLinks: Record<string, { href: string; label: string }[]> = {
     { href: "/problems/audit-ambush", label: "The audit ambush" },
   ],
   housekeeping: [
-    { href: "/solutions/housekeeping", label: "Housekeeping SOP app" },
+    { href: "/solutions/housekeeping", label: "Housekeeping execution" },
     { href: "/problems/supervisor-bottleneck", label: "The hotel supervisor bottleneck" },
   ],
   "hotel-operations": [

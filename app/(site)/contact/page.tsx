@@ -50,7 +50,7 @@ export default function ContactPage() {
           <Link href="/demo" data-track="demo_cta_click" data-track-location="contact-aside" className="flex items-center justify-between gap-4 rounded-2xl border border-gold/40 bg-gold-soft p-5">
             <span>
               <span className="block font-display text-[1.1rem] font-semibold text-ink">Book a 15-min demo</span>
-              <span className="block text-[0.9rem] text-muted">See one of your SOPs become a timed task.</span>
+              <span className="block text-[0.9rem] text-muted">See one of your existing standards run as a timed task.</span>
             </span>
             <Icon name="arrowRight" size={20} className="text-gold-ink" />
           </Link>

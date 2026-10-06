@@ -26,7 +26,7 @@ export default function FaqPage() {
         eyebrow={faqMeta.eyebrow}
         title={faqMeta.h1}
         updated={faqMeta.updated}
-        lede={<p>The Mise FAQ covers everything hotel teams ask us about Mise hotel software: what it is, how the Mise SOP platform works on a shift, what it needs, what a pilot looks like, and how Mise by Focus Realm handles data.</p>}
+        lede={<p>The Mise FAQ covers everything hotel teams ask us about Mise hotel software: what it is, how the Mise service execution platform works on a shift, what it needs, what a pilot looks like, and how Mise by Focus Realm handles data.</p>}
       />
       <div className="container-page pb-20">
         <div className="max-w-3xl">

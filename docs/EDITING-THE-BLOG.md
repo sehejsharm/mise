@@ -39,7 +39,7 @@ Saving in the editor makes a commit, and Vercel redeploys the site automatically
 ## Things the site does for you
 
 - **Internal links.**
-  - The first mention of terms like "digital SOP", "ghost SOP" or "audit readiness" is linked automatically to the matching page (`lib/links.ts`).
+  - The first mention of terms like "service execution platform", "ghost SOP" or "audit readiness" is linked automatically to the matching page (`lib/links.ts`).
   - Do not add those links by hand. Link other things normally.
 - **A demo call-to-action** is inserted about 40% of the way down every post. The post also ends with one.
 - **Reading time, table of contents, share buttons, related posts, schema and the social image** are all generated.
@@ -47,7 +47,8 @@ Saving in the editor makes a commit, and Vercel redeploys the site automatically
 ## Words to avoid
 
 The build fails if a published page uses **"LMS", "course", "module", "learner" or "training platform"**.
-- Mise is a service execution platform, so say *SOP*, *standard*, *timed task*, *evidence*, *service record*, *team*, *staff* instead.
+- Mise is a service execution platform, so say *standard*, *timed task*, *evidence*, *service record*, *team*, *staff* instead.
+- Call Mise the service execution platform (SEP), never "SOP software", "SOP app" or "SOP platform" (the build fails on these). Mise implements the SOPs a hotel already has; it does not write them.
 - The only exceptions are the Mise-vs-LMS comparison content, which is already set up.
 - Never mention internal partners, commercial terms or pricing. The CTA is always the demo.
 

@@ -2,31 +2,31 @@ import type { Longform } from "@/content/types";
 
 export const indiaPage: Longform = {
   meta: {
-    path: "/hotel-sop-software-india",
-    title: "Hotel SOP Software India: Built for Indian Hotels | Mise",
+    path: "/hotel-service-execution-india",
+    title: "Hotel Service Execution Platform, Built in India | Mise",
     description:
-      "Hotel SOP software India teams can run on any phone over mobile data: timed tasks, photo evidence and audit-ready records, no PMS needed. Book a 15-min demo.",
-    h1: "Hotel SOP software built in India, for Indian hotel operations",
-    primaryKeyword: "hotel SOP software India",
-    secondaryKeywords: ["digital SOP for Indian hotels", "hotel staff task app India"],
+      "A hotel service execution platform for India, on any phone over mobile data: timed tasks, photo evidence, audit-ready records, no PMS. Book a demo.",
+    h1: "A hotel service execution platform built in India, for Indian hotels",
+    primaryKeyword: "hotel service execution platform India",
+    secondaryKeywords: ["service execution for Indian hotels", "hotel staff task app India"],
     eyebrow: "Mise in India",
     updated: "2026-09-29",
     priority: 0.8,
   },
   eyebrow: "Mise in India",
   lede:
-    "Mise is hotel SOP software India's hotel teams can run on the phones they already carry. It was built by Focus Realm in India around the realities of Indian hotel operations: budget Android phones, mobile data, large multi-department teams, WhatsApp-run shifts and audits that arrive with little notice. Standards become timed tasks, key steps need photo evidence, and every shift builds an audit-ready record.",
+    "Mise is the service execution platform India's hotel teams can run on the phones they already carry. It was built by Focus Realm in India around the realities of Indian hotel operations: budget Android phones, mobile data, large multi-department teams, WhatsApp-run shifts and audits that arrive with little notice. Standards become timed tasks, key steps need photo evidence, and every shift builds an audit-ready record.",
   tldr:
-    "Mise is a service execution platform built in India for hotels. It runs SOPs as timed tasks on staff phones in a browser over mobile data, with photo evidence and supervisor sign-off, and no PMS integration or hardware. Pilots start at one property, usually in housekeeping.",
+    "Mise is a service execution platform built in India for hotels. It runs the SOPs hotels already have as timed tasks on staff phones in a browser over mobile data, with photo evidence and supervisor sign-off, and no PMS integration or hardware. Pilots start at one property, usually in housekeeping.",
   leadImage: {
     dept: "rotate",
-    alt: "Mise hotel SOP software India teams run on a budget phone: the staff app with each department's next timed task and target time",
+    alt: "Mise, the service execution platform India's hotel teams run on a budget phone: the staff app with each department's next timed task and target time",
     device: "phone",
   },
   body: `
-## Why a digital SOP for Indian hotels has to be different
+## Why service execution for Indian hotels has to be different
 
-A digital SOP for Indian hotels has to work in conditions many global tools were not designed for. Staff often use their own budget Android phones. Connectivity in back-of-house areas can be patchy, so the app must be light on mobile data. Teams are large and span several departments, and shift coordination often runs through WhatsApp groups. Mise was designed for exactly this posture: one thumb, a 340px screen, bright light and a mid-range phone.
+Service execution for Indian hotels has to work in conditions many global tools were not designed for. Staff often use their own budget Android phones. Connectivity in back-of-house areas can be patchy, so the app must be light on mobile data. Teams are large and span several departments, and shift coordination often runs through WhatsApp groups. Mise was designed for exactly this posture: one thumb, a 340px screen, bright light and a mid-range phone.
 
 ## A hotel staff task app India's floor teams will actually open
 
@@ -49,7 +49,7 @@ Many Indian hotels run a PMS that is hard to integrate with, or a mix of systems
 
 ## One property first, then the group
 
-Every pilot is scoped to one property. We usually start in housekeeping, convert the standards that matter most, and let the service record fill for the first weeks. Groups then extend property by property. See [multi-property hotel SOP software](/solutions/hotel-chains).
+Every pilot is scoped to one property. We usually start in housekeeping, convert the standards that matter most, and let the service record fill for the first weeks. Groups then extend property by property. See [multi-property service execution](/solutions/hotel-chains).
 
 ## Data handling
 
@@ -70,30 +70,30 @@ Mise runs on Google Cloud and Firebase. Read [security and data handling](/secur
     },
   ],
   related: [
-    { href: "/hotel-sop-software-south-asia", label: "Hotel operations software in South Asia", note: "Sri Lanka and beyond." },
-    { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "Where Indian pilots start." },
+    { href: "/hotel-service-execution-south-asia", label: "Hotel operations software in South Asia", note: "Sri Lanka and beyond." },
+    { href: "/solutions/housekeeping", label: "Housekeeping execution", note: "Where Indian pilots start." },
     { href: "/compare/mise-vs-whatsapp", label: "Replace WhatsApp for hotel operations", note: "Move work out of chat." },
-    { href: "/digital-sop", label: "Digitize hotel SOPs", note: "The step-by-step guide." },
+    { href: "/standards-to-execution", label: "Standards to execution", note: "The step-by-step guide." },
   ],
   relatedPosts: ["replace-whatsapp-hotel-task-tracking", "how-to-digitize-hotel-sops"],
 };
 
 export const southAsiaPage: Longform = {
   meta: {
-    path: "/hotel-sop-software-south-asia",
+    path: "/hotel-service-execution-south-asia",
     title: "Hotel Operations Software for South Asia | Mise",
     description:
-      "Hotel operations software for South Asia, including hotel SOP software for Sri Lanka: timed tasks, photo evidence and audit-ready records. Book a 15-min demo.",
+      "Hotel operations software for South Asia, built as a service execution platform: timed tasks, photo evidence and audit-ready records. Book a demo.",
     h1: "Hotel operations software for South Asia, from Colombo to Kathmandu",
     primaryKeyword: "hotel operations software South Asia",
-    secondaryKeywords: ["hotel SOP software Sri Lanka"],
+    secondaryKeywords: ["hotel service execution platform Sri Lanka"],
     eyebrow: "Mise in South Asia",
     updated: "2026-09-29",
     priority: 0.7,
   },
   eyebrow: "Mise in South Asia",
   lede:
-    "Mise is hotel operations software for South Asia's hotels and resorts: a service execution platform that turns SOPs into timed tasks on staff phones and builds an audit-ready service record every shift. Our demo property, Aurora Grand Colombo, is set in Sri Lanka for a reason. The operating conditions Mise was designed for are shared across the region.",
+    "Mise is hotel operations software for South Asia's hotels and resorts: a service execution platform that runs the SOPs hotels already have as timed tasks on staff phones and builds an audit-ready service record every shift. Our demo property, Aurora Grand Colombo, is set in Sri Lanka for a reason. The operating conditions Mise was designed for are shared across the region.",
   tldr:
     "Mise runs hotel standards as timed tasks on staff phones in a browser, with photo evidence, supervisor sign-off and no PMS integration or hardware. It suits South Asian hotels and resorts, including in Sri Lanka, where teams are large, phones are budget Android and shift coordination often runs through chat apps.",
   leadImage: {
@@ -106,11 +106,11 @@ export const southAsiaPage: Longform = {
 
 Hotels across South Asia share many of the same operating realities: large teams across several departments, staff using their own budget Android phones, patchy back-of-house connectivity, shift coordination in chat groups, and demanding international guests with high expectations. Hotel operations software for South Asia has to be light, mobile-first and quick to adopt. Mise is built around those constraints.
 
-## Hotel SOP software for Sri Lanka
+## Hotel service execution for Sri Lanka
 
 Our demo environment is a fictional property, Aurora Grand Colombo, with 468 rooms across 14 guest floors and 42 staff on the demo shift. We built it in Colombo because resort and city hotels in Sri Lanka face exactly the problems Mise addresses: seasonal staffing, the need to hold consistent standards for international guests, and brand or owner audits.
 
-As hotel SOP software for Sri Lanka's properties, Mise:
+As a service execution platform for Sri Lanka's properties, Mise:
 
 - runs room, front office and F&B standards as timed tasks on staff phones;
 - gates key steps on photo evidence, captured in the task;
@@ -127,7 +127,7 @@ Mise needs no PMS integration and no hardware. It runs in any browser over mobil
 
 ## Talk to us
 
-We work with hotels across India and South Asia. Book a 15-minute demo to see the three interfaces on the Aurora Grand Colombo demo property and one of your own SOPs turned into a timed task.
+We work with hotels across India and South Asia. Book a 15-minute demo to see the three interfaces on the Aurora Grand Colombo demo property and one of your existing standards running as a timed task.
 `,
   faqs: [
     {
@@ -144,9 +144,9 @@ We work with hotels across India and South Asia. Book a 15-minute demo to see th
     },
   ],
   related: [
-    { href: "/hotel-sop-software-india", label: "Hotel SOP software in India", note: "Built for Indian hotels." },
-    { href: "/solutions/boutique-hotels", label: "Digital SOP for boutique hotels", note: "Small teams, signature service." },
-    { href: "/solutions/hotel-chains", label: "Multi-property hotel SOP software", note: "For regional groups." },
+    { href: "/hotel-service-execution-india", label: "Hotel service execution in India", note: "Built for Indian hotels." },
+    { href: "/solutions/boutique-hotels", label: "Service execution for boutique hotels", note: "Small teams, signature service." },
+    { href: "/solutions/hotel-chains", label: "Multi-property service execution", note: "For regional groups." },
     { href: "/platform", label: "The platform", note: "Three role interfaces." },
   ],
   relatedPosts: ["what-is-a-service-execution-platform"],

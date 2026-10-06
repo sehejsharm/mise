@@ -11,11 +11,11 @@ const coreSolutions: Solution[] = [
     short: "Room reset, turndown and release as timed tasks with photo gates.",
     meta: {
       path: "/solutions/housekeeping",
-      title: "Housekeeping SOP App with Photo Evidence | Mise",
+      title: "Housekeeping Execution with Photo Evidence | Mise",
       description:
-        "A housekeeping SOP app that runs room reset, turndown and release as timed tasks with photo evidence and sign-off. No PMS needed. Book a demo.",
-      h1: "The housekeeping SOP app that proves every room is guest-ready",
-      primaryKeyword: "housekeeping SOP app",
+        "Housekeeping execution that runs room reset, turndown and release as timed tasks with photo evidence and sign-off. No PMS needed. Book a demo.",
+      h1: "Housekeeping execution that proves every room is guest-ready",
+      primaryKeyword: "housekeeping execution",
       secondaryKeywords: [
         "housekeeping task management software",
         "digital housekeeping checklist",
@@ -27,18 +27,18 @@ const coreSolutions: Solution[] = [
     },
     eyebrow: "Solutions · Housekeeping",
     lede:
-      "Housekeeping is one of seven departments Mise runs, and Mise is a housekeeping SOP app built for the room attendant's phone and the housekeeping manager's desk. Each room becomes a timed task: the standard's steps on screen, a countdown against the target time, photo gates on the details guests notice, and supervisor sign-off before release. Every room adds a line to an audit-ready service record.",
+      "Housekeeping is one of seven departments Mise runs, and Mise is the service execution platform built for the room attendant's phone and the housekeeping manager's desk. Each room becomes a timed task: the standard's steps on screen, a countdown against the target time, photo gates on the details guests notice, and supervisor sign-off before release. Every room adds a line to an audit-ready service record.",
     tldr:
       "Mise runs housekeeping standards such as guest room reset and release as timed tasks on attendants' phones. Key steps need a photo before they close, supervisors sign off from evidence, and every room writes to a service record. It needs no PMS integration or hardware.",
     leadImage: {
       key: "product/staff-today",
-      alt: "Mise housekeeping SOP app showing Room 208 guest-ready reset as the next timed task with a live countdown",
+      alt: "Mise housekeeping execution showing Room 208 guest-ready reset as the next timed task with a live countdown",
       device: "phone",
     },
     body: `
-## What does a housekeeping SOP app need to do?
+## What does housekeeping execution need to do?
 
-A housekeeping SOP app needs to put the room standard in the attendant's hand at the moment of work, time it against a realistic target, capture proof on the steps that matter, and let a supervisor release the room without walking to it. Anything less is a list, and lists are what [ghost SOPs](/problems/ghost-sop) are made of.
+Housekeeping execution needs to put the room standard in the attendant's hand at the moment of work, time it against a realistic target, capture proof on the steps that matter, and let a supervisor release the room without walking to it. Anything less is a list, and lists are what [ghost SOPs](/problems/ghost-sop) are made of.
 
 ## How a room runs in Mise
 
@@ -81,7 +81,7 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
 `,
     faqs: [
       {
-        q: "Does the housekeeping SOP app work without our PMS?",
+        q: "Does housekeeping execution in Mise work without our PMS?",
         a: "Yes. Mise needs no PMS integration. Rooms and standards are set up in Mise, and staff use a browser on their own phones over mobile data. Many properties run it alongside their PMS from day one of a pilot without any IT project.",
       },
       {
@@ -95,9 +95,9 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
     ],
     related: [
       { href: "/problems/supervisor-bottleneck", label: "The supervisor bottleneck", note: "Why inspections queue." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Convert your housekeeping binder." },
-      { href: "/solutions/front-office", label: "Front desk SOP software", note: "Room release meets arrival." },
-      { href: "/solutions", label: "All departments", note: "One SOP app for the whole hotel." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "Run your housekeeping binder." },
+      { href: "/solutions/front-office", label: "Front desk service execution", note: "Room release meets arrival." },
+      { href: "/solutions", label: "All departments", note: "One service execution platform for the whole hotel." },
     ],
     relatedPosts: ["housekeeping-sop-checklist", "how-to-digitize-hotel-sops"],
   },
@@ -108,11 +108,11 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
     short: "Arrival, check-in and service recovery standards that run on every shift.",
     meta: {
       path: "/solutions/front-office",
-      title: "Front Desk SOP Software for Hotels | Mise",
+      title: "Front Desk Service Execution for Hotels | Mise",
       description:
-        "Front desk SOP software that runs arrivals, handovers and service recovery as timed tasks with evidence, so every guest gets it. Book a demo.",
-      h1: "Front desk SOP software for consistent arrivals and service recovery",
-      primaryKeyword: "front desk SOP software",
+        "Front desk service execution that runs arrivals, handovers and service recovery as timed tasks with evidence, so every guest gets it. Book a demo.",
+      h1: "Front desk service execution for consistent arrivals and recovery",
+      primaryKeyword: "front desk service execution",
       secondaryKeywords: ["hotel front office task management"],
       eyebrow: "Solutions · Front office",
       updated: "2026-09-29",
@@ -120,22 +120,22 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
     },
     eyebrow: "Solutions · Front office",
     lede:
-      "Front desk SOP software has a harder job than most: the standard has to hold during a queue, a late flight and a complaint. Mise turns front office standards (arrival preparation, check-in, shift handover and service recovery) into timed tasks and guided workflows on staff devices, with evidence of what was done and when, so hotel front office task management leaves a record.",
+      "Front desk service execution has a harder job than most: the standard has to hold during a queue, a late flight and a complaint. Mise turns front office standards (arrival preparation, check-in, shift handover and service recovery) into timed tasks and guided workflows on staff devices, with evidence of what was done and when, so hotel front office task management leaves a record.",
     tldr:
       "Mise runs front office standards as timed tasks and guided workflows: arrival readiness, check-in steps, gated shift handovers and a Listen, Acknowledge, Resolve, Follow up service recovery flow. Each action is timestamped into the service record, so managers can see consistency at the desk, not just occupancy.",
     leadImage: {
       dept: "front-office",
-      alt: "Mise front desk SOP software on the agent's phone: FO-204 VIP arrival as the next timed task with ID and room-ready photo gates",
+      alt: "Mise front desk service execution on the agent's phone: FO-204 VIP arrival as the next timed task with ID and room-ready photo gates",
       device: "phone",
     },
     body: `
 ## Why front office standards drift
 
-Front office standards drift because the desk runs on interruption. The arrival sequence is clear in the SOP, but a queue, a phone call and a guest complaint all arrive at once, and whoever is on shift improvises. Without the standard in view and a record of what happened, each shift develops its own version.
+Front office standards drift because the desk runs on interruption. The arrival sequence is clear in the standard, but a queue, a phone call and a guest complaint all arrive at once, and whoever is on shift improvises. Without the standard in view and a record of what happened, each shift develops its own version.
 
-## What front desk SOP software should cover
+## What front desk service execution should cover
 
-Front desk SOP software should cover the standards that shape a guest's first and last impression, and the moments where things go wrong:
+Front desk service execution should cover the standards that shape a guest's first and last impression, and the moments where things go wrong:
 
 - **Arrival readiness:** VIP and repeat-guest preparation, room status confirmation and amenity requests, checked before the guest arrives.
 - **Check-in and check-out:** the steps your brand promises, in order, at a pace the desk can keep.
@@ -156,7 +156,7 @@ When a guest complaint lands, the Mise service recovery flow walks the staff mem
 
 ## Working with housekeeping
 
-Front office and housekeeping meet at room release. When housekeeping releases a room in Mise, the evidence and sign-off are already recorded, so the desk is not relying on a radio call. See the [housekeeping SOP app](/solutions/housekeeping).
+Front office and housekeeping meet at room release. When housekeeping releases a room in Mise, the evidence and sign-off are already recorded, so the desk is not relying on a radio call. See [housekeeping execution](/solutions/housekeeping).
 `,
     faqs: [
       {
@@ -173,7 +173,7 @@ Front office and housekeeping meet at room release. When housekeeping releases a
       },
     ],
     related: [
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "Room release with evidence." },
+      { href: "/solutions/housekeeping", label: "Housekeeping execution", note: "Room release with evidence." },
       { href: "/glossary/shift-handover", label: "Shift handover, defined", note: "What a gated handover includes." },
       { href: "/problems/star-rating-ceiling", label: "The star rating ceiling", note: "Why the desk decides reviews." },
       { href: "/platform#staff", label: "The staff app", note: "Built for one hand." },
@@ -187,24 +187,24 @@ Front office and housekeeping meet at room release. When housekeeping releases a
     short: "Outlet opening, hygiene and service standards with dated evidence.",
     meta: {
       path: "/solutions/food-and-beverage",
-      title: "Hotel F&B SOP Software for Outlets & Kitchens | Mise",
+      title: "Hotel F&B Service Execution for Outlets & Banquets | Mise",
       description:
-        "Hotel F&B SOP software that runs outlet opening, hygiene checks and service standards as timed tasks with photo evidence and sign-off. Book a 15-min demo.",
-      h1: "Hotel F&B SOP software for outlets, kitchens and banquets",
-      primaryKeyword: "hotel F&B SOP software",
-      secondaryKeywords: ["F&B task management software", "hotel food and beverage SOP"],
+        "Hotel F&B service execution that runs outlet opening, hygiene checks and service standards as timed tasks with photo evidence and sign-off. Book a 15-min demo.",
+      h1: "Hotel F&B service execution for outlets, kitchens and banquets",
+      primaryKeyword: "hotel F&B service execution",
+      secondaryKeywords: ["F&B task management software", "hotel food and beverage standards"],
       eyebrow: "Solutions · Food & beverage",
       updated: "2026-09-29",
       priority: 0.7,
     },
     eyebrow: "Solutions · Food & beverage",
     lede:
-      "Hotel F&B SOP software has to work at the pace of service and at the standard of an inspection. Mise turns food and beverage standards (outlet opening and closing, hygiene checks, mise en place and table service) into timed tasks with photo evidence and supervisor sign-off, so every shift leaves a dated record of what was done.",
+      "Hotel F&B service execution has to work at the pace of service and at the standard of an inspection. Mise turns food and beverage standards (outlet opening and closing, hygiene checks, mise en place and table service) into timed tasks with photo evidence and supervisor sign-off, so every shift leaves a dated record of what was done.",
     tldr:
-      "Mise runs hotel food and beverage SOPs as timed tasks on staff phones: outlet opening and closing, hygiene and cleaning checks, station setup and service standards. Photo gates capture evidence at the steps inspectors check, and each task writes to a service record you can filter before a hygiene inspection.",
+      "Mise runs hotel food and beverage standards as timed tasks on staff phones: outlet opening and closing, hygiene and cleaning checks, station setup and service standards. Photo gates capture evidence at the steps inspectors check, and each task writes to a service record you can filter before a hygiene inspection.",
     leadImage: {
       dept: "food-and-beverage",
-      alt: "Mise hotel F&B SOP software on a server's phone: FB-310 breakfast close as the next timed task with a table setup photo gate",
+      alt: "Mise hotel F&B service execution on a server's phone: FB-310 breakfast close as the next timed task with a table setup photo gate",
       device: "phone",
     },
     body: `
@@ -214,7 +214,7 @@ Food and beverage runs on repetition under pressure. Outlets open and close dail
 
 The name Mise comes from the kitchen: *mise en place*, having everything in its place before service starts. We built the platform to bring that discipline to every department. F&B is where the idea started.
 
-## What hotel F&B SOP software should run
+## What hotel F&B service execution should run
 
 - **Outlet opening and closing:** equipment, temperatures, stock, cleanliness and security, in order, with evidence.
 - **Hygiene and cleaning schedules:** recurring checks as timed tasks, so a missed check is visible the same day.
@@ -226,7 +226,7 @@ The name Mise comes from the kitchen: *mise en place*, having everything in its 
 
 F&B task management software often schedules tasks but cannot show how they were done. Mise records who carried out each check, when, against which version of the standard, with photos on gated steps and supervisor sign-off. The outlet manager sees exceptions first: missed checks, late setups and missing evidence.
 
-## Hotel food and beverage SOPs and food safety
+## Hotel food and beverage standards and food safety
 
 Food safety obligations come from regulation and your brand. In India, FSSAI sets them and publishes guidance, including its [Hygiene Rating Scheme guidance document](https://www.fssai.gov.in/docs/eri/Hygiene_Rating_Document_Jan21_VerIV.pdf). Mise does not interpret or certify those requirements. It runs the procedures you have written to meet them, consistently, and keeps dated evidence that they ran. That turns inspection preparation into filtering a record. See [hotel audit readiness](/audit-readiness).
 
@@ -251,8 +251,8 @@ The staff app works on any phone in a browser, with large touch targets and high
     related: [
       { href: "/audit-readiness", label: "Hotel audit readiness", note: "Inspection prep as a filter." },
       { href: "/about", label: "Why we are called Mise", note: "Mise en place, every department." },
-      { href: "/solutions/hotel-chains", label: "Multi-property SOP software", note: "One standard across outlets." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "From laminated sheet to timed task." },
+      { href: "/solutions/hotel-chains", label: "Multi-property service execution", note: "One standard across outlets." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "From laminated sheet to timed task." },
     ],
     relatedPosts: ["how-to-digitize-hotel-sops", "hotel-audit-readiness-audit-trail"],
   },
@@ -263,24 +263,24 @@ The staff app works on any phone in a browser, with large touch targets and high
     short: "One standards library, executed and evidenced at every property.",
     meta: {
       path: "/solutions/hotel-chains",
-      title: "Multi-Property Hotel SOP Software for Groups | Mise",
+      title: "Multi-Property Service Execution for Hotel Groups | Mise",
       description:
-        "Multi-property hotel SOP software: write group standards once, run them as timed tasks at each property and compare execution evidence. Book a 15-min demo.",
-      h1: "Multi-property hotel SOP software for groups and chains",
-      primaryKeyword: "multi-property hotel SOP software",
-      secondaryKeywords: ["hotel group standards software", "digital SOP software for hotel chains"],
+        "Multi-property service execution: write group standards once, run them as timed tasks at each property and compare execution evidence. Book a 15-min demo.",
+      h1: "Multi-property service execution for hotel groups and chains",
+      primaryKeyword: "multi-property service execution",
+      secondaryKeywords: ["hotel group standards software", "service execution for hotel chains"],
       eyebrow: "Solutions · Hotel chains",
       updated: "2026-09-29",
       priority: 0.8,
     },
     eyebrow: "Solutions · Hotel chains",
     lede:
-      "Multi-property hotel SOP software has one job that single-property tools do not: keep a group's standards identical in intent and visible in execution across every property. Mise lets a group write its standards once, run them as timed tasks at each property, and see from the service record where execution holds and where it drifts.",
+      "Multi-property service execution has one job that single-property tools do not: keep a group's standards identical in intent and visible in execution across every property. Mise lets a group write its standards once, run them as timed tasks at each property, and see from the service record where execution holds and where it drifts.",
     tldr:
       "For hotel groups, Mise turns brand and group standards into timed tasks that run the same way at every property, with photo evidence and sign-off. Each property's service record shows how its standards actually ran. Rollout starts with a one-property pilot and expands property by property.",
     leadImage: {
       key: "product/manager-standard-results",
-      alt: "Mise dashboard comparing SOP results and observed outcomes, used as multi-property hotel SOP software",
+      alt: "Mise dashboard comparing standard results and observed outcomes, used as multi-property service execution",
       device: "laptop",
     },
     body: `
@@ -290,7 +290,7 @@ Hotel groups invest heavily in standards: brand manuals, service sequences, audi
 
 That is the [ghost SOP](/problems/ghost-sop) at group scale, and it caps ratings across the portfolio, which is the [star rating ceiling](/problems/star-rating-ceiling) multiplied.
 
-## What multi-property hotel SOP software should do
+## What multi-property service execution should do
 
 - **One source of standards.** Group standards are written once, with versions, and published to properties.
 - **Execution, not distribution.** Standards arrive at each property as timed tasks on staff phones, not as PDFs in an inbox.
@@ -308,7 +308,7 @@ We roll out one property at a time, on purpose:
 
 This is slower than a big-bang launch and much more likely to stick. Pilots are scoped per property, and pricing follows the scope rather than a rate card.
 
-## Digital SOP software for hotel chains: what changes
+## Service execution for hotel chains: what changes
 
 | Today | With Mise |
 |---|---|
@@ -334,7 +334,7 @@ Group operations teams need to see where standards hold across properties. Mise 
     related: [
       { href: "/problems/star-rating-ceiling", label: "The star rating ceiling", note: "Variance across properties." },
       { href: "/for/general-managers", label: "For General Managers", note: "Property-level visibility." },
-      { href: "/solutions/boutique-hotels", label: "Digital SOP for boutique hotels", note: "When the group is small." },
+      { href: "/solutions/boutique-hotels", label: "Service execution for boutique hotels", note: "When the group is small." },
       { href: "/how-it-works#pilot", label: "How a pilot works", note: "One property, first." },
     ],
     relatedPosts: ["what-is-a-service-execution-platform"],
@@ -346,11 +346,11 @@ Group operations teams need to see where standards hold across properties. Mise 
     short: "Five-star consistency without a large operations team.",
     meta: {
       path: "/solutions/boutique-hotels",
-      title: "Digital SOP for Boutique Hotels | Mise",
+      title: "Service Execution for Boutique Hotels | Mise",
       description:
-        "A digital SOP for boutique hotels: run your signature standards as timed tasks on staff phones, with evidence, even with a small team. Book a 15-min demo.",
-      h1: "A digital SOP for boutique hotels that makes signature service repeatable",
-      primaryKeyword: "digital SOP for boutique hotels",
+        "Service execution for boutique hotels: run your signature standards as timed tasks on staff phones, with evidence, even with a small team. Book a 15-min demo.",
+      h1: "Service execution for boutique hotels that makes signature service repeatable",
+      primaryKeyword: "service execution for boutique hotels",
       secondaryKeywords: ["hotel operations software for small hotels"],
       eyebrow: "Solutions · Boutique hotels",
       updated: "2026-09-29",
@@ -358,18 +358,18 @@ Group operations teams need to see where standards hold across properties. Mise 
     },
     eyebrow: "Solutions · Boutique hotels",
     lede:
-      "A digital SOP for boutique hotels has to protect what makes the property different. Boutique hotels sell signature details, and those details usually live in the heads of a few long-serving people. Mise turns those details into timed tasks with reference photos and evidence, so the signature experience survives busy nights, new joiners and a lean team.",
+      "Service execution for boutique hotels has to protect what makes the property different. Boutique hotels sell signature details, and those details usually live in the heads of a few long-serving people. Mise turns those details into timed tasks with reference photos and evidence, so the signature experience survives busy nights, new joiners and a lean team.",
     tldr:
       "Boutique hotels depend on a few people who know how things are done. Mise captures those signature standards as timed tasks with reference photos and photo gates, so any staff member can deliver them, and owners can see from the service record that they were delivered, without adding managers or hardware.",
     leadImage: {
       dept: "rotate",
-      alt: "Mise staff app across every department of a property, a digital SOP for boutique hotels",
+      alt: "Mise staff app across every department of a property, service execution for boutique hotels",
       device: "phone",
     },
     body: `
 ## Why boutique hotels need standards more, not less
 
-Small properties often resist formal SOPs because they fear losing personality. The opposite tends to happen without them. The signature welcome, the particular turndown and the way breakfast is laid all depend on who is working. When a key person leaves, the signature goes with them. That is the [attrition bleed](/problems/attrition-bleed), and it hits smaller teams hardest.
+Small properties often resist formal standards because they fear losing personality. The opposite tends to happen without them. The signature welcome, the particular turndown and the way breakfast is laid all depend on who is working. When a key person leaves, the signature goes with them. That is the [attrition bleed](/problems/attrition-bleed), and it hits smaller teams hardest.
 
 ## Hotel operations software for small hotels
 
@@ -411,7 +411,7 @@ Many boutique owners run more than one business or live elsewhere. The service r
     ],
     related: [
       { href: "/problems/attrition-bleed", label: "The attrition bleed", note: "When the signature walks out." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Write your first standards." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "Bring the standards you have." },
       { href: "/solutions", label: "Solutions by department", note: "Every department, one app." },
       { href: "/roi", label: "ROI calculator", note: "Estimate with your own figures." },
     ],
@@ -444,12 +444,12 @@ export function solutionBySlug(slug: string) {
 
 export const solutionsHubMeta = {
   path: "/solutions",
-  title: "Hotel SOP App for Every Department | Mise",
+  title: "Service Execution Platform for Every Department | Mise",
   description:
-    "The hotel SOP app for every department, from front office and F&B to kitchen, engineering, security and spa, with photo evidence. Book a 15-min demo.",
-  h1: "Hotel SOP app for every department",
-  primaryKeyword: "hotel SOP app",
-  secondaryKeywords: ["hotel department SOP software", "hotel departmental workflow software", "SOP app for hotels"],
+    "The service execution platform for every department, from front office and F&B to kitchen, engineering, security and spa, with photo proof. Book a demo.",
+  h1: "A service execution platform for every hotel department",
+  primaryKeyword: "service execution platform for every department",
+  secondaryKeywords: ["hotel service execution platform", "hotel departmental workflow software", "SEP"],
   eyebrow: "Solutions",
   updated: "2026-10-01",
 };

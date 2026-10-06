@@ -13,7 +13,7 @@ function DemoCta() {
     <aside className="not-prose my-10 rounded-2xl border border-gold/40 bg-[linear-gradient(150deg,rgb(229_179_90/0.16),transparent_65%)] p-6 sm:p-7" aria-label="Book a demo">
       <p className="eyebrow">See it running</p>
       <p className="mt-2 font-display text-[1.35rem] leading-snug font-semibold text-ink">
-        Watch one of your SOPs become a timed task, in 15 minutes.
+        Watch one of your existing standards run as a timed task, in 15 minutes.
       </p>
       <p className="mt-2 text-[0.95rem] text-muted">Three interfaces on a live demo property. No feature tour.</p>
       <div className="mt-5">

@@ -25,7 +25,7 @@ export default function AudiencesHub() {
         {
           href: "/solutions/hotel-chains",
           eyebrow: "For hotel-group founders",
-          title: "Multi-property hotel SOP software for groups and chains",
+          title: "Multi-property service execution for groups and chains",
           body: "One standards library, executed and evidenced at every property.",
         },
       ]}

@@ -16,7 +16,7 @@ export default function SearchPage() {
         <RelatedLinks
           title="Popular"
           links={[
-            { href: "/digital-sop", label: "Digitize hotel SOPs" },
+            { href: "/standards-to-execution", label: "Standards to execution" },
             { href: "/audit-readiness", label: "Hotel audit readiness" },
             { href: "/problems", label: "The six hotel operations problems" },
             { href: "/platform", label: "The Mise platform" },

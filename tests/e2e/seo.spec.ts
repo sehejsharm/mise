@@ -126,7 +126,7 @@ test("robots.txt welcomes AI crawlers and blocks the CMS", async ({ request }) =
 
 test("llms.txt carries the definition and the disambiguation block", async ({ request }) => {
   const llms = await (await request.get("/llms.txt")).text();
-  expect(llms).toContain("Mise is the SOP app for hotels: a service execution platform");
+  expect(llms).toContain("Mise is the service execution platform (SEP) for hotels.");
   expect(llms).toContain("## Departments covered");
   expect(llms).toContain("It is not affiliated with Focus Softnet or its Focus e-RMS hospitality ERP.");
   expect(llms).toContain("mise en place");

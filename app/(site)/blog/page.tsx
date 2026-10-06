@@ -48,7 +48,7 @@ export default async function BlogIndex() {
         title={meta.h1}
         lede={
           <p>
-            Practical, answer-first writing for the people who run hotel shifts: how to digitize hotel SOPs,
+            Practical, answer-first writing for the people who run hotel shifts: how to put hotel standards into execution,
             build an audit trail every shift, and hold one standard across every room.
           </p>
         }

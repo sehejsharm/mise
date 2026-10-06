@@ -21,7 +21,7 @@ async function load(slug: string) {
   const meta: PageMeta = {
     path: `/blog/author/${slug}`,
     title: `${author.name}: Articles on the Mise Blog`,
-    description: `Articles by ${author.name}, ${author.role}, on hotel SOPs, service execution and audit readiness. Book a 15-min demo.`,
+    description: `Articles by ${author.name}, ${author.role}, on hotel standards, service execution and audit readiness. Book a 15-min demo.`,
     h1: `Articles by ${author.name}`,
     primaryKeyword: author.name,
     eyebrow: "Author",

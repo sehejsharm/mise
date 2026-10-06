@@ -67,7 +67,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ slug:
           <RelatedLinks
             links={[
               { href: "/blog", label: "All Mise articles" },
-              { href: "/digital-sop", label: "Digitize hotel SOPs: the guide" },
+              { href: "/standards-to-execution", label: "Standards to execution: the guide" },
               { href: "/audit-readiness", label: "Hotel audit readiness" },
               { href: "/problems", label: "The six hotel operations problems" },
             ]}

@@ -29,7 +29,7 @@ const font = (file: string) => fs.readFile(path.join(process.cwd(), "lib/og-font
 
 export async function GET(_req: Request, { params }: { params: Promise<{ key: string }> }) {
   const { key } = await params;
-  const card = (await cards())[key.replace(/\.png$/, "")] ?? { title: "Hotel SOP software that runs inside every shift.", eyebrow: "Mise" };
+  const card = (await cards())[key.replace(/\.png$/, "")] ?? { title: "The service execution platform for every shift.", eyebrow: "Mise" };
   const [grotesk, inter, mono] = await Promise.all([font("space-grotesk-600.woff"), font("inter-400.woff"), font("geist-mono-500.ttf")]);
   const size = card.title.length > 70 ? 54 : card.title.length > 45 ? 62 : 72;
   return new ImageResponse(

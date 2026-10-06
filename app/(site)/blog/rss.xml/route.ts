@@ -28,7 +28,7 @@ export async function GET() {
 <channel>
   <title>${esc(`${brand.name} blog`)}</title>
   <link>${absoluteUrl("/blog")}</link>
-  <description>${esc("Guides on hotel SOPs, service execution and audit readiness from Mise.")}</description>
+  <description>${esc("Guides on hotel standards, service execution and audit readiness from Mise.")}</description>
   <language>en-IN</language>
   <atom:link href="${absoluteUrl("/blog/rss.xml")}" rel="self" type="application/rss+xml"/>
 ${items}

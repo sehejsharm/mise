@@ -15,7 +15,7 @@ const links = [
   { href: "/platform", label: "The platform" },
   { href: "/how-it-works", label: "How it works" },
   { href: "/problems", label: "The six hotel operations problems" },
-  { href: "/digital-sop", label: "Digitize hotel SOPs" },
+  { href: "/standards-to-execution", label: "Standards to execution" },
   { href: "/blog", label: "Blog" },
 ];
 

@@ -29,7 +29,7 @@ export default function Hero() {
             id="hero-title"
             className="mt-6 text-[clamp(2.4rem,5.4vw,3.9rem)] leading-[1.0] font-semibold tracking-[-0.04em] text-ink"
           >
-            The SOP app for hotels. <span className="text-gradient-gold">Every department, every shift.</span>
+            The service execution platform for hotels. <span className="text-gradient-gold">Every department, every shift.</span>
           </h1>
           <p className="mt-6 font-display text-[1.25rem] font-medium text-gold-ink">{brand.tagline}</p>
           <p className="mt-4 max-w-xl text-[1.08rem] leading-relaxed text-muted">{brand.definitionShort}</p>

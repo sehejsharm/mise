@@ -2,7 +2,7 @@
 
 The marketing site for **Mise**, a service execution platform for hotels, built by Focus Realm.
 
-> Mise is a service execution platform for hotels. It turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.
+> Mise is the service execution platform (SEP) for hotels. It implements the SOPs a hotel already has as timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.
 
 **Stack:**
 - Next.js 15 (App Router, React Server Components, static generation), TypeScript and Tailwind CSS v4.

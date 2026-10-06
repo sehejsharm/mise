@@ -11,11 +11,11 @@ export const comparisons: Comparison[] = [
     allowLmsVocabulary: true,
     meta: {
       path: "/compare/mise-vs-hotel-lms",
-      title: "Hotel SOP Software vs LMS: What's the Difference? | Mise",
+      title: "Service Execution Platform vs LMS: The Difference | Mise",
       description:
-        "Hotel SOP software vs LMS: an LMS tracks course completion, Mise tracks whether standards run on shift, with photo evidence and a service record. Book a demo.",
-      h1: "Hotel SOP software vs LMS: execution evidence vs course completion",
-      primaryKeyword: "hotel SOP software vs LMS",
+        "Service execution platform vs LMS: an LMS tracks course completion; Mise tracks whether standards run on shift, with photo evidence. Book a demo.",
+      h1: "Service execution platform vs LMS: execution evidence vs course completion",
+      primaryKeyword: "service execution platform vs LMS",
       secondaryKeywords: ["hotel operations software vs LMS", "hotel training software"],
       eyebrow: "Compare · Mise vs hotel LMS",
       updated: "2026-09-29",
@@ -23,13 +23,13 @@ export const comparisons: Comparison[] = [
     },
     eyebrow: "Compare · Mise vs LMS",
     lede:
-      "Hotel SOP software vs LMS is the comparison buyers ask about most, because both involve standards and staff. They answer different questions. A learning management system (LMS) records that someone completed a course or module. Mise, a service execution platform, records that the standard actually ran on the floor: which room, which person, what time, with photo evidence.",
+      "Service execution platform vs LMS is the comparison buyers ask about most, because both involve standards and staff. They answer different questions. A learning management system (LMS) records that someone completed a course or module. Mise, a service execution platform, records that the standard actually ran on the floor: which room, which person, what time, with photo evidence.",
     tldr:
-      "An LMS manages courses, learners and completion certificates. Mise manages execution: SOPs run as timed tasks on staff phones, key steps require photo evidence, and every shift builds an audit-ready service record. Many hotels keep an LMS for formal training and use Mise for how the work is done on shift.",
+      "An LMS manages courses, learners and completion certificates. Mise manages execution: existing standards run as timed tasks on staff phones, key steps require photo evidence, and every shift builds an audit-ready service record. Many hotels keep an LMS for formal training and use Mise for how the work is done on shift.",
     body: `
-## What is the difference between hotel SOP software and an LMS?
+## What is the difference between a service execution platform and an LMS?
 
-The difference is the output. An LMS produces a record of learning activity: courses assigned, modules completed, quiz scores, certificates. Hotel SOP software built for execution, like Mise, produces a record of work done to standard: which task, which room, which person, how long, and what evidence. One tells you a learner finished a course; the other tells you room 208 was reset to standard at 08:39 with a photo attached.
+The difference is the output. An LMS produces a record of learning activity: courses assigned, modules completed, quiz scores, certificates. A service execution platform, like Mise, produces a record of work done to standard: which task, which room, which person, how long, and what evidence. One tells you a learner finished a course; the other tells you room 208 was reset to standard at 08:39 with a photo attached.
 
 Both have a place. They are not substitutes.
 
@@ -57,7 +57,7 @@ An LMS is the right tool for structured learning programmes: induction content, 
 
 Mise is the right tool when the question is "did the standard run, and can we prove it?" It is built for:
 
-- turning SOPs into timed tasks on staff phones;
+- running existing SOPs as timed tasks on staff phones;
 - capturing photo evidence and supervisor sign-off as work happens;
 - seeing readiness and execution per person and per standard;
 - producing an audit-ready service record without preparation.
@@ -68,12 +68,12 @@ Many properties will run both. The LMS holds formal learning content and certifi
 
 ## Is Mise an LMS?
 
-No. Mise does not manage courses, learners or certificates. It is a service execution platform: it turns SOPs into timed tasks, captures evidence as the work happens and compounds it into an audit-ready service record.
+No. Mise does not manage courses, learners or certificates. It is a service execution platform: it runs the SOPs hotels already have as timed tasks, captures evidence as the work happens and compounds it into an audit-ready service record.
 `,
     faqs: [
       {
         q: "Is Mise a hotel LMS?",
-        a: "No. Mise is a service execution platform, not an LMS. It does not manage courses or certificates. It turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as work happens, and builds an audit-ready service record.",
+        a: "No. Mise is a service execution platform, not an LMS. It does not manage courses or certificates. It runs the SOPs hotels already have as timed tasks on staff phones, captures photo and supervisor evidence as work happens, and builds an audit-ready service record.",
         allowLms: true,
       },
       {
@@ -91,7 +91,7 @@ No. Mise does not manage courses, learners or certificates. It is a service exec
       { href: "/glossary/service-execution-platform", label: "What is a service execution platform?", note: "The category, defined." },
       { href: "/problems/ghost-sop", label: "The ghost SOP", note: "Why knowing is not doing." },
       { href: "/for/learning-and-development", label: "For L&D Heads", note: "Execution as the measure." },
-      { href: "/compare/sop-software-vs-checklist-app", label: "SOP software vs checklist apps", note: "The other common comparison." },
+      { href: "/compare/execution-platform-vs-checklist-app", label: "Service execution platform vs checklist apps", note: "The other common comparison." },
     ],
     relatedPosts: ["what-is-a-service-execution-platform"],
   },
@@ -107,7 +107,7 @@ No. Mise does not manage courses, learners or certificates. It is a service exec
         "A hotel operations Excel alternative: replace spreadsheet trackers with timed tasks on staff phones, photo evidence and a live record. Book a demo.",
       h1: "A hotel operations Excel alternative that records the work as it happens",
       primaryKeyword: "hotel operations Excel alternative",
-      secondaryKeywords: ["SOP software vs Excel hotel"],
+      secondaryKeywords: ["service execution platform vs Excel hotel"],
       eyebrow: "Compare · Mise vs Excel",
       updated: "2026-09-29",
       priority: 0.6,
@@ -122,7 +122,7 @@ No. Mise does not manage courses, learners or certificates. It is a service exec
 
 Spreadsheets fill gaps. When there is no system for room inspections, audit logs or shift checks, someone builds a tracker. It works, for a while, because the person who built it maintains it. When that person is busy, on leave or gone, the tracker drifts.
 
-## SOP software vs Excel in a hotel
+## Service execution platform vs Excel in a hotel
 
 | | Excel tracker | Mise |
 |---|---|---|
@@ -144,7 +144,7 @@ Spreadsheets remain excellent for analysis, budgeting and ad-hoc reporting. Expo
 
 ## Moving off the tracker
 
-Start with the tracker that causes the most pain, usually room inspections or audit logs. Convert the underlying standard into a timed task with photo gates, run it for a few weeks at one property, and compare the record with what the spreadsheet used to show. The [digital SOP guide](/digital-sop) covers the steps.
+Start with the tracker that causes the most pain, usually room inspections or audit logs. Convert the underlying standard into a timed task with photo gates, run it for a few weeks at one property, and compare the record with what the spreadsheet used to show. The [standards-to-execution guide](/standards-to-execution) covers the steps.
 `,
     faqs: [
       {
@@ -163,7 +163,7 @@ Start with the tracker that causes the most pain, usually room inspections or au
     related: [
       { href: "/audit-readiness", label: "Hotel audit readiness", note: "A record that survives scrutiny." },
       { href: "/compare/mise-vs-whatsapp", label: "Mise vs WhatsApp", note: "The other shadow system." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Step-by-step guide." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "Step-by-step guide." },
       { href: "/problems/audit-ambush", label: "The audit ambush", note: "Why backfilled records fail." },
     ],
     relatedPosts: ["hotel-audit-readiness-audit-trail"],
@@ -227,7 +227,7 @@ Staff chose WhatsApp because it is quick. Mise is built to be as quick where it 
 
 ## Where to start
 
-Pick the WhatsApp group that carries the most operational weight, usually housekeeping, and move its routine work into timed tasks first. See the [housekeeping SOP app](/solutions/housekeeping) and our guide to [digitizing hotel SOPs](/digital-sop).
+Pick the WhatsApp group that carries the most operational weight, usually housekeeping, and move its routine work into timed tasks first. See [housekeeping execution](/solutions/housekeeping) and our guide to [putting hotel standards into execution](/standards-to-execution).
 `,
     faqs: [
       {
@@ -245,34 +245,34 @@ Pick the WhatsApp group that carries the most operational weight, usually housek
     ],
     related: [
       { href: "/problems/audit-ambush", label: "The audit ambush", note: "Where chat evidence fails." },
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "Move the busiest group first." },
+      { href: "/solutions/housekeeping", label: "Housekeeping execution", note: "Move the busiest group first." },
       { href: "/compare/mise-vs-excel", label: "Mise vs Excel", note: "The spreadsheet shadow system." },
       { href: "/glossary/shift-handover", label: "Shift handover", note: "What replaces scroll-up handovers." },
     ],
     relatedPosts: ["replace-whatsapp-hotel-task-tracking"],
   },
   {
-    slug: "sop-software-vs-checklist-app",
-    name: "SOP software vs checklist apps",
+    slug: "execution-platform-vs-checklist-app",
+    name: "Service execution platform vs checklist apps",
     versus: "Checklist apps",
-    short: "A checklist records ticks. SOP software built for execution records proof.",
+    short: "A checklist records ticks. A service execution platform records proof.",
     meta: {
-      path: "/compare/sop-software-vs-checklist-app",
-      title: "Hotel SOP Software vs Checklist App: Key Differences | Mise",
+      path: "/compare/execution-platform-vs-checklist-app",
+      title: "Service Execution Platform vs Checklist App | Mise",
       description:
-        "Hotel SOP software vs checklist apps: ticks vs proof. See how timed tasks, photo gates, versions and sign-off differ from a checklist app. Book a 15-min demo.",
-      h1: "Hotel SOP software vs checklist apps: ticks vs proof",
-      primaryKeyword: "hotel SOP software vs checklist",
-      secondaryKeywords: ["hotel checklist app vs SOP platform"],
-      eyebrow: "Compare · SOP software vs checklist apps",
+        "Service execution platform vs checklist apps: ticks vs proof. How timed tasks, photo gates, versions and sign-off differ from a checklist. Book a demo.",
+      h1: "Service execution platform vs checklist apps: ticks vs proof",
+      primaryKeyword: "service execution platform vs checklist app",
+      secondaryKeywords: ["hotel checklist app vs service execution platform"],
+      eyebrow: "Compare · Service execution platform vs checklist apps",
       updated: "2026-09-29",
       priority: 0.6,
     },
-    eyebrow: "Compare · SOP software vs checklist apps",
+    eyebrow: "Compare · Service execution platform vs checklist apps",
     lede:
-      "Hotel SOP software vs checklist apps can look like a small distinction: both put a list of steps on a phone. The difference shows up at audit time and in guest reviews. A checklist app records that boxes were ticked. SOP software built for execution records that the standard ran, against a target time, with photo evidence on the steps that matter and a sign-off.",
+      "Service execution platform vs checklist apps can look like a small distinction: both put a list of steps on a phone. The difference shows up at audit time and in guest reviews. A checklist app records that boxes were ticked. A service execution platform records that the standard ran, against a target time, with photo evidence on the steps that matter and a sign-off.",
     tldr:
-      "Checklist apps are good at lists and weak at proof: a tick carries no evidence, no standard version and no target time. A service execution platform like Mise runs the SOP as a timed task, gates key steps on photos, records the version and supervisor sign-off, and builds a service record that holds up in an audit.",
+      "Checklist apps are good at lists and weak at proof: a tick carries no evidence, no standard version and no target time. A service execution platform like Mise runs the standard as a timed task, gates key steps on photos, records the version and supervisor sign-off, and builds a service record that holds up in an audit.",
     body: `
 ## What a checklist app does well
 
@@ -282,7 +282,7 @@ Checklist apps are quick to set up and easy to use. For simple, low-stakes routi
 
 Hotel standards are rarely that simple. A guest room reset has a sequence, a time expectation, details that must look a particular way, and a verification step. A checklist flattens all of that into ticks, and a tick is easy to add at the end of a shift without the work behind it. The checklist becomes another [ghost SOP](/problems/ghost-sop), just on a phone.
 
-## Hotel checklist app vs SOP platform
+## Hotel checklist app vs service execution platform
 
 | | Checklist app | Mise |
 |---|---|---|
@@ -300,12 +300,12 @@ The single biggest difference is the [photo gate](/glossary/photo-gate). When a 
 
 ## When to choose which
 
-Use a checklist app for simple, low-risk routines where a tick is enough. Use SOP software built for execution when the standard matters to guests, auditors or your brand, which in a hotel is most of the time.
+Use a checklist app for simple, low-risk routines where a tick is enough. Use a service execution platform when the standard matters to guests, auditors or your brand, which in a hotel is most of the time.
 `,
     faqs: [
       {
-        q: "What is the difference between hotel SOP software and a checklist app?",
-        a: "A checklist app records ticks. Hotel SOP software built for execution, like Mise, runs the standard as a timed task with phases, requires photo evidence on key steps, records the standard version and supervisor sign-off, and builds an audit-ready service record.",
+        q: "What is the difference between a service execution platform and a checklist app?",
+        a: "A checklist app records ticks. A service execution platform, like Mise, runs the standard as a timed task with phases, requires photo evidence on key steps, records the standard version and supervisor sign-off, and builds an audit-ready service record.",
       },
       {
         q: "Can a checklist app be audit-ready?",
@@ -318,9 +318,9 @@ Use a checklist app for simple, low-risk routines where a tick is enough. Use SO
     ],
     related: [
       { href: "/glossary/photo-gate", label: "What is a photo gate?", note: "Evidence by design." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Write steps that can be proven." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "Steps that can be proven." },
       { href: "/compare/mise-vs-hotel-lms", label: "Mise vs hotel LMS", note: "Execution vs completion." },
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "A checklist that proves itself." },
+      { href: "/solutions/housekeeping", label: "Housekeeping execution", note: "A checklist that proves itself." },
     ],
     relatedPosts: ["housekeeping-sop-checklist"],
   },
@@ -332,11 +332,11 @@ export function comparisonBySlug(slug: string) {
 
 export const compareHubMeta = {
   path: "/compare",
-  title: "Hotel SOP Software Comparisons | Mise",
+  title: "Service Execution Platform Comparisons | Mise",
   description:
-    "Hotel SOP software comparisons: Mise vs training systems, Excel trackers, WhatsApp groups and checklist apps, and what each one records. Book a demo.",
-  h1: "Hotel SOP software comparisons: what each tool actually records",
-  primaryKeyword: "hotel SOP software comparison",
+    "Service execution platform comparisons: Mise vs training systems, Excel trackers, WhatsApp groups and checklist apps, and what each one records. Book a demo.",
+  h1: "Service execution platform comparisons: what each tool actually records",
+  primaryKeyword: "service execution platform comparison",
   eyebrow: "Compare",
   updated: "2026-09-29",
 };

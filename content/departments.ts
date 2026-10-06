@@ -55,7 +55,7 @@ export const departments: Department[] = [
     recordRows: ["07:48 · Front desk · FO-204 closed · 5 of 6 min", "07:31 · Front desk · Room-ready confirmed", "07:12 · Handover · acknowledged"],
     shift: { closed: 46, progress: 9, blocked: 1, queued: 8 },
     readiness: 86,
-    today: { person: "Arjun", initials: "AR", role: "Front desk agent", shift: "Sunday · Morning shift · 07:00–15:30", noun: "arrival", next: "The VIP in 1204 lands at 08:00. Your timed task, live SOP and five-star welcome are ready before the car arrives.", remaining: "6 min target", area: "Front desk" },
+    today: { person: "Arjun", initials: "AR", role: "Front desk agent", shift: "Sunday · Morning shift · 07:00–15:30", noun: "arrival", next: "The VIP in 1204 lands at 08:00. Your timed task, live standard and five-star welcome are ready before the car arrives.", remaining: "6 min target", area: "Front desk" },
   },
   {
     id: "housekeeping",
@@ -77,7 +77,7 @@ export const departments: Department[] = [
     recordRows: ["08:21 · Room 206 · Released · E. Rossi", "08:04 · Room 204 · Sign-off · 23 of 26 min", "07:48 · Room 202 · Photo evidence"],
     shift: { closed: 52, progress: 11, blocked: 2, queued: 9 },
     readiness: 91,
-    today: { person: "Maya", initials: "MF", role: "Room attendant", shift: "Sunday · Morning shift · 07:00–15:30", noun: "room", next: "Room 208 is next. Your timed task, live SOP and five-star finish are ready before you open the door.", remaining: "26 min target", area: "Floor 2" },
+    today: { person: "Maya", initials: "MF", role: "Room attendant", shift: "Sunday · Morning shift · 07:00–15:30", noun: "room", next: "Room 208 is next. Your timed task, live standard and five-star finish are ready before you open the door.", remaining: "26 min target", area: "Floor 2" },
   },
   {
     id: "food-and-beverage",

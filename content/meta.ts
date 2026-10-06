@@ -24,19 +24,19 @@ export const roiMeta: PageMeta = {
 
 export const aboutMeta: PageMeta = {
   path: "/about",
-  title: "About Mise | Standalone Hotel SOP & Operations Software",
+  title: "About Mise | Hotel Service Execution Platform (SEP)",
   description:
-    "How Mise is transforming hotel service execution: eliminating ghost SOPs, supervisor bottlenecks and messy WhatsApp groups with standalone hotel SOP software.",
+    "How Mise is transforming hotel service execution: running the SOPs hotels already have, and ending ghost SOPs, supervisor bottlenecks and WhatsApp chaos.",
   h1: "Reimagining Hotel Service Execution",
   primaryKeyword: "hotel service execution",
-  secondaryKeywords: ["standalone hotel SOP software", "About Mise", "Mise by Focus Realm", "Mise hotel software"],
+  secondaryKeywords: ["service execution platform", "SEP", "About Mise", "Mise by Focus Realm"],
   ogTitle: "About Mise | Revolutionizing Hotel Service Execution & Task Tracking",
   ogDescription:
-    "Learn how Mise empowers hotel operations teams with real-time photo proof, timed task tracking, and supervisor sign-offs without needing complex PMS integration.",
+    "Learn how Mise, the service execution platform, puts the SOPs hotels already have into practice with photo proof, timed tasks and supervisor sign-offs.",
   ogImageAlt: "Mise Team & Hotel Operations Platform Interface",
   twitterTitle: "About Mise | Revolutionizing Hotel Service Execution & Task Tracking",
   twitterDescription:
-    "Discover the story behind Mise: the standalone hotel SOP software designed to eliminate ghost SOPs and replace WhatsApp for hotel operations.",
+    "Discover the story behind Mise: the service execution platform (SEP) that makes existing hotel standards actually run, ending ghost SOPs and WhatsApp chaos.",
   eyebrow: "About Mise",
   updated,
   priority: 0.8,
@@ -58,7 +58,7 @@ export const demoMeta: PageMeta = {
   path: "/demo",
   title: "Book a 15-Minute Mise Demo | Mise",
   description:
-    "Book a 15-minute Mise demo: three interfaces on a live demo property, one of your hotel SOPs turned into a timed task, and how a one-property pilot works.",
+    "Book a 15-minute Mise demo: three interfaces on a live demo property, one of your existing standards as a timed task, and how a one-property pilot works.",
   h1: "Book a 15-minute Mise demo",
   primaryKeyword: "Mise demo",
   eyebrow: "Book a demo",
@@ -68,9 +68,9 @@ export const demoMeta: PageMeta = {
 
 export const contactMeta: PageMeta = {
   path: "/contact",
-  title: "Contact Mise: Hotel SOP Software Team | Mise",
+  title: "Contact Mise: Service Execution Platform Team | Mise",
   description:
-    "Contact the Mise team about hotel SOP software, pilots, partnerships or press. Email, phone or the form; we reply to every message. Or book a 15-min demo.",
+    "Contact the Mise team about the service execution platform, pilots, partnerships or press. Email, phone or the form; we reply to every message. Book a demo.",
   h1: "Contact Mise",
   primaryKeyword: "contact Mise",
   eyebrow: "Contact",
@@ -80,10 +80,10 @@ export const contactMeta: PageMeta = {
 
 export const blogMeta: PageMeta = {
   path: "/blog",
-  title: "Mise Blog: Hotel SOP & Operations Guides",
+  title: "Mise Blog: Hotel Service Execution Guides",
   description:
-    "The Mise blog: guides on digitizing hotel SOPs, audit readiness, every department's standards and running shifts without WhatsApp chaos. Book a demo.",
-  h1: "The Mise blog: hotel SOPs, standards and service execution",
+    "The Mise blog: guides on hotel service execution, audit readiness, every department's standards and running shifts without WhatsApp chaos. Book a demo.",
+  h1: "The Mise blog: hotel standards and service execution",
   primaryKeyword: "Mise blog",
   eyebrow: "Field notes",
   updated,
@@ -94,7 +94,7 @@ export const searchMeta: PageMeta = {
   path: "/search",
   title: "Search | Mise",
   description:
-    "Search misehotel.com: guides on hotel SOP software, digital SOPs, audit readiness, the six hotel operations problems and the Mise platform. Book a 15-min demo.",
+    "Search misehotel.com: guides on service execution, hotel standards, audit readiness, the six hotel operations problems and the Mise platform. Book a demo.",
   h1: "Search Mise",
   primaryKeyword: "search",
   eyebrow: "Search",

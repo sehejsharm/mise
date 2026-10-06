@@ -34,7 +34,7 @@ Production data is hosted in India.
 Mise holds the data needed to run and evidence your standards:
 
 - **People:** names, roles and the property each person works at.
-- **Standards:** the SOPs your standards owners write, with versions, reference photos and evidence requirements.
+- **Standards:** the SOPs your hotel already has, as set up in Mise, with versions, reference photos and evidence requirements.
 - **Execution records:** task assignments, step completions, timestamps, durations against target, supervisor sign-offs and comments.
 - **Evidence:** photos captured inside tasks at gated steps.
 - **Acknowledgements:** who confirmed which version of a standard, with a timestamp, device label and record ID.

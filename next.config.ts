@@ -89,6 +89,13 @@ const nextConfig: NextConfig = {
       { source: "/opengraph-image", destination: "/og/home.png", permanent: false },
       { source: "/blog/page/1", destination: "/blog", permanent: true },
       { source: "/solutions/fnb", destination: "/solutions/food-and-beverage", permanent: true },
+      // Service execution platform renames: no product URLs carry "SOP".
+      { source: "/hotel-sop-software-india", destination: "/hotel-service-execution-india", permanent: true },
+      { source: "/hotel-sop-software-south-asia", destination: "/hotel-service-execution-south-asia", permanent: true },
+      { source: "/compare/sop-software-vs-checklist-app", destination: "/compare/execution-platform-vs-checklist-app", permanent: true },
+      { source: "/digital-sop", destination: "/standards-to-execution", permanent: true },
+      { source: "/glossary/sop-app-for-hotels", destination: "/glossary/service-execution-platform", permanent: true },
+      { source: "/blog/one-sop-app-every-hotel-department", destination: "/blog/one-platform-every-hotel-department", permanent: true },
     ];
   },
   async headers() {

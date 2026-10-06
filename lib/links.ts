@@ -5,7 +5,7 @@
  * on a page into a link, at most once per term AND once per destination, never
  * to the page it is on, and never inside an existing link or a heading. Anchor
  * text is always the matched phrase itself, which keeps it descriptive
- * ("digitize hotel SOPs"), never "click here".
+ * ("hotel standards into execution"), never "click here".
  *
  * Longer phrases are listed first so "audit-ready service record" wins over
  * "service record".
@@ -13,12 +13,11 @@
 export type LinkRule = { terms: string[]; href: string };
 
 export const linkRules: LinkRule[] = [
-  { terms: ["digitize hotel SOPs", "digitise hotel SOPs", "digitizing hotel SOPs"], href: "/digital-sop" },
-  { terms: ["digital SOP for hotels", "digital SOPs"], href: "/digital-sop" },
-  { terms: ["audit-ready service record", "hotel audit readiness", "audit readiness"], href: "/audit-readiness" },
+  { terms: ["put hotel standards into execution", "hotel standards into execution"], href: "/standards-to-execution" },
+    { terms: ["audit-ready service record", "hotel audit readiness", "audit readiness"], href: "/audit-readiness" },
   { terms: ["service execution platform"], href: "/glossary/service-execution-platform" },
-  { terms: ["SOP app for hotels", "hotel SOP app", "hotel SOP software"], href: "/" },
-  { terms: ["hotel department SOP software", "hotel departmental workflow software", "every hotel department"], href: "/solutions" },
+  { terms: ["hotel service execution platform", "service execution platform (SEP)"], href: "/" },
+  { terms: ["service execution platform for every department", "hotel departmental workflow software", "every hotel department"], href: "/solutions" },
   { terms: ["hotel operations task management"], href: "/platform" },
   { terms: ["departmental SOP", "departmental SOPs"], href: "/glossary/departmental-sop" },
   { terms: ["hotel operations software"], href: "/platform" },
@@ -34,20 +33,20 @@ export const linkRules: LinkRule[] = [
   { terms: ["supervisor sign-off", "supervisor sign-offs"], href: "/glossary/supervisor-sign-off" },
   { terms: ["shift handover"], href: "/glossary/shift-handover" },
   { terms: ["service record"], href: "/glossary/service-record" },
-  { terms: ["housekeeping SOP app", "housekeeping SOPs", "housekeeping checklist"], href: "/solutions/housekeeping" },
-  { terms: ["front desk SOP", "front desk SOPs", "front office SOPs"], href: "/solutions/front-office" },
-  { terms: ["F&B SOPs", "food and beverage SOPs"], href: "/solutions/food-and-beverage" },
-  { terms: ["hotel kitchen SOP software", "kitchen SOPs", "FSSAI hygiene checklist"], href: "/solutions/kitchen" },
-  { terms: ["hotel maintenance task tracking", "preventive maintenance checklist", "engineering SOPs"], href: "/solutions/engineering" },
+  { terms: ["housekeeping execution", "housekeeping checklist"], href: "/solutions/housekeeping" },
+  { terms: ["front desk service execution", "front office execution"], href: "/solutions/front-office" },
+  { terms: ["F&B service execution", "food and beverage execution"], href: "/solutions/food-and-beverage" },
+  { terms: ["hotel kitchen execution", "FSSAI hygiene checklist"], href: "/solutions/kitchen" },
+  { terms: ["hotel maintenance task tracking", "preventive maintenance checklist", "engineering execution"], href: "/solutions/engineering" },
   { terms: ["hotel security round app", "fire safety checklist", "fire-exit round"], href: "/solutions/security-and-safety" },
-  { terms: ["spa SOP software for hotels", "spa SOPs"], href: "/solutions/spa-and-wellness" },
+  { terms: ["spa service execution", "spa and wellness execution"], href: "/solutions/spa-and-wellness" },
   { terms: ["multi-property hotel groups", "multi-property", "hotel chains"], href: "/solutions/hotel-chains" },
   { terms: ["boutique hotels", "boutique hotel"], href: "/solutions/boutique-hotels" },
   { terms: ["manager dashboard"], href: "/platform#manager" },
   { terms: ["standards workspace"], href: "/platform#standards" },
   { terms: ["WhatsApp groups", "WhatsApp group"], href: "/compare/mise-vs-whatsapp" },
   { terms: ["Excel tracker", "Excel trackers", "spreadsheet tracker"], href: "/compare/mise-vs-excel" },
-  { terms: ["checklist app", "checklist apps"], href: "/compare/sop-software-vs-checklist-app" },
+  { terms: ["checklist app", "checklist apps"], href: "/compare/execution-platform-vs-checklist-app" },
   { terms: ["cost of staff turnover", "cost of hotel staff turnover"], href: "/roi" },
   { terms: ["one-property pilot", "one property pilot"], href: "/how-it-works#pilot" },
 ];

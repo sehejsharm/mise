@@ -49,12 +49,12 @@ test("nav Solutions opens the department mega-menu and links to /solutions", asy
   }
 });
 
-test("the homepage is positioned as the SOP app for every department", async ({ page }) => {
+test("the homepage is positioned as the service execution platform for every department", async ({ page }) => {
   await stubGoogle(page);
   await rejectConsentUpfront(page);
   await page.goto("/");
-  await expect(page).toHaveTitle("Best Hotel SOP Software & Photo Proof Task Tracking | Mise");
-  await expect(page.locator("h1")).toContainText("SOP app for hotels");
+  await expect(page).toHaveTitle("Hotel Service Execution Platform (SEP) | Mise");
+  await expect(page.locator("h1")).toContainText("service execution platform for hotels");
   const group = page.getByRole("group", { name: "Show the demo for a department" });
   for (const d of ["Front office", "Housekeeping", "F&B service", "Kitchen", "Engineering", "Security", "Spa"]) {
     await expect(group.getByRole("button", { name: d })).toBeVisible();

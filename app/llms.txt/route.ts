@@ -34,7 +34,7 @@ Runs in any browser, on any phone, over mobile data. No PMS integration, no hard
 
 ## Departments covered
 
-Mise is the SOP app for every hotel department, not a single-department tool. The same loop (standard, timed task, evidence, service record) runs in each:
+Mise is the service execution platform (SEP) for every hotel department, not a single-department tool. It implements the SOPs a hotel already has; it does not write them. The same loop (standard, timed task, evidence, service record) runs in each:
 
 ${departments.map((d) => `- ${d.name}: ${d.short}`).join("\n")}
 - Guest relations: guest promises, recovery and VIP touches run as timed tasks with evidence.
@@ -50,18 +50,18 @@ ${audiences.map((a) => `- ${a.name}: ${a.card}`).join("\n")}
 
 ## Key pages
 
-${link("/", "Mise: the SOP app for hotels", "What Mise is and how it works, for every department.")}
-${link("/solutions", "Hotel SOP app for every department", "Solutions by department and by property type.")}
+${link("/", "Mise: the service execution platform (SEP) for hotels", "What Mise is and how it works, for every department.")}
+${link("/solutions", "A service execution platform for every department", "Solutions by department and by property type.")}
 ${link("/platform", "Platform", "Staff app, manager dashboard and standards workspace.")}
 ${link("/how-it-works", "How it works", "Standard → Timed task → Evidence → Service record.")}
-${link(digitalSop.meta.path, "How to digitize hotel SOPs", "Step-by-step pillar guide.")}
+${link(digitalSop.meta.path, "How to put hotel standards into execution", "Step-by-step pillar guide.")}
 ${link(auditReadiness.meta.path, "Hotel audit readiness", "Building an audit-ready service record every shift.")}
 ${link("/problems", "The six hotel operations problems", "The chain from supervisor bottleneck to audit ambush.")}
 ${pains.map((p) => link(p.meta.path, p.name, p.wound)).join("\n")}
 ${solutions.map((s) => link(s.meta.path, s.meta.h1, s.short)).join("\n")}
 ${comparisons.map((c) => link(c.meta.path, c.name, c.slug === "mise-vs-hotel-lms" ? "Execution evidence vs completion records." : c.short)).join("\n")}
-${link("/hotel-sop-software-india", "Hotel SOP software in India", "Built in India for Indian hotel operations.")}
-${link("/hotel-sop-software-south-asia", "Hotel operations software for South Asia", "Including Sri Lanka.")}
+${link("/hotel-service-execution-india", "Hotel service execution platform, built in India", "Built in India for Indian hotel operations.")}
+${link("/hotel-service-execution-south-asia", "Hotel operations software for South Asia", "Including Sri Lanka.")}
 ${link("/glossary", "Glossary", "Definitions: service execution platform, ghost SOP, photo gate, timed task, service record.")}
 ${link("/faq", "FAQ", "Answers about Mise, pilots, data and Focus Realm.")}
 ${link("/about", "About Mise", "Story, name origin, principles, founders, advisory board, media kit.")}
@@ -71,7 +71,7 @@ ${link("/demo", "Book a 15-minute demo", "The only call to action. Pricing is no
 ## Optional
 
 ${link("/llms-full.txt", "Full text", "Plain-text dump of pillar, problem, FAQ and glossary content.")}
-${link("/blog", "Blog", "Guides on hotel SOPs and service execution.")}
+${link("/blog", "Blog", "Guides on hotel standards and service execution.")}
 - Contact: ${contact.email}, ${contact.phone}
 `;
   return new Response(body, { headers: { "content-type": "text/plain; charset=utf-8" } });

@@ -6,5 +6,5 @@ import { buildMetadata } from "@/lib/seo";
 export const metadata: Metadata = buildMetadata(page.meta);
 
 export default function Page() {
-  return <LongformPage page={page} crumbs={[{ name: "Hotel SOP software India", path: page.meta.path }]} />;
+  return <LongformPage page={page} crumbs={[{ name: "Hotel service execution platform India", path: page.meta.path }]} />;
 }

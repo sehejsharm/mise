@@ -44,9 +44,9 @@ export const roleInterfaces: RoleInterface[] = [
       },
       {
         image: "product/staff-standards",
-        title: "SOPs",
+        title: "Standards",
         caption: "The standard for the work in front of you",
-        alt: "Mise hotel SOP app standards library with HSK-101 Guest Room Reset and Release, 4 of 8 checks complete",
+        alt: "Mise service execution platform standards library with HSK-101 Guest Room Reset and Release, 4 of 8 checks complete",
       },
       {
         image: "product/staff-briefs",
@@ -89,7 +89,7 @@ export const roleInterfaces: RoleInterface[] = [
       { title: "Assignments", body: "Push a standard to a role or person, with a deadline." },
       { title: "Acknowledgement desk", body: "Who confirmed the current standard, with a record ID. CSV export." },
       { title: "Team progress", body: "Readiness gaps and service evidence per person." },
-      { title: "SOP results", body: "Which standards staff reach for, and which change the shift." },
+      { title: "Standard results", body: "Which standards staff reach for, and which change the shift." },
       { title: "Exceptions first", body: "Blocked rooms, late tasks and missing evidence surface." },
     ],
     screens: [
@@ -119,9 +119,9 @@ export const roleInterfaces: RoleInterface[] = [
       },
       {
         image: "product/manager-standard-results",
-        title: "SOP results",
+        title: "Standard results",
         caption: "What changes the shift",
-        alt: "Mise hotel manager dashboard SOP results: 8 SOPs and 1,618 observed outcomes over 30 days (demo data)",
+        alt: "Mise hotel manager dashboard standard results: 8 standards and 1,618 observed outcomes over 30 days (demo data)",
       },
     ],
   },
@@ -146,7 +146,7 @@ export const roleInterfaces: RoleInterface[] = [
         image: "product/author-create-standard",
         title: "Create standard",
         caption: "Turn the standard into a clear shift sequence",
-        alt: "Mise standards workspace form for creating a hotel SOP with title, department, audience role and hashtags",
+        alt: "Mise standards workspace form for setting up an existing hotel standard with title, department, audience role and hashtags",
       },
       {
         image: "product/author-feedback-inbox",
@@ -162,19 +162,19 @@ export const platformMeta = {
   path: "/platform",
   title: "Hotel Operations Software: Staff, Manager, Standards | Mise",
   description:
-    "Mise hotel operations software: a staff app for timed tasks, a manager dashboard and a standards workspace, sharing one service record. Book a 15-min demo.",
+    "Hotel operations software built as a service execution platform: a staff app, a manager dashboard and a standards workspace, one service record. Book a demo.",
   h1: "Hotel operations software with three interfaces and one service record",
   primaryKeyword: "hotel operations software",
   metaKeywords: [
-    "hotel SOP app",
-    "SOP app for hotels",
+    "service execution platform",
+    "SEP for hotels",
     "hotel operations software",
-    "hotel SOP management system",
-    "hotel department SOP software",
+    "hotel service execution platform",
+    "service execution platform for every department",
     "hotel operations task management",
   ],
   secondaryKeywords: [
-    "hotel SOP management system",
+    "SEP for hotels",
     "hotel staff app",
     "hotel manager dashboard",
     "hotel operations task management",
@@ -190,22 +190,22 @@ export const platformFaqs: Faq[] = [
     a: "Because the three jobs have nothing in common. Staff need one task, one thumb and a small screen in daylight. Managers need a live picture of the floor on a desktop. Standards owners need a focused authoring workspace. One responsive layout would compromise all three.",
   },
   {
-    q: "Is Mise a hotel SOP management system?",
-    a: "Yes, and more than storage. As a hotel SOP management system, Mise holds versioned standards, but its core job is execution: each SOP runs as a timed task on staff phones, with photo evidence and sign-off, building an audit-ready service record.",
+    q: "Does Mise create our SOPs?",
+    a: "No. Mise is a service execution platform (SEP): it implements the SOPs you already have. It holds them as versioned standards, but its core job is execution: each standard runs as a timed task on staff phones, with photo evidence and sign-off, building an audit-ready service record.",
   },
   {
     q: "Which hotel departments can use Mise?",
-    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own SOPs as timed tasks with photo evidence in the same app, writing to one service record.",
+    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own existing standards as timed tasks with photo evidence on the same platform, writing to one service record.",
   },
 ];
 
 export const howItWorksMeta = {
   path: "/how-it-works",
-  title: "How Hotel SOP Management Software Works | Mise",
+  title: "How the Service Execution Platform Works | Mise",
   description:
-    "How Mise hotel SOP management software works: Standard → Timed task → Evidence → Service record, with photo gates and supervisor sign-off. Book a 15-min demo.",
-  h1: "How hotel SOP management software turns standards into evidence",
-  primaryKeyword: "hotel SOP management software",
+    "How the Mise service execution platform works: Standard → Timed task → Evidence → Service record, with photo gates and supervisor sign-off. Book a 15-min demo.",
+  h1: "How a service execution platform works: your standards, turned into evidence",
+  primaryKeyword: "how a service execution platform works",
   secondaryKeywords: ["timed task hotel", "hotel photo evidence app", "hotel supervisor sign-off app"],
   eyebrow: "One loop, four moves",
   updated: "2026-09-29",
@@ -217,9 +217,9 @@ export const loopSteps = [
     id: "standard",
     n: "01",
     name: "Standard",
-    line: "Write the SOP once: steps, target time, photo gates.",
+    line: "Bring the SOPs you have: steps, target time, photo gates.",
     detail:
-      "The standards owner writes the SOP in the standards workspace as short steps grouped into four phases (Prepare, Perform, Verify, Release), sets a realistic target time, adds reference photos, and marks which steps need photo evidence. Publishing gives it a version.",
+      "Mise doesn't write your standards. Each SOP you already have is set up in the standards workspace as short steps grouped into four phases (Prepare, Perform, Verify, Release), sets a realistic target time, adds reference photos, and marks which steps need photo evidence. Publishing gives it a version.",
     who: "Standards workspace · desktop",
   },
   {
@@ -254,7 +254,7 @@ export const loopSteps = [
 export const howItWorksFaqs: Faq[] = [
   {
     q: "What is a timed task in a hotel?",
-    a: "A timed task is a hotel standard delivered as a unit of work on a staff phone, with ordered steps, a target time and a live countdown. It replaces reading an SOP with doing it, step by step, at the moment of work.",
+    a: "A timed task is a hotel standard delivered as a unit of work on a staff phone, with ordered steps, a target time and a live countdown. It replaces reading a standard with doing it, step by step, at the moment of work.",
   },
   {
     q: "How does the hotel photo evidence app work?",

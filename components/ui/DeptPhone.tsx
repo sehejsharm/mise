@@ -69,7 +69,7 @@ export function DeptPhoneScreen({ dept }: { dept: Department }) {
 
       {/* Tab bar */}
       <div className="mx-2 mb-2 grid grid-cols-5 rounded-2xl bg-[#19353c] px-1 py-1.5 text-center text-[0.44rem] text-[#a0b0ac]">
-        {["Today", "SOPs", "Briefs", "Sequence", "Inbox"].map((tab, i) => (
+        {["Today", "Standards", "Briefs", "Sequence", "Inbox"].map((tab, i) => (
           <span key={tab} className={`rounded-lg py-1 ${i === 0 ? "bg-white/10 font-semibold text-[#e5b35a]" : ""}`}>
             {tab}
           </span>

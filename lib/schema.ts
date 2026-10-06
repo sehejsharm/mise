@@ -57,18 +57,18 @@ export function organizationNode(): Organization {
     },
     image: { "@id": ids.logo },
     description:
-      "Mise provides standalone hotel SOP management software with photo proof task tracking, duty manager handovers, and supervisor sign-off features.",
+      "Mise is the service execution platform (SEP) for hotels. It implements the standards a hotel already has as timed tasks with photo proof, duty manager handovers and supervisor sign-off.",
     email: contact.email,
     telephone: contact.phone,
     slogan: brand.tagline,
     foundingDate: brand.founded,
     areaServed: brand.areaServed.map((name) => ({ "@type": "Place" as const, name })),
     knowsAbout: [
-      "Hotel SOP software",
+      "Service execution platform (SEP)",
       "Service execution",
       "Hotel operations",
       "Hotel audit readiness",
-      "Digital SOPs for hotels",
+      "Hotel standards implementation",
       "Housekeeping task management",
     ],
     parentOrganization: {
@@ -98,7 +98,7 @@ export function websiteNode(): WebSite {
     "@id": ids.website,
     url: siteUrl,
     name: brand.name,
-    description: "Standalone Hotel SOP Software & Photo Proof Task Tracking",
+    description: "Hotel Service Execution Platform (SEP) & Photo Proof Task Tracking",
     inLanguage: "en-IN",
     publisher: { "@id": ids.org },
     potentialAction: {
@@ -117,24 +117,24 @@ export function softwareNode(): SoftwareApplication {
   return {
     "@type": "SoftwareApplication",
     "@id": ids.software,
-    name: "Mise Hotel Operations Software",
+    name: "Mise Service Execution Platform",
     url: siteUrl,
     description:
-      "Standalone hotel SOP software with photo proof verification, timed task tracking, supervisor sign-offs, and duty manager handovers without PMS integration.",
+      "Standalone service execution platform (SEP) for hotels: implements your existing standards as timed tasks with photo proof verification, supervisor sign-offs and duty manager handovers, without PMS integration.",
     applicationCategory: "BusinessApplication",
-    applicationSubCategory: "Hotel Operations & SOP Software",
+    applicationSubCategory: "Service Execution Platform (SEP)",
     ...({ brand: { "@id": ids.org } } as object),
     keywords:
-      "SOP app for hotels, hotel SOP app, hotel SOP software, hotel department SOP software, hotel departmental workflow software, hotel operations task management, digital SOP for hotels",
+      "service execution platform, SEP for hotels, hotel service execution platform, hotel standards execution, hotel departmental workflow software, hotel operations task management, photo proof task tracking",
     operatingSystem: "iOS, Android, Web",
     featureList: [
       "Real-time photo proof task verification",
-      "Timed task scheduling & SOP execution",
+      "Timed task scheduling for your existing standards",
       "Standalone deployment with zero PMS integration required",
       "Duty manager shift handover logbook",
       "Housekeeping checklist & sanitation tracking",
       "Hotel HR compliance & audit readiness logs",
-      "One SOP app for every department: front office, housekeeping, F&B, kitchen, engineering, security, spa",
+      "One service execution platform for every department: front office, housekeeping, F&B, kitchen, engineering, security, spa",
     ],
     audience: {
       "@type": "Audience",

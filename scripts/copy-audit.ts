@@ -1,5 +1,6 @@
 /**
- * Copy audit: keeps Mise positioned as the SOP app for every hotel department.
+ * Copy audit: keeps Mise positioned as the service execution platform (SEP) for
+ * every hotel department, implementing the SOPs hotels already have.
  *
  *   node scripts/copy-audit.ts                     audit the local build (.next), after `pnpm build`
  *   node scripts/copy-audit.ts --base https://misehotel.com
@@ -13,7 +14,9 @@
  *     contact address (no subject/body) on /demo, /contact and in the footer;
  *  4. retired vocabulary ("LMS", "course", "module", "learner", "training
  *     platform") appears outside the comparison content and "not an LMS" contexts;
- *  5. a confidential term or the retired domain appears in the HTML.
+ *  5. a confidential term or the retired domain appears in the HTML;
+ *  6. Mise is named as SOP software ("SOP app", "SOP software", "SOP platform",
+ *     "SOP management") in visible text, title, meta description or JSON-LD.
  *
  * Writes the per-URL counts table to docs/COPY-AUDIT.md (or --out <file>).
  * Runs with Node 22's built-in type stripping; no extra dependencies.
@@ -46,6 +49,7 @@ const VOCAB_ALLOWED_PHRASES = [/\bnot an LMS\b/gi, /\bnot a learning management 
 const VOCAB_ALLOWED_PAGES = [/^\/compare\/mise-vs-hotel-lms$/, /^\/blog\/what-is-a-service-execution-platform$/];
 const MAILTO_PAGES = ["/demo", "/contact"];
 const rev = (s: string) => s.split("").reverse().join("");
+const SOP_PRODUCT = /\bSOP (?:apps?|software|platforms?|management)\b/i;
 const CONFIDENTIAL = [new RegExp(`\\b${rev("noigeL")}\\b`, "i"), new RegExp(`\\b${rev("CDT")}\\b`), new RegExp(["focus", "realm\\.com"].join("-"), "i")];
 
 type Page = { url: string; html: string };
@@ -85,6 +89,7 @@ function visibleText(doc: HTMLElement) {
 }
 
 const failures: string[] = [];
+let sopTotal = 0;
 const rows: string[] = [];
 
 const pages = await loadPages();
@@ -150,9 +155,16 @@ for (const { url, html } of pages) {
   const raw = html.replace(/data:[a-z/+.-]+;base64,[A-Za-z0-9+/=]+/g, "");
   if (CONFIDENTIAL.some((re) => re.test(raw))) problems.push("confidential term in HTML");
 
+  // 6. SOP product naming. Mise is the service execution platform; it runs SOPs, it is not SOP software.
+  const ld = doc.querySelectorAll('script[type="application/ld+json"]').map((n) => n.text).join(" ");
+  const sopName = `${text} ${title} ${desc} ${ld}`.match(SOP_PRODUCT);
+  if (sopName) problems.push(`SOP product naming "${sopName[0]}"`);
+  const sops = count(text, /\bSOPs?\b/g);
+  sopTotal += sops;
+
   if (!html) problems.push("page not found in build");
   problems.forEach((p) => failures.push(`${url}: ${p}`));
-  rows.push(`| \`${url}\` | ${counts.join(" | ")} | ${mailtoCtas} | ${problems.length ? "FAIL" : "PASS"} |`);
+  rows.push(`| \`${url}\` | ${counts.join(" | ")} | ${sops} | ${mailtoCtas} | ${problems.length ? "FAIL" : "PASS"} |`);
 }
 
 const source = base ? `live site ${base} (sitemap URLs)` : "local production build (.next)";
@@ -166,12 +178,13 @@ Rules:
 - "housekeeping" may appear in a title, H1 or meta description only on \`/solutions/housekeeping\` and housekeeping blog posts.
 - The homepage may not mention housekeeping more often than any other single department.
 - No demo CTA may be a \`mailto:\` link. Plain contact-address links are allowed only on \`/demo\`, \`/contact\` and in the footer.
+- Mise is never named as SOP software: "SOP app", "SOP software", "SOP platform" and "SOP management" fail anywhere in visible text, titles, meta descriptions or JSON-LD. The "SOP" column counts remaining mentions of the word (the hotel's own SOPs and the ghost SOP concept).
 - The existing bans stay: retired vocabulary outside the comparison content and "not an LMS" contexts, confidential terms and the retired domain.
 
-Department mentions are counted in each page's visible text.${failures.length ? `\n\n## Problems\n\n${failures.map((f) => `- ${f}`).join("\n")}` : ""}
+Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: ${sopTotal}.${failures.length ? `\n\n## Problems\n\n${failures.map((f) => `- ${f}`).join("\n")}` : ""}
 
-| URL | ${DEPTS.map(([n]) => n).join(" | ")} | mailto CTAs | Result |
-|---|${DEPTS.map(() => "---:").join("|")}|---:|---|
+| URL | ${DEPTS.map(([n]) => n).join(" | ")} | SOP | mailto CTAs | Result |
+|---|${DEPTS.map(() => "---:").join("|")}|---:|---:|---|
 ${rows.join("\n")}
 `;
 fs.mkdirSync(path.dirname(outFile), { recursive: true });

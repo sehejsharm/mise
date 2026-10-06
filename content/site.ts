@@ -30,10 +30,10 @@ export const brand = {
    * Do not paraphrase it anywhere else.
    */
   definition:
-    "Mise is the SOP app for hotels: a service execution platform that turns every department's SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and builds an audit-ready service record. Not an LMS. No PMS integration required.",
+    "Mise is the service execution platform (SEP) for hotels. It does not write your standards: it implements the SOPs your hotel already has, running them as timed tasks on staff phones in every department, capturing photo and supervisor evidence as the work happens, and building an audit-ready service record. Not an LMS. No PMS integration required.",
   /** Hero sub-line: names the departments. */
   definitionShort:
-    "Standalone hotel SOP software for front office, housekeeping, F&B, kitchen, engineering, security and spa: every department's SOPs become timed tasks with photo proof and one audit-ready record.",
+    "The standalone service execution platform (SEP) for front office, housekeeping, F&B, kitchen, engineering, security and spa. Bring the standards you already have; Mise runs them as timed tasks with photo proof and one audit-ready record.",
   spine: ["Standard", "Timed task", "Evidence", "Service record"] as const,
   nameOrigin:
     "Mise comes from mise en place, the kitchen discipline of having everything in its place before service starts. Mise brings that discipline to every department, on every shift.",
@@ -215,7 +215,7 @@ export const footerColumns: { heading: string; links: FooterLink[] }[] = [
       { href: "/problems/attrition-bleed", label: "Attrition Bleed" },
       { href: "/problems/star-rating-ceiling", label: "Star Rating Ceiling" },
       { href: "/problems/audit-ambush", label: "Audit Ambush" },
-      { href: "/digital-sop", label: "Digital SOP guide" },
+      { href: "/standards-to-execution", label: "Standards to execution" },
       { href: "/audit-readiness", label: "Audit readiness" },
       { href: "/compare", label: "Comparisons" },
       { href: "/glossary", label: "Glossary" },

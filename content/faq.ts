@@ -19,14 +19,14 @@ export const faqs: FaqItem[] = [
   {
     group: "How it works",
     home: true,
-    q: "What is standalone hotel SOP software and why is PMS integration not required?",
-    a: "Mise is a standalone hotel SOP software operating independently of your Property Management System (PMS). Unlike legacy hotel operations management software that requires months of complex API integration, Mise deploys instantly on mobile and web delivering complete hotel task management software capabilities across housekeeping, front desk, and maintenance teams from day one.",
+    q: "What is a standalone service execution platform, and why is PMS integration not required?",
+    a: "Mise is a standalone service execution platform (SEP) operating independently of your Property Management System (PMS). Unlike legacy hotel operations management software that requires months of complex API integration, Mise deploys instantly on mobile and web delivering complete hotel task management software capabilities across housekeeping, front desk, and maintenance teams from day one.",
   },
   {
     group: "How it works",
     home: true,
     q: 'How does hotel photo proof software eliminate "ghost SOPs" and supervisor bottlenecks?',
-    a: 'Mise acts as a dedicated hotel photo proof software that stops "ghost SOPs"—tasks checked off without actual execution—by requiring timestamped photo verification. Staff capture real-time photo proof inside our housekeeping SOP app, while managers review and approve work remotely using our hotel supervisor sign-off app, clearing supervisor bottlenecks on the floor and delivering an audit-ready hotel SOP platform.',
+    a: 'Mise acts as a dedicated hotel photo proof software that stops "ghost SOPs"—tasks checked off without actual execution—by requiring timestamped photo verification. Staff capture real-time photo proof on the task itself, while managers review and approve work remotely using our hotel supervisor sign-off app, clearing supervisor bottlenecks on the floor and building an audit-ready service record.',
   },
   {
     group: "How it works",
@@ -38,24 +38,24 @@ export const faqs: FaqItem[] = [
     group: "How it works",
     home: true,
     q: "How does Mise support housekeeping checklists and hotel HR compliance?",
-    a: "Mise serves as an all-in-one hotel operations software solution designed to streamline departmental workflows: Housekeeping SOP App uses hotel housekeeping checklist software with photo verification to guarantee rooms meet brand standards every shift; Duty Manager Handover App captures shift incidents, maintenance tickets, and VIP notes for smooth operational handovers; Hotel HR Compliance Software automatically tracks staff SOP training completion and safety standard sign-offs with permanent digital records.",
+    a: "Mise is one service execution platform across departmental workflows: Housekeeping execution uses hotel housekeeping checklist software with photo verification to guarantee rooms meet brand standards every shift; Duty manager handover captures shift incidents, maintenance tickets, and VIP notes for smooth operational handovers; HR compliance tracking records staff standards acknowledgement and safety standard sign-offs with permanent digital records.",
   },
   {
     group: "About Mise",
     home: true,
     allowLms: true,
     q: "Is Mise an LMS?",
-    a: "No. Mise is a service execution platform, not an LMS. A learning management system tracks courses and completion. Mise runs your SOPs as timed tasks during the shift and records whether each standard was executed, with photo evidence and supervisor sign-off, in an audit-ready service record.",
+    a: "No. Mise is a service execution platform, not an LMS. A learning management system tracks courses and completion. Mise implements the SOPs you already have as timed tasks during the shift and records whether each standard was executed, with photo evidence and supervisor sign-off, in an audit-ready service record.",
     homeAnswer:
-      "No. An LMS tracks course completion. Mise runs SOPs as timed tasks during the shift and records whether each standard was executed, with evidence.",
+      "No. An LMS tracks course completion. Mise runs your existing standards as timed tasks during the shift and records whether each standard was executed, with evidence.",
   },
   {
     group: "How it works",
     home: true,
-    q: "How does Mise digitize hotel SOPs?",
-    a: "Mise turns each SOP into a timed task. The standards owner writes the steps, a target time and reference photos in the standards workspace, marks which steps need photo evidence, and publishes. The standard then arrives on staff phones as a timed task with a countdown, and every completion writes to the service record.",
+    q: "Does Mise write our SOPs?",
+    a: "No. Mise implements the SOPs your hotel already has; it does not create them. Each existing standard is set up in the standards workspace as short steps, a target time and reference photos, with the steps that need photo evidence marked, and then published. The standard then arrives on staff phones as a timed task with a countdown, and every completion writes to the service record.",
     homeAnswer:
-      "Each SOP becomes a timed task: steps, target time, reference photos and photo gates, published straight onto staff phones.",
+      "No. Mise implements the standards you already have. Each one becomes a timed task with steps, target time and photo gates, on staff phones.",
   },
   {
     group: "How it works",
@@ -86,7 +86,7 @@ export const faqs: FaqItem[] = [
     q: "How does a pilot work?",
     a: "A pilot is scoped to one property, starting with the department where standards slip most: front office, housekeeping, F&B, kitchen or engineering. We convert your most important standards into timed tasks, your team runs them on real shifts, and the service record fills with evidence from the first days. Scope, and therefore pricing, is agreed on a call rather than from a rate card.",
     homeAnswer:
-      "One property, starting with the department where standards slip most — front office, housekeeping, F&B, kitchen or engineering. Your SOPs become timed tasks, and the service record fills with evidence from the first shifts.",
+      "One property, starting with the department where standards slip most — front office, housekeeping, F&B, kitchen or engineering. The standards you already have become timed tasks, and the service record fills with evidence from the first shifts.",
   },
   {
     group: "About Mise",
@@ -129,7 +129,7 @@ export const faqs: FaqItem[] = [
   {
     group: "Setup",
     q: "How long does it take to get started?",
-    a: "The first standards can run within days of starting a one-property pilot. Converting a single SOP into a timed task takes minutes once its steps are clear; we do one live during the 15-minute demo.",
+    a: "The first standards can run within days of starting a one-property pilot. Setting up one existing standard as a timed task takes minutes once its steps are clear; we do one live during the 15-minute demo.",
   },
   {
     group: "Setup",
@@ -139,7 +139,7 @@ export const faqs: FaqItem[] = [
   {
     group: "Setup",
     q: "Which departments can use Mise?",
-    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own SOPs as timed tasks with photo evidence in the same app, writing to one service record.",
+    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own existing standards as timed tasks with photo evidence on the same platform, writing to one service record.",
   },
   {
     group: "Trust",
@@ -167,12 +167,12 @@ export const homeFaqs = faqs.filter((f) => f.home);
 
 export const faqMeta = {
   path: "/faq",
-  title: "Mise FAQ: Hotel SOP Software Questions Answered | Mise",
+  title: "Mise FAQ: Service Execution Platform Questions | Mise",
   description:
-    "Mise FAQ: answers about Mise hotel SOP software, how it digitizes SOPs, evidence, PMS, pilots, pricing, data and Focus Realm. Book a 15-min demo.",
-  h1: "Mise FAQ: hotel SOP software, answered",
+    "Mise FAQ: the service execution platform (SEP) explained: running your existing standards, evidence, PMS, pilots, data and Focus Realm. Book a demo.",
+  h1: "Mise FAQ: the service execution platform, answered",
   primaryKeyword: "Mise FAQ",
-  secondaryKeywords: ["Mise SOP", "Mise hotel operations", "Mise by Focus Realm"],
+  secondaryKeywords: ["Mise SEP", "Mise hotel operations", "Mise by Focus Realm"],
   eyebrow: "Frequently asked",
   updated: "2026-10-01",
 };

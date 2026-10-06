@@ -115,7 +115,7 @@ export default async function LongformPage({
               <Toc headings={headings} />
               <div className="mt-8 rounded-2xl border border-gold/30 bg-gold-soft p-5">
                 <p className="font-display text-[1.05rem] font-semibold text-ink">See it on a real shift</p>
-                <p className="mt-1.5 text-[0.88rem] text-muted">15 minutes. One of your SOPs, turned into a timed task.</p>
+                <p className="mt-1.5 text-[0.88rem] text-muted">15 minutes. One of your existing standards, running as a timed task.</p>
                 <ButtonLink href="/demo" className="mt-4 w-full" trackLocation={`toc-${meta.path}`}>
                   Book a demo
                 </ButtonLink>

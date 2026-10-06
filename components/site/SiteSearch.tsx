@@ -55,7 +55,7 @@ export default function SiteSearch({ autoFocus = false, compact = false }: { aut
           value={q}
           autoFocus={autoFocus}
           onChange={(e) => setQ(e.target.value)}
-          placeholder="Search: digital SOP, audit readiness, housekeeping…"
+          placeholder="Search: service execution, audit readiness, housekeeping…"
           className="h-13 min-w-0 flex-1 bg-transparent text-[1rem] text-ink placeholder:text-faint focus:outline-none"
         />
       </form>
@@ -74,7 +74,7 @@ export default function SiteSearch({ autoFocus = false, compact = false }: { aut
               ))}
             </ul>
           ) : (
-            <p className="text-muted">No pages match “{q}”. Try “SOP”, “audit” or “housekeeping”.</p>
+            <p className="text-muted">No pages match “{q}”. Try “standards”, “audit” or “housekeeping”.</p>
           )}
         </div>
       ) : null}

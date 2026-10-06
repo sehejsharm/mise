@@ -1,8 +1,8 @@
 # Live verification
 
-Target: **http://localhost:3100** (local rehearsal, not the live site) · run 2026-10-01T04:08:05.667Z · `node scripts/verify-live.mjs --base http://localhost:3100 --out docs/LIVE-VERIFICATION-LOCAL.md --submit-test-lead`
+Target: **http://localhost:3100** (local rehearsal, not the live site) · run 2026-10-06T07:43:03.823Z · `node scripts/verify-live.mjs --base http://localhost:3100 --out docs/LIVE-VERIFICATION-LOCAL.md`
 
-**22 PASS · 0 FAIL · 5 SKIP**
+**20 PASS · 0 FAIL · 5 SKIP**
 
 ## Domain & transport
 
@@ -17,44 +17,42 @@ Target: **http://localhost:3100** (local rehearsal, not the live site) · run 20
 
 | Check | Result | Evidence |
 |---|---|---|
-| Homepage <title> and H1 contain "SOP app for hotels" | **PASS** | title: Hotel SOP App for Every Department \| Mise \| H1: The SOP app for hotels. Every department, every shift. |
+| Homepage <title> and H1 name Mise the service execution platform (SEP) | **PASS** | title: Hotel Service Execution Platform (SEP) \| Mise \| H1: The service execution platform for hotels. Every department, every shift. |
 | Nav "Solutions" goes to /solutions | **PASS** | href=/solutions |
 | /solutions and the 4 new department pages return 200 | **PASS** | /solutions 200, /solutions/kitchen 200, /solutions/engineering 200, /solutions/security-and-safety 200, /solutions/spa-and-wellness 200 |
-| Zero mailto demo CTAs; every "Book a 15-min demo" → /demo | **PASS** | 318 demo CTAs across 66 pages, all → /demo |
-| llms.txt contains "Departments covered" | **PASS** | ## Departments covered<br><br>Mise is the SOP app for every hotel department, not a single-department tool. The same loop (standard, timed task, evidence, service record) runs in each:<br><br>-  |
+| Zero mailto demo CTAs; every "Book a 15-min demo" → /demo | **PASS** | 314 demo CTAs across 65 pages, all → /demo |
+| llms.txt contains "Departments covered" | **PASS** | ## Departments covered<br><br>Mise is the service execution platform (SEP) for every hotel department, not a single-department tool. It implements the SOPs a hotel already has; it does not |
 
 ## SEO / GEO
 
 | Check | Result | Evidence |
 |---|---|---|
-| sitemap.xml lists all routes including the new ones | **PASS** | 66 URLs; new pages present |
-| sitemap lastModified for the changed pages is the repositioning date or later (2026-10-01; today 2026-10-01) | **PASS** | / 2026-10-01, /platform 2026-10-01, /solutions 2026-10-01, /solutions/kitchen 2026-10-01, /solutions/engineering 2026-10-01, /solutions/security-and-safety 2026-10-01, /solutions/spa-and-wellness 2026-10-01 |
+| sitemap.xml lists all routes including the new ones | **PASS** | 65 URLs; new pages present |
+| sitemap lastModified for the changed pages is the repositioning date or later (2026-10-01; today 2026-10-06) | **PASS** | / 2026-10-06, /platform 2026-10-01, /solutions 2026-10-01, /solutions/kitchen 2026-10-01, /solutions/engineering 2026-10-01, /solutions/security-and-safety 2026-10-01, /solutions/spa-and-wellness 2026-10-01 |
 | robots.txt allows the AI crawlers and blocks /keystatic and /api | **PASS** | all 10 crawlers listed; /keystatic and /api disallowed |
 | /llms.txt returns 200 as text/plain | **PASS** | HTTP 200, text/plain; charset=utf-8 |
 | /llms-full.txt returns 200 as text/plain | **PASS** | HTTP 200, text/plain; charset=utf-8 |
-| Every page: one H1, self-canonical on https://misehotel.com, title ≤60, description ≤158, parseable JSON-LD | **PASS** | 66 pages checked |
-| Organization / SoftwareApplication / FAQPage descriptions match the canonical definition | **PASS** | Organization: Mise is the SOP app for hotels: a service execution platform that turn… \| FAQ: Mise is the SOP app for hotels: a service executio… |
+| Every page: one H1, self-canonical on https://misehotel.com, title ≤60, description ≤160, parseable JSON-LD | **PASS** | 65 pages checked |
+| Organization / SoftwareApplication descriptions name the service execution platform (SEP); FAQ "What is Mise?" is the canonical definition | **PASS** | Organization: Mise is the service execution platform (SEP) for hotels. It implements… \| FAQ: Mise is the service execution platform (SEP) for h… |
 | OG images resolve (200, 1200×630) for home, /solutions and each new solution page | **PASS** | home 200 1200×630, solutions 200 1200×630, solutions--kitchen 200 1200×630, solutions--engineering 200 1200×630, solutions--security-and-safety 200 1200×630, solutions--spa-and-wellness 200 1200×630 |
-| Zero broken internal links / 404s across a full crawl | **PASS** | 76 unique internal links, all < 400 |
+| Zero broken internal links / 404s across a full crawl | **PASS** | 75 unique internal links, all < 400 |
 | IndexNow ping sent for changed URLs | **SKIP** | Logged in the Vercel production build output (scripts/indexnow.mjs); requires INDEXNOW_KEY in Production env |
 
 ## Google tag
 
 | Check | Result | Evidence |
 |---|---|---|
-| G-X8HT0D7TPW present in the homepage HTML | **PASS** | 5 occurrences in raw HTML |
+| G-KVTTR7P7BY present in the homepage HTML | **PASS** | 5 occurrences in raw HTML |
 | gtag/js loads exactly once per page | **PASS** | /: 1, /solutions: 1, /platform: 1, /demo: 1 |
 | Before consent: analytics_storage denied and no collect hits | **PASS** | first consent call: ["consent","default",{"ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","analytics_storage":"denied","functionality_storage":"granted","security_storage":"granted","wait_for_update":500}]; collect hits: 0 |
-| After Accept: page_view hit to /g/collect with tid=G-X8HT0D7TPW | **SKIP** | Google is not reachable from a local rehearsal; run against the live site |
+| After Accept: page_view hit to /g/collect with tid=G-KVTTR7P7BY | **SKIP** | Google is not reachable from a local rehearsal; run against the live site |
 | Clicking a demo CTA fires demo_cta_click | **PASS** | events: demo_cta_click; CTA href /demo |
-| Submitting the form fires demo_form_submit | **PASS** | demo_form_submit in dataLayer |
 
 ## Demo form
 
 | Check | Result | Evidence |
 |---|---|---|
-| Live /demo submission: HTTP 200 and success state | **PASS** | HTTP 200 {"ok":true,"dryRun":true}; success state shown |
-| Resend shows the email delivered | **SKIP** | Confirm in the Resend dashboard (Emails → latest) and in the hello@misehotel.com inbox; not verifiable from this script |
+| Live /demo submission | **SKIP** | Not submitted. Re-run with --submit-test-lead to send one real test request |
 
 ## Separate commands
 

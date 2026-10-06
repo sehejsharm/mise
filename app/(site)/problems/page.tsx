@@ -10,11 +10,11 @@ const body = `
 
 Most hotel operations problems are treated one at a time: a new inspection sheet for the supervisor, a refresher session for the ghost SOP, a recruitment drive for turnover, an audit-prep project for the audit. Each fix is reasonable. None of them lasts, because the problems are linked. Each one makes the next worse.
 
-The chain starts with **hotel supervisor workload**. When verification means walking to every room, supervisors cannot check everything, so the written standard quietly stops being the one that runs, and **hotel SOPs are not followed**. Without a record of execution, **hotel performance tracking** falls back on impressions. When experienced people leave, the undocumented practice leaves with them. Variance between shifts caps guest ratings. And when the audit arrives, the evidence that was never kept has to be rebuilt by hand.
+The chain starts with **hotel supervisor workload**. When verification means walking to every room, supervisors cannot check everything, so the written standard quietly stops being the one that runs, and **hotel standards are not followed**. Without a record of execution, **hotel performance tracking** falls back on impressions. When experienced people leave, the undocumented practice leaves with them. Variance between shifts caps guest ratings. And when the audit arrives, the evidence that was never kept has to be rebuilt by hand.
 
 ## What breaks the chain?
 
-The chain breaks when the standard runs inside the work and the work records itself. That is what a [service execution platform](/glossary/service-execution-platform) does: each SOP becomes a timed task on the phone of the person doing the job, key steps require photo evidence, and every completion writes to an audit-ready service record. One mechanism addresses all six links, which is why Mise is built around it rather than around six separate features.
+The chain breaks when the standard runs inside the work and the work records itself. That is what a [service execution platform](/glossary/service-execution-platform) does: each existing standard becomes a timed task on the phone of the person doing the job, key steps require photo evidence, and every completion writes to an audit-ready service record. One mechanism addresses all six links, which is why Mise is built around it rather than around six separate features.
 
 | Pain | What it looks like | What closes it |
 |---|---|---|
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "How does Mise address all six at once?",
-    a: "Mise turns each SOP into a timed task on staff phones, gates key steps on photo evidence, and writes every completion to an audit-ready service record. That single loop removes verification from the corridor, makes standards run, records performance, and keeps evidence ready for audits.",
+    a: "Mise runs each existing standard as a timed task on staff phones, gates key steps on photo evidence, and writes every completion to an audit-ready service record. That single loop removes verification from the corridor, makes standards run, records performance, and keeps evidence ready for audits.",
   },
 ];
 

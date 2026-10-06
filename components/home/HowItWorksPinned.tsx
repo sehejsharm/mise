@@ -77,7 +77,7 @@ export default function HowItWorksPinned() {
               <SectionHeading
                 id="loop-title"
                 eyebrow="One loop, four moves"
-                title="How Mise turns hotel SOPs into audit-ready records"
+                title="How Mise turns your existing standards into audit-ready records"
               />
               <div ref={rot.ref} {...rot.pauseProps} data-copy-budget="exclude" className="mt-6">
                 <DeptSwitcher
@@ -119,7 +119,7 @@ export default function HowItWorksPinned() {
                 })}
               </ol>
               <div className="mt-8">
-                <ArrowLink href="/how-it-works">How Mise hotel SOP management software works</ArrowLink>
+                <ArrowLink href="/how-it-works">How the service execution platform works</ArrowLink>
               </div>
             </div>
             <div className="hidden justify-center lg:flex">

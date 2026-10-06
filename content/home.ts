@@ -8,14 +8,14 @@ import { departmentTicker } from "@/content/departments";
 
 export const homeMeta = {
   path: "/",
-  title: "Best Hotel SOP Software & Photo Proof Task Tracking | Mise",
+  title: "Hotel Service Execution Platform (SEP) | Mise",
   description:
-    "Mise is the standalone hotel SOP software with photo proof verification and timed task tracking. Replace WhatsApp and Excel with zero PMS integration required.",
-  h1: "The SOP app for hotels. Every department, every shift.",
-  primaryKeyword: "hotel SOP software",
+    "Mise is the service execution platform (SEP) for hotels. It runs the SOPs you already have as timed tasks with photo proof. No PMS integration. Book a demo.",
+  h1: "The service execution platform for hotels. Every department, every shift.",
+  primaryKeyword: "service execution platform",
   secondaryKeywords: [
-    "SOP app for hotels",
-    "standalone hotel SOP software",
+    "hotel service execution platform",
+    "SEP for hotels",
     "hotel photo proof software",
     "hotel timed task software",
     "hotel supervisor sign-off app",
@@ -23,13 +23,13 @@ export const homeMeta = {
     "hotel operations software",
     "Mise by Focus Realm",
   ],
-  ogTitle: "Standalone Hotel SOP Software & Photo Proof Task Tracking | Mise",
+  ogTitle: "The Service Execution Platform (SEP) for Hotels | Mise",
   ogDescription:
-    "Digitize hotel SOPs with real-time photo proof, timed tasks, and supervisor sign-offs. Replace WhatsApp group chats and manual Excel spreadsheets without needing PMS integration.",
-  ogImageAlt: "Mise Hotel Operations & Photo Proof SOP Platform Interface",
-  twitterTitle: "Standalone Hotel SOP Software & Photo Proof Task Tracking | Mise",
+    "Mise runs the SOPs your hotel already has, with real-time photo proof, timed tasks, and supervisor sign-offs. Replace WhatsApp group chats and Excel spreadsheets without PMS integration.",
+  ogImageAlt: "Mise service execution platform: hotel operations and photo proof interface",
+  twitterTitle: "The Service Execution Platform (SEP) for Hotels | Mise",
   twitterDescription:
-    "Digitize hotel SOPs with real-time photo proof, timed tasks, and supervisor sign-offs. Eliminate ghost SOPs and replace WhatsApp for hotel operations.",
+    "Mise executes the SOPs your hotel already has, with photo proof, timed tasks and sign-offs. End ghost SOPs and replace WhatsApp for hotel operations.",
   eyebrow: "Service Execution Platform",
   updated: "2026-10-06",
   priority: 1,
@@ -56,9 +56,9 @@ export const fiveSeconds = {
 
 export const fivePlaces = {
   eyebrow: "What it replaces",
-  title: "Five places. One SOP app for hotels.",
+  title: "Five places. One service execution platform.",
   cards: [
-    { icon: "binder", place: "The SOP binder", line: "Written once, opened never." },
+    { icon: "binder", place: "The standards binder", line: "Written once, opened never." },
     { icon: "whatsapp", place: "The WhatsApp group", line: "Instructions that scroll away." },
     { icon: "memory", place: "Memory", line: "Whoever is senior today." },
     { icon: "photos", place: "The camera roll", line: "Proof on a personal phone." },

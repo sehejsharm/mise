@@ -32,7 +32,7 @@ ${brand.definition}
 
 Mise (misehotel.com) is a hotel service execution platform built by Focus Realm (focusrealm.org), founded by Sehej Sharma, Ali Electricwala and Aditya Mishra. It is not affiliated with Focus Softnet or its Focus e-RMS hospitality ERP. It is not a PMS and not an LMS. "Mise" refers to the culinary principle mise en place.`;
 
-  out += `\n\n## Departments covered\n\nMise is the SOP app for every hotel department:\n\n${departments.map((d) => `- ${d.name}: ${d.short}`).join("\n")}\n- Guest relations: guest promises, recovery and VIP touches run as timed tasks with evidence.`;
+  out += `\n\n## Departments covered\n\nMise is the service execution platform (SEP) for every hotel department. It runs the SOPs each department already has:\n\n${departments.map((d) => `- ${d.name}: ${d.short}`).join("\n")}\n- Guest relations: guest promises, recovery and VIP touches run as timed tasks with evidence.`;
   out += section(digitalSop);
   out += section(auditReadiness);
   for (const p of pains) {

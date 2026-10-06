@@ -18,11 +18,11 @@ export const glossary: GlossaryTerm[] = [
     slug: "service-execution-platform",
     term: "Service execution platform",
     short:
-      "A service execution platform is software that turns a hotel's standard operating procedures into timed tasks carried out on staff devices, captures evidence as the work happens, and compounds it into an audit-ready service record.",
+      "A service execution platform (SEP) is software that implements a hotel's existing standard operating procedures as timed tasks carried out on staff devices, captures evidence as the work happens, and compounds it into an audit-ready service record.",
     description:
-      "A service execution platform turns hotel SOPs into timed tasks on staff phones, captures evidence and builds a service record. Book a 15-min demo.",
+      "A service execution platform (SEP) runs a hotel's existing SOPs as timed tasks on staff phones, captures evidence and builds a service record. Book a demo.",
     body: `
-A service execution platform sits between a hotel's standards and its shifts. Where document systems store SOPs and training tools teach them, a service execution platform runs them: each standard becomes a [timed task](/glossary/timed-task) on the phone of the person doing the work, key steps require evidence, and every completion writes to a [service record](/glossary/service-record).
+A service execution platform (SEP) sits between a hotel's standards and its shifts. It does not write the standards. Where document systems store SOPs and training tools teach them, a service execution platform runs them: each standard becomes a [timed task](/glossary/timed-task) on the phone of the person doing the work, key steps require evidence, and every completion writes to a [service record](/glossary/service-record).
 
 ## How it differs from nearby categories
 
@@ -64,7 +64,7 @@ Make the SOP the task. When the standard runs as a timed task with steps and [ph
 `,
     related: [
       { href: "/problems/ghost-sop", label: "The ghost SOP problem" },
-      { href: "/digital-sop", label: "Digitize hotel SOPs" },
+      { href: "/standards-to-execution", label: "Standards to execution" },
     ],
   },
   {
@@ -73,7 +73,7 @@ Make the SOP the task. When the standard runs as a timed task with steps and [ph
     short:
       "A photo gate is a step in a task that cannot be marked complete until a photo is captured from inside the task, making evidence a requirement of the work rather than a follow-up.",
     description:
-      "A photo gate is a task step that cannot close until a photo is captured, so evidence exists by design. How photo gates work in hotel SOPs. Book a 15-min demo.",
+      "A photo gate is a task step that cannot close until a photo is captured, so evidence exists by design. How photo gates work for hotels. Book a demo.",
     body: `
 In Mise, the standards owner marks which steps of a standard need photo evidence. On the staff app, those steps stay locked until the photo is taken with the phone's camera from inside the task. The photo is stored against the room, the person, the step, the time and the version of the standard.
 
@@ -83,11 +83,11 @@ A request for evidence is optional under pressure. A gate is not. Gating the ste
 
 ## Use gates sparingly
 
-Gate the steps a guest or auditor would check. Gating everything slows the work and dilutes the evidence. See the [digital SOP guide](/digital-sop#step-5).
+Gate the steps a guest or auditor would check. Gating everything slows the work and dilutes the evidence. See the [standards-to-execution guide](/standards-to-execution#step-5).
 `,
     related: [
-      { href: "/compare/sop-software-vs-checklist-app", label: "SOP software vs checklist apps" },
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app" },
+      { href: "/compare/execution-platform-vs-checklist-app", label: "Service execution platform vs checklist apps" },
+      { href: "/solutions/housekeeping", label: "Housekeeping execution" },
     ],
   },
   {
@@ -119,7 +119,7 @@ It is the last step of the Mise loop: Standard → Timed task → Evidence → S
     short:
       "A timed task is a hotel standard delivered as a unit of work on a staff device, with ordered steps, a target time and a live countdown, so the standard runs at the moment of work.",
     description:
-      "A timed task delivers a hotel SOP as a unit of work with steps, a target time and a countdown on the staff phone. How it replaces binders. Book a demo.",
+      "A timed task delivers a hotel standard as a unit of work with steps, a target time and a countdown on the staff phone. How it replaces binders. Book a demo.",
     body: `
 A timed task is how a standard reaches the floor in Mise. When a standard is published and assigned, it appears on the right person's phone as a task with a countdown against its target time. The steps are grouped into four phases (**Prepare, Perform, Verify, Release**) with reference photos, and some steps are [photo gates](/glossary/photo-gate).
 
@@ -129,11 +129,11 @@ A target time turns a standard into something that can be planned and measured. 
 
 ## The unit of work
 
-A timed task is not a reminder to read an SOP. It is the SOP, in the order the work happens. See [how Mise works](/how-it-works).
+A timed task is not a reminder to read a standard. It is the standard, in the order the work happens. See [how Mise works](/how-it-works).
 `,
     related: [
       { href: "/how-it-works", label: "How Mise works" },
-      { href: "/digital-sop", label: "Digitize hotel SOPs" },
+      { href: "/standards-to-execution", label: "Standards to execution" },
     ],
   },
   {
@@ -211,10 +211,10 @@ Handovers are where hotel promises get lost. A guest was promised a late checkou
 
 In Mise, the handover is gated behind a short checklist: unfinished work, guest promises and blocked rooms must be addressed before it can be sent. The incoming shift acknowledges it, and both actions are recorded. The next person on duty knows exactly what they inherited.
 
-See [front desk SOP software](/solutions/front-office) and why [WhatsApp handovers](/compare/mise-vs-whatsapp) fail.
+See [front desk service execution](/solutions/front-office) and why [WhatsApp handovers](/compare/mise-vs-whatsapp) fail.
 `,
     related: [
-      { href: "/solutions/front-office", label: "Front desk SOP software" },
+      { href: "/solutions/front-office", label: "Front desk service execution" },
       { href: "/compare/mise-vs-whatsapp", label: "Mise vs WhatsApp" },
     ],
   },
@@ -262,7 +262,7 @@ Pick a standard, a room and a date. If you can show who carried it out, when, ag
     short:
       "A digital SOP is a standard operating procedure delivered on a device as a task to carry out, with ordered steps, a target time and evidence captured as the work is done, not a scanned document.",
     description:
-      "A digital SOP for hotels is a standard run as a task on a device, with steps, target time and evidence, not a scanned PDF. Book a 15-min demo.",
+      "A digital SOP is a standard run as a task on a device, with steps, target time and evidence, not a scanned PDF. Book a 15-min demo.",
     body: `
 Moving an SOP into a shared folder is digital storage. A digital SOP, in the sense that matters for operations, is one that runs: it reaches the person doing the work as a [timed task](/glossary/timed-task), shows the steps at the moment of work, and records execution with evidence.
 
@@ -272,35 +272,11 @@ Moving an SOP into a shared folder is digital storage. A digital SOP, in the sen
 2. **Digital checklist:** a list that can be ticked. Closer to the work, weak on proof.
 3. **Executed standard:** a timed task with [photo gates](/glossary/photo-gate) and sign-off. The standard runs and leaves a record.
 
-Read the full guide to [digitizing hotel SOPs](/digital-sop).
+Read the full guide to [putting hotel standards into execution](/standards-to-execution).
 `,
     related: [
-      { href: "/digital-sop", label: "Digitize hotel SOPs guide" },
-      { href: "/compare/sop-software-vs-checklist-app", label: "SOP software vs checklist apps" },
-    ],
-  },
-  {
-    slug: "sop-app-for-hotels",
-    term: "SOP app for hotels",
-    short:
-      "An SOP app for hotels is a mobile app that delivers a hotel's standard operating procedures to staff as tasks to carry out, for every department, and records evidence that each standard was followed.",
-    description:
-      "An SOP app for hotels runs every department's standards as tasks on staff phones and records evidence that each one was followed. Book a 15-min demo.",
-    body: `
-An SOP app for hotels puts the standard where the work happens: on the phone of the person at the front desk, in the guest room, at the pass, in the plant room or on the night round. Instead of a binder or a PDF, each SOP arrives as a [timed task](/glossary/timed-task) with its steps on screen and evidence captured as it is done.
-
-## What makes it different from a document library
-
-A document library stores SOPs. An SOP app for hotels runs them. The difference shows in what is left afterwards: a library leaves a file that was opened, if anyone checks; an SOP app leaves a [service record](/glossary/service-record) of who did which standard, when, against what target time, with photos and sign-off.
-
-## One app across departments
-
-The same mechanism works for every department: front office arrivals, housekeeping room resets, F&B service, kitchen logs, engineering response, security rounds and spa turnovers. Only the content of the standards changes. See [solutions by department](/solutions).
-`,
-    related: [
-      { href: "/solutions", label: "Hotel SOP app for every department" },
-      { href: "/glossary/departmental-sop", label: "Departmental SOP" },
-      { href: "/platform", label: "The Mise platform" },
+      { href: "/standards-to-execution", label: "Standards to execution guide" },
+      { href: "/compare/execution-platform-vs-checklist-app", label: "Service execution platform vs checklist apps" },
     ],
   },
   {
@@ -319,12 +295,12 @@ When each department keeps its SOPs in its own binder or shared folder, they dri
 
 ## Running departmental SOPs in one system
 
-Running every departmental SOP the same way, as [timed tasks](/glossary/timed-task) with [photo gates](/glossary/photo-gate) and sign-off, keeps each department's content its own while giving the property one [service record](/glossary/service-record). See the [hotel SOP app for every department](/solutions).
+Running every departmental SOP the same way, as [timed tasks](/glossary/timed-task) with [photo gates](/glossary/photo-gate) and sign-off, keeps each department's content its own while giving the property one [service record](/glossary/service-record). See the [service execution platform for every department](/solutions).
 `,
     related: [
-      { href: "/glossary/sop-app-for-hotels", label: "SOP app for hotels" },
+      { href: "/glossary/service-execution-platform", label: "Service execution platform (SEP)" },
       { href: "/solutions", label: "Solutions by department" },
-      { href: "/digital-sop", label: "Digitize hotel SOPs" },
+      { href: "/standards-to-execution", label: "Standards to execution" },
     ],
   },
   {
@@ -345,7 +321,7 @@ Read [the story behind Mise](/about).
 `,
     related: [
       { href: "/about", label: "About Mise" },
-      { href: "/solutions/food-and-beverage", label: "Hotel F&B SOP software" },
+      { href: "/solutions/food-and-beverage", label: "Hotel F&B service execution" },
     ],
   },
 ];

@@ -31,7 +31,7 @@ Supervisors work from the manager dashboard. Completed tasks arrive with their e
 
 ## How a one-property pilot works {#pilot}
 
-1. **Demo (15 minutes).** See the three interfaces on the demo property, and watch one of your SOPs become a timed task.
+1. **Demo (15 minutes).** See the three interfaces on the demo property, and watch one of your existing standards run as a timed task.
 2. **Scope (one call).** Choose one property and one department, usually housekeeping, and the five to ten standards that matter most.
 3. **Set up (days, not months).** We convert those standards into timed tasks with your standards owner. Staff open the app in their phone's browser. No PMS integration, no hardware.
 4. **Run (real shifts).** Your team runs the standards on real shifts. The service record fills with evidence from the first day.
@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
           breadcrumbNode(howItWorksMeta.path, crumbs),
           howToNode(
             howItWorksMeta.path,
-            "How Mise turns a hotel SOP into an audit-ready service record",
+            "How Mise turns a hotel's existing standard into an audit-ready service record",
             "The four moves of the Mise loop: Standard, Timed task, Evidence, Service record.",
             loopSteps.map((s) => ({ name: s.name, text: s.detail })),
           ),
@@ -67,7 +67,7 @@ export default function HowItWorksPage() {
         updated={howItWorksMeta.updated}
         lede={
           <p>
-            Mise is hotel SOP management software built around one loop: <strong className="text-ink">Standard → Timed task → Evidence → Service record</strong>.
+            Mise is hotel service execution platform built around one loop: <strong className="text-ink">Standard → Timed task → Evidence → Service record</strong>.
             A standard is written once, runs as a timed task on the right person's phone, captures photo and supervisor
             evidence as the work happens, and writes an audit-ready entry every time a task closes.
           </p>
@@ -76,7 +76,7 @@ export default function HowItWorksPage() {
       <div className="container-page">
         <div className="max-w-3xl">
           <TldrBox>
-            Standards owners write each SOP as steps with a target time and photo gates. It arrives on staff phones as a
+            You bring the SOPs you already have; each is set up as steps with a target time and photo gates. It arrives on staff phones as a
             timed task with a countdown. Gated steps cannot close without a photo; supervisors sign off from the evidence.
             Every closed task writes a timestamped, attributable row to the service record.
           </TldrBox>
@@ -86,7 +86,7 @@ export default function HowItWorksPage() {
       <section aria-labelledby="loop-steps" className="py-16 sm:py-20">
         <div className="container-page">
           <h2 id="loop-steps" className="max-w-3xl text-[clamp(1.8rem,3.6vw,2.7rem)] leading-[1.08] font-semibold text-ink">
-            The four moves, step by step
+            How a service execution platform works, step by step
           </h2>
           <ol className="mt-12 space-y-16">
             {loopSteps.map((s, i) => (
@@ -115,14 +115,14 @@ export default function HowItWorksPage() {
           <Markdown source={deepDive} state={state} />
           <section aria-labelledby="hiw-faq" className="mt-16">
             <h2 id="hiw-faq" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
-              Hotel SOP management software: frequently asked questions
+              Service execution platform: frequently asked questions
             </h2>
             <FaqList items={howItWorksFaqs} className="mt-6" />
           </section>
           <RelatedLinks
             links={[
               { href: "/platform", label: "The platform", note: "Three interfaces, one record." },
-              { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Write standards that run." },
+              { href: "/standards-to-execution", label: "Standards to execution", note: "Make your standards run." },
               { href: "/audit-readiness", label: "Hotel audit readiness", note: "What the record is for." },
               { href: "/problems/supervisor-bottleneck", label: "The supervisor bottleneck", note: "What photo evidence fixes." },
             ]}

@@ -41,7 +41,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   applicationName: brand.name,
-  title: { default: `${brand.name} — Hotel SOP Software`, template: `%s | ${brand.name}` },
+  title: { default: `${brand.name} — Service Execution Platform (SEP) for Hotels`, template: `%s | ${brand.name}` },
   description: brand.definition,
   authors: [{ name: brand.name, url: siteUrl }],
   creator: brand.name,

@@ -82,12 +82,13 @@ export default function AboutPage() {
             <p>
               At Mise, we believe hotel standards shouldn&apos;t live in forgotten paper binders or get buried in chaotic
               WhatsApp group chats. We built Mise to give hotel general managers, directors of operations, and executive
-              housekeepers real-time visibility into every shift, task, and standard operating procedure.
+              housekeepers real-time visibility into every shift, task and standard they already have.
             </p>
             <p>
-              Mise is a dedicated hotel SOP software that operates completely independently of legacy Property Management
+              Mise is a service execution platform (SEP) that operates completely independently of legacy Property Management
               Systems (PMS). By removing the requirement for months of complex IT and API integrations, Mise enables hotel
-              teams to digitize floor workflows, enforce compliance, and streamline operations from day one.
+              teams to put the SOPs they already have into execution, enforce compliance, and streamline operations from
+              day one. We don&apos;t write your standards; we make sure they run.
             </p>
           </div>
         </div>
@@ -138,7 +139,7 @@ export default function AboutPage() {
         <div className="container-page">
           <Eyebrow>Why Mise</Eyebrow>
           <h2 id="why-mise" className="mt-4 max-w-3xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
-            Why Hotel Operators Choose Mise
+            Why Hotel Operators Choose Mise for Hotel Service Execution
           </h2>
           <ol className="mt-8 grid gap-5 lg:grid-cols-3">
             {[

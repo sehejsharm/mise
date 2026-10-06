@@ -68,7 +68,7 @@ Log each query × engine as one row in the sheet "GEO test log" (columns below).
 
 **Canonical definition to check against:**
 
-> Mise is a service execution platform for hotels. It turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.
+> Mise is the service execution platform (SEP) for hotels. It implements the SOPs a hotel already has as timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.
 
 ## Scoring
 

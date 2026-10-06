@@ -1,7 +1,7 @@
 import type { Solution } from "@/content/solutions";
 
 /**
- * Department pages added when Mise was positioned as the SOP app for every
+ * Department pages added when Mise was positioned as the service execution platform for every
  * hotel department. Same structure as the original solution pages: TL;DR, a
  * three-step example standard, the evidence captured, the pains it closes,
  * FAQ and related links. No compliance claims: Mise captures evidence; it does
@@ -15,11 +15,11 @@ export const departmentSolutions: Solution[] = [
     short: "Cold-chain checks, temperature logs and hygiene rounds, timed and evidenced.",
     meta: {
       path: "/solutions/kitchen",
-      title: "Hotel Kitchen SOP Software & Hygiene Checklists | Mise",
+      title: "Hotel Kitchen Execution: Hygiene & Cold-Chain Checks | Mise",
       description:
-        "Hotel kitchen SOP software that runs cold-chain checks, temperature logs and hygiene rounds as timed tasks with photo evidence. Book a 15-min demo.",
-      h1: "Hotel kitchen SOP software that logs every check with evidence",
-      primaryKeyword: "hotel kitchen SOP software",
+        "Hotel kitchen execution that runs cold-chain checks, temperature logs and hygiene rounds as timed tasks with photo evidence. Book a 15-min demo.",
+      h1: "Hotel kitchen execution: every hygiene and cold-chain check, evidenced",
+      primaryKeyword: "hotel kitchen execution",
       secondaryKeywords: ["FSSAI hygiene checklist app", "kitchen temperature log app", "cold chain checklist for hotels"],
       eyebrow: "Solutions · Kitchen",
       updated: "2026-10-01",
@@ -27,18 +27,18 @@ export const departmentSolutions: Solution[] = [
     },
     eyebrow: "Solutions · Kitchen",
     lede:
-      "Mise is hotel kitchen SOP software for the people who keep a kitchen safe between inspections. Cold-chain checks, temperature logs, receiving checks and closing hygiene rounds run as timed tasks on the cook's phone, with a photo of the reading or the station at each gated step. Every check writes to the property's audit-ready service record.",
+      "Mise is the service execution platform for the people who keep a kitchen safe between inspections. Cold-chain checks, temperature logs, receiving checks and closing hygiene rounds run as timed tasks on the cook's phone, with a photo of the reading or the station at each gated step. Every check writes to the property's audit-ready service record.",
     tldr:
       "Mise runs kitchen standards such as the walk-in temperature log, goods receiving and closing hygiene round as timed tasks on staff phones. Each reading or station is photographed inside the task, the sous chef signs off from the evidence, and the log builds itself. It captures evidence; it does not certify compliance.",
     leadImage: {
       dept: "kitchen",
-      alt: "Mise hotel kitchen SOP software on a cook's phone: KIT-115 walk-in temperature log as the next timed task with a thermometer photo gate",
+      alt: "Mise hotel kitchen execution on a cook's phone: KIT-115 walk-in temperature log as the next timed task with a thermometer photo gate",
       device: "phone",
     },
     body: `
-## What does hotel kitchen SOP software need to do?
+## What does hotel kitchen execution need to do?
 
-Hotel kitchen SOP software needs to put the check in front of the cook at the time it is due, capture the reading or the state of the station as it is taken, and show the head chef which checks were missed before anyone else finds out. A clipboard log on the walk-in door records numbers; it rarely proves when they were taken.
+Hotel kitchen execution needs to put the check in front of the cook at the time it is due, capture the reading or the state of the station as it is taken, and show the head chef which checks were missed before anyone else finds out. A clipboard log on the walk-in door records numbers; it rarely proves when they were taken.
 
 ## An example standard: KIT-115 Cold-chain check
 
@@ -81,10 +81,10 @@ India's food regulator publishes a [hygiene rating scheme](https://www.fssai.gov
       },
     ],
     related: [
-      { href: "/solutions/food-and-beverage", label: "F&B service SOP software", note: "Restaurant, bar and banquets." },
+      { href: "/solutions/food-and-beverage", label: "F&B service execution", note: "Restaurant, bar and banquets." },
       { href: "/audit-readiness", label: "Audit readiness", note: "Evidence before the auditor asks." },
       { href: "/problems/audit-ambush", label: "The audit ambush", note: "Why inspections become scrambles." },
-      { href: "/solutions", label: "All departments", note: "One SOP app for the whole hotel." },
+      { href: "/solutions", label: "All departments", note: "One service execution platform for the whole hotel." },
     ],
   },
   {
@@ -99,7 +99,7 @@ India's food regulator publishes a [hygiene rating scheme](https://www.fssai.gov
         "Hotel maintenance task tracking for engineering teams: fault response and preventive checklists as timed tasks with fixed-and-tested photos. Book a demo.",
       h1: "Hotel maintenance task tracking, from complaint to fixed and tested",
       primaryKeyword: "hotel maintenance task tracking",
-      secondaryKeywords: ["preventive maintenance checklist app", "hotel engineering SOP software", "room fault response"],
+      secondaryKeywords: ["preventive maintenance checklist app", "hotel engineering execution", "room fault response"],
       eyebrow: "Solutions · Engineering",
       updated: "2026-10-01",
       priority: 0.8,
@@ -157,10 +157,10 @@ Preventive rounds are where standards slip quietly: the generator test, pump-roo
       },
     ],
     related: [
-      { href: "/solutions/front-office", label: "Front office SOP software", note: "Where complaints are logged." },
+      { href: "/solutions/front-office", label: "Front office service execution", note: "Where complaints are logged." },
       { href: "/problems/invisible-performance-gap", label: "The invisible performance gap", note: "See response by technician." },
-      { href: "/digital-sop", label: "Digitize hotel SOPs", note: "Write your first engineering standard." },
-      { href: "/solutions", label: "All departments", note: "One SOP app for the whole hotel." },
+      { href: "/standards-to-execution", label: "Standards to execution", note: "Set up your first engineering standard." },
+      { href: "/solutions", label: "All departments", note: "One service execution platform for the whole hotel." },
     ],
   },
   {
@@ -238,7 +238,7 @@ Mise records that checks were done and what was found. It does not replace your 
       { href: "/audit-readiness", label: "Audit readiness", note: "An audit trail every shift." },
       { href: "/problems/audit-ambush", label: "The audit ambush", note: "When the evidence is missing." },
       { href: "/solutions/engineering", label: "Engineering & maintenance", note: "Faults found on rounds." },
-      { href: "/solutions", label: "All departments", note: "One SOP app for the whole hotel." },
+      { href: "/solutions", label: "All departments", note: "One service execution platform for the whole hotel." },
     ],
   },
   {
@@ -248,30 +248,30 @@ Mise records that checks were done and what was found. It does not replace your 
     short: "Treatment room turnover and hygiene resets on a target time, with a photo before the next guest.",
     meta: {
       path: "/solutions/spa-and-wellness",
-      title: "Spa SOP Software for Hotels | Mise",
+      title: "Spa Service Execution for Hotels | Mise",
       description:
-        "Spa SOP software for hotels: treatment room turnover, hygiene resets and opening checks run as timed tasks with photo evidence. Book a 15-min demo.",
-      h1: "Spa SOP software for hotels: every treatment room reset on time",
-      primaryKeyword: "spa SOP software for hotels",
-      secondaryKeywords: ["treatment room turnover checklist", "spa hygiene checklist app", "wellness SOP app"],
+        "Spa service execution for hotels: treatment room turnover, hygiene resets and opening checks run as timed tasks with photo evidence. Book a 15-min demo.",
+      h1: "Spa service execution for hotels: every treatment room reset on time",
+      primaryKeyword: "spa service execution for hotels",
+      secondaryKeywords: ["treatment room turnover checklist", "spa hygiene checklist app", "spa service execution"],
       eyebrow: "Solutions · Spa & wellness",
       updated: "2026-10-01",
       priority: 0.7,
     },
     eyebrow: "Solutions · Spa & wellness",
     lede:
-      "Mise is spa SOP software for hotels whose spa promises calm and needs precision behind the door. Treatment room turnover, linen and hygiene resets, opening checks and product handling run as timed tasks on the therapist's phone, with a photo of the reset room before the next guest walks in. Every turnover writes to the service record.",
+      "Mise is the service execution platform for hotels whose spa promises calm and needs precision behind the door. Treatment room turnover, linen and hygiene resets, opening checks and product handling run as timed tasks on the therapist's phone, with a photo of the reset room before the next guest walks in. Every turnover writes to the service record.",
     tldr:
       "Mise runs spa standards such as treatment room turnover, opening checks and hygiene resets as timed tasks on therapists' phones. The reset room is photographed before the task closes, the spa manager signs off from evidence, and the signature details of your spa are delivered the same way by every therapist.",
     leadImage: {
       dept: "spa-and-wellness",
-      alt: "Mise spa SOP software for hotels on a therapist's phone: SPA-210 treatment room turnover with a room reset photo gate",
+      alt: "Mise spa service execution for hotels on a therapist's phone: SPA-210 treatment room turnover with a room reset photo gate",
       device: "phone",
     },
     body: `
-## What should spa SOP software for hotels cover?
+## What should spa service execution for hotels cover?
 
-Spa SOP software for hotels should cover the moments guests never see but always feel: the turnover between treatments, the hygiene reset, the opening check of steam, sauna and relaxation areas, and the small signature touches. It should time them against the treatment schedule and prove they were done.
+Spa service execution for hotels should cover the moments guests never see but always feel: the turnover between treatments, the hygiene reset, the opening check of steam, sauna and relaxation areas, and the small signature touches. It should time them against the treatment schedule and prove they were done.
 
 ## An example standard: SPA-210 Treatment room turnover
 
@@ -312,7 +312,7 @@ Spa SOP software for hotels should cover the moments guests never see but always
       { href: "/solutions/boutique-hotels", label: "Boutique hotels", note: "Signature service, every time." },
       { href: "/problems/star-rating-ceiling", label: "The star rating ceiling", note: "Why consistency matters." },
       { href: "/platform#staff", label: "The staff app", note: "One thumb, one shift." },
-      { href: "/solutions", label: "All departments", note: "One SOP app for the whole hotel." },
+      { href: "/solutions", label: "All departments", note: "One service execution platform for the whole hotel." },
     ],
   },
 ];

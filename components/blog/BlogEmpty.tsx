@@ -32,7 +32,7 @@ export default function BlogEmpty() {
         </p>
         <ul className="mt-7 flex flex-wrap gap-3">
           {[
-            { href: "/digital-sop", label: "Digital SOPs, explained" },
+            { href: "/standards-to-execution", label: "Standards to execution" },
             { href: "/problems/ghost-sop", label: "The ghost SOP" },
             { href: "/audit-readiness", label: "Audit readiness" },
             { href: "/glossary", label: "The Mise glossary" },

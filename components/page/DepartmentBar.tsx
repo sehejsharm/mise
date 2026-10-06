@@ -8,7 +8,7 @@ import { solutionsMenu } from "@/content/site";
 export default function DepartmentBar({ current }: { current: string }) {
   return (
     <nav aria-label="Mise by department" className="mt-8">
-      <p className="font-mono text-[0.7rem] tracking-[0.14em] text-faint uppercase">One SOP app, every department</p>
+      <p className="font-mono text-[0.7rem] tracking-[0.14em] text-faint uppercase">One service execution platform, every department</p>
       <ul className="mt-3 flex flex-wrap gap-2">
         {solutionsMenu.departments.map((d) => {
           const on = d.href === current;

@@ -15,7 +15,7 @@ export const metadata: Metadata = buildMetadata(meta);
 
 const seeItems: { icon: IconName; title: string; body: string }[] = [
   { icon: "phone", title: "Three interfaces on a live demo property", body: "The staff app, manager dashboard and standards workspace, running on Aurora Grand Colombo." },
-  { icon: "clock", title: "One of your SOPs as a timed task", body: "Bring a standard nobody follows. We turn it into steps, a target time and photo gates while you watch." },
+  { icon: "clock", title: "Your existing standard as a timed task", body: "Bring a standard nobody follows. We set it up as steps, a target time and photo gates while you watch." },
   { icon: "building", title: "How a one-property pilot is scoped", body: "Which department, which standards, what the first weeks of evidence look like, and what it costs." },
 ];
 
@@ -26,8 +26,8 @@ const next = [
 ];
 
 const faqs = [
-  { q: "What happens in the 15-minute demo?", a: "We show the three Mise interfaces on a live demo property, convert one of your SOPs into a timed task with steps, a target time and photo gates, and explain how a one-property pilot is scoped for your hotel." },
-  { q: "Do I need to prepare anything?", a: "Only if you want to: bring one SOP you would like to see running as a timed task. There is nothing to install and no PMS access needed." },
+  { q: "What happens in the 15-minute demo?", a: "We show the three Mise interfaces on a live demo property, set up one of your existing standards as a timed task with steps, a target time and photo gates, and explain how a one-property pilot is scoped for your hotel." },
+  { q: "Do I need to prepare anything?", a: "Only if you want to: bring one existing standard you would like to see running as a timed task. There is nothing to install and no PMS access needed." },
   { q: "Who should join the demo?", a: "Whoever owns service standards and their outcomes: a GM, HR Director, L&D or quality lead, or a rooms division head. One person is enough to start." },
   { q: "Is there a cost for the demo?", a: "No. The demo is free. Pilots are scoped per property, and pricing is agreed after the demo rather than from a rate card." },
 ];
@@ -54,7 +54,7 @@ export default function DemoPage() {
             </div>
             <h1 className="mt-5 text-[clamp(2.3rem,5vw,3.8rem)] leading-[1.02] font-semibold tracking-[-0.035em] text-ink">{meta.h1}</h1>
             <p className="mt-5 max-w-xl text-[1.1rem] leading-relaxed text-muted">
-              See Mise, the SOP app for hotels, running on a real shift in the department you choose. Short, specific, and about your
+              See Mise, the service execution platform for hotels, running on a real shift in the department you choose. Short, specific, and about your
               standards rather than our slides.
             </p>
             <section id="what-you-see" aria-labelledby="see-title" className="mt-10 scroll-mt-28">

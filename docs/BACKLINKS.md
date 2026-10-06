@@ -20,13 +20,13 @@ Work through the list in priority order. Every profile uses the **same name, def
 **Category:** Service Execution Platform (hotel software)
 
 **One-liner (≤ 80 characters):**
-Every shift, five-star. Hotel SOPs as timed tasks, with evidence.
+Every shift, five-star. The service execution platform (SEP) for hotels.
 
 **Short description (canonical, ≤ 300 characters):**
-> Mise is a service execution platform for hotels. It turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.
+> Mise is the service execution platform (SEP) for hotels. It implements the SOPs a hotel already has as timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required.
 
 **Long description (boilerplate):**
-> Mise is a service execution platform for hotels. It turns SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required. Mise is built by Focus Realm and founded by Sehej Sharma, Ali Electricwala and Aditya Mishra. Its name comes from mise en place, the kitchen discipline of having everything in its place before service starts.
+> Mise is the service execution platform (SEP) for hotels. It implements the SOPs a hotel already has as timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and compounds it into an audit-ready service record. Not an LMS. No PMS integration required. Mise is built by Focus Realm and founded by Sehej Sharma, Ali Electricwala and Aditya Mishra. Its name comes from mise en place, the kitchen discipline of having everything in its place before service starts.
 
 **Founders:** Sehej Sharma (Co-Founder & CEO), Ali Electricwala (Co-Founder & COO), Aditya Mishra (Co-Founder & CTO).
 
@@ -52,7 +52,7 @@ Add these to **focusrealm.org**. Each is a plain `<a href>` without `rel="nofoll
 | Footer ("Products" or "Our platforms") | https://misehotel.com/ | Mise — hotel service execution platform |
 | Home page, the section about hospitality | https://misehotel.com/platform | Mise, our service execution platform for hotels |
 | Team page, on each founder's card | https://misehotel.com/team/sehej-sharma (and the `ali-electricwala` and `aditya-mishra` pages) | Sehej Sharma on Mise |
-| Any page mentioning the hotel SOP product | https://misehotel.com/digital-sop | digital SOPs for hotels |
+| Any page mentioning hotel service execution | https://misehotel.com/standards-to-execution | putting hotel standards into execution |
 | Old product/platform pages | **301 redirect** to the matching misehotel.com page, e.g. → `/platform` or `/how-it-works` | — |
 
 - The old "author/platform" screen describes the product in LMS terms. Retire it or redirect it; do not link to it.
@@ -84,7 +84,7 @@ After each profile goes live, add its URL to `socialProfiles` in `content/site.t
 
 ## 3. Software directories (weeks 2–4)
 
-Use the short description, and the long description where there is room. Category: hotel management / hospitality operations / task management / SOP software, whichever the site offers.
+Use the short description, and the long description where there is room. Category: hotel management / hospitality operations / task management / service execution platform, whichever the site offers.
 
 | Priority | Directory | Start at | Notes |
 |---|---|---|---|
@@ -101,7 +101,7 @@ Every listing links to https://misehotel.com/ (or `/demo` where a separate "demo
 
 | Item | Start at | Plan |
 |---|---|---|
-| **Product Hunt** | https://www.producthunt.com/ | Launch on a Tuesday–Thursday.<br>Tagline: "Every shift, five-star: hotel SOPs as timed tasks, with evidence".<br>First comment from Sehej: the mise en place story plus a 60-second loop video.<br>Link: https://misehotel.com/ |
+| **Product Hunt** | https://www.producthunt.com/ | Launch on a Tuesday–Thursday.<br>Tagline: "Every shift, five-star: the service execution platform for hotels".<br>First comment from Sehej: the mise en place story plus a 60-second loop video.<br>Link: https://misehotel.com/ |
 
 ## 5. Hospitality associations and directories (months 2–3)
 
@@ -125,7 +125,7 @@ Ask for a show-notes link to https://misehotel.com/ or the relevant pillar page.
 
 **Guest articles (hospitality trade publications and HR/ops blogs).** Rules:
 - The byline links to the founder's `/team/<slug>` page.
-- At most one contextual link to a pillar page, using descriptive anchors such as "digital SOPs for hotels" → `/digital-sop` or "hotel audit readiness" → `/audit-readiness`.
+- At most one contextual link to a pillar page, using descriptive anchors such as "putting hotel standards into execution" → `/standards-to-execution` or "hotel audit readiness" → `/audit-readiness`.
 - Never exact-match anchors on every piece.
 
 **LinkedIn.** Each founder posts one piece a month linking a new blog post, and lists Mise under Experience with the website set.

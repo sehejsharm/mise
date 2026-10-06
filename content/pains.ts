@@ -59,7 +59,7 @@ export const pains: Pain[] = [
     ],
     feeds: "ghost-sop",
     solution: { href: "/solutions/housekeeping", label: "Housekeeping task tracking with photo evidence" },
-    pillar: { href: "/digital-sop", label: "How to digitize hotel SOPs" },
+    pillar: { href: "/standards-to-execution", label: "How to put hotel standards into execution" },
     relatedPosts: ["how-to-digitize-hotel-sops", "housekeeping-sop-checklist"],
     meta: {
       path: "/problems/supervisor-bottleneck",
@@ -107,7 +107,7 @@ The supervisor bottleneck is the first pain in a chain, and it makes each of the
 
 You reduce hotel supervisor workload by moving routine verification out of the corridor and into the record. Three changes do most of the work:
 
-1. **Put the standard in the attendant's hand.** When the SOP's steps, target time and reference photos are on the screen the attendant is already using, most "is this right?" questions never reach the supervisor.
+1. **Put the standard in the attendant's hand.** When the standard's steps, target time and reference photos are on the screen the attendant is already using, most "is this right?" questions never reach the supervisor.
 2. **Make key steps produce proof.** A photo gate on the steps that matter (bathroom finish, bed make, minibar) means evidence exists the moment the step closes, timestamped and tied to the room.
 3. **Show supervisors exceptions, not everything.** A live view that lists blocked rooms, late tasks and missing evidence lets the supervisor walk to the three rooms that need them, not all forty.
 
@@ -139,9 +139,9 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
       },
     ],
     related: [
-      { href: "/solutions/housekeeping", label: "Housekeeping SOP app", note: "Timed room tasks with photo gates." },
+      { href: "/solutions/housekeeping", label: "Housekeeping execution", note: "Timed room tasks with photo gates." },
       { href: "/platform#manager", label: "The manager dashboard", note: "Exceptions first, routine cleared." },
-      { href: "/digital-sop", label: "How to digitize hotel SOPs", note: "The step-by-step guide." },
+      { href: "/standards-to-execution", label: "How to put hotel standards into execution", note: "The step-by-step guide." },
       { href: "/problems/ghost-sop", label: "Next in the chain: the ghost SOP", note: "What fills the gap when checks stop." },
     ],
   },
@@ -163,7 +163,7 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
     woundLong: "You are paying to maintain a standard you cannot prove anyone follows.",
     closes: [
       {
-        title: "The SOP becomes the task",
+        title: "The standard becomes the task",
         body: "Publishing a standard in Mise turns it into timed tasks with fixed steps. There is no separate document to drift from.",
       },
       {
@@ -177,7 +177,7 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
     ],
     feeds: "invisible-performance-gap",
     solution: { href: "/solutions/housekeeping", label: "Digital housekeeping checklist that runs itself" },
-    pillar: { href: "/digital-sop", label: "Digital SOP guide for hotels" },
+    pillar: { href: "/standards-to-execution", label: "Standards to execution guide" },
     relatedPosts: ["ghost-sop-hotel-standards", "how-to-digitize-hotel-sops"],
     meta: {
       path: "/problems/ghost-sop",
@@ -214,8 +214,8 @@ Hotel SOPs are not followed because following them depends on memory. A room att
 
 Four conditions make it worse:
 
-- **The SOP is a document, not a task.** Reading it is a separate activity from doing the work, so it is skipped under time pressure.
-- **Updates do not reach the floor.** A revised SOP is emailed or pinned, but the shift keeps running on the version people remember.
+- **The standard is a document, not a task.** Reading it is a separate activity from doing the work, so it is skipped under time pressure.
+- **Updates do not reach the floor.** A revised standard is emailed or pinned, but the shift keeps running on the version people remember.
 - **No one can see execution.** Without a record of how each room was done, drift goes unnoticed until a guest or an auditor finds it.
 - **Supervisors cannot check everything.** The [supervisor bottleneck](/problems/supervisor-bottleneck) means spot checks cover a fraction of the work.
 
@@ -227,12 +227,12 @@ The gap matters commercially because guests experience the practice, not the pap
 
 ## How do you make hotel staff follow SOPs?
 
-You make hotel staff follow SOPs by making the SOP the thing they do, rather than something they are meant to remember. When the standard is delivered as a timed task on the phone in their hand, with each step listed and key steps gated on a photo, following it is the path of least resistance.
+You make hotel staff follow SOPs by making the standard the thing they do, rather than something they are meant to remember. When the standard is delivered as a timed task on the phone in their hand, with each step listed and key steps gated on a photo, following it is the path of least resistance.
 
 In Mise that works in three moves:
 
-1. **Author once.** The standards owner writes the SOP in the standards workspace: steps, target time, reference photos, and which steps need evidence.
-2. **Run as a task.** The SOP becomes a timed task on the staff app, with a countdown against the target time and four phases: Prepare, Perform, Verify, Release.
+1. **Bring the SOP you have.** It is set up once in the standards workspace: steps, target time, reference photos, and which steps need evidence.
+2. **Run as a task.** The standard becomes a timed task on the staff app, with a countdown against the target time and four phases: Prepare, Perform, Verify, Release.
 3. **Record as it happens.** Every step is timestamped, gated steps carry a photo, and supervisor sign-off closes the loop. The result is a [service record](/glossary/service-record), not a checklist that someone ticked afterwards.
 
 ## Is this a training problem?
@@ -242,7 +242,7 @@ It is tempting to treat a ghost SOP as a knowledge gap and schedule another sess
 ## Signs you have ghost SOPs
 
 - Two staff members describe the same procedure differently.
-- The latest version of an SOP is not the one being used.
+- The latest version of a standard is not the one being used.
 - Nobody can show, for a given room and time, that the standard was followed.
 - Audit preparation involves rebuilding evidence rather than exporting it.
 
@@ -255,17 +255,17 @@ If any of these sound familiar, the [audit ambush](/problems/audit-ambush) is us
       },
       {
         q: "How does Mise stop SOPs from becoming ghost SOPs?",
-        a: "Mise turns each SOP into a timed task on the staff member's phone, with fixed steps, a target time and photo gates on key steps. Following the standard and doing the work become one action, and each completion is timestamped into the service record, so execution is visible.",
+        a: "Mise runs each existing SOP as a timed task on the staff member's phone, with fixed steps, a target time and photo gates on key steps. Following the standard and doing the work become one action, and each completion is timestamped into the service record, so execution is visible.",
       },
       {
         q: "Do we need to rewrite our SOPs to use Mise?",
-        a: "Usually not. Most properties start from their existing SOPs. During a pilot, the standards owner converts a handful into timed tasks: steps, target time, reference photos and evidence gates. Converting one SOP is part of the 15-minute demo.",
+        a: "No. Mise implements the SOPs you already have; it does not write them. During a pilot, a handful are set up as timed tasks: steps, target time, reference photos and evidence gates. Setting up one is part of the 15-minute demo.",
       },
     ],
     related: [
-      { href: "/digital-sop", label: "Digitize hotel SOPs, step by step", note: "From binder to timed task." },
+      { href: "/standards-to-execution", label: "Standards to execution, step by step", note: "From binder to timed task." },
       { href: "/solutions", label: "Solutions by department", note: "Every department, one app." },
-      { href: "/compare/sop-software-vs-checklist-app", label: "Hotel SOP software vs checklist apps", note: "Why ticking is not executing." },
+      { href: "/compare/execution-platform-vs-checklist-app", label: "Service execution platform vs checklist apps", note: "Why ticking is not executing." },
       { href: "/problems/invisible-performance-gap", label: "Next in the chain: the invisible performance gap", note: "When execution leaves no trace." },
     ],
   },
@@ -351,7 +351,7 @@ The manager dashboard is built around decisions, not reports:
 
 - **Who needs attention today:** late tasks, missing evidence and pending verifications, listed first.
 - **Readiness by role and person:** who is cleared for which standard and who needs coaching.
-- **Standard-level results:** which SOPs are used most, and which relate to better operational outcomes.
+- **Standard-level results:** which standards are used most, and which relate to better operational outcomes.
 
 In the demo property, for example, the team view shows how many of 42 staff are ready for their current operation and who needs a manager's attention today. Those figures are demo data; in a pilot they come from your own shifts.
 
@@ -416,7 +416,7 @@ When performance is visible, the next two pains in the chain become manageable. 
     ],
     feeds: "star-rating-ceiling",
     solution: { href: "/for/hr-directors", label: "Hotel HR compliance and onboarding evidence" },
-    pillar: { href: "/digital-sop", label: "Digital SOPs that outlast turnover" },
+    pillar: { href: "/standards-to-execution", label: "Standards that outlast turnover" },
     relatedPosts: ["what-is-a-service-execution-platform", "housekeeping-sop-checklist"],
     meta: {
       path: "/problems/attrition-bleed",
@@ -448,7 +448,7 @@ It follows directly from the [invisible performance gap](/problems/invisible-per
 
 ## Why hotel staff turnover hurts service quality
 
-Hotel staff turnover hurts service quality because most onboarding transfers habits, not standards. A new room attendant shadows a colleague for a period, absorbs that colleague's shortcuts and interpretations, and starts working alone. Nobody can see whether what they learned matches the written SOP, because execution is not recorded.
+Hotel staff turnover hurts service quality because most onboarding transfers habits, not standards. A new room attendant shadows a colleague for a period, absorbs that colleague's shortcuts and interpretations, and starts working alone. Nobody can see whether what they learned matches the written standard, because execution is not recorded.
 
 The cost is not only the recruitment spend. It is the weeks of below-standard work while a new joiner finds their way, the supervisor time spent answering questions, and the guest experiences that slip in between. Industry research has long treated turnover as a real operating cost; for a sense of how researchers approach it, see Hinkin and Tracey's work in the [Cornell Hotel and Restaurant Administration Quarterly](https://ecommons.cornell.edu/items/6f9519be-fef3-4707-b66c-b7422e38761c). Your own figures will differ, which is why our [ROI calculator](/roi) treats them as editable assumptions.
 
@@ -493,7 +493,7 @@ Consistent execution across old and new staff is the lever on the next pain in t
     related: [
       { href: "/for/hr-directors", label: "For HR Directors", note: "Readiness and acknowledgement evidence." },
       { href: "/roi", label: "Estimate the cost of hotel staff turnover", note: "With your own assumptions." },
-      { href: "/solutions/boutique-hotels", label: "Digital SOPs for boutique hotels", note: "When every person matters more." },
+      { href: "/solutions/boutique-hotels", label: "Service execution for boutique hotels", note: "When every person matters more." },
       { href: "/problems/star-rating-ceiling", label: "Next in the chain: the star rating ceiling", note: "Variance becomes reviews." },
     ],
   },
@@ -528,7 +528,7 @@ Consistent execution across old and new staff is the lever on the next pain in t
       },
     ],
     feeds: "audit-ambush",
-    solution: { href: "/solutions/hotel-chains", label: "Multi-property hotel SOP software" },
+    solution: { href: "/solutions/hotel-chains", label: "Multi-property service execution" },
     pillar: { href: "/audit-readiness", label: "Audit readiness and service standards" },
     relatedPosts: ["ghost-sop-hotel-standards", "housekeeping-sop-checklist"],
     meta: {
@@ -605,9 +605,9 @@ Consistent, recorded execution also means you already hold the evidence an audit
       },
     ],
     related: [
-      { href: "/solutions/hotel-chains", label: "Multi-property hotel SOP software", note: "One standard across properties." },
+      { href: "/solutions/hotel-chains", label: "Multi-property service execution", note: "One standard across properties." },
       { href: "/for/general-managers", label: "For General Managers", note: "Variance by floor and shift." },
-      { href: "/solutions/front-office", label: "Front desk SOP software", note: "Arrival standards, every time." },
+      { href: "/solutions/front-office", label: "Front desk service execution", note: "Arrival standards, every time." },
       { href: "/problems/audit-ambush", label: "Next in the chain: the audit ambush", note: "When proof has to be rebuilt." },
     ],
   },

@@ -100,7 +100,7 @@ export function FaqList({
 /** Full-bleed gold-on-navy closing CTA. */
 export function FinalCta({
   title = "See it on a real shift. No feature tour.",
-  body = "Fifteen minutes. Your SOP, as a timed task, on a live demo property.",
+  body = "Fifteen minutes. Your existing standard, running as a timed task on a live demo property.",
   location,
 }: {
   title?: string;

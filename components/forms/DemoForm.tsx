@@ -92,7 +92,7 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
             <h2 className="mt-5 font-display text-[1.6rem] font-semibold text-ink">Request received.</h2>
             <p className="mt-2 text-[1rem] leading-relaxed text-muted">
               We will reply shortly to fix a time.{" "}
-              {bookingUrl ? "Or pick a slot now:" : "Bring one SOP you would like to see as a timed task."}
+              {bookingUrl ? "Or pick a slot now:" : "Bring one of your existing standards; we will show it running as a timed task."}
             </p>
             {bookingUrl ? (
               <div className="mt-6">
@@ -151,7 +151,7 @@ export default function DemoForm({ bookingUrl }: { bookingUrl?: string }) {
                 id="demo-message"
                 name="message"
                 rows={4}
-                placeholder="The SOP you'd like to see as a timed task, your departments, your timeline…"
+                placeholder="An existing standard you'd like to see running as a timed task, your departments, your timeline…"
                 className={inputClass}
                 {...invalid("message")}
               />
