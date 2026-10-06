@@ -33,7 +33,7 @@ export const brand = {
     "Mise is the SOP app for hotels: a service execution platform that turns every department's SOPs into timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and builds an audit-ready service record. Not an LMS. No PMS integration required.",
   /** Hero sub-line: names the departments. */
   definitionShort:
-    "Front office, housekeeping, F&B, kitchen, engineering, security and spa: every department's SOPs become timed tasks on staff phones, with photo evidence and one audit-ready service record.",
+    "Standalone hotel SOP software for front office, housekeeping, F&B, kitchen, engineering, security and spa: every department's SOPs become timed tasks with photo proof and one audit-ready record.",
   spine: ["Standard", "Timed task", "Evidence", "Service record"] as const,
   nameOrigin:
     "Mise comes from mise en place, the kitchen discipline of having everything in its place before service starts. Mise brings that discipline to every department, on every shift.",
@@ -55,8 +55,7 @@ export const contact = {
 
 /** Company social profiles. Emitted as Organization.sameAs once they exist. */
 export const socialProfiles: { network: string; href: string }[] = [
-  { network: "Focus Realm", href: "https://focusrealm.org" },
-  { network: "LinkedIn", href: "https://www.linkedin.com/company/focus-realm/" },
+  { network: "LinkedIn", href: "https://www.linkedin.com/company/misehotel" },
 ];
 
 /* ── Founders ─────────────────────────────────────────────────────────── */

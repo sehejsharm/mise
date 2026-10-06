@@ -17,6 +17,30 @@ export const faqs: FaqItem[] = [
     homeAnswer: brand.definition,
   },
   {
+    group: "How it works",
+    home: true,
+    q: "What is standalone hotel SOP software and why is PMS integration not required?",
+    a: "Mise is a standalone hotel SOP software operating independently of your Property Management System (PMS). Unlike legacy hotel operations management software that requires months of complex API integration, Mise deploys instantly on mobile and web delivering complete hotel task management software capabilities across housekeeping, front desk, and maintenance teams from day one.",
+  },
+  {
+    group: "How it works",
+    home: true,
+    q: 'How does hotel photo proof software eliminate "ghost SOPs" and supervisor bottlenecks?',
+    a: 'Mise acts as a dedicated hotel photo proof software that stops "ghost SOPs"—tasks checked off without actual execution—by requiring timestamped photo verification. Staff capture real-time photo proof inside our housekeeping SOP app, while managers review and approve work remotely using our hotel supervisor sign-off app, clearing supervisor bottlenecks on the floor and delivering an audit-ready hotel SOP platform.',
+  },
+  {
+    group: "How it works",
+    home: true,
+    q: "Why should hotel operations replace WhatsApp and Excel spreadsheets?",
+    a: "Upgrading from WhatsApp and Excel to Mise replaces fragmented chats and static files with an accountable, structured hotel operations platform. It replaces unorganized chat messages with real-time hotel timed task software, lost photos with mandatory photo verification and supervisor sign-offs, manual text summaries with an automated hotel duty manager handover app, and compliance risks with searchable digital logs for instant audit readiness.",
+  },
+  {
+    group: "How it works",
+    home: true,
+    q: "How does Mise support housekeeping checklists and hotel HR compliance?",
+    a: "Mise serves as an all-in-one hotel operations software solution designed to streamline departmental workflows: Housekeeping SOP App uses hotel housekeeping checklist software with photo verification to guarantee rooms meet brand standards every shift; Duty Manager Handover App captures shift incidents, maintenance tickets, and VIP notes for smooth operational handovers; Hotel HR Compliance Software automatically tracks staff SOP training completion and safety standard sign-offs with permanent digital records.",
+  },
+  {
     group: "About Mise",
     home: true,
     allowLms: true,

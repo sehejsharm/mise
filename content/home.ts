@@ -8,24 +8,30 @@ import { departmentTicker } from "@/content/departments";
 
 export const homeMeta = {
   path: "/",
-  title: "Hotel SOP App for Every Department | Mise",
+  title: "Best Hotel SOP Software & Photo Proof Task Tracking | Mise",
   description:
-    "Mise is the SOP app for hotels. Every department's SOPs become timed tasks on staff phones, with photo evidence and an audit-ready record. Book a 15-min demo.",
+    "Mise is the standalone hotel SOP software with photo proof verification and timed task tracking. Replace WhatsApp and Excel with zero PMS integration required.",
   h1: "The SOP app for hotels. Every department, every shift.",
-  primaryKeyword: "SOP app for hotels",
+  primaryKeyword: "hotel SOP software",
   secondaryKeywords: [
-    "hotel SOP app",
-    "hotel SOP software",
+    "SOP app for hotels",
+    "standalone hotel SOP software",
+    "hotel photo proof software",
+    "hotel timed task software",
+    "hotel supervisor sign-off app",
+    "hotel duty manager handover app",
     "hotel operations software",
-    "digital SOP for hotels",
-    "hotel department SOP software",
-    "hotel operations task management",
-    "Mise hotel software",
     "Mise by Focus Realm",
   ],
-  ogTitle: "Mise — the SOP app for hotels. Every department, every shift.",
+  ogTitle: "Standalone Hotel SOP Software & Photo Proof Task Tracking | Mise",
+  ogDescription:
+    "Digitize hotel SOPs with real-time photo proof, timed tasks, and supervisor sign-offs. Replace WhatsApp group chats and manual Excel spreadsheets without needing PMS integration.",
+  ogImageAlt: "Mise Hotel Operations & Photo Proof SOP Platform Interface",
+  twitterTitle: "Standalone Hotel SOP Software & Photo Proof Task Tracking | Mise",
+  twitterDescription:
+    "Digitize hotel SOPs with real-time photo proof, timed tasks, and supervisor sign-offs. Eliminate ghost SOPs and replace WhatsApp for hotel operations.",
   eyebrow: "Service Execution Platform",
-  updated: "2026-10-01",
+  updated: "2026-10-06",
   priority: 1,
 };
 

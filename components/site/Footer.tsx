@@ -109,8 +109,8 @@ export default function Footer() {
             </ul>
             <div className="flex items-center gap-2">
               <a
-                href="https://www.linkedin.com/company/focus-realm/"
-                aria-label="Focus Realm on LinkedIn (opens in a new tab)"
+                href="https://www.linkedin.com/company/misehotel"
+                aria-label="Mise on LinkedIn (opens in a new tab)"
                 rel="noopener"
                 target="_blank"
                 className="grid size-10 place-items-center rounded-full border border-line-strong text-muted hover:border-gold hover:text-gold-ink"

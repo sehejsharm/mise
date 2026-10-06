@@ -53,7 +53,7 @@ test("the homepage is positioned as the SOP app for every department", async ({ 
   await stubGoogle(page);
   await rejectConsentUpfront(page);
   await page.goto("/");
-  await expect(page).toHaveTitle(/SOP App/i);
+  await expect(page).toHaveTitle("Best Hotel SOP Software & Photo Proof Task Tracking | Mise");
   await expect(page.locator("h1")).toContainText("SOP app for hotels");
   const group = page.getByRole("group", { name: "Show the demo for a department" });
   for (const d of ["Front office", "Housekeeping", "F&B service", "Kitchen", "Engineering", "Security", "Spa"]) {

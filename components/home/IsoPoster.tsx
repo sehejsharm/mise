@@ -120,8 +120,8 @@ export default function IsoPoster({ active, animate = true }: { active: number |
 
   const label =
     active === null
-      ? "Mise, the SOP app for hotels, on an isometric property map: every department, from front desk and guest rooms to restaurant, kitchen, spa, plant room and fire exits, writes evidence into one service record"
-      : `Mise, the SOP app for hotels, on an isometric property map: ${departments[active].zone} lights up as ${departments[active].standardId} tasks close and evidence streams into the service record`;
+      ? "Mise hotel SOP software, the SOP app for hotels, on an isometric property map: every department, from front desk and guest rooms to restaurant, kitchen, spa, plant room and fire exits, writes evidence into one service record"
+      : `Mise hotel SOP software, the SOP app for hotels, on an isometric property map: ${departments[active].zone} lights up as ${departments[active].standardId} tasks close and evidence streams into the service record`;
 
   return (
     <svg

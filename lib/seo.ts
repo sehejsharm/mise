@@ -23,6 +23,11 @@ export type PageMeta = {
   priority?: number;
   /** Overrides the <meta name="keywords"> order (defaults to primary + secondary). */
   metaKeywords?: string[];
+  /** Social overrides; each falls back to ogTitle / description. */
+  ogDescription?: string;
+  ogImageAlt?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
 };
 
 /** Stable key for the static OG image of a route: "/" → "home", "/a/b" → "a--b". */
@@ -42,7 +47,7 @@ export function buildMetadata(meta: PageMeta, extra: Partial<Metadata> = {}): Me
     url: absoluteUrl(ogImagePath(meta.path)),
     width: 1200,
     height: 630,
-    alt: `${meta.h1} — ${brand.name}`,
+    alt: meta.ogImageAlt ?? `${meta.h1} — ${brand.name}`,
   };
   return {
     title: { absolute: meta.title },
@@ -61,7 +66,7 @@ export function buildMetadata(meta: PageMeta, extra: Partial<Metadata> = {}): Me
       siteName: brand.name,
       locale: "en_IN",
       title: ogTitle,
-      description: meta.description,
+      description: meta.ogDescription ?? meta.description,
       images: [image],
       ...(meta.type === "article" && meta.published
         ? { publishedTime: meta.published, modifiedTime: meta.updated ?? meta.published }
@@ -69,9 +74,9 @@ export function buildMetadata(meta: PageMeta, extra: Partial<Metadata> = {}): Me
     },
     twitter: {
       card: "summary_large_image",
-      title: ogTitle,
-      description: meta.description,
-      images: [image.url],
+      title: meta.twitterTitle ?? ogTitle,
+      description: meta.twitterDescription ?? meta.ogDescription ?? meta.description,
+      images: [{ url: image.url, alt: image.alt }],
     },
     ...extra,
   };

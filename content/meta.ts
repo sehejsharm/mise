@@ -24,12 +24,19 @@ export const roiMeta: PageMeta = {
 
 export const aboutMeta: PageMeta = {
   path: "/about",
-  title: "About Mise Hospitality: Mise by Focus Realm | Mise",
+  title: "About Mise | Standalone Hotel SOP & Operations Software",
   description:
-    "Mise hospitality, by Focus Realm: why hotels need execution, not more documents, the mise en place origin, our principles and founders. Book a 15-min demo.",
-  h1: "About Mise hospitality: every shift, five-star",
-  primaryKeyword: "Mise hospitality",
-  secondaryKeywords: ["Mise by Focus Realm", "Mise Focus Realm", "Every shift five-star", "Mise hotel software"],
+    "How Mise is transforming hotel service execution: eliminating ghost SOPs, supervisor bottlenecks and messy WhatsApp groups with standalone hotel SOP software.",
+  h1: "Reimagining Hotel Service Execution",
+  primaryKeyword: "hotel service execution",
+  secondaryKeywords: ["standalone hotel SOP software", "About Mise", "Mise by Focus Realm", "Mise hotel software"],
+  ogTitle: "About Mise | Revolutionizing Hotel Service Execution & Task Tracking",
+  ogDescription:
+    "Learn how Mise empowers hotel operations teams with real-time photo proof, timed task tracking, and supervisor sign-offs without needing complex PMS integration.",
+  ogImageAlt: "Mise Team & Hotel Operations Platform Interface",
+  twitterTitle: "About Mise | Revolutionizing Hotel Service Execution & Task Tracking",
+  twitterDescription:
+    "Discover the story behind Mise: the standalone hotel SOP software designed to eliminate ghost SOPs and replace WhatsApp for hotel operations.",
   eyebrow: "About Mise",
   updated,
   priority: 0.8,

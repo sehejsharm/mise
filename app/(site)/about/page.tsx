@@ -58,9 +58,8 @@ export default function AboutPage() {
         updated={meta.updated}
         lede={
           <p>
-            Mise hospitality exists because hotels do not have a documentation problem. They have an execution problem.
-            The standards are written; the question is whether they run on this shift, in this room, and whether anyone
-            can prove it. Mise by Focus Realm is built to answer that question.
+            Mise is reimagining hotel service execution: standards that run on every shift, in every department, with
+            timed tasks, real-time photo proof and supervisor sign-off, for the people who answer for service.
           </p>
         }
       />
@@ -70,6 +69,101 @@ export default function AboutPage() {
           <TldrBox label="In one paragraph">{brand.definition}</TldrBox>
         </div>
       </div>
+
+      <section aria-labelledby="mission" className="py-16">
+        <div className="container-page grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <Eyebrow>Our mission</Eyebrow>
+            <h2 id="mission" className="mt-4 text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
+              Built to Eliminate Floor-Level Operational Failure
+            </h2>
+          </div>
+          <div className="prose-mise max-w-2xl">
+            <p>
+              At Mise, we believe hotel standards shouldn&apos;t live in forgotten paper binders or get buried in chaotic
+              WhatsApp group chats. We built Mise to give hotel general managers, directors of operations, and executive
+              housekeepers real-time visibility into every shift, task, and standard operating procedure.
+            </p>
+            <p>
+              Mise is a dedicated hotel SOP software that operates completely independently of legacy Property Management
+              Systems (PMS). By removing the requirement for months of complex IT and API integrations, Mise enables hotel
+              teams to digitize floor workflows, enforce compliance, and streamline operations from day one.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="challenges" className="py-16">
+        <div className="container-page">
+          <Eyebrow>What we fix</Eyebrow>
+          <h2 id="challenges" className="mt-4 max-w-3xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
+            The Operational Challenges We Solve
+          </h2>
+          <p className="mt-5 max-w-3xl text-[1.05rem] leading-relaxed text-muted">
+            Traditional hotel task management relies heavily on static Excel spreadsheets, physical checklists, and
+            unorganized messaging apps. This creates major operational vulnerabilities on the floor:
+          </p>
+          <ul className="mt-8 grid gap-5 lg:grid-cols-3">
+            {[
+              {
+                title: "Eliminating \"Ghost SOPs\"",
+                href: "/problems/ghost-sop",
+                body: "Paper binders and digital checkboxes allow tasks to be marked as complete without actual execution. Mise functions as a purpose-built hotel photo proof software, requiring staff to capture timestamped visual verification for room setups, maintenance fixes, and safety inspections.",
+              },
+              {
+                title: "Removing Supervisor Bottlenecks",
+                href: "/problems/supervisor-bottleneck",
+                body: "Floor managers often spend hours physically walking properties to verify completed tasks. With our hotel supervisor sign-off app, managers can inspect, approve, or reject work remotely from their mobile device.",
+              },
+              {
+                title: "Replacing WhatsApp & Excel Chaos",
+                href: "/compare/mise-vs-whatsapp",
+                body: "Managing operations via WhatsApp leads to lost photo records, unorganized shift handovers, and no audit trail or data privacy controls. Mise provides a structured hotel operations platform featuring real-time hotel timed task software and automated hotel duty manager handover app logs.",
+              },
+            ].map((c) => (
+              <li key={c.title} className="rounded-2xl border border-line bg-surface/60 p-6">
+                <h3 className="font-display text-[1.15rem] font-semibold text-ink">
+                  <Link href={c.href} className="hover:text-gold-ink">
+                    {c.title}
+                  </Link>
+                </h3>
+                <p className="mt-2 text-[0.95rem] leading-relaxed text-muted">{c.body}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="why-mise" className="py-16">
+        <div className="container-page">
+          <Eyebrow>Why Mise</Eyebrow>
+          <h2 id="why-mise" className="mt-4 max-w-3xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
+            Why Hotel Operators Choose Mise
+          </h2>
+          <ol className="mt-8 grid gap-5 lg:grid-cols-3">
+            {[
+              {
+                title: "Zero PMS Integration Required",
+                body: "Deploy immediately across housekeeping, front desk, maintenance, and F&B without waiting for PMS software vendors or API access.",
+              },
+              {
+                title: "Accountable Workflows",
+                body: "Timed task tracking ensures staff know exactly what needs to be done, when it needs to be completed, and how to verify it.",
+              },
+              {
+                title: "Instant Audit Readiness",
+                body: "Permanent, searchable digital records give hotel management total confidence during brand standards audits and HR compliance reviews.",
+              },
+            ].map((c, i) => (
+              <li key={c.title} className="rounded-2xl border border-line bg-surface/60 p-6">
+                <p className="font-mono text-[0.8rem] text-gold-ink">{String(i + 1).padStart(2, "0")}</p>
+                <h3 className="mt-2 font-display text-[1.15rem] font-semibold text-ink">{c.title}</h3>
+                <p className="mt-2 text-[0.95rem] leading-relaxed text-muted">{c.body}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
 
       <section aria-labelledby="story" className="py-16">
         <div className="container-page grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">

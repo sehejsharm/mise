@@ -1,5 +1,5 @@
 /**
- * Every route: 200, exactly one H1, title ≤ 60, description ≤ 158 (≥ 120),
+ * Every route: 200, exactly one H1, title ≤ 60, description ≤ 160 (≥ 120),
  * self-canonical on the production origin, hreflang, OG image, valid JSON-LD
  * with the fields Google's rich-result rules require for each type.
  */
@@ -81,7 +81,7 @@ test("every route passes the on-page SEO contract", async ({ request }) => {
 
     if (h1s.length !== 1) problems.push(`${path}: ${h1s.length} H1 elements`);
     if (!title || title.length > 60) problems.push(`${path}: title length ${title.length} "${title}"`);
-    if (desc.length > 158 || desc.length < 110) problems.push(`${path}: description length ${desc.length}`);
+    if (desc.length > 160 || desc.length < 110) problems.push(`${path}: description length ${desc.length}`);
     if (canonical !== expected) problems.push(`${path}: canonical ${canonical} ≠ ${expected}`);
     if (!doc.querySelector('link[rel="alternate"][hreflang="en-IN"]')) problems.push(`${path}: missing hreflang en-IN`);
     if (!doc.querySelector('meta[property="og:image"]')) problems.push(`${path}: missing og:image`);

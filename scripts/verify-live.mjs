@@ -86,7 +86,7 @@ for (const p of paths) {
   const home = parse(pages.get("/")?.html ?? "");
   const title = home.querySelector("title")?.text ?? "";
   const h1 = home.querySelector("h1")?.text ?? "";
-  check("Fix is live", "Homepage <title> and H1 contain \"SOP app for hotels\"", /SOP app/i.test(title) && /SOP app for hotels/i.test(h1), `title: ${title} | H1: ${h1}`);
+  check("Fix is live", "Homepage <title> is the owner's SEO title and the H1 says \"SOP app for hotels\"", title === "Best Hotel SOP Software & Photo Proof Task Tracking | Mise" && /SOP app for hotels/i.test(h1), `title: ${title} | H1: ${h1}`);
   const solutionsLink = home.querySelectorAll("nav[aria-label='Primary'] a").find((a) => a.text.trim() === "Solutions");
   check("Fix is live", "Nav \"Solutions\" goes to /solutions", solutionsLink?.getAttribute("href") === "/solutions", `href=${solutionsLink?.getAttribute("href")}`);
   const codes = [];
@@ -151,17 +151,17 @@ for (const p of paths) {
     const expectCanon = `https://misehotel.com${p === "/" ? "" : p}`;
     if (h1s !== 1) seo.push(`${p}: ${h1s} H1s`);
     if (title.length > 60) seo.push(`${p}: title ${title.length} chars`);
-    if (!desc || desc.length > 158) seo.push(`${p}: description ${desc.length} chars`);
+    if (!desc || desc.length > 160) seo.push(`${p}: description ${desc.length} chars`);
     if (canon.replace(/\/$/, "") !== expectCanon.replace(/\/$/, "")) seo.push(`${p}: canonical ${canon}`);
     if (!ldOk) seo.push(`${p}: JSON-LD missing or invalid`);
   }
-  check("SEO / GEO", "Every page: one H1, self-canonical on https://misehotel.com, title ≤60, description ≤158, parseable JSON-LD", seo.length === 0, seo.length ? seo.slice(0, 10).join("\n") : `${pages.size} pages checked`);
+  check("SEO / GEO", "Every page: one H1, self-canonical on https://misehotel.com, title ≤60, description ≤160, parseable JSON-LD", seo.length === 0, seo.length ? seo.slice(0, 10).join("\n") : `${pages.size} pages checked`);
   const graph = JSON.parse(parse(pages.get("/")?.html ?? "").querySelector('script[type="application/ld+json"]')?.text ?? "{}");
   const nodes = graph["@graph"] ?? [];
   const desc = (t) => nodes.find((n) => n["@type"] === t)?.description ?? "";
   const faqPage = parse(pages.get("/faq")?.html ?? "").querySelectorAll('script[type="application/ld+json"]').map((s) => JSON.parse(s.text)["@graph"] ?? []).flat();
   const faqWhat = faqPage.find((n) => n["@type"] === "FAQPage")?.mainEntity?.find((q) => q.name === "What is Mise?")?.acceptedAnswer?.text ?? "";
-  check("SEO / GEO", "Organization / SoftwareApplication / FAQPage descriptions match the canonical definition", desc("Organization").startsWith(CANON) && desc("SoftwareApplication").startsWith(CANON) && faqWhat.startsWith(CANON), `Organization: ${desc("Organization").slice(0, 70)}… | FAQ: ${faqWhat.slice(0, 50)}…`);
+  check("SEO / GEO", "Organization / SoftwareApplication descriptions are the SEO copy; FAQ \"What is Mise?\" is the canonical definition", desc("Organization").startsWith("Mise provides standalone hotel SOP management software") && desc("SoftwareApplication").startsWith("Standalone hotel SOP software with photo proof") && faqWhat.startsWith(CANON), `Organization: ${desc("Organization").slice(0, 70)}… | FAQ: ${faqWhat.slice(0, 50)}…`);
   const og = [];
   for (const key of ["home", "solutions", "solutions--kitchen", "solutions--engineering", "solutions--security-and-safety", "solutions--spa-and-wellness"]) {
     const r = await get(`/og/${key}.png`);

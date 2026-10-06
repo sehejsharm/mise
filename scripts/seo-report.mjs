@@ -81,8 +81,9 @@ for (const p of paths) {
     }
     if (r.inAlt === false) issues.push(`${p}: primary keyword "${kw}" not in lead image alt`);
   }
-  if (r.descLen < 120 || r.descLen > 158) issues.push(`${p}: description length ${r.descLen}`);
-  if (!r.descCta && p !== "/demo") issues.push(`${p}: description does not end with a demo CTA`);
+  if (r.descLen < 120 || r.descLen > 160) issues.push(`${p}: description length ${r.descLen}`);
+  // Home and About use the owner-supplied SEO copy (no CTA ending).
+  if (!r.descCta && !["/demo", "/", "/about"].includes(p)) issues.push(`${p}: description does not end with a demo CTA`);
 }
 
 // Homepage copy budget, measured on rendered visible text at desktop width.
