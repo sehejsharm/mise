@@ -11,11 +11,11 @@ Rules:
 - Mise is never named as SOP software: "SOP app", "SOP software", "SOP platform" and "SOP management" fail anywhere in visible text, titles, meta descriptions or JSON-LD. The "SOP" column counts remaining mentions of the word (the hotel's own SOPs and the ghost SOP concept).
 - The existing bans stay: retired vocabulary outside the comparison content and "not an LMS" contexts, confidential terms and the retired domain.
 
-Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: 180.
+Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: 186.
 
 | URL | Front office | Housekeeping | F&B | Kitchen | Engineering | Security | Spa | SOP | mailto CTAs | Result |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| `/` | 25 | 6 | 6 | 4 | 6 | 3 | 5 | 6 | 0 | PASS |
+| `/` | 25 | 3 | 7 | 4 | 5 | 3 | 5 | 7 | 0 | PASS |
 | `/platform` | 9 | 2 | 7 | 7 | 5 | 6 | 7 | 3 | 0 | PASS |
 | `/how-it-works` | 13 | 2 | 1 | 1 | 1 | 0 | 0 | 4 | 0 | PASS |
 | `/problems` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 0 | PASS |
@@ -64,8 +64,8 @@ Department and SOP mentions are counted in each page's visible text. Total SOP m
 | `/glossary/digital-sop` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | PASS |
 | `/glossary/departmental-sop` | 2 | 2 | 0 | 2 | 2 | 1 | 0 | 9 | 0 | PASS |
 | `/glossary/mise-en-place` | 1 | 1 | 2 | 4 | 1 | 1 | 1 | 1 | 0 | PASS |
-| `/faq` | 4 | 6 | 2 | 4 | 5 | 7 | 1 | 8 | 0 | PASS |
-| `/about` | 1 | 1 | 1 | 3 | 2 | 0 | 0 | 5 | 0 | PASS |
+| `/faq` | 4 | 3 | 3 | 4 | 4 | 7 | 1 | 9 | 0 | PASS |
+| `/about` | 1 | 1 | 1 | 3 | 2 | 0 | 0 | 9 | 0 | PASS |
 | `/team/sehej-sharma` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
 | `/team/ali-electricwala` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
 | `/team/aditya-mishra` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |

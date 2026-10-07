@@ -7,20 +7,20 @@ Generated 2026-10-07 by `pnpm seo:report` against a local production build (65 U
 ## Summary
 
 - URLs checked: **65**
-- Keyword placement issues on scored pages: **0**
+- Keyword placement issues on scored pages: **1**
 - Description length / CTA issues: **0**
 
 ### Homepage copy budget
 
-- Body copy in `<main>` at 1440px: **671 words** (rendered text; excludes collapsed FAQ answers, aria-hidden decorative duplicates such as the marquee copies and phone mockup, and the demo-data ticker and dashboard, which are labelled data rather than copy)
-- Words inside the eight FAQ accordion items (questions + collapsed answers): **528**
+- Body copy in `<main>` at 1440px: **677 words** (rendered text; excludes collapsed FAQ answers, aria-hidden decorative duplicates such as the marquee copies and phone mockup, and the demo-data ticker and dashboard, which are labelled data rather than copy)
+- Words inside the eight FAQ accordion items (questions + collapsed answers): **495**
 - Words in the demo service-record ticker (data labels): **91**
-- Per section: The service execution platform for hotel 58 · How Mise deploys 10 · Hotel audit readiness, answered in one f 40 · How Mise turns your existing standards i 62 · Hotel operations problems Mise solves 52 · Five places. One service execution platf 52 · A hotel staff app, manager dashboard and 47 · The hotel GM dashboard, live as the shif 22 · Runs on what your hotel already has 18 · What staff turnover costs your hotel 42 · Hotel operations software for every deci 44 · Mise founders and advisory board 76 · Hotel service execution guides 23 · Service execution platform FAQ 94 · See it on a real shift. No feature tour. 31
+- Per section: The service execution platform for hotel 58 · How Mise deploys 10 · Hotel audit readiness, answered in one f 40 · How Mise turns your existing standards i 62 · Hotel operations problems Mise solves 52 · Five places. One service execution platf 52 · A hotel staff app, manager dashboard and 47 · The hotel GM dashboard, live as the shif 22 · Runs on what your hotel already has 18 · What staff turnover costs your hotel 42 · Hotel operations software for every deci 44 · Mise founders and advisory board 76 · Hotel service execution guides 23 · Service execution platform FAQ 100 · See it on a real shift. No feature tour. 31
 - Section headlines (H2) and word counts: How Mise deploys (3) · Hotel audit readiness, answered in one filter (7) · How Mise turns your existing standards into audit-ready records (9) · Hotel operations problems Mise solves (5) · Five places. One service execution platform. (6) · A hotel staff app, manager dashboard and standards workspace (9) · The hotel GM dashboard, live as the shift runs (9) · Runs on what your hotel already has (7) · What staff turnover costs your hotel (6) · Hotel operations software for every decision-maker (6) · Mise founders and advisory board (5) · Hotel service execution guides (4) · Service execution platform FAQ (4) · See it on a real shift. No feature tour. (9)
 
 ### Open issues
 
-None.
+- /about: primary keyword "hotel service execution" not in an H2
 
 ## Per-URL detail
 
@@ -28,7 +28,7 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 
 | URL | Title | H1 | Primary keyword | Title | Desc | H1 | First 100 | H2 | Alt | OG | Desc len |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| `/` | Hotel Service Execution Platform (SEP) \| Mise | The service execution platform for hotels. Every department, every shift. | service execution platform | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 156 |
+| `/` | Hotel Service Execution Platform (SEP) & Timed Task Tracking \| Mise | The service execution platform for hotels. Every department, every shift. | service execution platform | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 156 ⚠ |
 | `/platform` | Hotel Operations Software: Staff, Manager, Standards \| Mise | Hotel operations software with three interfaces and one service record | hotel operations software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 157 |
 | `/how-it-works` | How the Service Execution Platform Works \| Mise | How a service execution platform works: your standards, turned into evidence | how a service execution platform works | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 159 |
 | `/problems` | Hotel Operations Problems: The Six-Pain Chain \| Mise | Hotel operations problems that compound, shift after shift | hotel operations problems | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
@@ -78,7 +78,7 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/glossary/departmental-sop` | What Is Departmental SOP? \| Mise Glossary | What is departmental SOP? | departmental sop | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 140 |
 | `/glossary/mise-en-place` | What Is Mise en place? \| Mise Glossary | What is mise en place? | mise en place | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 149 |
 | `/faq` | Mise FAQ: Service Execution Platform Questions \| Mise | Mise FAQ: the service execution platform, answered | Mise FAQ | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 148 |
-| `/about` | About Mise \| Hotel Service Execution Platform (SEP) | Reimagining Hotel Service Execution | hotel service execution | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 153 ⚠ |
+| `/about` | About Mise \| Hotel Service Execution Platform (SEP) | Reimagining Hotel Service Execution | hotel service execution | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 157 ⚠ |
 | `/team/sehej-sharma` | Sehej Sharma, Co-Founder & CEO of Mise | Sehej Sharma | Sehej Sharma | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 146 |
 | `/team/ali-electricwala` | Ali Electricwala, Co-Founder & COO of Mise | Ali Electricwala | Ali Electricwala | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 150 |
 | `/team/aditya-mishra` | Aditya Mishra, Co-Founder & CTO of Mise | Aditya Mishra | Aditya Mishra | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 149 |

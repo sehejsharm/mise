@@ -53,7 +53,7 @@ test("the homepage is positioned as the service execution platform for every dep
   await stubGoogle(page);
   await rejectConsentUpfront(page);
   await page.goto("/");
-  await expect(page).toHaveTitle("Hotel Service Execution Platform (SEP) | Mise");
+  await expect(page).toHaveTitle("Hotel Service Execution Platform (SEP) & Timed Task Tracking | Mise");
   await expect(page.locator("h1")).toContainText("service execution platform for hotels");
   const group = page.getByRole("group", { name: "Show the demo for a department" });
   for (const d of ["Front office", "Housekeeping", "F&B service", "Kitchen", "Engineering", "Security", "Spa"]) {

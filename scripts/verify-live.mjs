@@ -86,7 +86,7 @@ for (const p of paths) {
   const home = parse(pages.get("/")?.html ?? "");
   const title = home.querySelector("title")?.text ?? "";
   const h1 = home.querySelector("h1")?.text ?? "";
-  check("Fix is live", "Homepage <title> and H1 name Mise the service execution platform (SEP)", title === "Hotel Service Execution Platform (SEP) | Mise" && /service execution platform for hotels/i.test(h1), `title: ${title} | H1: ${h1}`);
+  check("Fix is live", "Homepage <title> and H1 name Mise the service execution platform (SEP)", title === "Hotel Service Execution Platform (SEP) & Timed Task Tracking | Mise" && /service execution platform for hotels/i.test(h1), `title: ${title} | H1: ${h1}`);
   const solutionsLink = home.querySelectorAll("nav[aria-label='Primary'] a").find((a) => a.text.trim() === "Solutions");
   check("Fix is live", "Nav \"Solutions\" goes to /solutions", solutionsLink?.getAttribute("href") === "/solutions", `href=${solutionsLink?.getAttribute("href")}`);
   const codes = [];
@@ -150,7 +150,7 @@ for (const p of paths) {
     }
     const expectCanon = `https://misehotel.com${p === "/" ? "" : p}`;
     if (h1s !== 1) seo.push(`${p}: ${h1s} H1s`);
-    if (title.length > 60) seo.push(`${p}: title ${title.length} chars`);
+    if (title.length > (p === "/" ? 70 : 60)) seo.push(`${p}: title ${title.length} chars`);
     if (!desc || desc.length > 160) seo.push(`${p}: description ${desc.length} chars`);
     if (canon.replace(/\/$/, "") !== expectCanon.replace(/\/$/, "")) seo.push(`${p}: canonical ${canon}`);
     if (!ldOk) seo.push(`${p}: JSON-LD missing or invalid`);
@@ -161,7 +161,7 @@ for (const p of paths) {
   const desc = (t) => nodes.find((n) => n["@type"] === t)?.description ?? "";
   const faqPage = parse(pages.get("/faq")?.html ?? "").querySelectorAll('script[type="application/ld+json"]').map((s) => JSON.parse(s.text)["@graph"] ?? []).flat();
   const faqWhat = faqPage.find((n) => n["@type"] === "FAQPage")?.mainEntity?.find((q) => q.name === "What is Mise?")?.acceptedAnswer?.text ?? "";
-  check("SEO / GEO", "Organization / SoftwareApplication descriptions name the service execution platform (SEP); FAQ \"What is Mise?\" is the canonical definition", desc("Organization").startsWith("Mise is the service execution platform (SEP) for hotels") && desc("SoftwareApplication").startsWith("Standalone service execution platform (SEP)") && faqWhat.startsWith(CANON), `Organization: ${desc("Organization").slice(0, 70)}… | FAQ: ${faqWhat.slice(0, 50)}…`);
+  check("SEO / GEO", "Organization / SoftwareApplication descriptions name the service execution platform (SEP); FAQ \"What is Mise?\" is the canonical definition", desc("Organization").startsWith("Mise is the service execution platform (SEP) for hotels") && desc("SoftwareApplication").startsWith("Mise is the service execution platform (SEP) for hotels") && faqWhat.startsWith(CANON), `Organization: ${desc("Organization").slice(0, 70)}… | FAQ: ${faqWhat.slice(0, 50)}…`);
   const og = [];
   for (const key of ["home", "solutions", "solutions--kitchen", "solutions--engineering", "solutions--security-and-safety", "solutions--spa-and-wellness"]) {
     const r = await get(`/og/${key}.png`);

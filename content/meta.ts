@@ -26,17 +26,17 @@ export const aboutMeta: PageMeta = {
   path: "/about",
   title: "About Mise | Hotel Service Execution Platform (SEP)",
   description:
-    "How Mise is transforming hotel service execution: running the SOPs hotels already have, and ending ghost SOPs, supervisor bottlenecks and WhatsApp chaos.",
+    "As the service execution platform (SEP) for hotels, Mise runs your existing standards as timed tasks with photo proof across every department. No PMS needed.",
   h1: "Reimagining Hotel Service Execution",
   primaryKeyword: "hotel service execution",
   secondaryKeywords: ["service execution platform", "SEP", "About Mise", "Mise by Focus Realm"],
-  ogTitle: "About Mise | Revolutionizing Hotel Service Execution & Task Tracking",
+  ogTitle: "About Mise | The Service Execution Platform (SEP) for Hotels",
   ogDescription:
-    "Learn how Mise, the service execution platform, puts the SOPs hotels already have into practice with photo proof, timed tasks and supervisor sign-offs.",
-  ogImageAlt: "Mise Team & Hotel Operations Platform Interface",
-  twitterTitle: "About Mise | Revolutionizing Hotel Service Execution & Task Tracking",
+    "Discover how Mise implements your hotel's existing standards as timed tasks on staff phones with photo proof and supervisor evidence across every department.",
+  ogImageAlt: "Mise Service Execution Platform Team & Dashboard Interface",
+  twitterTitle: "About Mise | The Service Execution Platform (SEP) for Hotels",
   twitterDescription:
-    "Discover the story behind Mise: the service execution platform (SEP) that makes existing hotel standards actually run, ending ghost SOPs and WhatsApp chaos.",
+    "Learn how Mise helps hotels run existing standards as timed tasks on staff phones with photo proof and supervisor evidence. Eliminate ghost SOPs without PMS integration.",
   eyebrow: "About Mise",
   updated,
   priority: 0.8,

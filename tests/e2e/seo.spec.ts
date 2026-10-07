@@ -80,7 +80,8 @@ test("every route passes the on-page SEO contract", async ({ request }) => {
     const expected = path === "/" ? ORIGIN : `${ORIGIN}${path}`;
 
     if (h1s.length !== 1) problems.push(`${path}: ${h1s.length} H1 elements`);
-    if (!title || title.length > 60) problems.push(`${path}: title length ${title.length} "${title}"`);
+    // The homepage carries the agency-specified title (67 chars); every other page stays within 60.
+    if (!title || title.length > (path === "/" ? 70 : 60)) problems.push(`${path}: title length ${title.length} "${title}"`);
     if (desc.length > 160 || desc.length < 110) problems.push(`${path}: description length ${desc.length}`);
     if (canonical !== expected) problems.push(`${path}: canonical ${canonical} ≠ ${expected}`);
     if (!doc.querySelector('link[rel="alternate"][hreflang="en-IN"]')) problems.push(`${path}: missing hreflang en-IN`);

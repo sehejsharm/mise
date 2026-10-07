@@ -8,9 +8,9 @@ import { departmentTicker } from "@/content/departments";
 
 export const homeMeta = {
   path: "/",
-  title: "Hotel Service Execution Platform (SEP) | Mise",
+  title: "Hotel Service Execution Platform (SEP) & Timed Task Tracking | Mise",
   description:
-    "Mise is the service execution platform (SEP) for hotels. It runs the SOPs you already have as timed tasks with photo proof. No PMS integration. Book a demo.",
+    "Mise is the service execution platform (SEP) for hotels. Run your existing standards as timed tasks with photo proof across every department. No PMS needed.",
   h1: "The service execution platform for hotels. Every department, every shift.",
   primaryKeyword: "service execution platform",
   secondaryKeywords: [
@@ -23,13 +23,13 @@ export const homeMeta = {
     "hotel operations software",
     "Mise by Focus Realm",
   ],
-  ogTitle: "The Service Execution Platform (SEP) for Hotels | Mise",
+  ogTitle: "Service Execution Platform (SEP) for Hotels | Mise",
   ogDescription:
-    "Mise runs the SOPs your hotel already has, with real-time photo proof, timed tasks, and supervisor sign-offs. Replace WhatsApp group chats and Excel spreadsheets without PMS integration.",
-  ogImageAlt: "Mise service execution platform: hotel operations and photo proof interface",
-  twitterTitle: "The Service Execution Platform (SEP) for Hotels | Mise",
+    "Implement your hotel's existing standards as timed tasks with photo proof and supervisor evidence. Run every department without PMS integration.",
+  ogImageAlt: "Mise Service Execution Platform Interface",
+  twitterTitle: "Service Execution Platform (SEP) for Hotels | Mise",
   twitterDescription:
-    "Mise executes the SOPs your hotel already has, with photo proof, timed tasks and sign-offs. End ghost SOPs and replace WhatsApp for hotel operations.",
+    "Run your hotel's existing SOPs as timed tasks on staff phones with photo proof and supervisor evidence. Eliminate ghost SOPs across all departments.",
   eyebrow: "Service Execution Platform",
   updated: "2026-10-06",
   priority: 1,

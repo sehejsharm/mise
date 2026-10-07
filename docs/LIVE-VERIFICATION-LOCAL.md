@@ -1,6 +1,6 @@
 # Live verification
 
-Target: **http://localhost:3100** (local rehearsal, not the live site) · run 2026-10-06T07:43:03.823Z · `node scripts/verify-live.mjs --base http://localhost:3100 --out docs/LIVE-VERIFICATION-LOCAL.md`
+Target: **http://localhost:3100** (local rehearsal, not the live site) · run 2026-10-07T15:45:01.904Z · `node scripts/verify-live.mjs --base http://localhost:3100 --out docs/LIVE-VERIFICATION-LOCAL.md`
 
 **20 PASS · 0 FAIL · 5 SKIP**
 
@@ -17,7 +17,7 @@ Target: **http://localhost:3100** (local rehearsal, not the live site) · run 20
 
 | Check | Result | Evidence |
 |---|---|---|
-| Homepage <title> and H1 name Mise the service execution platform (SEP) | **PASS** | title: Hotel Service Execution Platform (SEP) \| Mise \| H1: The service execution platform for hotels. Every department, every shift. |
+| Homepage <title> and H1 name Mise the service execution platform (SEP) | **PASS** | title: Hotel Service Execution Platform (SEP) & Timed Task Tracking \| Mise \| H1: The service execution platform for hotels. Every department, every shift. |
 | Nav "Solutions" goes to /solutions | **PASS** | href=/solutions |
 | /solutions and the 4 new department pages return 200 | **PASS** | /solutions 200, /solutions/kitchen 200, /solutions/engineering 200, /solutions/security-and-safety 200, /solutions/spa-and-wellness 200 |
 | Zero mailto demo CTAs; every "Book a 15-min demo" → /demo | **PASS** | 314 demo CTAs across 65 pages, all → /demo |
@@ -28,7 +28,7 @@ Target: **http://localhost:3100** (local rehearsal, not the live site) · run 20
 | Check | Result | Evidence |
 |---|---|---|
 | sitemap.xml lists all routes including the new ones | **PASS** | 65 URLs; new pages present |
-| sitemap lastModified for the changed pages is the repositioning date or later (2026-10-01; today 2026-10-06) | **PASS** | / 2026-10-06, /platform 2026-10-01, /solutions 2026-10-01, /solutions/kitchen 2026-10-01, /solutions/engineering 2026-10-01, /solutions/security-and-safety 2026-10-01, /solutions/spa-and-wellness 2026-10-01 |
+| sitemap lastModified for the changed pages is the repositioning date or later (2026-10-01; today 2026-10-07) | **PASS** | / 2026-10-06, /platform 2026-10-01, /solutions 2026-10-01, /solutions/kitchen 2026-10-01, /solutions/engineering 2026-10-01, /solutions/security-and-safety 2026-10-01, /solutions/spa-and-wellness 2026-10-01 |
 | robots.txt allows the AI crawlers and blocks /keystatic and /api | **PASS** | all 10 crawlers listed; /keystatic and /api disallowed |
 | /llms.txt returns 200 as text/plain | **PASS** | HTTP 200, text/plain; charset=utf-8 |
 | /llms-full.txt returns 200 as text/plain | **PASS** | HTTP 200, text/plain; charset=utf-8 |

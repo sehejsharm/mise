@@ -81,16 +81,46 @@ export default function AboutPage() {
           <div className="prose-mise max-w-2xl">
             <p>
               At Mise, we believe hotel standards shouldn&apos;t live in forgotten paper binders or get buried in chaotic
-              WhatsApp group chats. We built Mise to give hotel general managers, directors of operations, and executive
-              housekeepers real-time visibility into every shift, task and standard they already have.
+              WhatsApp group chats. We built Mise to give hotel general managers, directors of operations, and department
+              heads real-time visibility into every shift, task, and standard operating procedure.
             </p>
-            <p>
-              Mise is a service execution platform (SEP) that operates completely independently of legacy Property Management
-              Systems (PMS). By removing the requirement for months of complex IT and API integrations, Mise enables hotel
-              teams to put the SOPs they already have into execution, enforce compliance, and streamline operations from
-              day one. We don&apos;t write your standards; we make sure they run.
-            </p>
+            <p>{brand.definition}</p>
           </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="implementation" className="py-16">
+        <div className="container-page">
+          <Eyebrow>Implementation, not authoring</Eyebrow>
+          <h2 id="implementation" className="mt-4 max-w-3xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
+            Service Execution Platform (SEP) &amp; SOP Implementation and Maintenance
+          </h2>
+          <p className="mt-5 max-w-3xl text-[1.05rem] leading-relaxed text-muted">
+            Hotels spend significant effort establishing brand guidelines, yet maintaining consistency across daily shifts
+            remains a key operational vulnerability. Mise functions as the central service execution platform (SEP) that
+            bridges the gap between written procedures and daily execution:
+          </p>
+          <ul className="mt-8 grid gap-5 lg:grid-cols-3">
+            {[
+              {
+                title: "Seamless SOP Implementation",
+                body: "Bring the existing standards your property already owns. Mise puts your SOPs into immediate execution by delivering them directly to staff phones as structured, timed tasks across every department.",
+              },
+              {
+                title: "Long-Term Standards Maintenance",
+                body: "Prevent standard decay over time. Mise maintains high compliance across shifts by enforcing mandatory visual verification, timestamped photo evidence, and remote supervisor sign-offs for continuous operational alignment.",
+              },
+              {
+                title: "No Authoring Burden",
+                body: "Mise never writes or invents SOPs. Your brand retains full ownership of its operational rules while Mise handles floor execution and tracking.",
+              },
+            ].map((c) => (
+              <li key={c.title} className="rounded-2xl border border-line bg-surface/60 p-6">
+                <h3 className="font-display text-[1.15rem] font-semibold text-ink">{c.title}</h3>
+                <p className="mt-2 text-[0.95rem] leading-relaxed text-muted">{c.body}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -109,17 +139,17 @@ export default function AboutPage() {
               {
                 title: "Eliminating \"Ghost SOPs\"",
                 href: "/problems/ghost-sop",
-                body: "Paper binders and digital checkboxes allow tasks to be marked as complete without actual execution. Mise functions as a purpose-built hotel photo proof software, requiring staff to capture timestamped visual verification for room setups, maintenance fixes, and safety inspections.",
+                body: "Paper binders and digital checkboxes allow tasks to be marked as complete without actual execution. Mise operates as an accountable service execution platform, requiring staff to capture timestamped photo proof and supervisor evidence for room setups, maintenance fixes, and safety inspections as work happens.",
               },
               {
                 title: "Removing Supervisor Bottlenecks",
                 href: "/problems/supervisor-bottleneck",
-                body: "Floor managers often spend hours physically walking properties to verify completed tasks. With our hotel supervisor sign-off app, managers can inspect, approve, or reject work remotely from their mobile device.",
+                body: "Floor managers often spend hours physically walking properties to verify completed tasks. With mobile supervisor sign-offs and real-time evidence reviews, managers inspect, approve, or reject work remotely from their mobile device, clearing floor bottlenecks instantly.",
               },
               {
                 title: "Replacing WhatsApp & Excel Chaos",
                 href: "/compare/mise-vs-whatsapp",
-                body: "Managing operations via WhatsApp leads to lost photo records, unorganized shift handovers, and no audit trail or data privacy controls. Mise provides a structured hotel operations platform featuring real-time hotel timed task software and automated hotel duty manager handover app logs.",
+                body: "Managing operations via WhatsApp leads to lost photo records, unorganized shift handovers, and no audit trail or data privacy controls. Mise provides a structured hotel service execution platform featuring real-time timed task schedules and automated duty manager handover logs.",
               },
             ].map((c) => (
               <li key={c.title} className="rounded-2xl border border-line bg-surface/60 p-6">
@@ -139,7 +169,7 @@ export default function AboutPage() {
         <div className="container-page">
           <Eyebrow>Why Mise</Eyebrow>
           <h2 id="why-mise" className="mt-4 max-w-3xl text-[clamp(1.8rem,3.4vw,2.6rem)] leading-[1.08] font-semibold text-ink">
-            Why Hotel Operators Choose Mise for Hotel Service Execution
+            Why Hotel Operators Choose Mise
           </h2>
           <ol className="mt-8 grid gap-5 lg:grid-cols-3">
             {[
@@ -148,11 +178,11 @@ export default function AboutPage() {
                 body: "Deploy immediately across housekeeping, front desk, maintenance, and F&B without waiting for PMS software vendors or API access.",
               },
               {
-                title: "Accountable Workflows",
-                body: "Timed task tracking ensures staff know exactly what needs to be done, when it needs to be completed, and how to verify it.",
+                title: "Accountable Timed Workflows",
+                body: "Timed task execution ensures staff know exactly what needs to be done, when it needs to be completed, and how to capture proof directly on their phones.",
               },
               {
-                title: "Instant Audit Readiness",
+                title: "Audit-Ready Service Record",
                 body: "Permanent, searchable digital records give hotel management total confidence during brand standards audits and HR compliance reviews.",
               },
             ].map((c, i) => (
