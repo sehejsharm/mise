@@ -1,6 +1,6 @@
 # SEO report: misehotel.com
 
-Generated 2026-10-06 by `pnpm seo:report` against a local production build (65 URLs from the sitemap, drafts included because this is not a production build).
+Generated 2026-10-07 by `pnpm seo:report` against a local production build (65 URLs from the sitemap, drafts included because this is not a production build).
 
 **Keyword checks** use the page's primary keyword (the first `keywords` meta entry, set in `content/`). A keyword counts as present when its words appear in order (so "hotel SOP software India" matches "Hotel SOP software built in India"). **URL slugs** were fixed by the brief's information architecture, so they are not scored here. Utility pages (legal, contact, demo, author and category archives, founder profiles) are listed but not scored for keyword placement.
 

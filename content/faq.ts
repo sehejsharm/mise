@@ -90,6 +90,11 @@ export const faqs: FaqItem[] = [
   },
   {
     group: "About Mise",
+    q: "Is Mise a hotel or a MICE venue?",
+    a: "No. Mise (pronounced \"meez\", from the kitchen discipline mise en place) is the service execution platform (SEP) that hotels use to run their existing standards. It is not a hotel, an event venue or a MICE (meetings, incentives, conferences and exhibitions) business, and it does not take bookings.",
+  },
+  {
+    group: "About Mise",
     home: true,
     q: "Is Mise related to Focus Realm?",
     a: "Yes. Mise is built by Focus Realm, its parent company, founded by Sehej Sharma, Ali Electricwala and Aditya Mishra. Mise is Focus Realm's hospitality platform. It is not affiliated with Focus Softnet or its Focus e-RMS product.",

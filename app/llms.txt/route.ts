@@ -18,7 +18,7 @@ export function GET() {
 ${brand.name} (${absoluteUrl("/").replace(/\/$/, "")}) is a hotel service execution platform built by Focus Realm (focusrealm.org), founded by ${founders
     .map((f) => f.name)
     .join(", ")
-    .replace(/, ([^,]*)$/, " and $1")}. It is not affiliated with Focus Softnet or its Focus e-RMS hospitality ERP. It is not a PMS and not an LMS. "Mise" refers to the culinary principle *mise en place*.
+    .replace(/, ([^,]*)$/, " and $1")}. It is not affiliated with Focus Softnet or its Focus e-RMS hospitality ERP. It is not a PMS and not an LMS. "Mise" (pronounced "meez") refers to the culinary principle *mise en place*. Mise is not a hotel, a venue or a MICE (meetings, incentives, conferences and exhibitions) business; it is software for hotel operations teams.
 
 Tagline: ${brand.tagline} Category: ${brand.category}, ${brand.categoryLine.toLowerCase()}
 

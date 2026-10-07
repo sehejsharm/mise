@@ -36,7 +36,7 @@ export const brand = {
     "The standalone service execution platform (SEP) for front office, housekeeping, F&B, kitchen, engineering, security and spa. Bring the standards you already have; Mise runs them as timed tasks with photo proof and one audit-ready record.",
   spine: ["Standard", "Timed task", "Evidence", "Service record"] as const,
   nameOrigin:
-    "Mise comes from mise en place, the kitchen discipline of having everything in its place before service starts. Mise brings that discipline to every department, on every shift.",
+    "Mise (pronounced \"meez\") comes from mise en place, the kitchen discipline of having everything in its place before service starts. Mise brings that discipline to every department, on every shift.",
   notAnLms: "A service execution platform — not a learning management system.",
   founded: "2024",
   areaServed: ["India", "Sri Lanka", "South Asia"],

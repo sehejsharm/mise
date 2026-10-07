@@ -45,7 +45,7 @@ export function organizationNode(): Organization {
     "@id": ids.org,
     name: brand.name,
     legalName: brand.legalName,
-    alternateName: ["Mise hotel software", "Mise hospitality", "Mise by Focus Realm"],
+    alternateName: ["Mise Hotel", "misehotel", "Mise SEP", "Mise service execution platform", "Mise by Focus Realm"],
     url: siteUrl,
     logo: {
       "@type": "ImageObject",
@@ -98,6 +98,7 @@ export function websiteNode(): WebSite {
     "@id": ids.website,
     url: siteUrl,
     name: brand.name,
+    alternateName: ["Mise Hotel", "misehotel.com"],
     description: "Hotel Service Execution Platform (SEP) & Photo Proof Task Tracking",
     inLanguage: "en-IN",
     publisher: { "@id": ids.org },
