@@ -55,13 +55,17 @@ export const metadata: Metadata = {
     google: process.env.GOOGLE_SITE_VERIFICATION || "GhYMZZmq1DqSsWqfkJ7IY38ze6BLDDjcMLdBxMS5Og4",
     ...(process.env.BING_SITE_VERIFICATION ? { other: { "msvalidate.01": process.env.BING_SITE_VERIFICATION } } : {}),
   },
+  // Google requires favicons that are a multiple of 48px square (or SVG). The
+  // .ico lives in public/ so Next does not auto-declare it as 16x16.
   icons: {
     icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/brand/favicon-48.png", sizes: "48x48", type: "image/png" },
-      { url: "/brand/favicon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
       { url: "/brand/favicon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/brand/favicon-96.png", sizes: "96x96", type: "image/png" },
+      { url: "/brand/favicon-48.png", sizes: "48x48", type: "image/png" },
+      { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
     ],
+    shortcut: [{ url: "/favicon.ico" }],
     apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
   },
 };

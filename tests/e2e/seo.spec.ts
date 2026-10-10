@@ -134,3 +134,29 @@ test("llms.txt carries the definition and the disambiguation block", async ({ re
   const full = await (await request.get("/llms-full.txt")).text();
   expect(full.length).toBeGreaterThan(20000);
 });
+
+test("favicons meet Google's rules: in <head>, multiples of 48px or SVG, all reachable", async ({ request }) => {
+  const html = await (await request.get("/")).text();
+  const head = parse(html.slice(0, html.indexOf("</head>")));
+  const icons = head.querySelectorAll('link[rel="icon"], link[rel="shortcut icon"]');
+  expect(icons.length).toBeGreaterThan(0);
+  for (const link of icons) {
+    const href = link.getAttribute("href")!;
+    const type = link.getAttribute("type") ?? "";
+    const sizes = link.getAttribute("sizes");
+    if (type !== "image/svg+xml" && sizes) {
+      const [w, h] = sizes.split("x").map(Number);
+      expect(w, `${href} declared ${sizes}`).toBe(h);
+      expect(w % 48, `${href} declared ${sizes}, not a multiple of 48`).toBe(0);
+    }
+    const res = await request.get(href);
+    expect(res.status(), href).toBe(200);
+    const buf = await res.body();
+    if (href.endsWith(".png")) {
+      // PNG IHDR width/height must match the declared size.
+      expect(`${buf.readUInt32BE(16)}x${buf.readUInt32BE(20)}`, href).toBe(sizes);
+    }
+    if (href.endsWith(".ico")) expect(buf[6], "first .ico image is 48px").toBe(48);
+  }
+  expect((await request.get("/favicon.ico")).status()).toBe(200);
+});
