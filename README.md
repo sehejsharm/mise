@@ -46,7 +46,7 @@ pnpm dev                     # http://localhost:3000
 | `pnpm start` | Serve the build |
 | `pnpm lint` / `pnpm typecheck` / `pnpm format` | ESLint, TypeScript, Prettier |
 | `pnpm test:e2e` | Playwright:<br>- every route 200s, with one H1, title ≤ 60, description ≤ 158, self-canonical and valid JSON-LD;<br>- no broken internal links;<br>- GA4 exactly once and consent-gated;<br>- the demo form submits;<br>- reduced motion means no scroll-jacking |
-| `pnpm test:visual` | Screenshots every sitemap URL at 390/768/1440/1920 px in dark and light themes, into `qa/screenshots/`. Also checks horizontal overflow and runs axe (WCAG 2.2 AA) at 390 and 1440. Summarise with `node scripts/qa/visual-summary.mjs` |
+| `pnpm test:visual` | Screenshots every sitemap URL at 390/768/1440/1920 px in the site's single light theme, into `qa/screenshots/`. Also checks horizontal overflow and runs axe (WCAG 2.2 AA) at 390 and 1440. Summarise with `node scripts/qa/visual-summary.mjs` |
 | `pnpm lhci` | Lighthouse CI on six key pages, mobile then desktop.<br>Performance must be ≥ 95; Accessibility, Best Practices and SEO must be 100 |
 | `pnpm seo:report` | Regenerates `docs/SEO-REPORT.md` from the built HTML |
 | `pnpm check:links` | Checks every external link in the built pages; `--strict` also fails on unverifiable ones |

@@ -78,7 +78,7 @@ export default function DeptSwitcher({
 
   if (reduced) {
     return (
-      <div role="group" aria-label={label} className={`grid grid-cols-2 gap-1.5 sm:grid-cols-4 lg:grid-cols-7 ${className}`}>
+      <div role="group" aria-label={label} className={`grid grid-cols-[repeat(auto-fit,minmax(7rem,1fr))] gap-1.5 ${className}`}>
         {departments.map((d, i) => (
           <button
             key={d.id}

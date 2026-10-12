@@ -1,55 +1,31 @@
 @import "tailwindcss";
 
-/* Theme-switched values. Dark is the default; [data-theme="light"] overrides. */
+/* One theme: light, tuned for comfort. Warm off-white instead of pure white
+   (less glare), dark teal text instead of black (~12:1, not 18:1), soft
+   shadows. Every text token passes WCAG AA on bg, surface and surface-2. */
 :root {
-  --bg: #0c2329;
-  --surface: #122d35;
-  --surface-2: #18363e;
-  --elevated: #1d3d44;
-  --ink: #f2f4ee;
-  --muted: #a0b0ac;
-  --faint: #8ea09c;
-  --line: rgb(242 244 238 / 0.09);
-  --line-strong: rgb(242 244 238 / 0.18);
+  --bg: #f4f3ee;
+  --surface: #fbfaf6;
+  --surface-2: #eae9e2;
+  --elevated: #fdfcf9;
+  --ink: #1c3238;
+  --muted: #4b5a56;
+  --faint: #55635e;
+  --line: rgb(28 50 56 / 0.1);
+  --line-strong: rgb(28 50 56 / 0.18);
   --gold: #e5b35a;
-  --gold-ink: #e5b35a;
-  --gold-soft: rgb(229 179 90 / 0.14);
-  --cyan: #aedfd2;
-  --cyan-ink: #aedfd2;
-  --green: #4fc59e;
-  --green-ink: #4fc59e;
-  --coral: #ff6b5b;
-  --coral-ink: #ff8a7d;
-  --on-gold: #0c2329;
-  --glass: rgb(18 45 53 / 0.62);
-  --grain-opacity: 0.06;
-  --shadow: 0 30px 80px -30px rgb(0 0 0 / 0.65);
-  color-scheme: dark;
-}
-
-[data-theme="light"] {
-  --bg: #f6f7f1;
-  --surface: #ffffff;
-  --surface-2: #eceee6;
-  --elevated: #ffffff;
-  --ink: #122d35;
-  --muted: #4c5c58;
-  --faint: #56655f;
-  --line: rgb(18 45 53 / 0.1);
-  --line-strong: rgb(18 45 53 / 0.2);
-  --gold: #e5b35a;
-  --gold-ink: #7d5c14;
-  --gold-soft: rgb(229 179 90 / 0.18);
+  --gold-ink: #7a5912;
+  --gold-soft: rgb(229 179 90 / 0.16);
   --cyan: #278972;
-  --cyan-ink: #1f6e5b;
+  --cyan-ink: #1d6a57;
   --green: #278972;
   --green-ink: #1b5a47;
   --coral: #d9493a;
-  --coral-ink: #b3321f;
+  --coral-ink: #ad301e;
   --on-gold: #0c2329;
-  --glass: rgb(255 255 255 / 0.72);
-  --grain-opacity: 0.035;
-  --shadow: 0 30px 70px -35px rgb(18 45 53 / 0.35);
+  --glass: rgb(251 250 246 / 0.8);
+  --grain-opacity: 0.025;
+  --shadow: 0 24px 60px -32px rgb(28 50 56 / 0.28);
   color-scheme: light;
 }
 
@@ -171,16 +147,10 @@
 }
 
 @utility text-gradient-gold {
-  background: linear-gradient(100deg, #cfeee5 0%, #aedfd2 45%, #7cc4ae 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-[data-theme="light"] .text-gradient-gold {
   background: linear-gradient(100deg, #2f9a80 0%, #278972 55%, #1f6e5b 100%);
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
 }
 
 /* Film grain, painted once, fixed. */

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
-import { themeInitScript } from "@/components/site/ThemeToggle";
+import { motionInitScript } from "@/lib/motion-init";
 import { brand, siteUrl } from "@/content/site";
 import { GA_ID } from "@/lib/analytics";
 import { consentDefaultsScript } from "@/lib/consent";
@@ -32,7 +32,7 @@ const geistMono = localFont({
 });
 
 export const viewport: Viewport = {
-  themeColor: [{ color: "#0C2329" }],
+  themeColor: [{ color: "#F4F3EE" }],
   colorScheme: "dark light",
   width: "device-width",
   initialScale: 1,
@@ -80,12 +80,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      data-theme="dark"
       suppressHydrationWarning
       className={`${inter.variable} ${spaceGrotesk.variable} ${geistMono.variable}`}
     >
       <head>
-        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+        <script dangerouslySetInnerHTML={{ __html: motionInitScript }} />
       </head>
       <body className="grain min-h-dvh">
         <Script id="consent-defaults" strategy="beforeInteractive">

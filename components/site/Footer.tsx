@@ -2,7 +2,6 @@ import Link from "next/link";
 import { CookiePreferencesButton } from "@/components/site/ConsentBanner";
 import { Logo } from "@/components/site/Logo";
 import NewsletterForm from "@/components/site/NewsletterForm";
-import ThemeToggle from "@/components/site/ThemeToggle";
 import { Icon } from "@/components/ui/Icon";
 import { brand, contact, footerColumns, legalNav } from "@/content/site";
 
@@ -125,7 +124,6 @@ export default function Footer() {
               >
                 <Icon name="rss" size={17} />
               </Link>
-              <ThemeToggle />
             </div>
           </div>
         </div>

@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import Magnetic from "@/components/fx/Magnetic";
 import { Icon } from "@/components/ui/Icon";
 import { Logo } from "@/components/site/Logo";
-import ThemeToggle from "@/components/site/ThemeToggle";
 import { primaryNav, solutionsMenu } from "@/content/site";
 
 export default function Header() {
@@ -206,7 +205,6 @@ export default function Header() {
               </ul>
             </nav>
             <div className="flex items-center gap-2.5">
-              <ThemeToggle className="hidden sm:grid" />
               <Magnetic className="inline-flex">
                 <Link
                   href="/demo"
@@ -310,7 +308,6 @@ export default function Header() {
           >
             Book a 15-min demo
           </Link>
-          <ThemeToggle />
         </div>
       </div>
     </>

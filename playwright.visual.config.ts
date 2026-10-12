@@ -3,7 +3,7 @@ import { defineConfig } from "@playwright/test";
 const PORT = Number(process.env.PORT ?? 3100);
 const chromePath = process.env.CHROME_PATH ?? (process.env.CI ? undefined : "/opt/pw-browsers/chromium");
 
-/** Visual QA: screenshots of every page at 4 widths × 2 themes, overflow + axe checks. */
+/** Visual QA: screenshots of every page at 4 widths, light theme, overflow + axe checks. */
 export default defineConfig({
   testDir: "./tests/visual",
   timeout: 15 * 60_000,

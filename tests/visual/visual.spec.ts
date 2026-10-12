@@ -1,5 +1,5 @@
 /**
- * Visual QA. For every sitemap route, in dark and light themes:
+ * Visual QA. For every sitemap route (the site has one theme, light):
  *  - full-page screenshots at 390, 768, 1440 and 1920 px → qa/screenshots/
  *  - horizontal overflow check at every width
  *  - axe-core WCAG 2.2 AA scan at 390 and 1440 px (includes colour contrast)
@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const WIDTHS = [390, 768, 1440, 1920];
-const THEMES = ["dark", "light"] as const;
+const THEMES = ["light"] as const;
 const OUT = path.join(process.cwd(), "qa");
 const sitemap = fs.readFileSync(path.join(process.cwd(), ".next/server/app/sitemap.xml.body"), "utf8");
 const ROUTES = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
@@ -34,11 +34,6 @@ for (const theme of THEMES) {
   for (const route of ROUTES) {
     const slug = route === "/" ? "home" : route.slice(1).replace(/\//g, "--");
     test(`${theme} ${route}`, async ({ page }) => {
-      await page.addInitScript((t) => {
-        try {
-          localStorage.setItem("mise-theme", t);
-        } catch {}
-      }, theme);
       await page.context().addCookies([{ name: "mise_consent", value: "a%3A0%7Cm%3A0", url: "http://localhost" }]);
       await page.route(/googletagmanager|google-analytics/, (r) => r.abort());
 
