@@ -66,6 +66,18 @@ export const demoMeta: PageMeta = {
   priority: 0.9,
 };
 
+export const sitemapMeta: PageMeta = {
+  path: "/sitemap",
+  title: "Sitemap | Mise",
+  description:
+    "Every page on misehotel.com in one place: the service execution platform, solutions by department, problems, guides, comparisons and company pages.",
+  h1: "Sitemap",
+  primaryKeyword: "Mise sitemap",
+  eyebrow: "Sitemap",
+  updated,
+  priority: 0.3,
+};
+
 export const contactMeta: PageMeta = {
   path: "/contact",
   title: "Contact Mise: Service Execution Platform Team | Mise",

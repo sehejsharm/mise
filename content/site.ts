@@ -241,7 +241,7 @@ export const legalNav: FooterLink[] = [
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
   { href: "/cookies", label: "Cookies" },
-  { href: "/sitemap.xml", label: "Sitemap" },
+  { href: "/sitemap", label: "Sitemap" },
 ];
 
 export function absoluteUrl(path = "/") {

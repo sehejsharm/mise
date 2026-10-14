@@ -20,6 +20,7 @@ import {
   founderMeta,
   glossaryMeta,
   roiMeta,
+  sitemapMeta,
 } from "@/content/meta";
 import { pains, problemsHubMeta } from "@/content/pains";
 import { auditReadiness, digitalSop } from "@/content/pillars";
@@ -62,5 +63,6 @@ export function staticRoutes(): RouteEntry[] {
     r("legal", privacy.meta),
     r("legal", terms.meta),
     r("legal", cookies.meta),
+    r("sitemap", sitemapMeta),
   ];
 }
