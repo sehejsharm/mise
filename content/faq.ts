@@ -17,6 +17,21 @@ export const faqs: FaqItem[] = [
     homeAnswer: brand.definition,
   },
   {
+    group: "About Mise",
+    q: "What is a service execution platform (SEP) for hotels?",
+    a: "A service execution platform (SEP) is dedicated operational software that transforms a hotel's written guidelines into active floor execution. Mise is the service execution platform (SEP) for hotels: it does not write your standards; it implements the SOPs your hotel already has, running them as timed tasks on staff phones in every department, capturing photo and supervisor evidence as work happens, and building an audit-ready service record.",
+  },
+  {
+    group: "How it works",
+    q: 'How does a service execution platform eliminate "ghost SOPs"?',
+    a: "\"Ghost SOPs\" occur when paper checklists or digital checkboxes are marked as \"done\" without physical completion on the floor. Mise eliminates ghost SOPs by acting as a dedicated photo proof execution platform. Frontline staff must submit timestamped visual proof for room setups, safety checks, and maintenance repairs before a task can be logged.",
+  },
+  {
+    group: "How it works",
+    q: "How does remote supervisor sign-off clear floor bottlenecks?",
+    a: "Floor supervisors typically spend hours walking corridors to verify completed work manually. Functioning as high-accountability supervisor verification execution software, Mise allows department heads to inspect image proof and approve or reject tasks directly on their mobile screens, clearing inspection bottlenecks instantly.",
+  },
+  {
     group: "How it works",
     home: true,
     q: "What is a service execution platform (SEP) for hotels and why is PMS integration not required?",
@@ -45,16 +60,16 @@ export const faqs: FaqItem[] = [
     group: "About Mise",
     home: true,
     allowLms: true,
-    q: "Is Mise an LMS?",
-    a: "No. Mise is a service execution platform, not an LMS. A learning management system tracks courses and completion. Mise implements the SOPs you already have as timed tasks during the shift and records whether each standard was executed, with photo evidence and supervisor sign-off, in an audit-ready service record.",
+    q: "Is Mise a Learning Management System (LMS)?",
+    a: "No, Mise is strictly not an LMS. Traditional LMS platforms provide passive training videos and course modules for new hires. In contrast, Mise is an active hotel operations execution platform that drives daily, real-time shift accountability on the floor where work actually happens.",
     homeAnswer:
       "No. An LMS tracks course completion. Mise runs your existing standards as timed tasks during the shift and records whether each standard was executed, with evidence.",
   },
   {
     group: "How it works",
     home: true,
-    q: "Does Mise write our SOPs?",
-    a: "No. Mise implements the SOPs your hotel already has; it does not create them. Each existing standard is set up in the standards workspace as short steps, a target time and reference photos, with the steps that need photo evidence marked, and then published. The standard then arrives on staff phones as a timed task with a countdown, and every completion writes to the service record.",
+    q: "Does Mise replace my existing hotel standards or write new ones?",
+    a: "No, Mise never writes or invents SOPs. Your hotel retains full ownership of its operational rules and brand standards. You simply bring your existing procedures, and Mise puts them into execution as structured, timed tasks delivered directly to staff devices.",
     homeAnswer:
       "No. Mise implements the standards you already have. Each one becomes a timed task with steps, target time and photo gates, on staff phones.",
   },
@@ -69,8 +84,8 @@ export const faqs: FaqItem[] = [
   {
     group: "Setup",
     home: true,
-    q: "Does Mise need PMS integration?",
-    a: "No. Mise needs no PMS integration and no hardware. It runs in any browser, on any phone, over mobile data. Staff use the phones they already carry and managers use any desktop browser, so a pilot starts on a property rather than on an integration project.",
+    q: "Why is PMS integration not required to run Mise?",
+    a: "Mise operates completely standalone. Traditional hotel software requires months of complex IT work, vendor API negotiations, and expensive Property Management System (PMS) integrations before deployment. Because Mise focuses on staff task timing, visual verification, and supervisor evidence, it requires zero PMS integration and runs in the browser on any iOS or Android phone from day one.",
     homeAnswer: "No. Mise runs in any browser, on any phone, over mobile data. No PMS integration, no hardware.",
   },
   {
@@ -144,8 +159,8 @@ export const faqs: FaqItem[] = [
   },
   {
     group: "Setup",
-    q: "Which departments can use Mise?",
-    a: "Every department that runs repeatable standards: front office, housekeeping, F&B service, kitchen, engineering and maintenance, security and safety, spa and wellness, and guest relations. Each runs its own existing standards as timed tasks with photo evidence on the same platform, writing to one service record.",
+    q: "Which hotel departments can use the platform?",
+    a: "Mise is built for every department across your property. Housekeeping: timed room checks, turndown schedules and linen controls with photo proof. Front desk: duty manager shift handover logs, VIP arrivals and guest issue tracking. Maintenance: equipment servicing, work order sign-offs and facility inspections. Food & beverage: kitchen sanitation schedules, temperature tracking and pre-service setup checks. Kitchen, security and safety, and spa and wellness teams run their standards the same way.",
   },
   {
     group: "Trust",
@@ -173,12 +188,17 @@ export const homeFaqs = faqs.filter((f) => f.home);
 
 export const faqMeta = {
   path: "/faq",
-  title: "Mise FAQ: Service Execution Platform Questions | Mise",
+  title: "Hotel Service Execution Platform (SEP) FAQ | Mise",
   description:
-    "Mise FAQ: the service execution platform (SEP) explained: running your existing standards, evidence, PMS, pilots, data and Focus Realm. Book a demo.",
-  h1: "Mise FAQ: the service execution platform, answered",
-  primaryKeyword: "Mise FAQ",
-  secondaryKeywords: ["Mise SEP", "Mise hotel operations", "Mise by Focus Realm"],
+    "Get answers about Mise, the hotel service execution platform (SEP). Learn how to implement existing standards, track timed tasks, and eliminate ghost SOPs.",
+  h1: "Frequently Asked Questions",
+  ogTitle: "Frequently Asked Questions: Hotel Service Execution Platform (SEP) Explained | Mise",
+  ogDescription: "Everything you need to know about running hotel standards as timed tasks with real-time photo proof, mobile supervisor sign-offs, and zero PMS setup.",
+  ogImageAlt: "Mise Frequently Asked Questions & Knowledge Base Interface",
+  twitterTitle: "Hotel Service Execution Platform FAQ | Mise Knowledge Base",
+  twitterDescription: "Got questions about hotel service execution platforms? Learn how Mise runs existing SOPs as timed tasks with photo proof across every department.",
+  primaryKeyword: "hotel service execution platform",
+  secondaryKeywords: ["Mise FAQ", "Mise SEP", "Mise hotel operations", "Mise by Focus Realm"],
   eyebrow: "Frequently asked",
-  updated: "2026-10-01",
+  updated: "2026-10-18",
 };

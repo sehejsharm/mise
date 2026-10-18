@@ -1,22 +1,28 @@
+import { withSepCopy } from "@/content/sep-copy";
 import type { Longform } from "@/content/types";
 
 export type Audience = Longform & { slug: string; name: string; card: string };
 
-export const audiences: Audience[] = [
+const audienceEntries: Audience[] = [
   {
     slug: "hr-directors",
     name: "HR Directors",
     card: "Readiness and acknowledgement evidence per person, from the first shift.",
     meta: {
       path: "/for/hr-directors",
-      title: "Hotel HR Compliance Software for HR Directors | Mise",
+      title: "Hotel HR Compliance & Standards Execution Software | Mise",
       description:
-        "Hotel HR compliance software that shows who acknowledged each standard, who is ready for which role, and the evidence behind it. Book a demo.",
-      h1: "Hotel HR compliance software that shows readiness, not attendance",
-      primaryKeyword: "hotel HR compliance software",
-      secondaryKeywords: ["hotel staff compliance tracking"],
+        "Hotel HR compliance and operational accountability: Mise turns brand standards into timed tasks with photo proof and audit-ready records in every department.",
+      h1: "Driving Operational Compliance & Accountability for Hotel HR Leaders",
+      ogTitle: "Hotel HR Compliance & Standards Execution | Mise for HR Directors",
+      ogDescription: "Eliminate liability, enforce operational standards, and build permanent, audit-ready service records without forcing staff through passive classroom training.",
+      ogImageAlt: "Mise HR Compliance and Staff Operations Execution Dashboard",
+      twitterTitle: "Hotel HR Compliance & Standards Execution Software | Mise",
+      twitterDescription: "Bridge the gap between written HR policies and daily floor execution. Timed tasks, photo proof, and automated compliance records for hotel teams.",
+      primaryKeyword: "hotel HR compliance",
+      secondaryKeywords: ["hotel HR compliance software", "hotel staff compliance tracking"],
       eyebrow: "For HR Directors",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.7,
     },
     eyebrow: "For HR Directors",
@@ -94,14 +100,19 @@ Mise runs on Google Cloud and Firebase. See [security and data handling](/securi
     card: "One live picture of service, and a defensible record behind every promise.",
     meta: {
       path: "/for/general-managers",
-      title: "Hotel GM Dashboard for Operations Visibility | Mise",
+      title: "Hotel General Manager Software & Floor Execution | Mise",
       description:
-        "A hotel GM dashboard for operations visibility: readiness, service health, blocked rooms and standard results, live from the floor. Book a 15-min demo.",
-      h1: "The hotel GM dashboard for live operations visibility",
-      primaryKeyword: "hotel GM dashboard",
-      secondaryKeywords: ["hotel operations visibility", "hotel general manager operations software"],
+        "Gain floor-level visibility and audit readiness. Mise gives General Managers real-time proof of executed standards across every department, without PMS setup.",
+      h1: "Total Floor Visibility & Brand Compliance for Hotel General Managers",
+      ogTitle: "Hotel General Manager Software: Complete Floor-Level Execution Visibility | Mise",
+      ogDescription: "Eliminate ghost SOPs, protect brand standards, and stay audit-ready with real-time photo proof and supervisor evidence across all hotel departments.",
+      ogImageAlt: "Mise General Manager Executive Dashboard & Hotel Floor Execution Metrics",
+      twitterTitle: "Hotel General Manager Software & Service Execution Platform | Mise",
+      twitterDescription: "Real-time operational visibility for Hotel GMs. Run your property's existing standards as timed tasks with photo proof, with zero PMS integration required.",
+      primaryKeyword: "hotel general manager software",
+      secondaryKeywords: ["hotel GM dashboard", "hotel operations visibility", "hotel general manager operations software"],
       eyebrow: "For General Managers",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.7,
     },
     eyebrow: "For General Managers",
@@ -168,14 +179,19 @@ Mise is not a PMS and does not replace revenue, reservation or finance systems. 
     card: "Standards that execute on the floor, and report back what worked.",
     meta: {
       path: "/for/learning-and-development",
-      title: "Hotel Standards Platform for L&D Teams | Mise",
+      title: "Hotel Learning & Development Execution Software | Mise",
       description:
-        "A hotel standards platform for L&D: author standards, sequence operating briefs, and see execution evidence and floor feedback. Book a demo.",
-      h1: "A hotel standards platform for L&D teams who need execution, not attendance",
-      primaryKeyword: "hotel standards platform for L&D",
-      secondaryKeywords: ["hospitality standards software"],
+        "Transform hotel L&D from passive classroom learning into active floor execution. Mise turns trained SOPs into timed tasks with photo proof. No PMS required.",
+      h1: "Reinforcing Hotel Training with Real-Time Floor Execution",
+      ogTitle: "Bridge the Gap Between Training & Floor Execution | Mise for Hotel L&D",
+      ogDescription: "Stop relying solely on passive training videos. Discover how Mise implements trained hotel standards on staff phones as timed tasks with real-time photo proof.",
+      ogImageAlt: "Mise Learning and Development On-the-Job Execution Dashboard",
+      twitterTitle: "Hotel Learning & Development Software | Operational Standards Execution | Mise",
+      twitterDescription: "Ensure training turns into daily floor compliance. Deliver active timed tasks, photo proof, and supervisor evidence directly to hotel staff devices.",
+      primaryKeyword: "hotel learning & development",
+      secondaryKeywords: ["hotel standards platform for L&D", "hospitality standards software"],
       eyebrow: "For Learning & Development",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.7,
     },
     eyebrow: "For Learning & Development Heads",
@@ -242,6 +258,8 @@ Briefs unlock in sequence for each role, and supervisor sign-off on evidenced ta
     relatedPosts: ["what-is-a-service-execution-platform", "ghost-sop-hotel-standards"],
   },
 ];
+
+export const audiences: Audience[] = audienceEntries.map(withSepCopy);
 
 export function audienceBySlug(slug: string) {
   return audiences.find((a) => a.slug === slug);

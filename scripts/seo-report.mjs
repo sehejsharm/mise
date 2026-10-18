@@ -15,6 +15,26 @@ import { chromium } from "@playwright/test";
 import { parse } from "node-html-parser";
 
 const BASE = process.env.BASE_URL || "http://localhost:3100";
+/** Pages whose title and description come from the SEP SEO pack (content/sep-copy.ts). */
+const SEP_PACK_PATHS = [
+  "/platform",
+  "/how-it-works",
+  "/problems",
+  "/solutions",
+  "/for/hr-directors",
+  "/for/general-managers",
+  "/for/learning-and-development",
+  "/solutions/front-office",
+  "/solutions/housekeeping",
+  "/solutions/food-and-beverage",
+  "/solutions/kitchen",
+  "/solutions/engineering",
+  "/solutions/security-and-safety",
+  "/solutions/spa-and-wellness",
+  "/solutions/hotel-chains",
+  "/solutions/boutique-hotels",
+];
+
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 
 const norm = (s) => s.toLowerCase().replace(/[’']/g, "'").replace(/[^a-z0-9&' ]+/g, " ").replace(/\s+/g, " ").trim();
@@ -82,8 +102,8 @@ for (const p of paths) {
     if (r.inAlt === false) issues.push(`${p}: primary keyword "${kw}" not in lead image alt`);
   }
   if (r.descLen < 120 || r.descLen > 160) issues.push(`${p}: description length ${r.descLen}`);
-  // Home and About use the owner-supplied SEO copy (no CTA ending).
-  if (!r.descCta && !["/demo", "/", "/about"].includes(p)) issues.push(`${p}: description does not end with a demo CTA`);
+  // Home, About, /faq and the SEP-pack pages use owner-supplied SEO copy (no CTA ending).
+  if (!r.descCta && !["/demo", "/", "/about", "/faq", ...SEP_PACK_PATHS].includes(p)) issues.push(`${p}: description does not end with a demo CTA`);
 }
 
 // Homepage copy budget, measured on rendered visible text at desktop width.

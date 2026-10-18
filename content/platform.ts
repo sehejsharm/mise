@@ -160,11 +160,16 @@ export const roleInterfaces: RoleInterface[] = [
 
 export const platformMeta = {
   path: "/platform",
-  title: "Hotel Operations Software: Staff, Manager, Standards | Mise",
+  title: "Hotel Service Execution Platform (SEP) Features | Mise",
   description:
-    "Hotel operations software built as a service execution platform: a staff app, a manager dashboard and a standards workspace, one service record. Book a demo.",
-  h1: "Hotel operations software with three interfaces and one service record",
-  primaryKeyword: "hotel operations software",
+    "The hotel service execution platform (SEP): your existing standards run as timed tasks on staff phones with photo proof and supervisor evidence. No PMS needed.",
+  h1: "The Service Execution Platform (SEP) Built for Hotel Operations",
+  ogTitle: "How Mise Eliminates Ghost SOPs & Supervisor Bottlenecks Across Your Property",
+  ogDescription: "Run your hotel's existing standards as timed tasks on staff phones with photo proof and supervisor evidence across every department. No PMS integration required.",
+  ogImageAlt: "Mise Hotel Service Execution Platform Dashboard and Staff Mobile App Interface",
+  twitterTitle: "Hotel Service Execution Platform (SEP) Features & Tools | Mise",
+  twitterDescription: "Discover how Mise implements your hotel's existing standards as timed tasks with real-time photo proof, supervisor evidence, and zero PMS setup.",
+  primaryKeyword: "hotel service execution platform",
   metaKeywords: [
     "service execution platform",
     "SEP for hotels",
@@ -174,13 +179,14 @@ export const platformMeta = {
     "hotel operations task management",
   ],
   secondaryKeywords: [
+    "hotel operations software",
     "SEP for hotels",
     "hotel staff app",
     "hotel manager dashboard",
     "hotel operations task management",
   ],
   eyebrow: "The platform",
-  updated: "2026-10-01",
+  updated: "2026-10-18",
   priority: 0.9,
 };
 
@@ -201,14 +207,19 @@ export const platformFaqs: Faq[] = [
 
 export const howItWorksMeta = {
   path: "/how-it-works",
-  title: "How the Service Execution Platform Works | Mise",
+  title: "How Mise Works | Hotel Service Execution Platform (SEP)",
   description:
-    "How the Mise service execution platform works: Standard → Timed task → Evidence → Service record, with photo gates and supervisor sign-off. Book a 15-min demo.",
-  h1: "How a service execution platform works: your standards, turned into evidence",
-  primaryKeyword: "how a service execution platform works",
-  secondaryKeywords: ["timed task hotel", "hotel photo evidence app", "hotel supervisor sign-off app"],
+    "See how Mise works: the hotel service execution platform (SEP) runs existing standards as timed tasks on staff phones with photo proof and supervisor evidence.",
+  h1: "How Mise Powers Hotel Service Execution",
+  ogTitle: "From Written Standards to Daily Floor Execution in 4 Simple Steps | Mise",
+  ogDescription: "Learn how Mise implements your hotel's existing standards as timed tasks on staff phones with real-time photo proof, remote supervisor sign-offs, and no PMS setup.",
+  ogImageAlt: "Mise Service Execution Platform Step-by-Step Workflow Diagram",
+  twitterTitle: "How Mise Works | Hotel Service Execution Platform (SEP)",
+  twitterDescription: "Discover how Mise turns existing hotel SOPs into timed tasks on staff phones with photo proof and supervisor evidence.",
+  primaryKeyword: "hotel service execution",
+  secondaryKeywords: ["how a service execution platform works", "timed task hotel", "hotel photo evidence app", "hotel supervisor sign-off app"],
   eyebrow: "One loop, four moves",
-  updated: "2026-09-29",
+  updated: "2026-10-18",
   priority: 0.9,
 };
 

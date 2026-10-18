@@ -6,7 +6,7 @@
  *    "training platform") appears in rendered copy outside the allowed places:
  *    - /compare/mise-vs-hotel-lms and the "what is a service execution
  *      platform" post (Mise-vs-LMS comparison content),
- *    - elements marked data-copy-lint="allow" (the "Is Mise an LMS?" FAQ,
+ *    - elements marked data-copy-lint="allow" (the "Is Mise a Learning Management System (LMS)?" FAQ,
  *      quoted testimonials, links to the LMS comparison),
  *    - the exact negation in the canonical definition ("Not an LMS").
  * 2. Confidential terms appear anywhere in the repository. They are stored
@@ -97,13 +97,13 @@ for (const file of htmlFiles(appDir)) {
   pages++;
 }
 
-// Plain-text surfaces for AI engines. The "Is Mise an LMS?" Q/A is the allowed FAQ.
+// Plain-text surfaces for AI engines. The "Is Mise a Learning Management System (LMS)?" Q/A is the allowed FAQ.
 for (const name of ["llms.txt.body", "llms-full.txt.body"]) {
   const file = path.join(appDir, name);
   if (!fs.existsSync(file)) continue;
   const text = fs
     .readFileSync(file, "utf8")
-    .replace(/Q: Is Mise an LMS\?\nA: [^\n]*/g, "")
+    .replace(/Q: Is Mise (?:an LMS|a Learning Management System \(LMS\))\?\nA: [^\n]*/g, "")
     // The link line to the comparison page is a comparison label, like data-copy-lint="allow" on the site.
     .replace(/^.*compare\/mise-vs-hotel-lms.*$/gm, "");
   check(text, name);

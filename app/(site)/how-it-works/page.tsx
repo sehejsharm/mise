@@ -5,6 +5,7 @@ import { FaqList, FinalCta, JsonLd, RelatedLinks, TldrBox } from "@/components/u
 import { PhoneFrame } from "@/components/ui/DeviceFrame";
 import { Eyebrow } from "@/components/ui/primitives";
 import { howItWorksFaqs, howItWorksMeta, loopSteps } from "@/content/platform";
+import { sepCopy } from "@/content/sep-copy";
 import { createLinkState } from "@/lib/links";
 import { Markdown } from "@/lib/md";
 import { baseNodes, breadcrumbNode, faqNode, howToNode, softwareNode, webPageNode } from "@/lib/schema";
@@ -67,7 +68,7 @@ export default function HowItWorksPage() {
         updated={howItWorksMeta.updated}
         lede={
           <p>
-            Mise is hotel service execution platform built around one loop: <strong className="text-ink">Standard → Timed task → Evidence → Service record</strong>.
+            {sepCopy[howItWorksMeta.path].lede} Mise is the hotel service execution platform built around one loop: <strong className="text-ink">Standard → Timed task → Evidence → Service record</strong>.
             A standard is written once, runs as a timed task on the right person's phone, captures photo and supervisor
             evidence as the work happens, and writes an audit-ready entry every time a task closes.
           </p>
@@ -80,6 +81,9 @@ export default function HowItWorksPage() {
             timed task with a countdown. Gated steps cannot close without a photo; supervisors sign off from the evidence.
             Every closed task writes a timestamped, attributable row to the service record.
           </TldrBox>
+          <div className="mt-14">
+            <Markdown source={sepCopy[howItWorksMeta.path].body} state={state} />
+          </div>
         </div>
       </div>
 
