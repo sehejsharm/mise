@@ -64,7 +64,7 @@ Department and SOP mentions are counted in each page's visible text. Total SOP m
 | `/glossary/digital-sop` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | PASS |
 | `/glossary/departmental-sop` | 2 | 2 | 0 | 2 | 2 | 1 | 0 | 9 | 0 | PASS |
 | `/glossary/mise-en-place` | 1 | 1 | 2 | 4 | 1 | 1 | 1 | 1 | 0 | PASS |
-| `/faq` | 4 | 3 | 3 | 5 | 4 | 7 | 1 | 11 | 0 | PASS |
+| `/faq` | 4 | 3 | 3 | 5 | 4 | 8 | 1 | 11 | 0 | PASS |
 | `/about` | 1 | 1 | 1 | 3 | 2 | 0 | 0 | 9 | 0 | PASS |
 | `/team/sehej-sharma` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
 | `/team/ali-electricwala` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |

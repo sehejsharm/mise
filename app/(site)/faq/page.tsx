@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/page/PageHero";
 import { FaqList, FinalCta, JsonLd, RelatedLinks, TldrBox } from "@/components/ui/blocks";
-import { faqMeta, faqs } from "@/content/faq";
+import { faqGroups, faqMeta, faqs } from "@/content/faq";
 import { brand } from "@/content/site";
 import { baseNodes, breadcrumbNode, faqNode, webPageNode } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -10,7 +10,6 @@ export const metadata: Metadata = buildMetadata(faqMeta);
 
 export default function FaqPage() {
   const crumbs = [{ name: "FAQ", path: "/faq" }];
-  const groups = [...new Set(faqs.map((f) => f.group))];
   return (
     <>
       <JsonLd
@@ -31,10 +30,10 @@ export default function FaqPage() {
       <div className="container-page pb-20">
         <div className="max-w-3xl">
           <TldrBox>{brand.definition}</TldrBox>
-          {groups.map((g) => (
+          {faqGroups.map((g) => (
             <section key={g} aria-labelledby={`faq-${g.toLowerCase().replace(/\W+/g, "-")}`} className="mt-14">
               <h2 id={`faq-${g.toLowerCase().replace(/\W+/g, "-")}`} className="font-display text-[1.5rem] font-semibold text-ink">
-                Mise FAQ: {g.toLowerCase()}
+                {g}
               </h2>
               <FaqList items={faqs.filter((f) => f.group === g)} className="mt-5" />
             </section>
