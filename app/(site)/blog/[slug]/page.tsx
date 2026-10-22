@@ -56,6 +56,7 @@ function metaFor(post: Awaited<ReturnType<typeof getVisiblePost>>): PageMeta | n
     updated: post.updatedAt,
     published: post.publishedAt,
     type: "article",
+    ...(post.coverImage ? { ogImage: post.coverImage, ogImageAlt: post.coverAlt || post.title } : {}),
   };
 }
 
@@ -138,7 +139,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         </header>
 
         <div className="container-page max-w-4xl">
-          <div className="aspect-[16/7] overflow-hidden rounded-2xl border border-line">
+          <div className={`${post.coverImage ? "aspect-[16/9]" : "aspect-[16/7]"} overflow-hidden rounded-2xl border border-line`}>
             <PostCover post={post} large />
           </div>
         </div>

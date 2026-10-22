@@ -26,6 +26,8 @@ export type PageMeta = {
   /** Social overrides; each falls back to ogTitle / description. */
   ogDescription?: string;
   ogImageAlt?: string;
+  /** Absolute-path image (1600×900) to use instead of the generated OG card. */
+  ogImage?: string;
   twitterTitle?: string;
   twitterDescription?: string;
 };
@@ -44,9 +46,9 @@ export function buildMetadata(meta: PageMeta, extra: Partial<Metadata> = {}): Me
   const url = absoluteUrl(meta.path);
   const ogTitle = meta.ogTitle ?? meta.title;
   const image = {
-    url: absoluteUrl(ogImagePath(meta.path)),
-    width: 1200,
-    height: 630,
+    url: absoluteUrl(meta.ogImage ?? ogImagePath(meta.path)),
+    width: meta.ogImage ? 1600 : 1200,
+    height: meta.ogImage ? 900 : 630,
     alt: meta.ogImageAlt ?? `${meta.h1} — ${brand.name}`,
   };
   return {
