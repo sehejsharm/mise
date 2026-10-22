@@ -9,6 +9,9 @@ import { Icon } from "@/components/ui/Icon";
 import { Picture } from "@/components/ui/Picture";
 import { ButtonLink, Eyebrow } from "@/components/ui/primitives";
 import { platformFaqs, platformMeta, roleInterfaces } from "@/content/platform";
+import { sepCopy } from "@/content/sep-copy";
+import { createLinkState } from "@/lib/links";
+import { Markdown } from "@/lib/md";
 import { brand, demoProperty } from "@/content/site";
 import { baseNodes, breadcrumbNode, faqNode, softwareNode, webPageNode, imageUrl } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
@@ -26,6 +29,7 @@ const recordFields = [
 
 export default function PlatformPage() {
   const crumbs = [{ name: "Platform", path: platformMeta.path }];
+  const state = createLinkState(platformMeta.path);
   return (
     <>
       <JsonLd
@@ -50,7 +54,7 @@ export default function PlatformPage() {
         updated={platformMeta.updated}
         lede={
           <p>
-            Mise is hotel operations software built as three separate interfaces: a mobile staff app where your existing standards run as
+            {sepCopy[platformMeta.path].lede} Mise is hotel operations software built as three separate interfaces: a mobile staff app where your existing standards run as
             timed tasks, a desktop manager dashboard where supervisors see the live floor, and a desktop standards
             workspace where standards are written and published. All three share one audit-ready service record. No PMS
             integration, no hardware.
@@ -74,6 +78,9 @@ export default function PlatformPage() {
             phones, with photo gates on key steps. Managers see readiness, exceptions and results on a desktop dashboard.
             Standards owners write and publish from a focused workspace. Every task writes to one service record.
           </TldrBox>
+          <div className="mt-14">
+            <Markdown source={sepCopy[platformMeta.path].body} state={state} />
+          </div>
         </div>
         <nav aria-label="Interfaces" className="mt-10 flex flex-wrap gap-2">
           {[...roleInterfaces.map((r) => ({ id: r.id, label: r.keyword })), { id: "service-record", label: "Service record" }].map((l) => (

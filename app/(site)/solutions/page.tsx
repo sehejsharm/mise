@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/page/HubPage";
 import type { Faq } from "@/content/types";
+import { sepCopy } from "@/content/sep-copy";
 import { departments, propertyTypes, solutionsHubMeta } from "@/content/solutions";
 import { buildMetadata } from "@/lib/seo";
 
@@ -40,7 +41,7 @@ export default function SolutionsHub() {
   return (
     <HubPage
       meta={solutionsHubMeta}
-      lede="Mise is the service execution platform for every department. Front office, housekeeping, F&B service, kitchen, engineering, security and spa all run their standards the same way: as timed tasks on staff phones, with photo and supervisor evidence, building one audit-ready service record for the whole property."
+      lede={`${sepCopy[solutionsHubMeta.path].lede} Mise is the service execution platform for every department. Front office, housekeeping, F&B service, kitchen, engineering, security and spa all run their standards the same way: as timed tasks on staff phones, with photo and supervisor evidence, building one audit-ready service record for the whole property.`}
       tldr="Mise runs every department's existing standards as timed tasks on staff phones, captures photo and supervisor evidence as the work happens, and builds one audit-ready service record. It works for single boutique properties and multi-property groups, needs no PMS integration, and a pilot starts with the department where standards slip most."
       cardsTitle="Service execution, by department and property"
       cards={[...deptCards, ...typeCards]}
@@ -49,7 +50,7 @@ export default function SolutionsHub() {
         { id: "by-property-type", title: "By property type", cards: typeCards },
       ]}
       itemList
-      body={body}
+      body={sepCopy[solutionsHubMeta.path].body + body}
       faqs={faqs}
     />
   );

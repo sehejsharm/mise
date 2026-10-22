@@ -11,34 +11,34 @@ Rules:
 - Mise is never named as SOP software: "SOP app", "SOP software", "SOP platform" and "SOP management" fail anywhere in visible text, titles, meta descriptions or JSON-LD. The "SOP" column counts remaining mentions of the word (the hotel's own SOPs and the ghost SOP concept).
 - The existing bans stay: retired vocabulary outside the comparison content and "not an LMS" contexts, confidential terms and the retired domain.
 
-Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: 202.
+Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: 240.
 
 | URL | Front office | Housekeeping | F&B | Kitchen | Engineering | Security | Spa | SOP | mailto CTAs | Result |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
-| `/` | 25 | 3 | 7 | 4 | 5 | 3 | 5 | 7 | 0 | PASS |
-| `/platform` | 9 | 2 | 7 | 7 | 5 | 6 | 7 | 3 | 0 | PASS |
-| `/how-it-works` | 13 | 2 | 1 | 1 | 1 | 0 | 0 | 4 | 0 | PASS |
-| `/problems` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 0 | PASS |
+| `/` | 25 | 3 | 7 | 4 | 5 | 3 | 5 | 6 | 0 | PASS |
+| `/platform` | 10 | 3 | 9 | 8 | 8 | 6 | 7 | 5 | 0 | PASS |
+| `/how-it-works` | 14 | 3 | 1 | 1 | 4 | 0 | 0 | 10 | 0 | PASS |
+| `/problems` | 1 | 1 | 1 | 1 | 3 | 0 | 0 | 11 | 0 | PASS |
 | `/problems/supervisor-bottleneck` | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | PASS |
 | `/problems/ghost-sop` | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 37 | 0 | PASS |
 | `/problems/invisible-performance-gap` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | PASS |
 | `/problems/attrition-bleed` | 3 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
 | `/problems/star-rating-ceiling` | 2 | 1 | 1 | 1 | 1 | 1 | 1 | 2 | 0 | PASS |
 | `/problems/audit-ambush` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | PASS |
-| `/solutions` | 5 | 6 | 5 | 6 | 7 | 6 | 4 | 1 | 0 | PASS |
-| `/solutions/front-office` | 16 | 3 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
-| `/solutions/housekeeping` | 1 | 17 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | PASS |
-| `/solutions/food-and-beverage` | 0 | 0 | 22 | 2 | 0 | 1 | 0 | 1 | 0 | PASS |
-| `/solutions/kitchen` | 0 | 0 | 0 | 15 | 0 | 0 | 0 | 2 | 0 | PASS |
-| `/solutions/engineering` | 5 | 1 | 0 | 0 | 17 | 0 | 0 | 1 | 0 | PASS |
-| `/solutions/security-and-safety` | 0 | 0 | 0 | 0 | 1 | 21 | 0 | 2 | 0 | PASS |
-| `/solutions/spa-and-wellness` | 0 | 0 | 0 | 0 | 0 | 0 | 24 | 1 | 0 | PASS |
-| `/solutions/hotel-chains` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | PASS |
-| `/solutions/boutique-hotels` | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
+| `/solutions` | 7 | 8 | 6 | 7 | 12 | 8 | 6 | 4 | 0 | PASS |
+| `/solutions/front-office` | 33 | 4 | 1 | 0 | 1 | 0 | 0 | 2 | 0 | PASS |
+| `/solutions/housekeeping` | 2 | 31 | 0 | 0 | 2 | 0 | 1 | 5 | 0 | PASS |
+| `/solutions/food-and-beverage` | 0 | 1 | 37 | 6 | 1 | 1 | 0 | 2 | 0 | PASS |
+| `/solutions/kitchen` | 0 | 0 | 0 | 26 | 2 | 0 | 0 | 3 | 0 | PASS |
+| `/solutions/engineering` | 6 | 2 | 1 | 1 | 38 | 0 | 0 | 2 | 0 | PASS |
+| `/solutions/security-and-safety` | 1 | 0 | 0 | 0 | 3 | 41 | 0 | 3 | 0 | PASS |
+| `/solutions/spa-and-wellness` | 1 | 0 | 0 | 0 | 2 | 0 | 41 | 2 | 0 | PASS |
+| `/solutions/hotel-chains` | 1 | 2 | 1 | 0 | 2 | 0 | 0 | 4 | 0 | PASS |
+| `/solutions/boutique-hotels` | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | PASS |
 | `/for` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
-| `/for/hr-directors` | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 1 | 0 | PASS |
-| `/for/general-managers` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
-| `/for/learning-and-development` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 2 | 0 | PASS |
+| `/for/hr-directors` | 1 | 1 | 1 | 0 | 4 | 2 | 0 | 4 | 0 | PASS |
+| `/for/general-managers` | 1 | 1 | 1 | 0 | 4 | 0 | 0 | 4 | 0 | PASS |
+| `/for/learning-and-development` | 0 | 0 | 0 | 0 | 3 | 0 | 0 | 6 | 0 | PASS |
 | `/standards-to-execution` | 0 | 5 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | PASS |
 | `/audit-readiness` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
 | `/compare` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
@@ -64,7 +64,7 @@ Department and SOP mentions are counted in each page's visible text. Total SOP m
 | `/glossary/digital-sop` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | PASS |
 | `/glossary/departmental-sop` | 2 | 2 | 0 | 2 | 2 | 1 | 0 | 9 | 0 | PASS |
 | `/glossary/mise-en-place` | 1 | 1 | 2 | 4 | 1 | 1 | 1 | 1 | 0 | PASS |
-| `/faq` | 4 | 3 | 3 | 4 | 4 | 7 | 1 | 9 | 0 | PASS |
+| `/faq` | 4 | 3 | 3 | 5 | 4 | 7 | 1 | 11 | 0 | PASS |
 | `/about` | 1 | 1 | 1 | 3 | 2 | 0 | 0 | 9 | 0 | PASS |
 | `/team/sehej-sharma` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
 | `/team/ali-electricwala` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
@@ -77,7 +77,7 @@ Department and SOP mentions are counted in each page's visible text. Total SOP m
 | `/privacy` | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | PASS |
 | `/terms` | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | PASS |
 | `/cookies` | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |
-| `/sitemap` | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 4 | 0 | PASS |
+| `/sitemap` | 1 | 1 | 1 | 1 | 2 | 1 | 1 | 4 | 0 | PASS |
 | `/blog/what-is-mise-hotel-service-execution-platform` | 2 | 1 | 1 | 2 | 3 | 2 | 0 | 6 | 0 | PASS |
 | `/blog/one-platform-every-hotel-department` | 9 | 6 | 5 | 6 | 7 | 6 | 3 | 4 | 0 | PASS |
 | `/blog/category/hotel-operations` | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | PASS |

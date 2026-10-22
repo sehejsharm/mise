@@ -1,5 +1,6 @@
 import type { Longform } from "@/content/types";
 import { departmentSolutions } from "@/content/solutions-departments";
+import { withSepCopy } from "@/content/sep-copy";
 
 export type Solution = Longform & { slug: string; name: string; short: string; group: "department" | "property" };
 
@@ -11,18 +12,24 @@ const coreSolutions: Solution[] = [
     short: "Room reset, turndown and release as timed tasks with photo gates.",
     meta: {
       path: "/solutions/housekeeping",
-      title: "Housekeeping Execution with Photo Evidence | Mise",
+      title: "Hotel Housekeeping Service Execution Platform (SEP) | Mise",
       description:
-        "Housekeeping execution that runs room reset, turndown and release as timed tasks with photo evidence and sign-off. No PMS needed. Book a demo.",
-      h1: "Housekeeping execution that proves every room is guest-ready",
-      primaryKeyword: "housekeeping execution",
+        "Discover how Mise runs hotel housekeeping standards as timed tasks with mandatory photo proof and supervisor sign-offs, with no PMS integration required.",
+      h1: "Hotel Housekeeping Service Execution Platform (SEP)",
+      ogTitle: "Eliminate Ghost SOPs & Automate Room Cleanliness Checks | Mise Housekeeping SEP",
+      ogDescription: "Transform hotel housekeeping routines into timed tasks with real-time photo verification and remote supervisor approvals. No PMS required.",
+      ogImageAlt: "Mise Hotel Housekeeping Service Execution Platform Interface with Photo Proof",
+      twitterTitle: "Hotel Housekeeping Service Execution Platform (SEP) | Mise",
+      twitterDescription: "Run hotel housekeeping standards as timed tasks with mandatory photo proof and supervisor sign-offs. No PMS required.",
+      primaryKeyword: "housekeeping service execution platform",
       secondaryKeywords: [
+        "housekeeping execution",
         "housekeeping task management software",
         "digital housekeeping checklist",
         "room inspection checklist app",
       ],
       eyebrow: "Solutions · Housekeeping",
-      updated: "2026-10-01",
+      updated: "2026-10-18",
       priority: 0.8,
     },
     eyebrow: "Solutions · Housekeeping",
@@ -108,14 +115,19 @@ The staff app is designed for one thumb, a 340px screen and bright daylight on a
     short: "Arrival, check-in and service recovery standards that run on every shift.",
     meta: {
       path: "/solutions/front-office",
-      title: "Front Desk Service Execution for Hotels | Mise",
+      title: "Front Office Service Execution Platform for Hotels | Mise",
       description:
-        "Front desk service execution that runs arrivals, handovers and service recovery as timed tasks with evidence, so every guest gets it. Book a demo.",
-      h1: "Front desk service execution for consistent arrivals and recovery",
-      primaryKeyword: "front desk service execution",
-      secondaryKeywords: ["hotel front office task management"],
+        "How Mise, the service execution platform (SEP), runs hotel front office operations, duty manager handovers and VIP checklists with zero PMS integration.",
+      h1: "Hotel Front Office Service Execution Platform (SEP)",
+      ogTitle: "Optimize Hotel Front Office Operations & Duty Manager Handover Logs | Mise",
+      ogDescription: "Transform hotel front desk standards into timed tasks with supervisor sign-offs and digital handover logs. No PMS integration required.",
+      ogImageAlt: "Mise Hotel Front Office Service Execution Platform Interface & Duty Manager Logs",
+      twitterTitle: "Hotel Front Office Service Execution Platform (SEP) | Mise",
+      twitterDescription: "Run hotel front office standards and duty manager handovers as timed tasks with digital tracking and supervisor sign-offs. No PMS required.",
+      primaryKeyword: "front office service execution platform",
+      secondaryKeywords: ["front desk service execution", "hotel front office task management"],
       eyebrow: "Solutions · Front office",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.7,
     },
     eyebrow: "Solutions · Front office",
@@ -187,14 +199,19 @@ Front office and housekeeping meet at room release. When housekeeping releases a
     short: "Outlet opening, hygiene and service standards with dated evidence.",
     meta: {
       path: "/solutions/food-and-beverage",
-      title: "Hotel F&B Service Execution for Outlets & Banquets | Mise",
+      title: "Hotel Food & Beverage Service Execution Platform | Mise",
       description:
-        "Hotel F&B service execution that runs outlet opening, hygiene checks and service standards as timed tasks with photo evidence and sign-off. Book a 15-min demo.",
-      h1: "Hotel F&B service execution for outlets, kitchens and banquets",
-      primaryKeyword: "hotel F&B service execution",
-      secondaryKeywords: ["F&B task management software", "hotel food and beverage standards"],
+        "Streamline hotel F&B operations, kitchen SOPs, and temperature logs. Mise runs F&B standards as timed tasks with photo proof, with zero PMS integration.",
+      h1: "Hotel Food & Beverage Service Execution Platform (SEP)",
+      ogTitle: "Optimize Hotel F&B Operations, Kitchen SOPs & Prep Checklists | Mise",
+      ogDescription: "Run hotel kitchen, restaurant, and banquet standards as timed tasks with real-time photo proof and supervisor sign-offs. Zero PMS integration required.",
+      ogImageAlt: "Mise Hotel Food and Beverage Service Execution Interface and Kitchen Checklists",
+      twitterTitle: "Hotel Food & Beverage Service Execution Platform (SEP) | Mise",
+      twitterDescription: "Enforce kitchen prep schedules, temperature logs, and restaurant setup standards with timed tasks and photo proof. No PMS required.",
+      primaryKeyword: "food & beverage service execution platform",
+      secondaryKeywords: ["hotel F&B service execution", "F&B task management software", "hotel food and beverage standards"],
       eyebrow: "Solutions · Food & beverage",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.7,
     },
     eyebrow: "Solutions · Food & beverage",
@@ -263,14 +280,19 @@ The staff app works on any phone in a browser, with large touch targets and high
     short: "One standards library, executed and evidenced at every property.",
     meta: {
       path: "/solutions/hotel-chains",
-      title: "Multi-Property Service Execution for Hotel Groups | Mise",
+      title: "Enterprise Hotel Chain Service Execution Platform | Mise",
       description:
-        "Multi-property service execution: write group standards once, run them as timed tasks at each property and compare execution evidence. Book a 15-min demo.",
-      h1: "Multi-property service execution for hotel groups and chains",
-      primaryKeyword: "multi-property service execution",
-      secondaryKeywords: ["hotel group standards software", "service execution for hotel chains"],
+        "Scale brand standards across multiple properties with Mise, the enterprise service execution platform (SEP). Real-time proof and timed tasks. No PMS needed.",
+      h1: "Enterprise Hotel Chain Service Execution Platform (SEP)",
+      ogTitle: "Standardize Operations Across Multiple Properties | Mise for Hotel Chains",
+      ogDescription: "Eliminate inconsistent regional SOPs. Scale brand standards across hotel chains with timed tasks, photo proof, and enterprise-wide visibility.",
+      ogImageAlt: "Mise Enterprise Hotel Chain Multi-Property Execution Dashboard",
+      twitterTitle: "Enterprise Hotel Chain Service Execution Platform (SEP) | Mise",
+      twitterDescription: "Scale operational consistency and brand standards across all properties with timed tasks and real-time photo proof. No PMS required.",
+      primaryKeyword: "hotel chain service execution platform",
+      secondaryKeywords: ["multi-property service execution", "hotel group standards software", "service execution for hotel chains"],
       eyebrow: "Solutions · Hotel chains",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.8,
     },
     eyebrow: "Solutions · Hotel chains",
@@ -346,14 +368,19 @@ Group operations teams need to see where standards hold across properties. Mise 
     short: "Five-star consistency without a large operations team.",
     meta: {
       path: "/solutions/boutique-hotels",
-      title: "Service Execution for Boutique Hotels | Mise",
+      title: "Boutique Hotel Service Execution Platform (SEP) | Mise",
       description:
-        "Service execution for boutique hotels: run your signature standards as timed tasks on staff phones, with evidence, even with a small team. Book a 15-min demo.",
-      h1: "Service execution for boutique hotels that makes signature service repeatable",
-      primaryKeyword: "service execution for boutique hotels",
-      secondaryKeywords: ["hotel operations software for small hotels"],
+        "Streamline boutique hotel operations and maintain luxury standards. Mise runs SOPs as timed tasks with photo proof for lean teams, with zero PMS integration.",
+      h1: "Boutique Hotel Service Execution Platform (SEP)",
+      ogTitle: "Maintain Luxury Standards & Lean Operations | Mise for Boutique Hotels",
+      ogDescription: "Empower lean boutique hotel teams with timed tasks, photo verification, and digital checklists. No PMS integration required.",
+      ogImageAlt: "Mise Boutique Hotel Service Execution Platform Interface for Lean Teams",
+      twitterTitle: "Boutique Hotel Service Execution Platform (SEP) | Mise",
+      twitterDescription: "Streamline boutique hotel operations, room turnovers, and guest touchpoints with timed tasks and photo proof. No PMS required.",
+      primaryKeyword: "boutique hotel service execution platform",
+      secondaryKeywords: ["service execution for boutique hotels", "hotel operations software for small hotels"],
       eyebrow: "Solutions · Boutique hotels",
-      updated: "2026-09-29",
+      updated: "2026-10-18",
       priority: 0.7,
     },
     eyebrow: "Solutions · Boutique hotels",
@@ -432,7 +459,7 @@ const order = [
 ];
 
 /** Every solution page, departments first (housekeeping is one of seven), then property types. */
-export const solutions: Solution[] = [...coreSolutions, ...departmentSolutions].sort(
+export const solutions: Solution[] = [...coreSolutions, ...departmentSolutions].map(withSepCopy).sort(
   (a, b) => order.indexOf(a.slug) - order.indexOf(b.slug),
 );
 export const departments = solutions.filter((s) => s.group === "department");
@@ -444,12 +471,17 @@ export function solutionBySlug(slug: string) {
 
 export const solutionsHubMeta = {
   path: "/solutions",
-  title: "Service Execution Platform for Every Department | Mise",
+  title: "Hotel Multi-Department Service Execution Platform | Mise",
   description:
-    "The service execution platform for every department, from front office and F&B to kitchen, engineering, security and spa, with photo proof. Book a demo.",
-  h1: "A service execution platform for every hotel department",
-  primaryKeyword: "service execution platform for every department",
-  secondaryKeywords: ["hotel service execution platform", "hotel departmental workflow software", "SEP"],
+    "Service execution for every hotel department: Mise runs existing standards as timed tasks with photo proof across front desk, engineering, F&B and spa.",
+  h1: "Enterprise Service Execution Across Every Hotel Department",
+  ogTitle: "Unify Housekeeping, Front Desk & Maintenance Under One Execution Platform | Mise",
+  ogDescription: "Discover how Mise powers operational execution across housekeeping, front office, maintenance, and F&B using timed tasks, photo proof, and supervisor sign-offs.",
+  ogImageAlt: "Mise Multi-Department Hotel Service Execution Platform Interface",
+  twitterTitle: "Hotel Multi-Department Service Execution Platform (SEP) | Mise",
+  twitterDescription: "Run existing hotel standards across every department with timed task tracking, photo verification, and zero PMS setup.",
+  primaryKeyword: "service execution",
+  secondaryKeywords: ["service execution platform for every department", "hotel service execution platform", "hotel departmental workflow software", "SEP"],
   eyebrow: "Solutions",
-  updated: "2026-10-01",
+  updated: "2026-10-18",
 };

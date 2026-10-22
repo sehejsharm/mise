@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/page/HubPage";
 import { pains, problemsHubMeta } from "@/content/pains";
+import { sepCopy } from "@/content/sep-copy";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata(problemsHubMeta);
@@ -45,11 +46,11 @@ export default function ProblemsHub() {
   return (
     <HubPage
       meta={problemsHubMeta}
-      lede="Hotel operations problems rarely arrive alone. Six of them form a chain, and each makes the next one worse: from the supervisor who cannot check every room, to the audit that finds what was never recorded. This page maps the chain and links to a full guide for each problem."
+      lede={`${sepCopy[problemsHubMeta.path].lede} Hotel operations problems rarely arrive alone. Six of them form a chain, and each makes the next one worse: from the supervisor who cannot check every room, to the audit that finds what was never recorded. This page maps the chain and links to a full guide for each problem.`}
       tldr="Six hotel operations problems compound in order: Supervisor Bottleneck → Ghost SOP → Invisible Performance Gap → Attrition Bleed → Star Rating Ceiling → Audit Ambush. They share one cause: standards live beside the work and the work leaves no record. Mise closes the chain by running each SOP as a timed task that records its own evidence."
       cardsTitle="The six pains, in chain order"
       cards={pains.map((p) => ({ href: `/problems/${p.slug}`, eyebrow: `Pain ${p.index}`, title: p.name, body: p.definition }))}
-      body={body}
+      body={sepCopy[problemsHubMeta.path].body + body}
       faqs={faqs}
     />
   );

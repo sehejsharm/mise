@@ -737,12 +737,17 @@ export function painBySlug(slug: string) {
 
 export const problemsHubMeta = {
   path: "/problems",
-  title: "Hotel Operations Problems: The Six-Pain Chain | Mise",
+  title: "Hotel Operational Challenges & Execution Problems | Mise",
   description:
-    "Six hotel operations problems, from supervisor workload to audit prep, and how each makes the next worse. See how Mise closes the chain. Book a demo.",
-  h1: "Hotel operations problems that compound, shift after shift",
-  primaryKeyword: "hotel operations problems",
-  secondaryKeywords: ["hotel supervisor workload", "hotel SOPs not followed", "hotel performance tracking"],
+    "Eliminate ghost SOPs, supervisor bottlenecks, and messy WhatsApp chats. See how our service execution platform (SEP) solves core hotel operational challenges.",
+  h1: "Solving Floor-Level Hotel Operational Challenges",
+  ogTitle: "Ditch Paper Checklists & WhatsApp Chaos: Solve Hotel Floor Failure with Mise",
+  ogDescription: "Discover how Mise solves hotel floor execution failures: ghost SOPs, supervisor bottlenecks and WhatsApp chaos, across every department without PMS integration.",
+  ogImageAlt: "Mise Solving Hotel Floor Operational Challenges & Execution Bottlenecks",
+  twitterTitle: "Hotel Operational Challenges & Floor Execution Problems | Mise",
+  twitterDescription: "See how our service execution platform (SEP) eliminates ghost SOPs, supervisor bottlenecks, and unorganized chat groups across hotel operations.",
+  primaryKeyword: "hotel operational challenges",
+  secondaryKeywords: ["hotel operations problems", "hotel supervisor workload", "hotel SOPs not followed", "hotel performance tracking"],
   eyebrow: "Six problems, one chain",
-  updated: "2026-09-29",
+  updated: "2026-10-18",
 };
