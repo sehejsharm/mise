@@ -1,21 +1,21 @@
 # SEO report: misehotel.com
 
-Generated 2026-10-18 by `pnpm seo:report` against a local production build (66 URLs from the sitemap, drafts included because this is not a production build).
+Generated 2026-10-23 by `pnpm seo:report` against a local production build (69 URLs from the sitemap, drafts included because this is not a production build).
 
 **Keyword checks** use the page's primary keyword (the first `keywords` meta entry, set in `content/`). A keyword counts as present when its words appear in order (so "hotel SOP software India" matches "Hotel SOP software built in India"). **URL slugs** were fixed by the brief's information architecture, so they are not scored here. Utility pages (legal, contact, demo, author and category archives, founder profiles) are listed but not scored for keyword placement.
 
 ## Summary
 
-- URLs checked: **66**
-- Keyword placement issues on scored pages: **46**
-- Description length / CTA issues: **1**
+- URLs checked: **69**
+- Keyword placement issues on scored pages: **47**
+- Description length / CTA issues: **2**
 
 ### Homepage copy budget
 
-- Body copy in `<main>` at 1440px: **690 words** (rendered text; excludes collapsed FAQ answers, aria-hidden decorative duplicates such as the marquee copies and phone mockup, and the demo-data ticker and dashboard, which are labelled data rather than copy)
+- Body copy in `<main>` at 1440px: **704 words** (rendered text; excludes collapsed FAQ answers, aria-hidden decorative duplicates such as the marquee copies and phone mockup, and the demo-data ticker and dashboard, which are labelled data rather than copy)
 - Words inside the eight FAQ accordion items (questions + collapsed answers): **508**
 - Words in the demo service-record ticker (data labels): **91**
-- Per section: The service execution platform for hotel 58 · How Mise deploys 10 · Hotel audit readiness, answered in one f 40 · How Mise turns your existing standards i 62 · Hotel operations problems Mise solves 52 · Five places. One service execution platf 52 · A hotel staff app, manager dashboard and 47 · The hotel GM dashboard, live as the shif 22 · Runs on what your hotel already has 18 · What staff turnover costs your hotel 42 · Hotel operations software for every deci 44 · Mise founders and advisory board 76 · Hotel service execution guides 23 · Service execution platform FAQ 113 · See it on a real shift. No feature tour. 31
+- Per section: The service execution platform for hotel 58 · How Mise deploys 10 · Hotel audit readiness, answered in one f 40 · How Mise turns your existing standards i 62 · Hotel operations problems Mise solves 52 · Five places. One service execution platf 52 · A hotel staff app, manager dashboard and 47 · The hotel GM dashboard, live as the shif 22 · Runs on what your hotel already has 18 · What staff turnover costs your hotel 42 · Hotel operations software for every deci 44 · Mise founders and advisory board 76 · Hotel service execution guides 37 · Service execution platform FAQ 113 · See it on a real shift. No feature tour. 31
 - Section headlines (H2) and word counts: How Mise deploys (3) · Hotel audit readiness, answered in one filter (7) · How Mise turns your existing standards into audit-ready records (9) · Hotel operations problems Mise solves (5) · Five places. One service execution platform. (6) · A hotel staff app, manager dashboard and standards workspace (9) · The hotel GM dashboard, live as the shift runs (9) · Runs on what your hotel already has (7) · What staff turnover costs your hotel (6) · Hotel operations software for every decision-maker (6) · Mise founders and advisory board (5) · Hotel service execution guides (4) · Service execution platform FAQ (4) · See it on a real shift. No feature tour. (9)
 
 ### Open issues
@@ -67,6 +67,8 @@ Generated 2026-10-18 by `pnpm seo:report` against a local production build (66 U
 - /sitemap: primary keyword "Mise sitemap" not in first 100 words
 - /sitemap: primary keyword "Mise sitemap" not in an H2
 - /sitemap: description does not end with a demo CTA
+- /blog/what-is-mise-hotel-service-execution-platform: primary keyword "Mise hotel service execution platform" not in an H2
+- /blog/what-is-mise-hotel-service-execution-platform: description does not end with a demo CTA
 
 ## Per-URL detail
 
@@ -78,11 +80,11 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/platform` | Hotel Service Execution Platform (SEP) Features \| Mise | The Service Execution Platform (SEP) Built for Hotel Operations | hotel service execution platform | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ | 159 ⚠ |
 | `/how-it-works` | How Mise Works \| Hotel Service Execution Platform (SEP) | How Mise Powers Hotel Service Execution | hotel service execution | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✗ | 159 ⚠ |
 | `/problems` | Hotel Operational Challenges & Execution Problems \| Mise | Solving Floor-Level Hotel Operational Challenges | hotel operational challenges | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✗ | 158 ⚠ |
-| `/problems/supervisor-bottleneck` | Hotel Supervisor Bottleneck: Cut Verification Load \| Mise | The hotel supervisor bottleneck, and how to break it | hotel supervisor bottleneck | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 154 |
-| `/problems/ghost-sop` | Ghost SOP Hotel Problem: Why SOPs Aren't Followed \| Mise | The ghost SOP: why hotel standards exist on paper, not on the floor | ghost SOP hotel | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 156 |
-| `/problems/invisible-performance-gap` | Hotel Staff Performance Tracking Without Spreadsheets \| Mise | The invisible performance gap: hotel staff performance tracking that runs itself | hotel staff performance tracking | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 157 |
-| `/problems/attrition-bleed` | Hotel Staff Turnover: Protect Service Quality \| Mise | The attrition bleed: keeping standards when hotel staff turnover is high | hotel staff turnover | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 146 |
-| `/problems/star-rating-ceiling` | Hotel Service Consistency Software: Lift Ratings \| Mise | The star rating ceiling: hotel service consistency software for every shift | hotel service consistency software | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 140 |
+| `/problems/supervisor-bottleneck` | Overcome the Hotel Supervisor Bottleneck \| Mise SEP | Overcoming the Hotel Supervisor Bottleneck | hotel supervisor bottleneck | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 152 ⚠ |
+| `/problems/ghost-sop` | Eliminate Ghost SOPs in Hotel Operations \| Mise SEP | Eliminating the "Ghost SOP" in Hotel Operations | ghost SOP hotel | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 147 ⚠ |
+| `/problems/invisible-performance-gap` | Close the Invisible Performance Gap in Hotels \| Mise | Closing the Invisible Performance Gap in Hotel Operations | invisible performance gap hotel | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 153 ⚠ |
+| `/problems/attrition-bleed` | Stop the Hotel Attrition Bleed & Onboarding Friction \| Mise | Stopping the "Attrition Bleed" in Hotel Operations | hotel attrition bleed | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 155 ⚠ |
+| `/problems/star-rating-ceiling` | Break the Hotel Star Rating Ceiling \| Mise SEP | Breaking the Hotel "Star Rating Ceiling" | hotel star rating ceiling | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 153 ⚠ |
 | `/problems/audit-ambush` | Hotel Audit Problems: End the Pre-Audit Scramble \| Mise | The audit ambush: solving hotel audit problems before the auditor arrives | hotel audit problems | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | 146 |
 | `/solutions` | Hotel Multi-Department Service Execution Platform \| Mise | Enterprise Service Execution Across Every Hotel Department | service execution | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✗ | 151 ⚠ |
 | `/solutions/front-office` | Front Office Service Execution Platform for Hotels \| Mise | Hotel Front Office Service Execution Platform (SEP) | front office service execution platform | ✓ | ✓ | ✓ | ✓ | ✓ | ✗ | ✗ | 152 ⚠ |
@@ -137,6 +139,9 @@ Legend: ✓ present · ✗ missing · – no lead image · ⚠ description does 
 | `/terms` | Terms of Use \| Mise | Terms of use | Mise terms of use | ✓ | ✗ | ✗ | ✓ | ✗ | – | ✓ | 145 |
 | `/cookies` | Cookie Policy \| Mise | Cookie policy | Mise cookie policy | ✓ | ✗ | ✗ | ✗ | ✗ | – | ✓ | 143 |
 | `/sitemap` | Sitemap \| Mise | Sitemap | Mise sitemap | ✓ | ✗ | ✗ | ✗ | ✗ | – | ✓ | 147 ⚠ |
+| `/blog/what-is-mise-hotel-service-execution-platform` | What is Mise? The Service Execution Platform for Hotels | What is Mise? The Service Execution Platform Built Specifically for Hotel Operations | Mise hotel service execution platform | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 145 ⚠ |
 | `/blog/one-platform-every-hotel-department` | One Service Execution Platform for Hotels \| Mise | One service execution platform for every hotel department: front office to engineering | service execution platform for hotels | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 150 |
 | `/blog/category/hotel-operations` | Hotel operations Articles \| Mise Blog | Hotel operations: articles from the Mise blog | hotel operations | ✓ | ✗ | ✓ | ✓ | ✗ | – | ✓ | 123 |
+| `/blog/category/service-execution` | Service execution Articles \| Mise Blog | Service execution: articles from the Mise blog | service execution | ✓ | ✓ | ✓ | ✓ | ✓ | – | ✓ | 150 |
+| `/blog/author/mise` | Mise Team: Articles on the Mise Blog | Articles by Mise Team | Mise Team | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 150 |
 | `/blog/author/sehej-sharma` | Sehej Sharma: Articles on the Mise Blog | Articles by Sehej Sharma | Sehej Sharma | ✓ | ✓ | ✓ | ✓ | ✗ | – | ✓ | 128 |

@@ -7,6 +7,167 @@
 export type SepCopy = { lede: string; body: string };
 
 export const sepCopy: Record<string, SepCopy> = {
+  "/problems/supervisor-bottleneck": {
+    lede: "Transition from micromanagement and physical inspections to photo-verified, self-executing hotel operations.",
+    body: `
+## What is the supervisor bottleneck?
+
+In traditional hotel operations, floor staff cannot complete workflows without physical supervisor sign-offs. Rooms sit unreleased, maintenance tasks stay open, and shift handovers drag on because supervisors are stuck manually verifying every step. [Mise](/) eliminates this operational delay by introducing timed tasks, mandatory photo proof, and remote supervisor sign-offs across all property departments.
+
+## Why physical supervision holds hotel teams back
+
+When floor supervisors spend their entire shift walking corridors to inspect room setups, temperature logs, or maintenance fixes, your operational flow slows down. This reliance on physical presence creates severe operational friction:
+
+- **Delayed Room Turnarounds:** Cleaned guest rooms remain blocked in "inspection pending" status while room attendants wait for floor managers to walk down hall after hall.
+- **Shift Handover Delays:** Duty managers lose critical check-in time trying to reconcile paper clipboards and missing verbal updates across shift changes.
+- **Unfocused Supervisory Effort:** Floor leaders spend much of their shift verifying routine SOPs rather than handling VIP guest experiences, training staff, or resolving complex escalations.
+
+## How Mise eliminates the supervisor bottleneck
+
+The [Mise platform](/platform) changes how hotel work is verified. Instead of waiting for a physical walkthrough, staff verify their own work visually in real time:
+
+1. **Timed Mobile Task Sequences:** Floor staff receive structured, timed routines directly on their mobile devices for housekeeping, engineering, and front desk tasks.
+2. **Mandatory Photo Proof:** Attendants and technicians capture timestamped visual evidence of completed tasks, such as a finished room setup, a clean kitchen line, or a fixed AC unit.
+3. **Remote Supervisor Sign-Offs:** Department heads review photo evidence and sign off remotely, releasing completed work without leaving their desk or current floor.
+
+Learn more about [how Mise works](/how-it-works) to drive daily accountability across active shifts.
+
+## The operational benefits of removing the bottleneck
+
+- **Faster Check-In & Room Release:** Convert turnover rooms to guest-ready status faster by removing physical corridor wait times.
+- **Higher Employee Accountability:** Floor staff get clear ownership of their tasks with verifiable digital records.
+- **Audit-Ready Work History:** Every photo upload, timestamp, and remote approval is saved automatically into a permanent operational audit trail.
+- **Zero PMS Integration Required:** Deploy across your entire property immediately without waiting for Property Management System API connections or IT approvals.
+`,
+  },
+  "/problems/ghost-sop": {
+    lede: "Turn static binders and unverified checklists into live, photo-verified shift execution.",
+    body: `
+## What is a "Ghost SOP"?
+
+A Ghost SOP occurs when a hotel has documented operating procedures, but staff mark them as "completed" on paper clipboards or messaging groups without physically executing them on the floor. The standard exists in corporate binders or training decks, but disappears during live shifts. [Mise](/) eliminates Ghost SOPs by embedding standards directly into daily work as timed tasks with mandatory photo proof.
+
+## Why Ghost SOPs threaten hotel guest satisfaction and star ratings
+
+Most hotels do not lack operational guidelines; they lack a reliable mechanism to enforce and verify standards on every shift. When SOPs exist beside the work instead of inside it, critical errors slip through to the guest:
+
+- **Pencil-Whipped Checklists:** Staff tick off paper forms, WhatsApp messages, or static digital forms in seconds without conducting physical inspections.
+- **Brand Standard Drift:** Variations across morning, evening, and weekend shifts lead to inconsistent guest experiences and falling OTA star ratings.
+- **Audit Ambush:** Corporate quality audits uncover compliance gaps because managers have no verifiable digital evidence of daily floor activity.
+
+## How Mise converts binders into active floor execution
+
+The [Mise platform](/platform) puts standards directly into the hands of floor staff, transforming static guidelines into verifiable actions:
+
+1. **Timed Mobile Tasks:** Convert long SOP documents into clear, sequential steps on staff mobile devices with countdown timers.
+2. **Mandatory Photo Gates:** Require timestamped visual evidence for critical touchpoints, such as bathroom presentation, buffet setups, or HVAC filter replacements, before a task can be closed.
+3. **Remote Supervisor Evidence:** Managers review visual proof and sign off remotely, creating a complete operational service record.
+
+Discover [how Mise works](/how-it-works) to embed accountability across all hotel shifts.
+
+## Key benefits of eliminating Ghost SOPs
+
+- **Consistent Service:** Every room reset, food prep schedule, and security patrol follows your brand standard, every shift.
+- **Audit Readiness:** Replace missing paper logs with a searchable digital record complete with timestamped photos and sign-offs.
+- **Zero PMS Integration Required:** Deploy immediately across housekeeping, front office, F&B, and engineering without complex IT implementation.
+`,
+  },
+  "/problems/invisible-performance-gap": {
+    lede: "Bridge the friction between corporate brand expectations and daily shift reality.",
+    body: `
+## What is the invisible performance gap?
+
+The Invisible Performance Gap is the operational blind spot where general managers assume brand standards are being executed, but actual shift performance quietly degrades. Because traditional hotel reporting relies on verbal check-ins or paper logs filled out after the shift, breakdowns remain hidden until negative guest reviews, high turnover, or failed quality audits bring them to light. [Mise](/) makes floor performance visible in real time through timed tasks and photo proof.
+
+## Why silent performance leaks hurt hotel operations
+
+When leadership lacks real-time visibility into daily shifts, small micro-failures compound across departments:
+
+- **Blind Shift Transitions:** Evening and night shifts operate without live data, leading to inconsistent room setups, unmonitored public areas, and missed guest requests.
+- **Lagging Audit Signals:** Managers only discover missed maintenance, skipped hygiene checks, or compromised cleanliness days or weeks later, during formal audits.
+- **Unidentified Bottlenecks:** Leaders cannot improve staffing or workflows because they have no objective data on task completion times or recurring floor delays.
+
+## How Mise provides real-time operational visibility
+
+The [Mise platform](/platform) replaces delayed paper reports with immediate, actionable operational information:
+
+1. **Live Floor Status:** Track which timed tasks are in progress, completed, or delayed across housekeeping, front office, F&B, and engineering in real time.
+2. **Visual Proof Gates:** Staff capture mandatory timestamped photos of completed work, giving management an objective view of execution quality without micromanaging.
+3. **Actionable Shift Reports:** Identify bottlenecks, high-performing teams, and recurring service delays from the service record.
+
+Discover [how Mise works](/how-it-works) to bring operational transparency to your property.
+
+## The benefits of real-time operational transparency
+
+- **Proactive Risk Prevention:** Catch missed tasks and delays mid-shift, before they affect the guest's stay.
+- **Data-Driven Staff Recognition:** Identify top-performing floor teams objectively using verified completion data and remote supervisor sign-offs.
+- **Zero PMS Integration Required:** Deploy across your hotel workforce immediately without waiting for Property Management System API connections.
+`,
+  },
+  "/problems/attrition-bleed": {
+    lede: "Reduce onboarding friction and staff turnover, and support floor teams with intuitive mobile workflows.",
+    body: `
+## What is the attrition bleed?
+
+Hotel teams turn over often. "Attrition Bleed" occurs when new hires are put on the floor with vague verbal directions, thick binder SOPs, or passive videos that fail to prepare them for live shift pressure. Frustration sets in, errors escalate, and staff leave early. [Mise](/) helps stop the attrition bleed by delivering clear, self-guiding timed tasks and instant visual feedback straight to mobile devices.
+
+## Why operational chaos drives hotel staff away
+
+High turnover is rarely just an HR issue; it is often a symptom of floor-level operational confusion:
+
+- **Overwhelming Onboarding Friction:** New housekeepers, kitchen staff, and front desk agents struggle to remember complex brand guidelines without active guidance.
+- **Lack of Real-Time Feedback:** Staff finish shifts unsure whether their work met the supervisor's expectations, leading to unearned reprimands or quiet disengagement.
+- **Burnout from Constant Rework:** When team members miss steps because instructions were unclear, senior staff redo the work, causing friction across shifts.
+
+## How Mise supports staff and shortens onboarding
+
+The [Mise platform](/platform) gives every team member a clear, intuitive roadmap for every shift:
+
+1. **Step-by-Step Timed Tasks:** Turn long operational manuals into easy-to-follow visual steps on the phone that guide new hires through their shift from day one.
+2. **Instant Photo-Proof Verification:** Staff capture quick photos of completed setups, giving them confidence that their work matches the brand standard.
+3. **Constructive Remote Approvals:** Supervisors review visual evidence in real time, giving sign-offs and guidance without micromanaging.
+
+Discover [how Mise works](/how-it-works) to bring operational clarity to your team.
+
+## The impact of lower turnover
+
+- **Faster Time to Productivity:** Help seasonal and new employees work independently sooner.
+- **Lower Recruiting & Retraining Overhead:** Keep skilled floor staff longer by removing daily frustration and ambiguity.
+- **Zero PMS Integration Required:** Deploy across housekeeping, F&B, front office, and engineering immediately without IT delays or API integrations.
+`,
+  },
+  "/problems/star-rating-ceiling": {
+    lede: "Eliminate micro-service failures and lift guest reviews with photo-verified precision.",
+    body: `
+## What is the "star rating ceiling"?
+
+Many hotels invest in renovations, linens, and staff training, yet stay stuck at a plateau on Tripadvisor, Google, and OTA review scores. This "Star Rating Ceiling" is rarely caused by major breakdowns; it comes from small, recurring micro-defects such as a forgotten bath towel, a dusty air vent, or a delayed luggage delivery. [Mise](/) catches micro-failures before they reach the guest by requiring timed task execution and mandatory visual proof.
+
+## Why micro-service breakdowns stall guest review growth
+
+Guests rarely leave poor reviews because of catastrophic failures; they leave them because small details were overlooked during their stay:
+
+- **Inconsistent Room Presentation:** Dust on high surfaces, missing welcome amenities, or an unreplenished minibar undermine an otherwise great stay.
+- **Sluggish Service Delivery:** Delayed engineering fixes or slow housekeeping requests turn minor guest requests into public review complaints.
+- **Unverified Quality Checks:** Department heads lack the bandwidth to physically check every room and public space, so small defects slip through to arriving guests.
+
+## How Mise makes execution consistent
+
+The [Mise platform](/platform) turns brand excellence from a goal into a verifiable, shift-by-shift requirement:
+
+1. **Timed Precision Workflows:** Housekeeping, front desk, and room service tasks run against time targets for prompt delivery.
+2. **Visual Quality Gates:** Staff capture mandatory photo proof of completed room staging, cleaned bathrooms, and dining setups before marking a task complete.
+3. **Remote Quality Verification:** Supervisors inspect visual evidence remotely and approve work, so rooms that meet the standard are released faster.
+
+Explore [how Mise works](/how-it-works) to safeguard your property's reputation.
+
+## The business impact of breaking the review ceiling
+
+- **Stronger Rate Position:** Consistent review scores support the room rates a property can command.
+- **More Direct Bookings:** Consistent guest feedback builds brand trust and reduces reliance on third-party channels.
+- **Zero PMS Integration Required:** Deploy across housekeeping, front office, F&B, and engineering immediately without IT friction.
+`,
+  },
   "/platform": {
     lede: "Turn written standards into accountable, timed execution across every department.",
     body: `

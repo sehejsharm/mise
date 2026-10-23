@@ -5,6 +5,7 @@
  *
  * Every page follows Status quo → Impact chain → The wound → How Mise closes it.
  */
+import { withSepCopy } from "@/content/sep-copy";
 import type { Longform } from "@/content/types";
 
 export type Pain = Longform & {
@@ -25,7 +26,7 @@ export type Pain = Longform & {
   pillar: { href: string; label: string };
 };
 
-export const pains: Pain[] = [
+const painEntries: Pain[] = [
   {
     slug: "supervisor-bottleneck",
     index: "01",
@@ -63,13 +64,18 @@ export const pains: Pain[] = [
     relatedPosts: ["how-to-digitize-hotel-sops", "housekeeping-sop-checklist"],
     meta: {
       path: "/problems/supervisor-bottleneck",
-      title: "Hotel Supervisor Bottleneck: Cut Verification Load | Mise",
+      title: "Overcome the Hotel Supervisor Bottleneck | Mise SEP",
       description:
-        "The hotel supervisor bottleneck: when every check waits on one person. See how photo evidence and timed tasks cut supervisor workload. Book a 15-min demo.",
-      h1: "The hotel supervisor bottleneck, and how to break it",
+        "Eliminate supervisor bottlenecks in hotel operations. Mise runs self-verifying staff workflows with photo proof and timed tasks, with zero PMS required.",
+      h1: "Overcoming the Hotel Supervisor Bottleneck",
       primaryKeyword: "hotel supervisor bottleneck",
       secondaryKeywords: ["reduce hotel supervisor workload", "hotel task verification"],
       eyebrow: "Pain 01 · Supervisor Bottleneck",
+      ogTitle: "Eliminate the Hotel Supervisor Bottleneck | Mise Service Execution Platform",
+      ogDescription: "Stop waiting for physical inspections. Empower hotel staff with timed tasks, mandatory photo proof, and remote supervisor sign-offs.",
+      ogImageAlt: "Mise Hotel Service Execution Interface Solving Supervisor Bottleneck",
+      twitterTitle: "Solve the Hotel Supervisor Bottleneck | Mise SEP",
+      twitterDescription: "Remove operational delays with photo-verified self-execution and remote supervisor sign-offs across every hotel department.",
       updated: "2026-09-29",
     },
     eyebrow: "Pain 01 of 6",
@@ -125,6 +131,10 @@ This is how Mise works. Supervisors still sign off. They simply do it against ev
 Nothing here needs a PMS integration or new hardware. Staff use a browser on the phones they already carry, and the manager dashboard runs on any desktop.
 `,
     faqs: [
+      { q: "What is the supervisor bottleneck in hotel operations?", a: "The supervisor bottleneck occurs when hotel floor staff are forced to wait for physical supervisor checks before progressing with tasks, resulting in delayed room readiness, slow shift handovers, and guest wait times." },
+      { q: "How does Mise solve the supervisor bottleneck?", a: "Mise replaces physical corridor checks with timed tasks, mandatory photo proof, and remote supervisor sign-offs. Staff upload visual evidence of completed work, allowing supervisors to review and approve standards from anywhere." },
+      { q: "Does solving the supervisor bottleneck require PMS integration?", a: "No. Mise operates with zero PMS integration required, deploying directly onto staff mobile devices across housekeeping, front office, F&B, and engineering on day one." },
+      { q: "Is Mise a training tool?", a: "No. Mise is not an LMS. It is a Service Execution Platform (SEP) built to run daily operational shifts on the floor rather than passive video training." },
       {
         q: "Does Mise replace hotel supervisors?",
         a: "No. Mise changes what supervisors spend their time on. Routine verification moves into photo evidence and timestamps inside each timed task, so supervisors review proof remotely, sign off in one action, and spend walk-pasts on exceptions, coaching and guest-facing decisions.",
@@ -181,13 +191,18 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
     relatedPosts: ["ghost-sop-hotel-standards", "how-to-digitize-hotel-sops"],
     meta: {
       path: "/problems/ghost-sop",
-      title: "Ghost SOP Hotel Problem: Why SOPs Aren't Followed | Mise",
+      title: "Eliminate Ghost SOPs in Hotel Operations | Mise SEP",
       description:
-        "A ghost SOP hotel problem: standards that exist on paper but not on the floor. Why hotel SOPs are not followed and how to close the gap. Book a 15-min demo.",
-      h1: "The ghost SOP: why hotel standards exist on paper, not on the floor",
+        "Stop unverified checkmarks and pencil-whipping. Mise turns hotel \"Ghost SOPs\" into active timed tasks with real-time photo proof—zero PMS required.",
+      h1: "Eliminating the \"Ghost SOP\" in Hotel Operations",
       primaryKeyword: "ghost SOP hotel",
       secondaryKeywords: ["hotel SOPs not followed", "SOP execution gap hotel", "hotel SOP compliance problem"],
       eyebrow: "Pain 02 · Ghost SOP",
+      ogTitle: "Eliminate Ghost SOPs in Hotels & Pencil-Whipped Checklists | Mise",
+      ogDescription: "Hotel SOPs sitting in binders or checked off without execution degrade guest reviews. Turn static procedures into active timed tasks with visual proof.",
+      ogImageAlt: "Mise Hotel Service Execution Interface Eliminating Ghost SOPs with Photo Verification",
+      twitterTitle: "Eliminate Ghost SOPs in Hotel Operations | Mise SEP",
+      twitterDescription: "Transform static hotel binders into photo-verified, self-executing shift workflows. Eliminate unverified task checkmarks—no PMS required.",
       updated: "2026-09-29",
     },
     eyebrow: "Pain 02 of 6",
@@ -249,6 +264,9 @@ It is tempting to treat a ghost SOP as a knowledge gap and schedule another sess
 If any of these sound familiar, the [audit ambush](/problems/audit-ambush) is usually not far behind.
 `,
     faqs: [
+      { q: "What is a Ghost SOP in hotel operations?", a: "It is a standard operating procedure that exists in manuals or training systems but is checked off on paper without actual physical execution during live shifts." },
+      { q: "How does photo proof stop \"pencil-whipping\"?", a: "Staff cannot complete a task until they upload a live, timestamped photo showing that the work meets standard requirements." },
+      { q: "Is Mise a training tool?", a: "No. Mise is not an LMS. It is a Service Execution Platform (SEP) built to manage live daily task execution on the floor, not passive classroom training." },
       {
         q: "What causes ghost SOPs in hotels?",
         a: "Ghost SOPs happen when the standard lives in a document and the work happens on the floor, with nothing connecting the two during a shift. Staff rely on memory under time pressure, updates do not reach the shift, and without a record of execution nobody sees the drift until a guest does.",
@@ -305,13 +323,18 @@ If any of these sound familiar, the [audit ambush](/problems/audit-ambush) is us
     relatedPosts: ["what-is-a-service-execution-platform", "hotel-audit-readiness-audit-trail"],
     meta: {
       path: "/problems/invisible-performance-gap",
-      title: "Hotel Staff Performance Tracking Without Spreadsheets | Mise",
+      title: "Close the Invisible Performance Gap in Hotels | Mise",
       description:
-        "Hotel staff performance tracking that runs itself: every timed task records time, steps and evidence, so managers see who meets standard. Book a 15-min demo.",
-      h1: "The invisible performance gap: hotel staff performance tracking that runs itself",
-      primaryKeyword: "hotel staff performance tracking",
-      secondaryKeywords: ["hotel service performance tracking", "hotel staff performance evidence"],
+        "Close the invisible performance gap in hotels: bridge SOPs and real shift execution with real-time floor visibility, timed tasks and photo proof. No PMS.",
+      h1: "Closing the Invisible Performance Gap in Hotel Operations",
+      primaryKeyword: "invisible performance gap hotel",
+      secondaryKeywords: ["hotel staff performance tracking", "hotel service performance tracking", "hotel staff performance evidence"],
       eyebrow: "Pain 03 · Invisible Performance Gap",
+      ogTitle: "Expose & Close the Invisible Performance Gap in Hotels | Mise",
+      ogDescription: "Uncover hidden operational delays and compliance gaps across hotel shifts. Track active floor execution with timed tasks, photo proof, and supervisor sign-offs.",
+      ogImageAlt: "Mise Hotel Service Execution Interface Exposing Floor Performance Metrics",
+      twitterTitle: "Close the Invisible Performance Gap in Hotel Operations | Mise SEP",
+      twitterDescription: "Gain real-time operational visibility across all hotel departments. Turn silent performance leaks into verified shift execution, no PMS required.",
       updated: "2026-09-29",
     },
     eyebrow: "Pain 03 of 6",
@@ -321,7 +344,7 @@ If any of these sound familiar, the [audit ambush](/problems/audit-ambush) is us
       "The invisible performance gap exists because hotel work leaves no record: checks happen in corridors and results live in memory. Mise records start, finish, step completion and photo evidence on every timed task, so readiness per person and per standard is a live number rather than an opinion.",
     leadImage: {
       key: "product/manager-team-progress",
-      alt: "Mise manager dashboard for hotel staff performance tracking, showing readiness and service evidence per person",
+      alt: "Mise manager dashboard for hotel staff performance tracking, showing readiness and service evidence per person, closing the invisible performance gap in hotels",
       device: "laptop",
     },
     body: `
@@ -364,6 +387,9 @@ Staff see their own service record in the staff app: verified standards, readine
 When performance is visible, the next two pains in the chain become manageable. Coaching can target the right people, which matters for the [attrition bleed](/problems/attrition-bleed). And consistency can be measured, which is the lever on the [star rating ceiling](/problems/star-rating-ceiling).
 `,
     faqs: [
+      { q: "What is the invisible performance gap in hotel operations?", a: "It is the unmonitored disconnect between documented brand SOPs and actual on-the-ground staff execution during active shifts." },
+      { q: "How does photo verification improve performance visibility?", a: "Photo verification provides clear visual proof that work was completed to the brand standard, removing guesswork and paper-based misreporting." },
+      { q: "Is Mise a training tool?", a: "No. Mise is not an LMS. It is a Service Execution Platform (SEP) designed to manage live shift execution and real-time floor performance, not passive video training." },
       {
         q: "What does Mise measure for each staff member?",
         a: "For every timed task, Mise records the start and finish time against the target, completion of each step, photo evidence on gated steps, and supervisor sign-offs or comments. Rolled up, that gives readiness per person and per standard, visible to managers and to the staff member.",
@@ -420,13 +446,18 @@ When performance is visible, the next two pains in the chain become manageable. 
     relatedPosts: ["what-is-a-service-execution-platform", "housekeeping-sop-checklist"],
     meta: {
       path: "/problems/attrition-bleed",
-      title: "Hotel Staff Turnover: Protect Service Quality | Mise",
+      title: "Stop the Hotel Attrition Bleed & Onboarding Friction | Mise",
       description:
-        "Hotel staff turnover resets service quality with every departure. Keep the standard in the operation from a new joiner's first shift. Book a demo.",
-      h1: "The attrition bleed: keeping standards when hotel staff turnover is high",
-      primaryKeyword: "hotel staff turnover",
-      secondaryKeywords: ["hotel onboarding software", "hotel employee retention operations"],
+        "Stop the hotel attrition bleed: reduce staff churn and speed up onboarding. Mise runs clear timed tasks with photo proof, with no PMS integration required.",
+      h1: "Stopping the \"Attrition Bleed\" in Hotel Operations",
+      primaryKeyword: "hotel attrition bleed",
+      secondaryKeywords: ["hotel staff turnover", "hotel onboarding software", "hotel employee retention operations"],
       eyebrow: "Pain 04 · Attrition Bleed",
+      ogTitle: "Stop the Hotel Attrition Bleed & Reduce Staff Turnover | Mise",
+      ogDescription: "High turnover hurts hotel productivity. Support new hires on day one with clear timed tasks, photo verification, and intuitive mobile workflows.",
+      ogImageAlt: "Mise Hotel Service Execution Interface Reducing Staff Churn and Onboarding Friction",
+      twitterTitle: "Stop Hotel Attrition Bleed | Mise Service Execution Platform",
+      twitterDescription: "Shorten onboarding and retain hospitality talent with clear, self-guiding mobile workflows—no PMS required.",
       updated: "2026-09-29",
     },
     eyebrow: "Pain 04 of 6",
@@ -436,7 +467,7 @@ When performance is visible, the next two pains in the chain become manageable. 
       "The attrition bleed is the service-quality loss that follows each departure, because standards lived in people rather than in the operation. Mise keeps the standard inside timed tasks and operating briefs, so a new joiner works to the same steps from the first shift and managers can see readiness based on evidenced work.",
     leadImage: {
       dept: "rotate",
-      alt: "Mise staff app guiding a new joiner in any department to the next timed task, reducing the impact of hotel staff turnover",
+      alt: "Mise staff app guiding a new joiner in any department to the next timed task, reducing the impact of hotel staff turnover, stopping the hotel attrition bleed",
       device: "phone",
     },
     body: `
@@ -477,6 +508,9 @@ Retention is a management discipline. Mise supports it with better information: 
 Consistent execution across old and new staff is the lever on the next pain in the chain, the [star rating ceiling](/problems/star-rating-ceiling), where variance between shifts becomes variance in guest reviews.
 `,
     faqs: [
+      { q: "What is attrition bleed in hotel operations?", a: "It is the steady loss of hospitality employees caused by confusing shift expectations, poor onboarding, and friction on the floor." },
+      { q: "How does Mise help new hires work independently faster?", a: "Mise turns the hotel's existing SOPs into visual, step-by-step task sequences on the phone, guiding staff through every step of their shift." },
+      { q: "Is Mise a training tool?", a: "No. Mise is not an LMS. It is a Service Execution Platform (SEP) that guides live, shift-by-shift task execution on the floor, rather than passive classroom videos." },
       {
         q: "Does Mise reduce hotel staff turnover?",
         a: "We do not claim that. Retention depends on pay, schedules, management and culture. Mise reduces what turnover costs: the standard lives inside timed tasks and briefs rather than in people, so each departure removes a person but not the standard, and new joiners reach consistent execution sooner.",
@@ -533,13 +567,18 @@ Consistent execution across old and new staff is the lever on the next pain in t
     relatedPosts: ["ghost-sop-hotel-standards", "housekeeping-sop-checklist"],
     meta: {
       path: "/problems/star-rating-ceiling",
-      title: "Hotel Service Consistency Software: Lift Ratings | Mise",
+      title: "Break the Hotel Star Rating Ceiling | Mise SEP",
       description:
-        "Hotel service consistency software that runs every room to the same standard on every shift, so reviews reflect your best work. Book a demo.",
-      h1: "The star rating ceiling: hotel service consistency software for every shift",
-      primaryKeyword: "hotel service consistency software",
-      secondaryKeywords: ["hotel service quality management", "hotel star rating standards"],
+        "Break through your hotel's star rating ceiling. Mise runs your standards as timed tasks with photo proof, so small defects are caught. Zero PMS required.",
+      h1: "Breaking the Hotel \"Star Rating Ceiling\"",
+      primaryKeyword: "hotel star rating ceiling",
+      secondaryKeywords: ["hotel service consistency software", "hotel service quality management", "hotel star rating standards"],
       eyebrow: "Pain 05 · Star Rating Ceiling",
+      ogTitle: "Break Through Your Hotel's Star Rating Ceiling | Mise Platform",
+      ogDescription: "Micro-service breakdowns drag down guest reviews. Protect your online reputation with photo-verified operational proof on every shift.",
+      ogImageAlt: "Mise Hotel Service Execution Interface Boosting Hotel Guest Reviews and Star Ratings",
+      twitterTitle: "Break the Hotel Star Rating Ceiling | Mise SEP",
+      twitterDescription: "Catch the small service failures that hurt guest reviews. Enforce consistent room setups and timed service delivery, no PMS required.",
       updated: "2026-09-29",
     },
     eyebrow: "Pain 05 of 6",
@@ -549,7 +588,7 @@ Consistent execution across old and new staff is the lever on the next pain in t
       "The star rating ceiling is the cap inconsistency puts on guest ratings. It is driven by variance between staff and shifts, not by the best rooms. Mise runs every task to the same steps and target time, makes variance visible by standard and shift, and pushes fixes to the next shift, so consistency becomes the product.",
     leadImage: {
       key: "product/manager-overview",
-      alt: "Mise manager dashboard showing readiness, service health and guest signal for a demo property, as hotel service consistency software",
+      alt: "Mise manager dashboard showing readiness, service health and guest signal for a demo property, as hotel service consistency software, breaking the hotel star rating ceiling",
       device: "laptop",
     },
     body: `
@@ -591,6 +630,9 @@ We do not claim a specific rating uplift; every property is different. But the l
 Consistent, recorded execution also means you already hold the evidence an auditor will ask for, which is the answer to the last pain in the chain, the [audit ambush](/problems/audit-ambush).
 `,
     faqs: [
+      { q: "What causes a hotel to hit a star rating ceiling?", a: "It is caused by small, inconsistent service failures across shifts that trigger negative guest feedback despite high standards." },
+      { q: "How does photo proof prevent guest complaints?", a: "Photo proof forces a visual check before a task is closed, so every detail (amenities, cleanliness, maintenance) meets the standard before the guest arrives." },
+      { q: "Is Mise a training tool?", a: "No. Mise is not an LMS. It is a Service Execution Platform (SEP) that enforces active task execution and visual standards during live shifts, rather than delivering classroom videos." },
       {
         q: "Can Mise improve our guest ratings?",
         a: "We do not promise a rating uplift. Mise targets the operational cause of rating plateaus: variance between staff and shifts. It runs every task to the same standard, shows where consistency breaks, and gets fixes onto the next shift, which is the part of guest experience operations controls.",
@@ -730,6 +772,8 @@ When evidence is written at the time of work, audits stop being events. The reco
     ],
   },
 ];
+
+export const pains: Pain[] = painEntries.map(withSepCopy);
 
 export function painBySlug(slug: string) {
   return pains.find((p) => p.slug === slug);
