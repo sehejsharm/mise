@@ -39,6 +39,14 @@
     "src": "/images/advisors/renu-mehra-advisory-board-mise-683.webp",
     "blurDataURL": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoQABQAPu1iqU2ppaQiMAgBMB2JQBgfeABOtBbkb+hBR2ljB8kgAP7zd0sW8P7a6tgLY7R1hPaU0Q6X2RJkGT9k3hM2gVIRr+WTid64j+9+BVnW0CUdduVE9F2qVMvCzVvjxqfab04/j+/plEd0+BncmPpfSTGMAdi21cFi3u7KW1e/r+1q03+yHRPKFLpGfyzgtylsAAA="
   },
+  "advisors/sanchita-ralhan": {
+    "width": 2400,
+    "height": 3000,
+    "avif": "/images/advisors/sanchita-ralhan-advisory-board-mise-400.avif 400w, /images/advisors/sanchita-ralhan-advisory-board-mise-800.avif 800w, /images/advisors/sanchita-ralhan-advisory-board-mise-1200.avif 1200w",
+    "webp": "/images/advisors/sanchita-ralhan-advisory-board-mise-400.webp 400w, /images/advisors/sanchita-ralhan-advisory-board-mise-800.webp 800w, /images/advisors/sanchita-ralhan-advisory-board-mise-1200.webp 1200w",
+    "src": "/images/advisors/sanchita-ralhan-advisory-board-mise-1200.webp",
+    "blurDataURL": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADwAwCdASoQABQAPu1iqU2ppaOiMAgBMB2JQBdgBArqsa1SeWcsk4sAAP7Gr1nnQlzqVCw52xPwDF0nXKG8DMlG0r1v2EZU/7tOFAH6VxmdDAHTZvyjZrZIjmt2J9scRr/TlXs0T0wtqLh22wKh9VMlKI+ilDFAqCiuGYLvfG4OAY/N4gAAAA=="
+  },
   "product/staff-today": {
     "width": 812,
     "height": 1364,

@@ -34,6 +34,7 @@ const CROPS = {
   "parul-sharma": { left: 0, top: 60, width: 1071, height: 1339 },
   // The supplied file has black letterbox bars top and bottom; stay inside them.
   "renu-mehra": { left: 109, top: 14, width: 683, height: 854 },
+  "sanchita-ralhan": { left: 160, top: 300, width: 2400, height: 3000 },
 };
 
 const PEOPLE = [
@@ -42,6 +43,7 @@ const PEOPLE = [
   { group: "team", slug: "aditya-mishra", seo: "aditya-mishra-co-founder-cto-mise" },
   { group: "advisors", slug: "parul-sharma", seo: "parul-sharma-advisory-board-mise" },
   { group: "advisors", slug: "renu-mehra", seo: "renu-mehra-advisory-board-mise" },
+  { group: "advisors", slug: "sanchita-ralhan", seo: "sanchita-ralhan-advisory-board-mise" },
 ];
 
 /**
