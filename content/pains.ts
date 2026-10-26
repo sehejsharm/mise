@@ -76,7 +76,7 @@ const painEntries: Pain[] = [
       ogImageAlt: "Mise Hotel Service Execution Interface Solving Supervisor Bottleneck",
       twitterTitle: "Solve the Hotel Supervisor Bottleneck | Mise SEP",
       twitterDescription: "Remove operational delays with photo-verified self-execution and remote supervisor sign-offs across every hotel department.",
-      updated: "2026-09-29",
+      updated: "2026-10-26",
     },
     eyebrow: "Pain 01 of 6",
     lede:
@@ -203,7 +203,7 @@ Nothing here needs a PMS integration or new hardware. Staff use a browser on the
       ogImageAlt: "Mise Hotel Service Execution Interface Eliminating Ghost SOPs with Photo Verification",
       twitterTitle: "Eliminate Ghost SOPs in Hotel Operations | Mise SEP",
       twitterDescription: "Transform static hotel binders into photo-verified, self-executing shift workflows. Eliminate unverified task checkmarks—no PMS required.",
-      updated: "2026-09-29",
+      updated: "2026-10-26",
     },
     eyebrow: "Pain 02 of 6",
     faqTitle: "Ghost SOPs in hotels: frequently asked questions",
@@ -335,7 +335,7 @@ If any of these sound familiar, the [audit ambush](/problems/audit-ambush) is us
       ogImageAlt: "Mise Hotel Service Execution Interface Exposing Floor Performance Metrics",
       twitterTitle: "Close the Invisible Performance Gap in Hotel Operations | Mise SEP",
       twitterDescription: "Gain real-time operational visibility across all hotel departments. Turn silent performance leaks into verified shift execution, no PMS required.",
-      updated: "2026-09-29",
+      updated: "2026-10-26",
     },
     eyebrow: "Pain 03 of 6",
     lede:
@@ -458,7 +458,7 @@ When performance is visible, the next two pains in the chain become manageable. 
       ogImageAlt: "Mise Hotel Service Execution Interface Reducing Staff Churn and Onboarding Friction",
       twitterTitle: "Stop Hotel Attrition Bleed | Mise Service Execution Platform",
       twitterDescription: "Shorten onboarding and retain hospitality talent with clear, self-guiding mobile workflows—no PMS required.",
-      updated: "2026-09-29",
+      updated: "2026-10-26",
     },
     eyebrow: "Pain 04 of 6",
     lede:
@@ -579,7 +579,7 @@ Consistent execution across old and new staff is the lever on the next pain in t
       ogImageAlt: "Mise Hotel Service Execution Interface Boosting Hotel Guest Reviews and Star Ratings",
       twitterTitle: "Break the Hotel Star Rating Ceiling | Mise SEP",
       twitterDescription: "Catch the small service failures that hurt guest reviews. Enforce consistent room setups and timed service delivery, no PMS required.",
-      updated: "2026-09-29",
+      updated: "2026-10-26",
     },
     eyebrow: "Pain 05 of 6",
     lede:
