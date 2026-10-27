@@ -77,6 +77,15 @@ export default function Footer() {
                   {contact.phone}
                 </a>
               </li>
+              <li>
+                <address className="text-[0.92rem] leading-relaxed text-muted not-italic">
+                  {contact.address.street}
+                  <br />
+                  {contact.address.city} {contact.address.postalCode}
+                  <br />
+                  {contact.address.region}, India
+                </address>
+              </li>
             </ul>
           </nav>
         </div>

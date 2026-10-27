@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import LongformPage from "@/components/page/LongformPage";
-import { digitalSop as page } from "@/content/pillars";
+import { digitalSop } from "@/content/pillars";
+import { withSepCopy } from "@/content/sep-copy";
 import { buildMetadata } from "@/lib/seo";
+
+const page = withSepCopy(digitalSop);
 
 export const metadata: Metadata = buildMetadata(page.meta);
 

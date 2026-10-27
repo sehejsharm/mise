@@ -51,6 +51,13 @@ export const contact = {
     return `tel:${this.phone.replace(/[^+\d]/g, "")}`;
   },
   bookingUrl: process.env.NEXT_PUBLIC_BOOKING_URL || "",
+  address: {
+    street: "NIBM Post Office Road",
+    city: "Pune",
+    region: "Maharashtra",
+    postalCode: "411048",
+    country: "IN",
+  },
 } as const;
 
 /** Company social profiles. Emitted as Organization.sameAs once they exist. */

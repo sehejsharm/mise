@@ -3,12 +3,12 @@ import type { Longform } from "@/content/types";
 export const digitalSop: Longform = {
   meta: {
     path: "/standards-to-execution",
-    title: "Put Hotel Standards Into Execution, Every Shift | Mise",
+    title: "Turn Hotel Brand Standards into Daily Shift Execution | Mise",
     description:
-      "How to put hotel standards into execution: run the binder you already have as timed tasks on staff phones, with photo evidence. Book a 15-min demo.",
-    h1: "How to put hotel standards into execution: from binder to timed tasks on every phone",
-    primaryKeyword: "put hotel standards into execution",
-    secondaryKeywords: [
+      "Transform static hotel SOP binders into real-time mobile execution. Mise turns brand standards into timed tasks with photo proof, with zero PMS required.",
+    h1: "Transforming Hotel Brand Standards into Live Shift Execution",
+    primaryKeyword: "hotel standards execution",
+    secondaryKeywords: ["put hotel standards into execution", 
       "standards execution for hotels",
       "run existing hotel SOPs as timed tasks",
       "replace the standards binder",
@@ -16,7 +16,12 @@ export const digitalSop: Longform = {
       "service execution platform",
     ],
     eyebrow: "The execution guide",
-    updated: "2026-09-29",
+    ogTitle: "Bridge the Gap Between Hotel Standards & Daily Execution | Mise",
+    ogDescription: "Stop letting brand SOPs sit forgotten in binders or PDFs. Deliver step-by-step timed tasks, photo verification, and real-time supervisor proof straight to staff phones.",
+    ogImageAlt: "Mise Hotel Service Execution Interface Translating Brand SOP Binders into Mobile Tasks",
+    twitterTitle: "Turn Hotel Standards into Live Shift Execution | Mise SEP",
+    twitterDescription: "Convert static hotel operational manuals into active, timed mobile tasks with photo proof, no PMS required.",
+    updated: "2026-10-27",
     priority: 0.9,
   },
   eyebrow: "Pillar guide · Standards to execution",
@@ -26,7 +31,7 @@ export const digitalSop: Longform = {
     "Putting hotel standards into execution means converting each standard from a document into a timed task that runs on staff phones: steps, target time, reference photos and photo gates on key steps. Start with one department at one property, set up the standards that matter most, publish them into the shift, and measure execution from the service record.",
   leadImage: {
     key: "product/author-create-standard",
-    alt: "Mise standards workspace form used to put hotel standards into execution as a timed shift sequence",
+    alt: "Mise standards workspace form used to put hotel standards into execution as a timed shift sequence, turning hotel standards into execution",
     device: "laptop",
   },
   howTo: {
@@ -142,6 +147,8 @@ You know your standards are in execution when the service record answers operati
 - Build the audit side of the record: [hotel audit readiness](/audit-readiness).
 `,
   faqs: [
+    { q: "How does Mise differ from a standard paper checklist?", a: "Unlike paper checklists that are easily pencil-whipped at the end of a shift, Mise requires live, timestamped task execution, mandatory photo verification, and digital supervisor sign-offs." },
+    { q: "Can our existing hotel SOP manuals be used in Mise?", a: "Yes. Mise does not write your SOPs; your existing brand SOPs, policy guidelines, and departmental manuals are set up in Mise as structured, mobile-first task routines." },
     {
       q: "What is service execution for hotel standards?",
       a: "Service execution means running the standard operating procedures a hotel already has as tasks on a device, with ordered steps, a target time, reference photos and evidence captured as the work is done. It differs from a scanned document because it runs during the shift and records that it ran.",
@@ -171,12 +178,12 @@ You know your standards are in execution when the service record answers operati
 export const auditReadiness: Longform = {
   meta: {
     path: "/audit-readiness",
-    title: "Hotel Audit Readiness Software & Service Records | Mise",
+    title: "365-Day Continuous Hotel Audit Readiness Platform | Mise",
     description:
-      "Hotel audit readiness software that builds an audit-ready service record every shift, with photo evidence, timestamps and sign-offs. Book a demo.",
-    h1: "Hotel audit readiness software: an audit-ready service record, every shift",
-    primaryKeyword: "hotel audit readiness software",
-    secondaryKeywords: [
+      "Achieve continuous hotel audit readiness. Mise replaces manual inspection paperwork with photo-verified digital compliance, with zero PMS required.",
+    h1: "365-Day Continuous Hotel Audit Readiness",
+    primaryKeyword: "continuous hotel audit readiness",
+    secondaryKeywords: ["hotel audit readiness software", 
       "audit-ready service record hotel",
       "hotel audit trail software",
       "hotel compliance tracking software",
@@ -184,7 +191,12 @@ export const auditReadiness: Longform = {
       "hotel health and safety compliance software",
     ],
     eyebrow: "The audit readiness guide",
-    updated: "2026-09-29",
+    ogTitle: "365-Day Continuous Hotel Audit Readiness | Mise SEP",
+    ogDescription: "Eliminate pre-audit panic and pencil-whipped inspection sheets. Turn daily floor checks into photo-verified digital compliance trails.",
+    ogImageAlt: "Mise Hotel Service Execution Interface Demonstrating Continuous Audit Readiness Dashboard",
+    twitterTitle: "Continuous Hotel Audit Readiness & Compliance | Mise",
+    twitterDescription: "Stay inspection-ready every day of the year with timed mobile tasks, visual proof gates, and compliance logs, no PMS required.",
+    updated: "2026-10-27",
     priority: 0.9,
   },
   eyebrow: "Pillar guide · Audit readiness",
@@ -194,7 +206,7 @@ export const auditReadiness: Longform = {
     "An audit-ready service record is a time-ordered, attributable log of standards executed: who, what, where, when, which version, with photo evidence and sign-off. Mise builds it automatically as staff complete timed tasks, so audit preparation becomes filtering and exporting the record rather than assembling a folder.",
   leadImage: {
     key: "product/manager-readiness",
-    alt: "Mise hotel audit readiness software screen listing acknowledgement receipts with timestamps, ready to export",
+    alt: "Mise hotel audit readiness software screen listing acknowledgement receipts with timestamps, ready to export, for continuous hotel audit readiness",
     device: "laptop",
   },
   howTo: {
@@ -279,6 +291,8 @@ Different audits ask different questions, but they share a pattern: prove the st
 - Understand the problem this solves: [the audit ambush](/problems/audit-ambush).
 `,
   faqs: [
+    { q: "What is continuous audit readiness in hospitality?", a: "It means keeping operational compliance in place every shift of the year, so the property is always prepared for surprise brand or regulatory inspections." },
+    { q: "How does visual proof satisfy audit requirements?", a: "Timestamped photo proof gives clear visual evidence that cleaning, maintenance, and safety routines were completed correctly at the time they were logged." },
     {
       q: "What is hotel audit readiness software?",
       a: "Hotel audit readiness software keeps a hotel continuously able to prove its standards were followed. Mise does this by capturing photo evidence, timestamps, standard versions and supervisor sign-offs inside every timed task, so the audit trail exists before anyone asks for it.",

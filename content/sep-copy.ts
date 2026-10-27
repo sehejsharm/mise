@@ -7,6 +7,184 @@
 export type SepCopy = { lede: string; body: string };
 
 export const sepCopy: Record<string, SepCopy> = {
+  "/problems/audit-ambush": {
+    lede: "Shift from panic-driven audit preparation to continuous, everyday digital audit readiness.",
+    body: `
+## What is the "audit ambush"?
+
+The "Audit Ambush" is the scramble that follows when brand standards inspectors, mystery shoppers, or health and safety auditors walk through your doors unannounced. When compliance relies on paper logs, binder checklists, and post-shift guessing, managers spend days worrying whether standards were actually met. [Mise](/) removes audit anxiety by turning daily shift execution into a photo-verified digital audit trail.
+
+## Why paper SOP binders fail during hotel inspections
+
+Relying on legacy paper checklists leaves property leadership exposed during quality assurance and compliance reviews:
+
+- **"Pencil-Whipped" Log Sheets:** Staff fill out paper compliance sheets in bulk at the end of a shift, creating unreliable records that fail under audit checks.
+- **Missing Historical Evidence:** When auditors ask for proof of daily temperature logs, deep cleaning or safety checks from three months ago, paper records are often lost or incomplete.
+- **Disjointed Departmental Records:** Engineering, housekeeping, and F&B work in silos, so General Managers have to collect paperwork from several heads of department during an active inspection.
+
+## How Mise delivers continuous audit readiness
+
+The [Mise platform](/platform) captures proof of compliance as daily work happens on the floor:
+
+1. **Timestamped Visual Proof:** Gated steps require staff to upload photo evidence, showing the standard was met at the time of execution.
+2. **Instant Digital Records:** Inspections, hygiene routines, and maintenance checks are stored in one service record, searchable by date, department, or shift.
+3. **Supervisor Sign-Offs:** Department heads verify and approve tasks remotely in real time, so compliance gaps don't build up over time.
+
+Learn [how Mise works](/how-it-works) to keep your property's audit evidence up to date.
+
+## The operational return of continuous compliance
+
+- **No Pre-Audit Panic:** Avoid emergency pre-inspection clean-ups, overtime and last-minute supervisor scrambles.
+- **Stronger Brand Quality Results:** Protect your brand standing with verifiable operational consistency.
+- **Zero PMS Integration Required:** Deploy across housekeeping, kitchen, front office, and engineering immediately, with no IT bottlenecks or API dependencies.
+`,
+  },
+  "/standards-to-execution": {
+    lede: "Stop letting SOPs gather dust in binders: put verifiable execution on every staff phone.",
+    body: `
+## From passive manuals to active execution
+
+Hotel brands invest significant time crafting meticulous Standard Operating Procedures (SOPs), only for them to sit in office binders or unread PDF drives. When shift pressure builds, staff rely on memory or shortcuts, and guest experiences become erratic. [Mise](/) bridges the gap between corporate expectations and floor reality by turning static standards into self-guiding, timed mobile tasks backed by mandatory photo proof.
+
+## Why paper SOPs never reach the hotel floor
+
+The breakdown in hospitality quality control isn't a lack of standards; it's the way they are delivered:
+
+- **Passive Storage vs. Active Guidance:** Traditional SOPs expect staff to memorize hundreds of detailed steps after a brief orientation.
+- **No Real-Time Enforcement:** Management cannot verify whether procedures were followed during a busy shift without standing next to every employee.
+- **Shift-to-Shift Degradation:** Standards drift as senior staff pass informal shortcuts to new hires, bypassing the official brand guidelines.
+
+## The Mise standard-to-execution engine
+
+The [Mise platform](/platform) converts document-based brand standards into live, measurable floor activity:
+
+1. **Timed Task Sequences:** Your existing SOPs are broken down into simple, step-by-step timed tasks on staff phones across housekeeping, F&B, front office, and engineering.
+2. **Visual Proof Gates:** Staff verify compliance by uploading the required photo evidence (room staging, buffet setup, cleaned fixtures) before closing a task.
+3. **Remote Supervisor Evidence:** Department heads review photo submissions in real time, validating execution quality without creating shift bottlenecks.
+
+Discover [how Mise works](/how-it-works) to put your hotel's brand standards into operation.
+`,
+  },
+  "/audit-readiness": {
+    lede: "Replace emergency inspection scrambles with real-time, photo-verified compliance.",
+    body: `
+## The reality of hotel audit readiness
+
+Traditional hotel compliance runs on reactive panic: scrambling for days before scheduled brand audits or health inspections, and hoping unannounced audits don't catch missed checks. Paper binders and retroactive checklist signatures fail under scrutiny. [Mise](/) turns audit readiness from a stressful event into a daily operational habit by building visual proof into live shift workflows.
+
+## The flaws of periodic audit preparation
+
+Relying on quarterly audits or manual paper logs leaves hotels exposed to compliance failures and audit markdowns:
+
+- **Pencil-Whipped Paper Logs:** Staff complete inspection sheets hours or days after the tasks were due, creating unreliable records.
+- **Scattered Records & Lost Paperwork:** Department heads struggle to compile maintenance, food-safety temperature, and deep-cleaning logs during unexpected auditor walkthroughs.
+- **Post-Shift Blind Spots:** GMs and Operations Directors cannot see whether night-shift or weekend routines were actually executed to brand standard.
+
+## How Mise makes audit readiness an everyday habit
+
+The [Mise platform](/platform) turns brand standards and regulatory guidelines into daily execution:
+
+1. **Timed Compliance Tasks:** Daily, weekly, and monthly checkpoints are scheduled onto staff phones across housekeeping, kitchen, F&B, and engineering.
+2. **Mandatory Photo-Proof Gates:** Staff capture the required photo evidence at each critical point, showing the standard was met at the time of execution.
+3. **Digital Audit Trails:** Auditors and management can review, filter, and export verified historical records in moments.
+
+Explore [how Mise works](/how-it-works) to keep your property audit-ready.
+`,
+  },
+  "/compare": {
+    lede: "See how active mobile execution outperforms passive training, paper binders, messaging groups, and spreadsheets.",
+    body: `
+## Why general managers are upgrading
+
+Modern hotel operations require real-time floor execution, but many properties still rely on tools that were never built for daily shift management. From passive video courses to chaotic WhatsApp groups and paper SOP binders, legacy methods create blind spots and unverified work. [Mise](/) is a dedicated Service Execution Platform (SEP), combining timed tasks, mandatory photo proof, and remote supervisor sign-offs on staff phones.
+
+## Compare Mise vs. legacy hotel operations tools
+
+| Operational requirement | Mise (SEP) | Hotel LMS | WhatsApp groups | Paper & Excel |
+|---|---|---|---|---|
+| Shift focus | Live floor task execution | Passive classroom training | Unstructured messaging | Retroactive reporting |
+| Execution verification | Timestamped photo proof | Course completion quiz | Manual photo uploads | Unverified checkmarks |
+| Supervisor oversight | Remote live sign-offs | Test grade reports | Chaotic scroll history | Physical walk-throughs |
+| PMS integration required | No (standalone) | Varies | No | No |
+| Audit readiness | Instant digital trail | None | Lost in chat threads | Missing or incomplete logs |
+
+## Detailed tool comparisons
+
+### 1. Mise vs. hotel LMS (learning management systems)
+
+While an LMS hosts training videos for onboarding, it cannot manage active shift workflows. Mise replaces passive learning with live execution, guiding staff step by step through timed daily tasks on the floor. [Read the full Mise vs. hotel LMS comparison](/compare/mise-vs-hotel-lms).
+
+### 2. Mise vs. Excel spreadsheets
+
+Excel logs are static, reactive, and easily pencil-whipped hours after a shift ends. Mise schedules tasks, flags delayed work, and captures mandatory visual evidence in real time. [Read the full Mise vs. Excel comparison](/compare/mise-vs-excel).
+
+### 3. Mise vs. WhatsApp groups
+
+Messaging apps lead to buried photos, missed guest requests, and no searchable compliance record. Mise structures shift communication into departmental workflows with clear accountability. [Read the full Mise vs. WhatsApp comparison](/compare/mise-vs-whatsapp).
+
+### 4. Service execution platform vs. simple checklist apps
+
+Basic task apps only record whether a box was clicked. Mise builds in quality assurance through photo-proof gates, timed SOP execution, and supervisor evidence. [Read the full SEP vs. checklist app breakdown](/compare/execution-platform-vs-checklist-app).
+
+## Why hotel leaders choose Mise
+
+- **Real-Time Operational Visibility:** Know which tasks are running, complete, or delayed across housekeeping, front desk, F&B, and engineering.
+- **Audit Confidence:** Replace paper binder panic with a searchable digital audit trail, available any time.
+- **No Technical Friction:** Deploy on personal or hotel-provided phones, with zero PMS integration needed.
+
+Learn [how Mise works](/how-it-works) across all hotel departments.
+`,
+  },
+  "/glossary": {
+    lede: "Clear definitions for hotel leaders, operations managers, and hospitality innovators.",
+    body: `
+## Navigating modern hotel operations
+
+As hotel operations move away from paper checklists, static PDF manuals, and passive video training, new terms are emerging to describe floor productivity and quality control. [Mise](/) has compiled this glossary to help General Managers, HR Directors, and Operations Heads use the language of service execution platforms (SEP).
+
+## Core operations and software terms
+
+### Service execution platform (SEP)
+
+A software category built to manage, enforce, and verify daily operational task completion in real time. Unlike passive training tools or task management apps, an SEP uses timed workflows, mandatory photo evidence, and remote supervisor sign-offs on staff phones. [Explore the service execution platform definition](/glossary/service-execution-platform).
+
+### Ghost SOP
+
+A Standard Operating Procedure (SOP) that officially exists in corporate binders or PDF drives but is effectively invisible on the floor, because staff skip or shortcut steps during daily shifts. [Learn how to eliminate ghost SOPs](/glossary/ghost-sop).
+
+### Photo gate
+
+A mandatory verification step in a task that requires staff to upload live visual proof of finished work before the task can close, preventing "pencil-whipped" checkmarks. [Read about photo gate verification](/glossary/photo-gate).
+
+### Timed task
+
+An operational assignment delivered to a staff phone with a target time and a live countdown, so late work is visible to supervisors. [Learn more about timed tasks](/glossary/timed-task).
+
+## Operational risk and compliance terms
+
+### Audit ambush
+
+The panic created when unannounced brand inspectors or health authorities arrive, exposing missing paper logs and unverified shift checks. [Read about overcoming the audit ambush](/glossary/audit-ambush).
+
+### Continuous audit readiness
+
+An operational state where a hotel keeps up with brand standards and health regulations every day of the year, backed by a timestamped digital service record. [Explore audit readiness](/glossary/audit-ready).
+
+### Supervisor sign-off
+
+The digital approval in which supervisors verify task completion and review uploaded photo proof remotely, without creating floor bottlenecks. [Discover digital supervisor sign-offs](/glossary/supervisor-sign-off).
+
+## Departmental and workflow terms
+
+- **[Mise en place](/glossary/mise-en-place):** The culinary idea of "everything in its place", applied to departmental shift readiness and setup.
+- **[Shift handover](/glossary/shift-handover):** The structured transfer of ongoing tasks, logs, and notes between outgoing and incoming teams.
+- **[Service record](/glossary/service-record):** A digital log capturing the time, staff member, photo proof, and supervisor sign-off for each completed task.
+- **[Operating brief](/glossary/operating-brief):** Daily shift instructions delivered to staff phones at the start of a shift.
+- **[Digital SOP](/glossary/digital-sop):** A mobile-first standard operating procedure that guides staff through a task step by step.
+
+Learn [how Mise works](/how-it-works) to apply these concepts across your hotel.
+`,
+  },
   "/problems/supervisor-bottleneck": {
     lede: "Transition from micromanagement and physical inspections to photo-verified, self-executing hotel operations.",
     body: `
@@ -614,3 +792,17 @@ export function withSepCopy<T extends { meta: { path: string }; lede: string; bo
   const copy = sepCopy[page.meta.path];
   return copy ? { ...page, lede: `${copy.lede} ${page.lede}`, body: `${copy.body}\n${page.body}` } : page;
 }
+
+/** SEO-pack FAQs for the comparison and glossary hubs. */
+export const hubFaqs: Record<string, { q: string; a: string }[]> = {
+  "/compare": [
+    { q: "Can Mise replace our existing paper SOP binders?", a: "Yes. Your existing paper SOPs are set up in Mise as clear, timed mobile tasks that guide staff through their shift." },
+    { q: "Is Mise difficult to deploy compared to complex hotel software?", a: "No. Mise is a standalone Service Execution Platform with zero PMS integration required, so the first standards can run within days of starting a pilot." },
+    { q: "How does photo proof improve operational accountability?", a: "Photo proof means staff complete work to brand standard before a task can be marked finished, preventing missed steps and unearned checkmarks." },
+  ],
+  "/glossary": [
+    { q: "How is a Service Execution Platform different from a PMS?", a: "A Property Management System (PMS) manages room inventory, reservations, and billing. A Service Execution Platform (SEP) manages live floor tasks, SOP compliance, and shift execution, with zero PMS integration needed." },
+    { q: "What causes \"pencil-whipping\" in paper hotel checklists?", a: "Pencil-whipping happens when staff sign off paper checklists in bulk at the end of a shift without actually doing the work, usually because there is no visual verification." },
+    { q: "Why is photo proof essential for digital hotel SOPs?", a: "Photo proof provides clear visual evidence that cleaning, maintenance, or guest prep tasks were done to brand standard before a task can be closed." },
+  ],
+};

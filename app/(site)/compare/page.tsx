@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HubPage from "@/components/page/HubPage";
 import { compareHubMeta, comparisons } from "@/content/compare";
+import { hubFaqs, sepCopy } from "@/content/sep-copy";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata(compareHubMeta);
@@ -17,7 +18,7 @@ export default function CompareHub() {
   return (
     <HubPage
       meta={compareHubMeta}
-      lede="Hotels compare Mise with the tools they already use for standards and shifts: training systems, spreadsheets, WhatsApp groups and checklist apps. Each comparison below is answer-first and specific about what each tool actually records."
+      lede={`${sepCopy["/compare"].lede} Hotels compare Mise with the tools they already use for standards and shifts: training systems, spreadsheets, WhatsApp groups and checklist apps. Each comparison below is answer-first and specific about what each tool actually records.`}
       tldr="Training systems record attendance and completion; spreadsheets record what someone typed later; WhatsApp records messages; checklist apps record ticks. Mise records execution: existing standards run as timed tasks, key steps need photo evidence, and each shift builds an audit-ready service record."
       cardsTitle="Service execution platform comparisons"
       cards={comparisons.map((c) => ({
@@ -27,7 +28,8 @@ export default function CompareHub() {
         body: c.short,
         allowLms: c.slug === "mise-vs-hotel-lms",
       }))}
-      body={body}
+      body={sepCopy["/compare"].body + body}
+      faqs={hubFaqs["/compare"]}
     />
   );
 }

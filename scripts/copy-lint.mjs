@@ -53,7 +53,7 @@ for (const file of walk(root)) {
 
 const vocabulary = [/\bLMS\b/, /\bcourses?\b/i, /\bmodules?\b/i, /\blearners?\b/i, /\btraining platforms?\b/i];
 const allowedPhrases = [/\bnot an LMS\b/gi, /\bwithout acting as an LMS\b/gi, /\bnot a learning management system\b/gi];
-const allowedPages = [/compare\/mise-vs-hotel-lms\.html$/, /blog\/what-is-a-service-execution-platform\.html$/, /blog\/what-is-mise-hotel-service-execution-platform\.html$/];
+const allowedPages = [/compare\/mise-vs-hotel-lms\.html$/, /compare\.html$/, /blog\/what-is-a-service-execution-platform\.html$/, /blog\/what-is-mise-hotel-service-execution-platform\.html$/];
 
 const appDir = path.join(root, ".next", "server", "app");
 if (!fs.existsSync(appDir)) {

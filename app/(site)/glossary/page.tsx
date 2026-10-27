@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/page/PageHero";
-import { FinalCta, JsonLd, TldrBox } from "@/components/ui/blocks";
+import { FaqList, FinalCta, JsonLd, TldrBox } from "@/components/ui/blocks";
 import { glossary, glossaryHubMeta } from "@/content/glossary";
-import { baseNodes, breadcrumbNode, definedTermSetNode, webPageNode } from "@/lib/schema";
+import { hubFaqs, sepCopy } from "@/content/sep-copy";
+import { createLinkState } from "@/lib/links";
+import { Markdown } from "@/lib/md";
+import { baseNodes, breadcrumbNode, definedTermSetNode, faqNode, webPageNode } from "@/lib/schema";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata(glossaryHubMeta);
@@ -19,6 +22,7 @@ export default function GlossaryHub() {
           webPageNode({ path: "/glossary", name: glossaryHubMeta.title, description: glossaryHubMeta.description, kind: "CollectionPage", updated: glossaryHubMeta.updated }),
           breadcrumbNode("/glossary", crumbs),
           definedTermSetNode(glossary),
+          faqNode("/glossary", hubFaqs["/glossary"]),
         ]}
       />
       <PageHero
@@ -26,7 +30,7 @@ export default function GlossaryHub() {
         eyebrow={glossaryHubMeta.eyebrow}
         title={glossaryHubMeta.h1}
         updated={glossaryHubMeta.updated}
-        lede={<p>The hotel service execution glossary: short, self-contained definitions of the terms Mise uses, from service execution platform to photo gate, timed task and service record.</p>}
+        lede={<p>{sepCopy["/glossary"].lede} The hotel service execution glossary: short, self-contained definitions of the terms Mise uses, from service execution platform to photo gate, timed task and service record.</p>}
       />
       <div className="container-page pb-20">
         <div className="max-w-3xl">
@@ -34,6 +38,9 @@ export default function GlossaryHub() {
             Service execution is the discipline of making hotel standards run on every shift and proving that they did. These
             definitions describe its building blocks: standards, timed tasks, evidence and the service record they produce.
           </TldrBox>
+        </div>
+        <div className="mt-12 max-w-3xl">
+          <Markdown source={sepCopy["/glossary"].body} state={createLinkState("/glossary")} />
         </div>
         <h2 className="mt-14 font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">Hotel service execution glossary, A to Z</h2>
         <dl className="mt-6 grid gap-4 md:grid-cols-2">
@@ -48,6 +55,12 @@ export default function GlossaryHub() {
             </div>
           ))}
         </dl>
+        <section aria-labelledby="glossary-faq" className="mt-16 max-w-3xl">
+          <h2 id="glossary-faq" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
+            Frequently asked questions about hotel terms
+          </h2>
+          <FaqList items={hubFaqs["/glossary"]} className="mt-6" />
+        </section>
       </div>
       <FinalCta location="glossary" />
     </>

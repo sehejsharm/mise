@@ -332,11 +332,17 @@ export function termBySlug(slug: string) {
 
 export const glossaryHubMeta = {
   path: "/glossary",
-  title: "Hotel Service Execution Glossary: Key Terms | Mise",
+  title: "Hotel Operations & Service Execution Glossary | Mise",
   description:
-    "The hotel service execution glossary: service execution platform, ghost SOP, photo gate, timed task, service record, readiness and more. Book a demo.",
-  h1: "Hotel service execution glossary: key terms defined",
+      "The hotel service execution glossary: key terms from service execution platforms (SEP) and ghost SOPs to photo gates and audit readiness.",
+  h1: "Hotel Service Execution & Operations Glossary",
   primaryKeyword: "hotel service execution glossary",
+  secondaryKeywords: ["hotel service execution glossary"],
   eyebrow: "Glossary",
-  updated: "2026-10-01",
+  ogTitle: "Hotel Operations & Service Execution Glossary | Mise SEP",
+    ogDescription: "Modern hotel operations terminology: how service execution platforms, timed tasks, photo-proof gates, and digital SOPs remove floor bottlenecks.",
+    ogImageAlt: "Mise Hotel Service Execution Platform Operations & SOP Terminology Glossary",
+    twitterTitle: "Hotel Operations & Service Execution Glossary | Mise",
+    twitterDescription: "Your guide to hotel operations terms: service execution platforms, photo gates, ghost SOPs, timed tasks, and continuous audit readiness.",
+    updated: "2026-10-27",
 };

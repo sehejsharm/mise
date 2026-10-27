@@ -332,11 +332,17 @@ export function comparisonBySlug(slug: string) {
 
 export const compareHubMeta = {
   path: "/compare",
-  title: "Service Execution Platform Comparisons | Mise",
+  title: "Compare Hotel Operations Software & Checklist Apps | Mise",
   description:
-    "Service execution platform comparisons: Mise vs training systems, Excel trackers, WhatsApp groups and checklist apps, and what each one records. Book a demo.",
-  h1: "Service execution platform comparisons: what each tool actually records",
-  primaryKeyword: "service execution platform comparison",
+      "Compare Mise with hotel LMS tools, paper checklists, Excel and WhatsApp, and see why hotels choose a standalone Service Execution Platform. Zero PMS.",
+  h1: "Compare Mise: The Service Execution Platform Built for Hotels",
+  primaryKeyword: "compare Mise",
+  secondaryKeywords: ["service execution platform comparison"],
   eyebrow: "Compare",
-  updated: "2026-09-29",
+  ogTitle: "Compare Mise vs. Hotel LMS, Excel & Checklist Apps | Mise SEP",
+    ogDescription: "See how Mise compares to traditional hotel tools, video LMS platforms, WhatsApp groups, and paper SOPs: real-time photo execution vs. passive tracking.",
+    ogImageAlt: "Mise Hotel Service Execution Platform Comparison Chart vs LMS, Excel, and WhatsApp",
+    twitterTitle: "Compare Hotel Operations Tools & Software | Mise SEP",
+    twitterDescription: "Why hotel teams choose service execution over passive LMS training, messy WhatsApp chats, or pencil-whipped paper binders, no PMS required.",
+    updated: "2026-10-27",
 };
