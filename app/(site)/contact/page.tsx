@@ -30,7 +30,7 @@ export default function ContactPage() {
         title={meta.h1}
         lede={<p>Questions about Mise, a pilot, a partnership or press? Write to the founding team. If you already know the pain, the fastest route is a 15-minute demo.</p>}
       />
-      <div className="container-page grid gap-10 pb-24 lg:grid-cols-[1.2fr_0.8fr]">
+      <div className="container-page grid gap-10 pb-16 lg:grid-cols-[1.2fr_0.8fr]">
         <ContactForm />
         <aside className="space-y-4">
           <a href={`mailto:${contact.email}`} data-track-location="contact-page" className="flex items-center gap-4 rounded-2xl border border-line bg-surface/60 p-5 hover:border-gold/50">
@@ -60,6 +60,32 @@ export default function ContactPage() {
           </p>
         </aside>
       </div>
+      <section aria-labelledby="find-us" className="container-page pb-24">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+          <div>
+            <h2 id="find-us" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
+              Find us
+            </h2>
+            <address className="mt-4 text-[1.02rem] leading-relaxed text-muted not-italic">
+              Mise · Hotel Service Execution Platform
+              <br />
+              {contact.address.street}
+              <br />
+              {contact.address.city} {contact.address.postalCode}, {contact.address.region}, India
+            </address>
+          </div>
+          <div className="overflow-hidden rounded-2xl border border-line shadow-float">
+            <iframe
+              src={contact.address.mapEmbed}
+              title="Map showing Mise, NIBM Post Office Road, Pune"
+              className="block aspect-[4/3] w-full sm:aspect-[16/9]"
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

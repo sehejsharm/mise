@@ -57,6 +57,9 @@ export const contact = {
     region: "Maharashtra",
     postalCode: "411048",
     country: "IN",
+    /** Google Maps embed for the Mise business listing. */
+    mapEmbed:
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2406174312964!2d73.8994843!3d18.472757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba9cc4583a9%3A0xde1933999f1e19e9!2sMise%20-%20Hotel%20Service%20Execution%20Platform!5e0!3m2!1sen!2sae!4v1793252453096!5m2!1sen!2sae",
   },
 } as const;
 

@@ -46,7 +46,7 @@ function csp(extra: { script?: string[]; connect?: string[]; img?: string[] } = 
     "img-src": ["'self'", "data:", "blob:", ...google.img, ...(extra.img ?? [])],
     "font-src": ["'self'", "data:"],
     "connect-src": ["'self'", ...google.connect, ...(extra.connect ?? []), ...(isDev ? ["ws:"] : [])],
-    "frame-src": ["'self'", ...bookingOrigins()],
+    "frame-src": ["'self'", "https://www.google.com", ...bookingOrigins()],
     "frame-ancestors": ["'self'"],
     "base-uri": ["'self'"],
     "form-action": ["'self'"],
