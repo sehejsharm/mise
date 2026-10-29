@@ -86,6 +86,16 @@ export default function Footer() {
                   {contact.address.region}, India
                 </address>
               </li>
+              <li className="pt-2">
+                <iframe
+                  src={contact.address.mapEmbed}
+                  title="Map showing Mise, NIBM Post Office Road, Pune"
+                  className="block aspect-[4/3] w-full max-w-[300px] rounded-xl border border-line"
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </li>
             </ul>
           </nav>
         </div>
