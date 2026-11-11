@@ -4,10 +4,10 @@
 
 ## How this inventory was produced
 
-The build sandbox's network policy blocks `focusrealm.org`, `fr2-b6s.pages.dev` and `drive.google.com`, so a live crawl was not possible. Two substitutes were used instead:
+The build sandbox's network policy blocks `focusrealm.org`, the private prototype and `drive.google.com`, so a live crawl was not possible. Two substitutes were used instead:
 
 - **Site source.** The Next.js source of the marketing site was read statically from `github.com/sehejsharm/focusrealm`, branch `claude/focus-realm-positioning-jwfvz7` (commit `097dea0`, 2026-09-28, "Add the SEO + GEO keyword master list across the site"). The README for that branch calls it "the public site for Focus Realm Hospitality". The `deploy_ready_fb_2026-09-03*` branches are older Firebase snapshots of the same site.
-- **Product screenshots.** Real captures of the live prototype (`fr2-b6s.pages.dev`) live in that branch's `assets/platform/`. These are the "product imagery" source for the new site. Playwright could not reach the prototype.
+- **Product screenshots.** Real captures of the live prototype (the private prototype) live in that branch's `assets/platform/`. These are the "product imagery" source for the new site. Playwright could not reach the prototype.
 
 > Re-run a live crawl from a machine that can reach focusrealm.org before launch, to confirm that production matches this branch. `TODO(sehej)`
 
