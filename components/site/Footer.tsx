@@ -61,8 +61,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href={brand.prototypeUrl} className={linkClass} rel="noopener" target="_blank">
-                  Live prototype
+                <a href={brand.experienceUrl} className={linkClass} rel="noopener" target="_blank">
+                  Experience Mise
                   <Icon name="arrowUpRight" size={13} className="ml-1 inline" />
                   <span className="sr-only"> (opens in a new tab)</span>
                 </a>
@@ -134,6 +134,24 @@ export default function Footer() {
                 className="grid size-10 place-items-center rounded-full border border-line-strong text-muted hover:border-gold hover:text-gold-ink"
               >
                 <Icon name="linkedin" size={17} />
+              </a>
+              <a
+                href="https://www.youtube.com/@Mise-Hotels"
+                aria-label="Mise on YouTube (opens in a new tab)"
+                rel="noopener"
+                target="_blank"
+                className="grid size-10 place-items-center rounded-full border border-line-strong text-muted hover:border-gold hover:text-gold-ink"
+              >
+                <Icon name="youtube" size={17} />
+              </a>
+              <a
+                href="https://www.instagram.com/misehotel/"
+                aria-label="Mise on Instagram (opens in a new tab)"
+                rel="noopener"
+                target="_blank"
+                className="grid size-10 place-items-center rounded-full border border-line-strong text-muted hover:border-gold hover:text-gold-ink"
+              >
+                <Icon name="instagram" size={17} />
               </a>
               <Link
                 href="/blog/rss.xml"

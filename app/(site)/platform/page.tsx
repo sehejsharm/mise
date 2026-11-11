@@ -65,8 +65,8 @@ export default function PlatformPage() {
           <ButtonLink href="/demo" arrow trackLocation="platform-hero">
             Book a 15-min demo
           </ButtonLink>
-          <ButtonLink href={brand.prototypeUrl} variant="ghost">
-            Walk the live prototype
+          <ButtonLink href={brand.experienceUrl} variant="ghost">
+            Experience Mise
           </ButtonLink>
         </div>
       </PageHero>

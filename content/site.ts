@@ -40,7 +40,8 @@ export const brand = {
   notAnLms: "A service execution platform — not a learning management system.",
   founded: "2024",
   areaServed: ["India", "Sri Lanka", "South Asia"],
-  prototypeUrl: "https://fr2-b6s.pages.dev/",
+  /** Interactive "Experience Mise" journey (public). */
+  experienceUrl: "https://experience-mise.vercel.app/#journey",
   logoPath: "/brand/mise-logo.svg",
 } as const;
 
@@ -59,13 +60,15 @@ export const contact = {
     country: "IN",
     /** Google Maps embed for the Mise business listing. */
     mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.2406174312964!2d73.8994843!3d18.472757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eba9cc4583a9%3A0xde1933999f1e19e9!2sMise%20-%20Hotel%20Service%20Execution%20Platform!5e0!3m2!1sen!2sae!4v1793252453096!5m2!1sen!2sae",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.232480055312!2d73.9007192!3d18.473125800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebb786f96201%3A0x3613d38e5193e491!2sMise%20Hotel%20Software!5e0!3m2!1sen!2sae!4v1794375920301!5m2!1sen!2sae",
   },
 } as const;
 
 /** Company social profiles. Emitted as Organization.sameAs once they exist. */
 export const socialProfiles: { network: string; href: string }[] = [
   { network: "LinkedIn", href: "https://www.linkedin.com/company/misehotel" },
+  { network: "YouTube", href: "https://www.youtube.com/@Mise-Hotels" },
+  { network: "Instagram", href: "https://www.instagram.com/misehotel/" },
 ];
 
 /* ── Founders ─────────────────────────────────────────────────────────── */
