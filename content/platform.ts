@@ -160,16 +160,15 @@ export const roleInterfaces: RoleInterface[] = [
 
 export const platformMeta = {
   path: "/platform",
-  title: "Hotel Service Execution Platform (SEP) Features | Mise",
-  description:
-    "The hotel service execution platform (SEP): your existing standards run as timed tasks on staff phones with photo proof and supervisor evidence. No PMS needed.",
+  title: "Hotel Operations Software Features & Mobile Tools | Mise Hotel",
+  description: "Discover Mise Hotel, hotel operations software and a housekeeping management platform. Run daily tasks with real-time photo proof - zero PMS required.",
   h1: "The Service Execution Platform (SEP) Built for Hotel Operations",
-  ogTitle: "How Mise Eliminates Ghost SOPs & Supervisor Bottlenecks Across Your Property",
-  ogDescription: "Run your hotel's existing standards as timed tasks on staff phones with photo proof and supervisor evidence across every department. No PMS integration required.",
-  ogImageAlt: "Mise Hotel Service Execution Platform Dashboard and Staff Mobile App Interface",
-  twitterTitle: "Hotel Service Execution Platform (SEP) Features & Tools | Mise",
-  twitterDescription: "Discover how Mise implements your hotel's existing standards as timed tasks with real-time photo proof, supervisor evidence, and zero PMS setup.",
-  primaryKeyword: "hotel service execution platform",
+  ogTitle: "Hotel Operations Software & Task Management Platform | Mise Hotel",
+  ogDescription: "Run your hotel's daily standards as timed tasks on staff phones with photo proof and supervisor evidence across every department - zero PMS integration required.",
+  ogImageAlt: "Mise Hotel Management Software Dashboard and Staff Mobile App Interface",
+  twitterTitle: "Hotel Operations Software Features & Mobile Tools | Mise Hotel",
+  twitterDescription: "Discover how Mise Hotel implements your property's existing standards as timed tasks with real-time photo proof, supervisor evidence, and zero PMS setup.",
+  primaryKeyword: "hotel operations software",
   metaKeywords: [
     "service execution platform",
     "SEP for hotels",

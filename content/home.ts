@@ -8,11 +8,10 @@ import { departmentTicker } from "@/content/departments";
 
 export const homeMeta = {
   path: "/",
-  title: "Hotel Service Execution Platform (SEP) & Timed Task Tracking | Mise",
-  description:
-    "Mise is the service execution platform (SEP) for hotels. Run your existing standards as timed tasks with photo proof across every department. No PMS needed.",
+  title: "Hotel Management Software & Operations App | Mise Hotel",
+  description: "Discover Mise Hotel, hotel management software and a housekeeping management platform. Run daily hotel tasks with real-time photo proof - zero PMS required.",
   h1: "The service execution platform for hotels. Every department, every shift.",
-  primaryKeyword: "service execution platform",
+  primaryKeyword: "hotel management software",
   secondaryKeywords: [
     "hotel service execution platform",
     "SEP for hotels",
@@ -23,13 +22,11 @@ export const homeMeta = {
     "hotel operations software",
     "Mise by Focus Realm",
   ],
-  ogTitle: "Service Execution Platform (SEP) for Hotels | Mise",
-  ogDescription:
-    "Implement your hotel's existing standards as timed tasks with photo proof and supervisor evidence. Run every department without PMS integration.",
-  ogImageAlt: "Mise Service Execution Platform Interface",
-  twitterTitle: "Service Execution Platform (SEP) for Hotels | Mise",
-  twitterDescription:
-    "Run your hotel's existing SOPs as timed tasks on staff phones with photo proof and supervisor evidence. Eliminate ghost SOPs across all departments.",
+  ogTitle: "Hotel Management Software | Mise Hotel",
+  ogDescription: "Transform hotel standards into timed mobile tasks with mandatory photo proof. Run housekeeping and operations seamlessly with zero PMS integration required.",
+  ogImageAlt: "Mise Hotel Management Software Dashboard & Mobile App Interface",
+  twitterTitle: "Hotel Management Software & Operations Platform | Mise Hotel",
+  twitterDescription: "Discover hotel management software and housekeeping solutions. Eliminate unverified tasks with timed mobile workflows and photo proof.",
   eyebrow: "Service Execution Platform",
   updated: "2026-10-06",
   priority: 1,

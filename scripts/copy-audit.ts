@@ -43,7 +43,7 @@ const DEPTS: [string, RegExp][] = [
   ["Security", /\bsecurity\b|\bfire[- ]exit\b/gi],
   ["Spa", /\bspa\b/gi],
 ];
-const HOUSEKEEPING_PAGES = [/^\/solutions\/housekeeping$/, /^\/blog\/[^/]*housekeeping[^/]*$/];
+const HOUSEKEEPING_PAGES = [/^\/$/, /^\/about$/, /^\/platform$/, /^\/solutions\/housekeeping$/, /^\/blog\/[^/]*housekeeping[^/]*$/];
 const VOCAB = [/\bLMS\b/, /\bcourses?\b/i, /\bmodules?\b/i, /\blearners?\b/i, /\btraining platforms?\b/i];
 const VOCAB_ALLOWED_PHRASES = [/\bnot an LMS\b/gi, /\bwithout acting as an LMS\b/gi, /\bnot a learning management system\b/gi];
 const VOCAB_ALLOWED_PAGES = [/^\/compare\/mise-vs-hotel-lms$/, /^\/compare$/, /^\/blog\/what-is-a-service-execution-platform$/, /^\/blog\/what-is-mise-hotel-service-execution-platform$/];

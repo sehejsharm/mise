@@ -24,19 +24,16 @@ export const roiMeta: PageMeta = {
 
 export const aboutMeta: PageMeta = {
   path: "/about",
-  title: "About Mise | Hotel Service Execution Platform (SEP)",
-  description:
-    "As the service execution platform (SEP) for hotels, Mise runs your existing standards as timed tasks with photo proof across every department. No PMS needed.",
+  title: "About Us | Hotel Operations & Housekeeping Software | Mise Hotel",
+  description: "Learn how Mise Hotel transforms hotel operations. As hotel management software, Mise Hotel runs daily tasks with photo proof - zero PMS required.",
   h1: "Reimagining Hotel Service Execution",
-  primaryKeyword: "hotel service execution",
+  primaryKeyword: "hotel operations software",
   secondaryKeywords: ["service execution platform", "SEP", "About Mise", "Mise by Focus Realm"],
-  ogTitle: "About Mise | The Service Execution Platform (SEP) for Hotels",
-  ogDescription:
-    "Discover how Mise implements your hotel's existing standards as timed tasks on staff phones with photo proof and supervisor evidence across every department.",
-  ogImageAlt: "Mise Service Execution Platform Team & Dashboard Interface",
-  twitterTitle: "About Mise | The Service Execution Platform (SEP) for Hotels",
-  twitterDescription:
-    "Learn how Mise helps hotels run existing standards as timed tasks on staff phones with photo proof and supervisor evidence. Eliminate ghost SOPs without PMS integration.",
+  ogTitle: "About Us | Hotel Management & Operations Software | Mise Hotel",
+  ogDescription: "Discover how Mise Hotel implements your property's existing standards as timed tasks on staff phones with photo proof and supervisor evidence across every department.",
+  ogImageAlt: "Mise Hotel Operations Software Team & Dashboard Interface",
+  twitterTitle: "About Us | Hotel Operations & Housekeeping Software | Mise Hotel",
+  twitterDescription: "Learn how Mise Hotel helps hotels run existing standards as timed tasks on staff phones with photo proof and supervisor evidence. Eliminate unverified tasks without PMS integration.",
   eyebrow: "About Mise",
   updated,
   priority: 0.8,

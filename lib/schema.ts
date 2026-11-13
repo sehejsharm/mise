@@ -43,9 +43,9 @@ export function organizationNode(): Organization {
   return {
     "@type": "Organization",
     "@id": ids.org,
-    name: brand.name,
+    name: "Mise Hotel",
     legalName: brand.legalName,
-    alternateName: ["Mise Hotel", "misehotel", "Mise SEP", "Mise service execution platform", "Mise by Focus Realm"],
+    alternateName: ["Mise", "misehotel", "Mise SEP", "Mise service execution platform", "Mise by Focus Realm"],
     url: siteUrl,
     logo: {
       "@type": "ImageObject",
@@ -57,7 +57,7 @@ export function organizationNode(): Organization {
     },
     image: { "@id": ids.logo },
     description:
-      "Mise is the service execution platform (SEP) for hotels. It implements existing hotel standards as timed tasks with photo proof and supervisor evidence across all departments.",
+      "Mise Hotel provides advanced hotel management software and housekeeping management solutions designed for modern hospitality teams.",
     email: contact.email,
     telephone: contact.phone,
     address: {
@@ -105,9 +105,9 @@ export function websiteNode(): WebSite {
     "@type": "WebSite",
     "@id": ids.website,
     url: siteUrl,
-    name: brand.name,
-    alternateName: ["Mise Hotel", "misehotel.com"],
-    description: "Hotel Service Execution Platform (SEP)",
+    name: "Mise Hotel",
+    alternateName: ["Mise", "misehotel.com"],
+    description: "Hotel Management Software & Operations Platform",
     inLanguage: "en-IN",
     publisher: { "@id": ids.org },
     potentialAction: {
@@ -126,31 +126,30 @@ export function softwareNode(): SoftwareApplication {
   return {
     "@type": "SoftwareApplication",
     "@id": ids.software,
-    name: "Mise Service Execution Platform",
+    name: "Mise Hotel Management Software",
     url: siteUrl,
     description:
-      "Mise is the service execution platform (SEP) for hotels. It implements the SOPs your hotel already has, running them as timed tasks on staff phones in every department with photo proof and supervisor evidence.",
+      "Mise Hotel is hotel management software that transforms property standards into timed mobile tasks with mandatory photo proof across housekeeping and operations.",
     applicationCategory: "BusinessApplication",
-    applicationSubCategory: "Hotel Service Execution Platform (SEP)",
+    applicationSubCategory: "Hotel Operations Software",
     ...({ brand: { "@id": ids.org } } as object),
     keywords:
-      "service execution platform, SEP for hotels, hotel service execution platform, hotel standards execution, hotel departmental workflow software, hotel operations task management, photo proof task tracking",
+      "hotel management software, hotel operations software, housekeeping management software, service execution platform, SEP for hotels, hotel standards execution, hotel departmental workflow software, hotel operations task management, photo proof task tracking",
     operatingSystem: "iOS, Android, Web",
     featureList: [
-      "Runs existing hotel standards as timed tasks on staff phones",
-      "Captures real-time photo proof and supervisor evidence",
-      "Builds an audit-ready service record automatically",
-      "Supports every hotel department (Front Desk, Housekeeping, Maintenance, F&B)",
-      "Zero PMS integration required",
-      "Not an LMS",
+      "Timed mobile task schedules for hotel staff",
+      "Mandatory photo proof and visual verification",
+      "Real-time supervisor sign-offs and remote oversight",
+      "Housekeeping management software features for room turnarounds",
+      "Zero PMS integration required for rapid deployment",
     ],
     audience: {
       "@type": "Audience",
-      audienceType: "Hotel General Managers, Directors of Operations, Department Heads",
+      audienceType: "Hotel General Managers, Directors of Operations, Property Owners",
     },
     offers: {
       "@type": "Offer",
-      description: "Custom hotel property subscription. Book a 15-min demo for details.",
+      description: "Custom property subscription. Book a 15-minute demo.",
       priceCurrency: "INR",
     },
     publisher: { "@id": ids.org },
