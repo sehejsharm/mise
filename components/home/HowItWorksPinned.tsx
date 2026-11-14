@@ -119,7 +119,7 @@ export default function HowItWorksPinned() {
                 })}
               </ol>
               <div className="mt-8">
-                <ArrowLink href="/how-it-works">How the service execution platform works</ArrowLink>
+                <ArrowLink href="/platform">How the service execution platform works</ArrowLink>
               </div>
             </div>
             <div className="hidden justify-center lg:flex">

@@ -204,23 +204,6 @@ export const platformFaqs: Faq[] = [
   },
 ];
 
-export const howItWorksMeta = {
-  path: "/how-it-works",
-  title: "How Mise Works | Hotel Service Execution Platform (SEP)",
-  description:
-    "See how Mise works: the hotel service execution platform (SEP) runs existing standards as timed tasks on staff phones with photo proof and supervisor evidence.",
-  h1: "How Mise Powers Hotel Service Execution",
-  ogTitle: "From Written Standards to Daily Floor Execution in 4 Simple Steps | Mise",
-  ogDescription: "Learn how Mise implements your hotel's existing standards as timed tasks on staff phones with real-time photo proof, remote supervisor sign-offs, and no PMS setup.",
-  ogImageAlt: "Mise Service Execution Platform Step-by-Step Workflow Diagram",
-  twitterTitle: "How Mise Works | Hotel Service Execution Platform (SEP)",
-  twitterDescription: "Discover how Mise turns existing hotel SOPs into timed tasks on staff phones with photo proof and supervisor evidence.",
-  primaryKeyword: "hotel service execution",
-  secondaryKeywords: ["how a service execution platform works", "timed task hotel", "hotel photo evidence app", "hotel supervisor sign-off app"],
-  eyebrow: "One loop, four moves",
-  updated: "2026-10-18",
-  priority: 0.9,
-};
 
 export const loopSteps = [
   {
@@ -261,21 +244,3 @@ export const loopSteps = [
   },
 ] as const;
 
-export const howItWorksFaqs: Faq[] = [
-  {
-    q: "What is a timed task in a hotel?",
-    a: "A timed task is a hotel standard delivered as a unit of work on a staff phone, with ordered steps, a target time and a live countdown. It replaces reading a standard with doing it, step by step, at the moment of work.",
-  },
-  {
-    q: "How does the hotel photo evidence app work?",
-    a: "Steps marked as photo gates cannot close until a photo is taken from inside the task. Each photo is stored with the room, person, step, time and standard version, so evidence exists for every gated step by design.",
-  },
-  {
-    q: "How does supervisor sign-off work in Mise?",
-    a: "Supervisors review task evidence on the manager dashboard and sign off in one action. Sign-off is recorded against the task with name and time, whether the supervisor verified remotely from photos or after an in-person inspection.",
-  },
-  {
-    q: "What does a pilot look like?",
-    a: "One property, starting with the department where standards slip most: front office, housekeeping, F&B, kitchen or engineering. We convert your most important standards into timed tasks with you, your team runs them on real shifts, and the service record fills with evidence from the first days. Scope and pricing are agreed after the demo.",
-  },
-];

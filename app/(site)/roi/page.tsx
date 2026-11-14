@@ -90,7 +90,7 @@ export default function RoiPage() {
               { href: "/problems/attrition-bleed", label: "The attrition bleed", note: "What turnover really takes." },
               { href: "/problems/supervisor-bottleneck", label: "The supervisor bottleneck", note: "Where verification time goes." },
               { href: "/audit-readiness", label: "Hotel audit readiness", note: "Audit prep as a filter." },
-              { href: "/how-it-works#pilot", label: "How a pilot measures it", note: "One property, real shifts." },
+              { href: "/faq", label: "How a pilot measures it", note: "One property, real shifts." },
             ]}
           />
         </div>

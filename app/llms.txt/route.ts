@@ -53,7 +53,6 @@ ${audiences.map((a) => `- ${a.name}: ${a.card}`).join("\n")}
 ${link("/", "Mise: the service execution platform (SEP) for hotels", "What Mise is and how it works, for every department.")}
 ${link("/solutions", "A service execution platform for every department", "Solutions by department and by property type.")}
 ${link("/platform", "Platform", "Staff app, manager dashboard and standards workspace.")}
-${link("/how-it-works", "How it works", "Standard → Timed task → Evidence → Service record.")}
 ${link(digitalSop.meta.path, "How to put hotel standards into execution", "Step-by-step pillar guide.")}
 ${link(auditReadiness.meta.path, "Hotel audit readiness", "Building an audit-ready service record every shift.")}
 ${link("/problems", "The six hotel operations problems", "The chain from supervisor bottleneck to audit ambush.")}

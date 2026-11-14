@@ -169,7 +169,6 @@ export const demoProperty = {
 
 export const primaryNav = [
   { href: "/platform", label: "Platform" },
-  { href: "/how-it-works", label: "How it works" },
   { href: "/problems", label: "Problems" },
   { href: "/solutions", label: "Solutions", match: "/solutions", menu: true },
   { href: "/blog", label: "Blog" },
@@ -204,7 +203,6 @@ export const footerColumns: { heading: string; links: FooterLink[] }[] = [
       { href: "/platform#manager", label: "Manager dashboard" },
       { href: "/platform#standards", label: "Standards workspace" },
       { href: "/platform#service-record", label: "Service record" },
-      { href: "/how-it-works", label: "How it works" },
       { href: "/roi", label: "ROI calculator" },
       { href: "/for/hr-directors", label: "For HR Directors" },
       { href: "/for/general-managers", label: "For General Managers" },

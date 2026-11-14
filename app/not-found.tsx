@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 const links = [
   { href: "/", label: "Home" },
   { href: "/platform", label: "The platform" },
-  { href: "/how-it-works", label: "How it works" },
   { href: "/problems", label: "The six hotel operations problems" },
   { href: "/standards-to-execution", label: "Standards to execution" },
   { href: "/blog", label: "Blog" },

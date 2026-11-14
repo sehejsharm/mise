@@ -143,7 +143,7 @@ You know your standards are in execution when the service record answers operati
 ## Where to go next
 
 - Start with the department most pilots choose: [housekeeping](/solutions/housekeeping).
-- See how the loop runs end to end: [how Mise works](/how-it-works).
+- See how the loop runs end to end: [how Mise works](/platform).
 - Build the audit side of the record: [hotel audit readiness](/audit-readiness).
 `,
   faqs: [
@@ -167,7 +167,7 @@ You know your standards are in execution when the service record answers operati
     },
   ],
   related: [
-    { href: "/how-it-works", label: "How Mise works", note: "Standard → Timed task → Evidence → Service record." },
+    { href: "/platform", label: "How Mise works", note: "Standard → Timed task → Evidence → Service record." },
     { href: "/solutions/housekeeping", label: "Housekeeping execution", note: "The usual first department." },
     { href: "/audit-readiness", label: "Hotel audit readiness", note: "The record your standards produce." },
     { href: "/compare/execution-platform-vs-checklist-app", label: "Service execution platform vs checklist apps", note: "Why ticking is not enough." },
@@ -286,7 +286,7 @@ Different audits ask different questions, but they share a pattern: prove the st
 
 ## Where to go next
 
-- See where evidence comes from: [how Mise works](/how-it-works).
+- See where evidence comes from: [how Mise works](/platform).
 - Start with the source documents: [put hotel standards into execution](/standards-to-execution).
 - Understand the problem this solves: [the audit ambush](/problems/audit-ambush).
 `,

@@ -25,7 +25,7 @@ import {
 } from "@/content/meta";
 import { pains, problemsHubMeta } from "@/content/pains";
 import { auditReadiness, digitalSop } from "@/content/pillars";
-import { howItWorksMeta, platformMeta } from "@/content/platform";
+import { platformMeta } from "@/content/platform";
 import { founders } from "@/content/site";
 import { solutions, solutionsHubMeta } from "@/content/solutions";
 import type { PageMeta } from "@/lib/seo";
@@ -37,7 +37,6 @@ export function staticRoutes(): RouteEntry[] {
   return [
     r("home", homeMeta),
     r("platform", platformMeta),
-    r("platform", howItWorksMeta),
     r("problems", problemsHubMeta),
     ...pains.map((p) => r("problems", p.meta)),
     r("solutions", solutionsHubMeta),

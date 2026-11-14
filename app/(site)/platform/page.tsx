@@ -205,9 +205,6 @@ export default function PlatformPage() {
               <ButtonLink href="/audit-readiness" variant="ghost">
                 Hotel audit readiness
               </ButtonLink>
-              <ButtonLink href="/how-it-works" variant="quiet" arrow>
-                How the loop works
-              </ButtonLink>
             </div>
           </div>
           <div className="rounded-2xl border border-white/10 bg-[#122d35] p-6 text-[#f2f4ee] shadow-float">
@@ -234,7 +231,6 @@ export default function PlatformPage() {
         <div className="max-w-3xl">
           <RelatedLinks
             links={[
-              { href: "/how-it-works", label: "How Mise works", note: "Standard → Timed task → Evidence → Service record." },
               { href: "/solutions", label: "Solutions by department", note: "Front office to engineering, one app." },
               { href: "/standards-to-execution", label: "Standards to execution", note: "The step-by-step guide." },
               { href: "/security", label: "Security & data handling", note: "Google Cloud and Firebase, plainly stated." },

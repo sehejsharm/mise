@@ -49,7 +49,7 @@ export const linkRules: LinkRule[] = [
   { terms: ["Excel tracker", "Excel trackers", "spreadsheet tracker"], href: "/compare/mise-vs-excel" },
   { terms: ["checklist app", "checklist apps"], href: "/compare/execution-platform-vs-checklist-app" },
   { terms: ["cost of staff turnover", "cost of hotel staff turnover"], href: "/roi" },
-  { terms: ["one-property pilot", "one property pilot"], href: "/how-it-works#pilot" },
+  { terms: ["one-property pilot", "one property pilot"], href: "/faq" },
 ];
 
 type Compiled = { re: RegExp; href: string; key: string };

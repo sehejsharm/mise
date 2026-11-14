@@ -38,7 +38,7 @@ A service execution platform (SEP) sits between a hotel's standards and its shif
 Hotels rarely lack standards. They lack a way to make standards run consistently on every shift and to prove that they did. That gap produces [ghost SOPs](/problems/ghost-sop) and [audit ambushes](/problems/audit-ambush). Mise is a service execution platform for hotels.
 `,
     related: [
-      { href: "/how-it-works", label: "How Mise works" },
+      { href: "/platform", label: "How Mise works" },
       { href: "/compare/mise-vs-hotel-lms", label: "Mise vs hotel LMS" },
     ],
   },
@@ -129,10 +129,10 @@ A target time turns a standard into something that can be planned and measured. 
 
 ## The unit of work
 
-A timed task is not a reminder to read a standard. It is the standard, in the order the work happens. See [how Mise works](/how-it-works).
+A timed task is not a reminder to read a standard. It is the standard, in the order the work happens. See [how Mise works](/platform).
 `,
     related: [
-      { href: "/how-it-works", label: "How Mise works" },
+      { href: "/platform", label: "How Mise works" },
       { href: "/standards-to-execution", label: "Standards to execution" },
     ],
   },

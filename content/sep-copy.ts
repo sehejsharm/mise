@@ -30,7 +30,7 @@ The [Mise platform](/platform) captures proof of compliance as daily work happen
 2. **Instant Digital Records:** Inspections, hygiene routines, and maintenance checks are stored in one service record, searchable by date, department, or shift.
 3. **Supervisor Sign-Offs:** Department heads verify and approve tasks remotely in real time, so compliance gaps don't build up over time.
 
-Learn [how Mise works](/how-it-works) to keep your property's audit evidence up to date.
+Learn [how Mise works](/platform) to keep your property's audit evidence up to date.
 
 ## The operational return of continuous compliance
 
@@ -62,7 +62,7 @@ The [Mise platform](/platform) converts document-based brand standards into live
 2. **Visual Proof Gates:** Staff verify compliance by uploading the required photo evidence (room staging, buffet setup, cleaned fixtures) before closing a task.
 3. **Remote Supervisor Evidence:** Department heads review photo submissions in real time, validating execution quality without creating shift bottlenecks.
 
-Discover [how Mise works](/how-it-works) to put your hotel's brand standards into operation.
+Discover [how Mise works](/platform) to put your hotel's brand standards into operation.
 `,
   },
   "/audit-readiness": {
@@ -88,7 +88,7 @@ The [Mise platform](/platform) turns brand standards and regulatory guidelines i
 2. **Mandatory Photo-Proof Gates:** Staff capture the required photo evidence at each critical point, showing the standard was met at the time of execution.
 3. **Digital Audit Trails:** Auditors and management can review, filter, and export verified historical records in moments.
 
-Explore [how Mise works](/how-it-works) to keep your property audit-ready.
+Explore [how Mise works](/platform) to keep your property audit-ready.
 `,
   },
   "/compare": {
@@ -132,7 +132,7 @@ Basic task apps only record whether a box was clicked. Mise builds in quality as
 - **Audit Confidence:** Replace paper binder panic with a searchable digital audit trail, available any time.
 - **No Technical Friction:** Deploy on personal or hotel-provided phones, with zero PMS integration needed.
 
-Learn [how Mise works](/how-it-works) across all hotel departments.
+Learn [how Mise works](/platform) across all hotel departments.
 `,
   },
   "/glossary": {
@@ -182,7 +182,7 @@ The digital approval in which supervisors verify task completion and review uplo
 - **[Operating brief](/glossary/operating-brief):** Daily shift instructions delivered to staff phones at the start of a shift.
 - **[Digital SOP](/glossary/digital-sop):** A mobile-first standard operating procedure that guides staff through a task step by step.
 
-Learn [how Mise works](/how-it-works) to apply these concepts across your hotel.
+Learn [how Mise works](/platform) to apply these concepts across your hotel.
 `,
   },
   "/problems/supervisor-bottleneck": {
@@ -208,7 +208,7 @@ The [Mise platform](/platform) changes how hotel work is verified. Instead of wa
 2. **Mandatory Photo Proof:** Attendants and technicians capture timestamped visual evidence of completed tasks, such as a finished room setup, a clean kitchen line, or a fixed AC unit.
 3. **Remote Supervisor Sign-Offs:** Department heads review photo evidence and sign off remotely, releasing completed work without leaving their desk or current floor.
 
-Learn more about [how Mise works](/how-it-works) to drive daily accountability across active shifts.
+Learn more about [how Mise works](/platform) to drive daily accountability across active shifts.
 
 ## The operational benefits of removing the bottleneck
 
@@ -241,7 +241,7 @@ The [Mise platform](/platform) puts standards directly into the hands of floor s
 2. **Mandatory Photo Gates:** Require timestamped visual evidence for critical touchpoints, such as bathroom presentation, buffet setups, or HVAC filter replacements, before a task can be closed.
 3. **Remote Supervisor Evidence:** Managers review visual proof and sign off remotely, creating a complete operational service record.
 
-Discover [how Mise works](/how-it-works) to embed accountability across all hotel shifts.
+Discover [how Mise works](/platform) to embed accountability across all hotel shifts.
 
 ## Key benefits of eliminating Ghost SOPs
 
@@ -273,7 +273,7 @@ The [Mise platform](/platform) replaces delayed paper reports with immediate, ac
 2. **Visual Proof Gates:** Staff capture mandatory timestamped photos of completed work, giving management an objective view of execution quality without micromanaging.
 3. **Actionable Shift Reports:** Identify bottlenecks, high-performing teams, and recurring service delays from the service record.
 
-Discover [how Mise works](/how-it-works) to bring operational transparency to your property.
+Discover [how Mise works](/platform) to bring operational transparency to your property.
 
 ## The benefits of real-time operational transparency
 
@@ -305,7 +305,7 @@ The [Mise platform](/platform) gives every team member a clear, intuitive roadma
 2. **Instant Photo-Proof Verification:** Staff capture quick photos of completed setups, giving them confidence that their work matches the brand standard.
 3. **Constructive Remote Approvals:** Supervisors review visual evidence in real time, giving sign-offs and guidance without micromanaging.
 
-Discover [how Mise works](/how-it-works) to bring operational clarity to your team.
+Discover [how Mise works](/platform) to bring operational clarity to your team.
 
 ## The impact of lower turnover
 
@@ -337,7 +337,7 @@ The [Mise platform](/platform) turns brand excellence from a goal into a verifia
 2. **Visual Quality Gates:** Staff capture mandatory photo proof of completed room staging, cleaned bathrooms, and dining setups before marking a task complete.
 3. **Remote Quality Verification:** Supervisors inspect visual evidence remotely and approve work, so rooms that meet the standard are released faster.
 
-Explore [how Mise works](/how-it-works) to safeguard your property's reputation.
+Explore [how Mise works](/platform) to safeguard your property's reputation.
 
 ## The business impact of breaking the review ceiling
 
@@ -443,37 +443,6 @@ Maintaining service quality requires consistent execution across all teams, shif
 1. **Departmental Onboarding:** Bring your hotel's existing standards; Mise puts them straight into execution as active timed tasks without forcing staff through passive classroom training.
 2. **Visual Proof & Sign-Offs:** Every team member submits real-time visual evidence as work happens, allowing department heads to clear supervisor bottlenecks remotely.
 3. **Property-Wide Compliance:** Permanent, searchable digital logs aggregate multi-department task records, keeping your hotel perpetually audit-ready.
-`,
-  },
-  "/how-it-works": {
-    lede: "From written standards to daily floor execution in 4 simple steps.",
-    body: `
-Mise is the service execution platform (SEP) for hotels. It does not write your standards: it implements the SOPs your hotel already has, running them as timed tasks on staff phones in every department, capturing photo and supervisor evidence as the work happens, and building an audit-ready service record. Not an LMS. No PMS integration required.
-
-## Step-by-Step Platform Execution
-
-### Step 1: Bring Your Existing Standards
-
-There is no need to write new SOPs or rebuild your brand guidelines. Simply bring the operational procedures your hotel already owns. Mise digitizes your existing rules into structured schedules ready for daily execution.
-
-### Step 2: Timed Tasks Delivered to Staff Phones
-
-Frontline teams receive scheduled, department-specific tasks directly on their mobile devices as work needs to happen. Timed notifications ensure housekeeping turndowns, maintenance checks, and front office handovers are completed on schedule throughout every shift.
-
-### Step 3: Real-Time Photo Proof & Visual Evidence
-
-To eliminate "ghost SOPs," staff capture timestamped visual evidence directly within the platform as tasks are performed. Photo verification ensures standards are met with concrete visual proof rather than passive checkmarks.
-
-### Step 4: Mobile Supervisor Evidence & Audit Readiness
-
-Floor supervisors review incoming task evidence remotely on their phones. Managers approve or flag work instantly, clearing inspection bottlenecks. Every verified action builds an automated, permanent service record for total audit readiness.
-
-## SOP Implementation and Maintenance Built In
-
-Maintaining service quality isn't a one-time project: it's an active daily commitment:
-
-- **SOP Implementation:** Deploy your property’s operational standards directly onto staff phones on day one with zero PMS integration delays.
-- **SOP Maintenance:** Prevent operational decay across shifts with mandatory visual evidence, timed schedules, and structured supervisor sign-offs.
 `,
   },
   "/for/hr-directors": {

@@ -357,7 +357,7 @@ Group operations teams need to see where standards hold across properties. Mise 
       { href: "/problems/star-rating-ceiling", label: "The star rating ceiling", note: "Variance across properties." },
       { href: "/for/general-managers", label: "For General Managers", note: "Property-level visibility." },
       { href: "/solutions/boutique-hotels", label: "Service execution for boutique hotels", note: "When the group is small." },
-      { href: "/how-it-works#pilot", label: "How a pilot works", note: "One property, first." },
+      { href: "/faq", label: "How a pilot works", note: "One property, first." },
     ],
     relatedPosts: ["what-is-a-service-execution-platform"],
   },

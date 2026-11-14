@@ -125,9 +125,8 @@ export default function DemoPage() {
           <RelatedLinks
             title="Before the demo"
             links={[
-              { href: "/how-it-works", label: "How Mise works", note: "The loop in four moves." },
               { href: "/platform", label: "The three interfaces", note: "Staff, manager, standards." },
-              { href: "/how-it-works#pilot", label: "How a one-property pilot works", note: "Scope, setup, first shifts." },
+              { href: "/faq", label: "How a one-property pilot works", note: "Scope, setup, first shifts." },
               { href: "/security", label: "Security & data handling", note: "What we hold and where." },
             ]}
           />

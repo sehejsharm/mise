@@ -41,7 +41,6 @@ export default function FaqPage() {
           ))}
           <RelatedLinks
             links={[
-              { href: "/how-it-works", label: "How Mise works", note: "Standard → Timed task → Evidence → Service record." },
               { href: "/platform", label: "The platform", note: "Staff app, manager dashboard, standards workspace." },
               { href: "/security", label: "Security & data handling", note: "Plainly stated." },
               { href: "/compare/mise-vs-hotel-lms", label: "Mise vs hotel LMS", note: "Execution evidence vs completion records." },

@@ -77,7 +77,7 @@ export default async function LongformPage({
           <ButtonLink href="/demo" arrow trackLocation={`hero-${meta.path}`}>
             Book a 15-min demo
           </ButtonLink>
-          <ButtonLink href="/how-it-works" variant="ghost">
+          <ButtonLink href="/platform" variant="ghost">
             How Mise works
           </ButtonLink>
         </div>

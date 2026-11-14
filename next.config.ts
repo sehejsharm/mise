@@ -91,6 +91,8 @@ const nextConfig: NextConfig = {
       { source: "/solutions/fnb", destination: "/solutions/food-and-beverage", permanent: true },
       // Service execution platform renames: no product URLs carry "SOP".
       // Alternate addresses from the owner's sitemap draft, sent to the real pages.
+      // The How it works page was folded into /platform (the same loop, the same mechanism).
+      { source: "/how-it-works", destination: "/platform", permanent: true },
       { source: "/staff-app", destination: "/platform#staff", permanent: true },
       { source: "/manager-dashboard", destination: "/platform#manager", permanent: true },
       { source: "/standards-workspace", destination: "/platform#standards", permanent: true },

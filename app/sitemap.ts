@@ -13,7 +13,6 @@ function hints(path: string, group: string): { changeFrequency: Freq; priority: 
     "/": ["daily", 1.0],
     "/platform": ["weekly", 0.9],
     "/solutions": ["weekly", 0.9],
-    "/how-it-works": ["monthly", 0.8],
     "/blog": ["weekly", 0.8],
     "/faq": ["weekly", 0.7],
     "/roi": ["monthly", 0.7],

@@ -18,7 +18,6 @@ const BASE = process.env.BASE_URL || "http://localhost:3100";
 /** Pages whose title and description come from the SEP SEO pack (content/sep-copy.ts). */
 const SEP_PACK_PATHS = [
   "/platform",
-  "/how-it-works",
   "/problems",
   "/problems/supervisor-bottleneck",
   "/problems/ghost-sop",
