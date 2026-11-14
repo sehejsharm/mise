@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { PostCard } from "@/components/blog/PostCard";
 import LeadImage from "@/components/page/LeadImage";
+import LoopStrip from "@/components/page/LoopStrip";
 import PageHero from "@/components/page/PageHero";
 import Toc from "@/components/page/Toc";
 import { FaqList, FinalCta, JsonLd, RelatedLinks, TldrBox } from "@/components/ui/blocks";
@@ -86,6 +87,7 @@ export default async function LongformPage({
       <div className="container-page pb-20">
         <div className="max-w-3xl">
           <TldrBox>{page.tldr}</TldrBox>
+          <LoopStrip />
         </div>
         {before}
         <div className="mt-14 grid gap-12 lg:grid-cols-[minmax(0,1fr)_240px] lg:gap-16">

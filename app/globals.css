@@ -646,6 +646,124 @@
   }
 }
 
+/* The Mise loop diagram on long-form pages (components/page/LoopStrip). */
+.loop-strip {
+  position: relative;
+  margin-top: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1.25rem;
+  background:
+    radial-gradient(120% 140% at 0% 0%, var(--gold-soft), transparent 55%),
+    var(--surface);
+  padding: 1.6rem 1.25rem 1.4rem;
+  overflow: hidden;
+}
+.loop-strip-stages {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 0.75rem;
+}
+@media (min-width: 768px) {
+  .loop-strip-stages {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.loop-strip-stages > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+.loop-strip-node {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1.5px solid var(--line-strong);
+  color: var(--muted);
+  animation: loop-node 6s var(--ease-out-expo) infinite;
+  animation-delay: calc(var(--i) * 1.5s);
+}
+.loop-strip-name {
+  margin-top: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.loop-strip-line {
+  font-size: 0.86rem;
+  line-height: 1.4;
+  color: var(--muted);
+  max-width: 14rem;
+}
+/* The track runs behind the nodes on wide screens only. */
+.loop-strip-track {
+  display: none;
+}
+@media (min-width: 768px) {
+  .loop-strip-track {
+    display: block;
+    position: absolute;
+    left: 12.5%;
+    right: 12.5%;
+    top: calc(1.6rem + 1.5rem);
+    height: 2px;
+    background: var(--line);
+  }
+  .loop-strip-pulse {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: var(--gold);
+    box-shadow: 0 0 0 6px var(--gold-soft);
+    animation: loop-pulse 6s linear infinite;
+  }
+}
+@keyframes loop-pulse {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  75% {
+    left: 100%;
+    opacity: 1;
+  }
+  85%,
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+@keyframes loop-node {
+  0%,
+  16%,
+  100% {
+    background: var(--bg);
+    border-color: var(--line-strong);
+    color: var(--muted);
+    transform: none;
+  }
+  1%,
+  9% {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: var(--on-gold);
+    transform: scale(1.08);
+  }
+}
+
 /* Blog empty state: the launch ticket sways on its rail; the "in prep" dot pulses. */
 @keyframes ticket-sway {
   0%, 100% { transform: rotate(-1.2deg); }
