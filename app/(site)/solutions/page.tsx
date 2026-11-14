@@ -3,7 +3,7 @@ import Link from "next/link";
 import LoopStrip from "@/components/page/LoopStrip";
 import PageHero from "@/components/page/PageHero";
 import { FaqList, FinalCta, JsonLd } from "@/components/ui/blocks";
-import DeptPhoneMini from "@/components/ui/DeptPhoneMini";
+import DeptPhoneRotator from "@/components/ui/DeptPhoneRotator";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { departments as deptScreens } from "@/content/departments";
 import { departments, propertyTypes, solutionsHubMeta } from "@/content/solutions";
@@ -27,6 +27,16 @@ const rollout = `
 `;
 
 const propertyIcons: Record<string, IconName> = { "hotel-chains": "building", "boutique-hotels": "spark" };
+
+const deptIcons: Record<string, IconName> = {
+  "front-office": "users",
+  housekeeping: "grid",
+  "food-and-beverage": "calendar",
+  kitchen: "clock",
+  engineering: "chip",
+  "security-and-safety": "shield",
+  "spa-and-wellness": "spark",
+};
 
 const faqs: Faq[] = [
   {
@@ -77,45 +87,63 @@ export default function SolutionsHub() {
       />
 
       <div className="container-page pb-20">
-        <section aria-labelledby="by-department">
-          <h2 id="by-department" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
-            Tailored solutions for every department
-          </h2>
-          <p className="mt-2 text-[1rem] text-muted">Same app, same record. Only the standard changes.</p>
-          <ul className="mt-8 grid grid-cols-1 gap-5 min-[520px]:grid-cols-2 lg:grid-cols-4">
-            {departments.map((s, i) => {
-              const screen = screenFor(s.slug);
-              return (
-                <li key={s.slug} data-reveal style={{ ["--reveal-delay" as string]: `${i * 70}ms` }}>
-                  <Link
-                    href={s.meta.path}
-                    className="dept-card group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface transition-colors hover:border-gold/60"
-                  >
-                    <div className="dept-card-stage relative flex h-[300px] justify-center overflow-hidden bg-[radial-gradient(120%_90%_at_50%_0%,var(--gold-soft),transparent_70%)] pt-6">
-                      {screen ? (
-                        <div className="dept-card-phone origin-top scale-[0.82]">
-                          <DeptPhoneMini dept={screen} />
-                        </div>
-                      ) : null}
-                    </div>
-                    <div className="flex flex-1 flex-col border-t border-line p-5">
-                      {screen ? (
-                        <p className="font-mono text-[0.7rem] tracking-[0.14em] text-gold-ink uppercase">
-                          {screen.standardId} · {screen.task}
-                        </p>
-                      ) : null}
-                      <h3 className="mt-2 font-display text-[1.15rem] leading-snug font-semibold text-ink">{s.name}</h3>
-                      <p className="mt-1.5 flex-1 text-[0.92rem] leading-relaxed text-muted">{s.short}</p>
-                      <span className="mt-4 inline-flex items-center gap-1.5 text-[0.86rem] font-medium text-gold-ink">
-                        Explore <span className="sr-only">{s.name} service execution</span>
-                        <Icon name="arrowRight" size={15} className="transition-transform group-hover:translate-x-1" />
+        <section aria-labelledby="by-department" className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-14">
+          <div>
+            <h2 id="by-department" className="font-display text-[clamp(1.5rem,2.6vw,2rem)] font-semibold text-ink">
+              Tailored solutions for every department
+            </h2>
+            <p className="mt-2 text-[1rem] text-muted">Same app, same record. Only the standard changes.</p>
+            <ul className="mt-8 grid gap-3 sm:grid-cols-2 sm:gap-4">
+              {departments.map((s, i) => {
+                const screen = screenFor(s.slug);
+                return (
+                  <li key={s.slug} data-reveal style={{ ["--reveal-delay" as string]: `${i * 60}ms` }}>
+                    <Link
+                      href={s.meta.path}
+                      className="dept-tile group flex h-full items-start gap-4 rounded-2xl border border-line bg-surface p-4 transition-all hover:-translate-y-0.5 hover:border-gold/60 sm:p-5"
+                    >
+                      <span className="dept-tile-icon relative grid size-11 flex-none place-items-center rounded-xl bg-gold-soft text-gold-ink">
+                        <Icon name={deptIcons[s.slug] ?? "spark"} size={20} />
                       </span>
-                    </div>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+                      <span className="min-w-0 flex-1">
+                        <span className="block font-display text-[1.05rem] font-semibold text-ink">{s.name}</span>
+                        {screen ? (
+                          <span className="mt-0.5 block font-mono text-[0.66rem] tracking-[0.12em] text-gold-ink uppercase">
+                            {screen.standardId} · {screen.task}
+                          </span>
+                        ) : null}
+                        <span className="mt-1.5 block text-[0.9rem] leading-relaxed text-muted">{s.short}</span>
+                      </span>
+                      <Icon name="arrowRight" size={16} className="mt-1 flex-none text-gold-ink transition-transform group-hover:translate-x-1" />
+                    </Link>
+                  </li>
+                );
+              })}
+              <li data-reveal style={{ ["--reveal-delay" as string]: `${departments.length * 60}ms` }}>
+                <Link
+                  href="/demo"
+                  className="group flex h-full items-start gap-4 rounded-2xl bg-navy p-4 text-[#f2f4ee] transition-transform hover:-translate-y-0.5 sm:p-5"
+                >
+                  <span className="grid size-11 flex-none place-items-center rounded-xl bg-gold text-on-gold transition-transform duration-500 group-hover:rotate-90">
+                    <Icon name="plus" size={20} />
+                  </span>
+                  <span className="flex-1">
+                    <span className="block font-display text-[1.05rem] font-semibold">Your department?</span>
+                    <span className="mt-1.5 block text-[0.9rem] leading-relaxed text-[#b9c7c3]">
+                      Any repeatable standard runs the same way. <span className="text-[#e5b35a]">Book a 15-min demo</span>
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+          {/* One phone, cycling through every department's Today screen. */}
+          <div className="hidden lg:block">
+            <div className="sticky top-28">
+              <DeptPhoneRotator label="Mise staff app Today screen, cycling through each department's next timed task" />
+              <p className="mt-4 text-center font-mono text-[0.7rem] tracking-[0.12em] text-faint uppercase">One staff app · every department</p>
+            </div>
+          </div>
         </section>
 
         <section aria-labelledby="by-property-type" className="mt-16">

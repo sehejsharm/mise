@@ -11,7 +11,7 @@ Rules:
 - Mise is never named as SOP software: "SOP app", "SOP software", "SOP platform" and "SOP management" fail anywhere in visible text, titles, meta descriptions or JSON-LD. The "SOP" column counts remaining mentions of the word (the hotel's own SOPs and the ghost SOP concept).
 - The existing bans stay: retired vocabulary outside the comparison content and "not an LMS" contexts, confidential terms and the retired domain.
 
-Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: 301.
+Department and SOP mentions are counted in each page's visible text. Total SOP mentions across the site: 299.
 
 | URL | Front office | Housekeeping | F&B | Kitchen | Engineering | Security | Spa | SOP | mailto CTAs | Result |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|
@@ -24,7 +24,7 @@ Department and SOP mentions are counted in each page's visible text. Total SOP m
 | `/problems/attrition-bleed` | 5 | 1 | 2 | 1 | 1 | 0 | 0 | 4 | 0 | PASS |
 | `/problems/star-rating-ceiling` | 4 | 4 | 2 | 1 | 4 | 1 | 1 | 3 | 0 | PASS |
 | `/problems/audit-ambush` | 1 | 2 | 1 | 1 | 3 | 0 | 0 | 5 | 0 | PASS |
-| `/solutions` | 7 | 8 | 6 | 7 | 12 | 8 | 6 | 4 | 0 | PASS |
+| `/solutions` | 4 | 1 | 2 | 1 | 3 | 2 | 2 | 2 | 0 | PASS |
 | `/solutions/front-office` | 33 | 4 | 1 | 0 | 1 | 0 | 0 | 3 | 0 | PASS |
 | `/solutions/housekeeping` | 2 | 31 | 0 | 0 | 2 | 0 | 1 | 6 | 0 | PASS |
 | `/solutions/food-and-beverage` | 0 | 1 | 37 | 6 | 1 | 1 | 0 | 3 | 0 | PASS |
