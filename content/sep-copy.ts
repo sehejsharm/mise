@@ -411,40 +411,6 @@ Solving operational failures requires more than a one-time fix. Mise ensures lon
 3. **Maintain Compliance:** Automated audit-ready service records maintain permanent shift logs, ensuring your property is perpetually ready for brand audits and compliance reviews.
 `,
   },
-  "/solutions": {
-    lede: "One platform to run your property’s existing standards with photo proof and timed tasks.",
-    body: `
-Mise is the service execution platform (SEP) for hotels. It does not write your standards: it implements the SOPs your hotel already has, running them as timed tasks on staff phones in every department, capturing photo and supervisor evidence as the work happens, and building an audit-ready service record. Not an LMS. No PMS integration required.
-
-## Tailored Solutions for Every Department
-
-Mise breaks down operational silos by delivering a unified hotel operations execution platform built for total property alignment:
-
-### Housekeeping Operations
-
-Implement room setup standards, turndown routines, and public area cleaning protocols as scheduled, timed tasks. Frontline staff capture mandatory timestamped photo proof inside the platform, eliminating "ghost SOPs" and ensuring every guest room meets brand standards before check-in.
-
-### Front Office & Duty Managers
-
-Replace manual shift logs and unorganized chat groups with automated duty manager handover logs. Capture VIP arrivals, guest requests, and shift incidents in real time, building a permanent service record that keeps operational transitions seamless.
-
-### Engineering & Preventive Maintenance
-
-Execute scheduled equipment servicing, room repair tickets, and safety inspections with mandatory visual verification. Supervisors review and sign off on completed work orders remotely, ensuring total accountability across physical asset upkeep.
-
-### Food & Beverage
-
-Enforce kitchen prep schedules, buffet layout standards, and temperature log compliance prior to guest service. Timed task reminders on staff phones guarantee pre-shift standards are met on schedule every day.
-
-## SOP Implementation & Continuous Maintenance Across Departments
-
-Maintaining service quality requires consistent execution across all teams, shifts, and property areas:
-
-1. **Departmental Onboarding:** Bring your hotel's existing standards; Mise puts them straight into execution as active timed tasks without forcing staff through passive classroom training.
-2. **Visual Proof & Sign-Offs:** Every team member submits real-time visual evidence as work happens, allowing department heads to clear supervisor bottlenecks remotely.
-3. **Property-Wide Compliance:** Permanent, searchable digital logs aggregate multi-department task records, keeping your hotel perpetually audit-ready.
-`,
-  },
   "/for/hr-directors": {
     lede: "Bridge the gap between written HR policies and daily floor execution.",
     body: `

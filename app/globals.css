@@ -764,6 +764,31 @@
   }
 }
 
+/* Solutions hub: each department card's phone rises into place as the
+   card reveals, and lifts on hover. Uses the translate property so it
+   composes with Tailwind's scale utility. */
+.dept-card-phone {
+  transition: translate 700ms var(--ease-out-expo);
+}
+.js-motion [data-reveal] .dept-card-phone {
+  translate: 0 48px;
+  transition: translate 1000ms var(--ease-out-expo) calc(var(--reveal-delay, 0ms) + 150ms);
+}
+.js-motion [data-reveal][data-in] .dept-card-phone {
+  translate: 0 0;
+}
+.dept-card:hover .dept-card-phone,
+.js-motion [data-reveal][data-in] .dept-card:hover .dept-card-phone {
+  translate: 0 -14px;
+  transition-delay: 0ms;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-motion [data-reveal] .dept-card-phone,
+  .dept-card:hover .dept-card-phone {
+    translate: none !important;
+  }
+}
+
 /* Blog empty state: the launch ticket sways on its rail; the "in prep" dot pulses. */
 @keyframes ticket-sway {
   0%, 100% { transform: rotate(-1.2deg); }
