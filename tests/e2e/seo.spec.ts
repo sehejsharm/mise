@@ -16,7 +16,10 @@ function validateNode(node: Node, errors: string[]) {
   const need = (keys: string[]) => keys.forEach((k) => node[k] === undefined && errors.push(`${type} missing ${k}`));
   switch (type) {
     case "Organization":
-      need(["name", "url", "logo", "description", "parentOrganization", "founder", "contactPoint"]);
+      // Mise's own entity carries the full set; another organization (Focus Realm on /focusrealm) only needs to identify itself.
+      if (node["@id"] === `${ORIGIN}/#organization` || !node["@id"])
+        need(["name", "url", "logo", "description", "parentOrganization", "founder", "contactPoint"]);
+      else need(["name", "url", "description"]);
       break;
     case "WebSite":
       need(["name", "url", "potentialAction"]);
