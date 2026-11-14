@@ -9,7 +9,7 @@ import type { Longform } from "@/content/types";
 import { resolvePosts } from "@/lib/blog";
 import { createLinkState } from "@/lib/links";
 import { headingsOf, Markdown } from "@/lib/md";
-import { baseNodes, breadcrumbNode, faqNode, howToNode, imageUrl, softwareNode, webPageNode } from "@/lib/schema";
+import { baseNodes, breadcrumbNode, faqNode, howToNode, imageUrl, softwareNode, webPageNode, type WebPageKind } from "@/lib/schema";
 
 /**
  * Template for long-form SEO pages: hero with H1 + lede (primary keyword in the
@@ -22,6 +22,8 @@ export default async function LongformPage({
   before,
   heroExtra,
   extraNodes = [],
+  pageKind,
+  about,
 }: {
   page: Longform;
   crumbs: { name: string; path: string }[];
@@ -30,6 +32,10 @@ export default async function LongformPage({
   /** Content at the bottom of the hero, under the CTAs (e.g. the department switcher bar). */
   heroExtra?: ReactNode;
   extraNodes?: unknown[];
+  /** schema.org page type; defaults to WebPage. */
+  pageKind?: WebPageKind;
+  /** @id the page is about; defaults to the Mise software node. */
+  about?: string;
 }) {
   const { meta } = page;
   const state = createLinkState(meta.path);
@@ -48,6 +54,8 @@ export default async function LongformPage({
             name: meta.title,
             description: meta.description,
             updated: meta.updated,
+            kind: pageKind,
+            about,
             primaryImage: page.leadImage?.key ? imageUrl(page.leadImage.key) : undefined,
           }),
           breadcrumbNode(meta.path, crumbs),

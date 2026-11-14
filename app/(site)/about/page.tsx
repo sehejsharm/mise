@@ -328,7 +328,11 @@ export default function AboutPage() {
               </h2>
               <p className="mt-3 text-[1rem] leading-relaxed text-muted">
                 Focus Realm is the parent company behind Mise. Mise is its hospitality platform, with its own name,
-                product and team focus. Mise is not affiliated with Focus Softnet or its Focus e-RMS product.
+                product and team focus. Mise is not affiliated with Focus Softnet or its Focus e-RMS product.{" "}
+                <Link href="/focusrealm" className="underline decoration-gold/50 underline-offset-4 hover:text-gold-ink">
+                  More on Mise by Focus Realm
+                </Link>
+                .
               </p>
             </div>
             <a href={brand.parent.url} rel="noopener" target="_blank" className="inline-flex shrink-0 items-center gap-2 rounded-full border border-line-strong px-5 py-3 text-[0.94rem] text-ink hover:border-gold">

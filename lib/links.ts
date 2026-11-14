@@ -13,6 +13,7 @@
 export type LinkRule = { terms: string[]; href: string };
 
 export const linkRules: LinkRule[] = [
+  { terms: ["Mise by Focus Realm", "a Focus Realm company"], href: "/focusrealm" },
   { terms: ["put hotel standards into execution", "hotel standards into execution"], href: "/standards-to-execution" },
     { terms: ["audit-ready service record", "hotel audit readiness", "audit readiness"], href: "/audit-readiness" },
   { terms: ["service execution platform"], href: "/glossary/service-execution-platform" },

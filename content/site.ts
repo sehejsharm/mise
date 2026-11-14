@@ -245,6 +245,7 @@ export const footerColumns: { heading: string; links: FooterLink[] }[] = [
       { href: "/security", label: "Security" },
       { href: "/faq", label: "FAQ" },
       { href: "/contact", label: "Contact" },
+      { href: "/focusrealm", label: "Mise by Focus Realm" },
       { href: "https://focusrealm.org", label: "Focus Realm (parent company)", external: true },
     ],
   },

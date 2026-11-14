@@ -7,6 +7,7 @@
 import { audiences, audiencesHubMeta } from "@/content/audiences";
 import { compareHubMeta, comparisons } from "@/content/compare";
 import { faqMeta } from "@/content/faq";
+import { focusRealmPage } from "@/content/focusrealm";
 import { indiaPage, southAsiaPage } from "@/content/geo";
 import { glossary, glossaryHubMeta } from "@/content/glossary";
 import { homeMeta } from "@/content/home";
@@ -54,6 +55,7 @@ export function staticRoutes(): RouteEntry[] {
     ...glossary.map((t) => r("glossary", glossaryMeta(t))),
     r("company", faqMeta),
     r("company", aboutMeta),
+    r("company", focusRealmPage.meta),
     ...founders.map((f) => r("company", founderMeta(f.slug)!)),
     r("company", advisorsMeta),
     r("blog", blogMeta),
