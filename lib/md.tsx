@@ -11,7 +11,38 @@
  */
 import Link from "next/link";
 import { Fragment, type ReactNode } from "react";
+import { Icon, type IconName } from "@/components/ui/Icon";
 import { autolink, reserveHref, type LinkState } from "@/lib/links";
+
+/** "**Title:** body" or "**Title**: body" → [title, body]. */
+const LEAD = /^\*\*([^*]+?)(?::\*\*|\*\*:)\s*(.*)$/;
+function splitLead(item: string): [string, string] | null {
+  const m = item.match(LEAD);
+  return m ? [m[1], m[2]] : null;
+}
+
+/** Picks a card icon from words in its title; falls back to a spark. */
+const ICON_RULES: [RegExp, IconName][] = [
+  [/fail|problem|risk|chaos|ghost|drift|bottleneck|vulnerab/i, "close"],
+  [/solution|solve|fix|answer|approv|verif|sign-?off|check/i, "check"],
+  [/photo|proof|evidence|visual|image/i, "camera"],
+  [/time|timed|clock|schedul|shift|turnaround|turnover|rapid|instant|day one/i, "clock"],
+  [/audit|record|log|ledger|archive|history|complian/i, "ledger"],
+  [/pms|integration|api|it /i, "plugOff"],
+  [/lms|training|learn|onboard/i, "book"],
+  [/whatsapp|chat|messag|handover/i, "whatsapp"],
+  [/phone|mobile|app/i, "phone"],
+  [/secur|safety|fire|patrol|hazard|liabilit/i, "shield"],
+  [/chain|propert|portfolio|brand|enterprise|boutique|group/i, "building"],
+  [/visib|analytic|performance|insight|dashboard|compar/i, "chart"],
+  [/supervisor|manager|team|staff|people|role|director|leader/i, "users"],
+  [/standard|sop|procedure|binder/i, "binder"],
+  [/department|multi|connect|align|property-wide|unified/i, "grid"],
+];
+function iconFor(title: string): IconName {
+  return ICON_RULES.find(([re]) => re.test(title))?.[1] ?? "spark";
+}
+const delay = (i: number) => ({ ["--reveal-delay" as string]: `${Math.min(i, 8) * 70}ms` });
 
 export function slugify(text: string) {
   return text
@@ -191,9 +222,41 @@ export function Markdown({ source, state, className }: { source: string; state?:
               </h3>
             );
           case "p":
-            return <p key={k}>{renderInline(block.text, state, k)}</p>;
+            // The answer-first paragraph right under a question heading is the one to skim.
+            return blocks[i - 1]?.type === "h2" ? (
+              <p key={k} className="md-answer" data-reveal>
+                {renderInline(block.text, state, k)}
+              </p>
+            ) : (
+              <p key={k}>{renderInline(block.text, state, k)}</p>
+            );
           case "ul": {
             const checklist = block.items.every((item) => item.startsWith("[ ] "));
+            const leads = block.items.map(splitLead);
+            // "**Title:** text" lists render as icon cards; the words are unchanged.
+            if (!checklist && block.items.length >= 2 && leads.every(Boolean)) {
+              const wide = block.items.length === 2 || block.items.length === 4;
+              return (
+                <ul key={k} className={`md-cards${wide ? " md-cards-2" : ""}`}>
+                  {leads.map((lead, j) => {
+                    const [title, body] = lead!;
+                    const icon = iconFor(title);
+                    const tone = icon === "close" ? " md-card-bad" : icon === "check" ? " md-card-good" : "";
+                    return (
+                      <li key={j} className={`md-card${tone}`} data-reveal style={delay(j)}>
+                        <span className="md-card-icon" aria-hidden="true">
+                          <Icon name={icon} size={18} />
+                        </span>
+                        <span className="md-card-body">
+                          <strong>{renderInline(title, undefined, `${k}-${j}-t`)}</strong>
+                          {body ? <span> {renderInline(body, state, `${k}-${j}`)}</span> : null}
+                        </span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              );
+            }
             return (
               <ul key={k} className={checklist ? "checklist" : undefined}>
                 {block.items.map((item, j) =>
@@ -210,18 +273,36 @@ export function Markdown({ source, state, className }: { source: string; state?:
             );
           }
           case "ol":
+            // Numbered lists render as a step timeline: badge, connector, bold lead.
             return (
-              <ol key={k}>
-                {block.items.map((item, j) => (
-                  <li key={j}>{renderInline(item, state, `${k}-${j}`)}</li>
-                ))}
+              <ol key={k} className="md-steps">
+                {block.items.map((item, j) => {
+                  const lead = splitLead(item);
+                  return (
+                    <li key={j} data-reveal style={delay(j)}>
+                      <span className="md-step-n" aria-hidden="true">
+                        {String(j + 1).padStart(2, "0")}
+                      </span>
+                      <span className="md-step-body">
+                        {lead ? (
+                          <>
+                            <strong>{renderInline(lead[0], undefined, `${k}-${j}-t`)}</strong>
+                            {lead[1] ? <span> {renderInline(lead[1], state, `${k}-${j}`)}</span> : null}
+                          </>
+                        ) : (
+                          renderInline(item, state, `${k}-${j}`)
+                        )}
+                      </span>
+                    </li>
+                  );
+                })}
               </ol>
             );
           case "quote":
             return <blockquote key={k}>{renderInline(block.text, state, k)}</blockquote>;
           case "table":
             return (
-              <div key={k} className="-mx-4 overflow-x-auto px-4" role="region" aria-label="Comparison table" tabIndex={0}>
+              <div key={k} data-reveal className="-mx-4 overflow-x-auto px-4" role="region" aria-label="Comparison table" tabIndex={0}>
                 <table>
                   <thead>
                     <tr>
