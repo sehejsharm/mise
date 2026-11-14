@@ -23,11 +23,13 @@ function splitLead(item: string): [string, string] | null {
 
 /** Picks a card icon from words in its title; falls back to a spark. */
 const ICON_RULES: [RegExp, IconName][] = [
-  [/fail|problem|risk|chaos|ghost|drift|bottleneck|vulnerab/i, "close"],
-  [/solution|solve|fix|answer|approv|verif|sign-?off|check/i, "check"],
-  [/photo|proof|evidence|visual|image/i, "camera"],
+  // Red/green only for explicit failure → solution pairs; everything else gets a neutral topic icon.
+  [/^(the )?(failure|problem)\b/i, "close"],
+  [/^(the )?(solution|fix|answer)\b/i, "check"],
+  [/photo|proof|evidence|visual|image|ghost/i, "camera"],
+  [/approv|verif|sign-?off/i, "check"],
   [/time|timed|clock|schedul|shift|turnaround|turnover|rapid|instant|day one/i, "clock"],
-  [/audit|record|log|ledger|archive|history|complian/i, "ledger"],
+  [/audit|record|log|ledger|archive|history|complian|checklist|pencil/i, "ledger"],
   [/pms|integration|api|it /i, "plugOff"],
   [/lms|training|learn|onboard/i, "book"],
   [/whatsapp|chat|messag|handover/i, "whatsapp"],
